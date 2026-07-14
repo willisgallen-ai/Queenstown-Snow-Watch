@@ -6,6 +6,7 @@ adjacent lifts, trails, facilities and car parks being merged together.
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 from copy import deepcopy
@@ -56,6 +57,32 @@ DIFFICULTY_MAP = {
     "race arena": "black", "powder run": "double-black", "back bowls": "double-black",
     # Parks / zones remain unclassified by design.
 }
+
+
+TRAIL_COLOURS_FILE = ROOT / "trail-colours.json"
+RESORT_COORDS = {
+    "remarkables": (-45.0556, 168.8140),
+    "coronetpeak": (-44.9277, 168.7366),
+    "cardrona": (-44.8717, 168.9497),
+    "treblecone": (-44.6320, 168.8804),
+}
+
+def load_trail_colours() -> dict[str, str]:
+    mapping = dict(DIFFICULTY_MAP)
+    try:
+        custom = json.loads(TRAIL_COLOURS_FILE.read_text(encoding="utf-8"))
+        for resort_map in custom.values():
+            if isinstance(resort_map, dict):
+                mapping.update({clean(k).lower(): clean(v).lower() for k, v in resort_map.items()})
+    except Exception:
+        pass
+    return mapping
+
+def apply_trail_colours(trails: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    mapping = load_trail_colours()
+    for trail in trails:
+        trail["difficulty"] = mapping.get(clean(trail.get("name")).lower(), trail.get("difficulty", "unclassified"))
+    return trails
 
 STATUS_PHRASES = sorted([
     "Wind may affect chairlift ops", "Advanced Riders Only", "Closed for Racing",
@@ -339,21 +366,30 @@ def parse_carparks_strict(soup: BeautifulSoup) -> list[dict[str, str]]:
 
 
 def scrape_grasshopper_headline() -> dict[str, Any] | None:
+    """Return the latest NZ Grasshopper headline and a short licensed-safe summary."""
     try:
         soup, _ = fetch(GRASSHOPPER_URL)
         candidates=[]
         for a in soup.find_all("a", href=True):
             title=clean(a.get_text(" "))
             href=urljoin(GRASSHOPPER_URL, a["href"])
-            if len(title) < 25:
-                continue
             low=title.lower()
-            if "new zealand" in low and any(k in low for k in ("forecast", "snow", "outlook")):
+            if len(title) >= 25 and "new zealand" in low and any(k in low for k in ("forecast", "snow", "outlook")):
                 candidates.append((title, href))
         if not candidates:
             return None
         title, url = candidates[0]
-        return {"title": title, "url": url, "source": "The Grasshopper · Mountainwatch"}
+        article, _ = fetch(url)
+        summary = ""
+        meta = article.find("meta", attrs={"name":"description"}) or article.find("meta", attrs={"property":"og:description"})
+        if meta and meta.get("content"):
+            summary = clean(meta["content"])
+        if not summary:
+            paras=[clean(p.get_text(" ")) for p in article.find_all("p") if len(clean(p.get_text(" "))) > 80]
+            summary = paras[0] if paras else ""
+        # Keep the ticker informative without reproducing the full copyrighted report.
+        summary = summary[:360].rsplit(" ", 1)[0] + ("…" if len(summary) > 360 else "")
+        return {"title": title, "summary": summary, "url": url, "source": "The Grasshopper · Mountainwatch"}
     except Exception as exc:
         print(f"Grasshopper headline failed: {exc}", file=sys.stderr)
         return None
@@ -406,6 +442,35 @@ def parse_current_weather(soup: BeautifulSoup, source_url: str, source_name: str
         "condition": condition,
         "source": source_name,
         "source_url": source_url,
+    }
+
+def google_current_weather(name: str) -> dict[str, Any] | None:
+    key = os.environ.get("GOOGLE_WEATHER_API_KEY", "").strip()
+    if not key:
+        return None
+    lat, lon = RESORT_COORDS[name]
+    url = "https://weather.googleapis.com/v1/currentConditions:lookup"
+    response = requests.get(url, params={
+        "key": key,
+        "location.latitude": lat,
+        "location.longitude": lon,
+        "unitsSystem": "METRIC",
+    }, headers=HEADERS, timeout=TIMEOUT)
+    response.raise_for_status()
+    payload = response.json()
+    condition = payload.get("weatherCondition", {}).get("description", {}).get("text")
+    condition_type = payload.get("weatherCondition", {}).get("type", "")
+    precip_type = payload.get("precipitation", {}).get("probability", {}).get("type", "")
+    temp = payload.get("temperature", {}).get("degrees")
+    if temp is None:
+        return None
+    snowing = "SNOW" in str(condition_type).upper() or "SNOW" in str(precip_type).upper() or snowing_from_condition(condition)
+    return {
+        "temperature_c": round(float(temp), 1),
+        "snowing": snowing,
+        "condition": condition,
+        "source": "Google Weather",
+        "source_url": "https://developers.google.com/maps/documentation/weather",
     }
 
 def find_webcam_image(soup: BeautifulSoup, base_url: str) -> str | None:
@@ -527,7 +592,12 @@ def scrape_resort(name: str, previous: dict[str, Any] | None) -> dict[str, Any]:
                 if data.get(key) is None: data[key] = summary.get(key)
         except Exception as exc:
             print(f"SnowNZ parking fallback failed for {name}: {exc}", file=sys.stderr)
-    data["weather"] = parse_current_weather(soup, URLS[name], source_name)
+    try:
+        data["weather"] = google_current_weather(name) or parse_current_weather(soup, URLS[name], source_name)
+    except Exception as exc:
+        print(f"Google Weather failed for {name}: {exc}", file=sys.stderr)
+        data["weather"] = parse_current_weather(soup, URLS[name], source_name)
+    data["trails"] = apply_trail_colours(data.get("trails", []))
     try:
         webcam_soup, _ = fetch(WEBCAM_PAGES[name])
         webcam_image = find_webcam_image(webcam_soup, WEBCAM_PAGES[name])
