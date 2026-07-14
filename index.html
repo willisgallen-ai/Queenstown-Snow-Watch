@@ -181,6 +181,8 @@
   .src-chip .arrow{color:var(--muted-2);}
 
   footer{text-align:center;color:var(--muted-2);font-size:10.5px;font-family:'JetBrains Mono',monospace;margin-top:10px;}
+
+  .live-cluster{display:flex;gap:9px;align-items:center;text-align:right}.live-dot{width:9px;height:9px;border-radius:50%;background:var(--muted-2)}.live-dot.fresh{background:var(--good);box-shadow:0 0 0 4px rgba(111,207,151,.12)}.live-dot.stale{background:var(--storm);box-shadow:0 0 0 4px rgba(232,162,60,.12)}.next-tag{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--muted-2);margin-top:2px}.live-panels{display:grid;grid-template-columns:1fr 1fr;gap:8px}.mini-panel{background:var(--bg-alt);border:1px solid var(--line);border-radius:10px;padding:10px}.weather-now{font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.55}.weather-temp{font-family:'Big Shoulders Display',sans-serif;font-size:24px;font-weight:800}.weather-detail,.muted-inline{color:var(--muted-2);font-size:9.5px}.carpark-list{display:flex;flex-direction:column;gap:5px}.carpark-pill{display:flex;justify-content:space-between;gap:8px;font-family:'JetBrains Mono',monospace;font-size:9.5px}.park-state{font-weight:600}.park-open{color:var(--good)}.park-limited{color:var(--storm)}.park-full{color:var(--bad)}.park-unknown{color:var(--muted-2)}.webcam-card{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background-size:cover;background-position:center;min-height:68px;cursor:pointer;position:relative;overflow:hidden}.webcam-card::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,17,25,.94),rgba(10,17,25,.48))}.webcam-card>*{position:relative}.webcam-title{font-size:11px;font-weight:600}.trail-groups{display:flex;flex-direction:column;gap:10px}.trail-group{border-left:3px solid var(--line);padding-left:9px}.trail-group-head{display:flex;align-items:center;gap:7px;margin-bottom:6px;font-family:'JetBrains Mono',monospace;font-size:9.5px;text-transform:uppercase}.difficulty-symbol{width:10px;height:10px;display:inline-block}.diff-green{border-radius:50%;background:#5fd07e}.diff-blue{border-radius:3px;background:#5fb0e8}.diff-red{border-radius:3px;background:#e88f5f;transform:rotate(45deg)}.diff-black{border-radius:3px;background:#171717;border:1px solid #777;transform:rotate(45deg)}.diff-double-black{position:relative;width:18px}.diff-double-black::before,.diff-double-black::after{content:'';position:absolute;width:9px;height:9px;border-radius:2px;background:#171717;border:1px solid #777;transform:rotate(45deg);top:0}.diff-double-black::after{left:7px}.diff-unclassified{border-radius:50%;border:1px solid var(--muted-2)}@media(max-width:560px){.live-panels{grid-template-columns:1fr}.live-cluster{text-align:left;width:100%}}
 </style>
 </head>
 <body>
@@ -205,7 +207,7 @@
 
   <header>
     <h1>Southern Lakes Snow Watch</h1>
-    <span class="stamp-tag">Report data 13–14 Jul · forecast issued dates per row below</span>
+    <div class="live-cluster"><span class="live-dot" id="live-dot"></span><div><div class="stamp-tag" id="live-stamp">Loading live data…</div><div class="next-tag" id="next-update">Next check calculating…</div></div></div>
   </header>
 
   <div class="lift-legend">
@@ -237,7 +239,7 @@
       <div class="stat-row">
         <div class="stat"><div class="v" id="rm-base">15–60cm</div><div class="k">Base</div></div>
         <div class="stat"><div class="v">53cm</div><div class="k">Season</div></div>
-        <div class="stat"><div class="v">8cm</div><div class="k">Last 24h</div></div>
+        <div class="stat"><div class="v">8cm</div><div class="k">Last 24h</div></div><div class="stat"><div class="v" id="rm-7d">—</div><div class="k">Last 7d</div></div>
       </div>
       <div>
         <div class="section-lbl">Lifts</div>
@@ -262,9 +264,9 @@
       </div>
       <div>
         <div class="section-lbl">Named trails</div>
-        <div class="no-data">Not published individually — difficulty breakdown above is the finest grain this resort's feed gives.</div>
+        <div class="trail-groups" id="rm-trails"><div class="no-data">Loading named terrain…</div></div>
       </div>
-      <div class="card-note">theremarkables.co.nz · 13 Jul 16:28</div>
+      <div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · AccuWeather</div><div id="rm-weather" class="weather-now">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div id="rm-carparks" class="carpark-list"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="rm-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Open official camera</div></div><span>↗</span></div><div class="card-note">Live source · The Remarkables</div>
     </div>
 
     <div class="card" id="card-coronetpeak">
@@ -274,7 +276,7 @@
       </div>
       <div class="stat-row">
         <div class="stat"><div class="v" id="cp-base">20–30cm</div><div class="k">Base</div></div>
-        <div class="stat"><div class="v">0cm</div><div class="k">Last 7d</div></div>
+        <div class="stat"><div class="v" id="cp-7d">—</div><div class="k">Last 7d</div></div>
       </div>
       <div>
         <div class="section-lbl">Lifts</div>
@@ -297,7 +299,7 @@
       </div>
       <div>
         <div class="section-lbl">Named trails · 19/29 open</div>
-        <div class="trail-chips" id="cp-trails">
+        <div class="trail-groups" id="cp-trails">
           <div class="trail-chip t-open"><span class="t-dot"></span>Big Easy</div>
           <div class="trail-chip t-open"><span class="t-dot"></span>Little Easy</div>
           <div class="trail-chip t-open"><span class="t-dot"></span>Gentle Annie</div>
@@ -329,7 +331,7 @@
           <div class="trail-chip t-closed"><span class="t-dot"></span>Walkabout Park</div>
         </div>
       </div>
-      <div class="card-note">snow.nz individual report · 13 Jul 06:33</div>
+      <div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · AccuWeather</div><div id="cp-weather" class="weather-now">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div id="cp-carparks" class="carpark-list"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cp-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Open official camera</div></div><span>↗</span></div><div class="card-note">Live source · Coronet Peak / snow.nz</div>
     </div>
 
   </div>
@@ -345,7 +347,7 @@
       <div class="stat-row">
         <div class="stat"><div class="v" id="cd-base">37cm</div><div class="k">Base</div></div>
         <div class="stat"><div class="v">10</div><div class="k">Lifts total</div></div>
-        <div class="stat"><div class="v">1cm</div><div class="k">Last 7d</div></div>
+        <div class="stat"><div class="v" id="cd-7d">—</div><div class="k">Last 7d</div></div>
       </div>
       <div>
         <div class="section-lbl">Lifts</div>
@@ -368,9 +370,9 @@
       </div>
       <div>
         <div class="section-lbl">Named trails</div>
-        <div class="no-data">Not published on this resort's feed.</div>
+        <div class="trail-groups" id="cd-trails"><div class="no-data">Not currently reported.</div></div>
       </div>
-      <div class="card-note">Names: snow.nz · status last read 18:50 (after-hours) — grey until a daytime read confirms each</div>
+      <div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · AccuWeather</div><div id="cd-weather" class="weather-now">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div id="cd-carparks" class="carpark-list"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cd-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Open official camera</div></div><span>↗</span></div><div class="card-note">Live source · Cardrona / snow.nz</div>
     </div>
 
     <div class="card" id="card-treblecone">
@@ -380,7 +382,7 @@
       </div>
       <div class="stat-row">
         <div class="stat"><div class="v" id="tc-base">52cm</div><div class="k">Base</div></div>
-        <div class="stat"><div class="v">6cm</div><div class="k">Last 7d</div></div>
+        <div class="stat"><div class="v" id="tc-7d">—</div><div class="k">Last 7d</div></div>
       </div>
       <div>
         <div class="section-lbl">Lifts</div>
@@ -396,9 +398,9 @@
       </div>
       <div>
         <div class="section-lbl">Named trails</div>
-        <div class="no-data">Not published on this resort's feed.</div>
+        <div class="trail-groups" id="tc-trails"><div class="no-data">Not currently reported.</div></div>
       </div>
-      <div class="card-note">snow.nz individual report · 13 Jul 06:00 — all 3 lifts confirmed open</div>
+      <div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · AccuWeather</div><div id="tc-weather" class="weather-now">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div id="tc-carparks" class="carpark-list"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="tc-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Open official camera</div></div><span>↗</span></div><div class="card-note">Live source · Treble Cone / snow.nz</div>
     </div>
 
   </div>
@@ -470,7 +472,7 @@
     <a class="src-chip" href="https://www.snow-forecast.com/resorts/Treble-Cone/6day/mid" target="_blank">Treble Cone forecast <span class="arrow">↗</span></a>
   </div>
 
-  <footer>data.json live-binds this page when the scraper pipeline is deployed · otherwise this snapshot holds</footer>
+  <footer>Live data checks every 5 minutes · previous valid readings remain visible if a source temporarily fails</footer>
 
 </div>
 
@@ -541,50 +543,69 @@
       return `<div class="lift-chip ${cls}"><svg class="lift-icon"><use href="#${icon}"/></svg><span class="lift-name">${l.name}</span>${qual}<span class="lift-dot"></span></div>`;
     }).join('');
   }
+  const difficultyOrder = ['green','blue','red','black','double-black','unclassified'];
+  const difficultyLabels = {green:'Green · Beginner',blue:'Blue · Intermediate',red:'Red · Advanced',black:'Black · Expert','double-black':'Double black · Extreme',unclassified:'Other terrain'};
+  function escapeHtml(value){ return String(value ?? '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c])); }
+  function trailStatusClass(status){
+    const value=(status||'').toLowerCase();
+    if(value.includes('ungroomed')||value.includes('variable')) return 't-ungroomed';
+    if(value.includes('open')||value.includes('available')) return 't-open';
+    return 't-closed';
+  }
   function renderTrails(prefix, trails){
-    if(!trails || !Array.isArray(trails) || !trails.length) return;
-    const el = document.getElementById(prefix + '-trails');
-    if(!el) return;
-    el.innerHTML = trails.map(t => {
-      const s = (t.status || '').toLowerCase();
-      const cls = s.includes('open') ? 't-open' : s.includes('ungroomed') ? 't-ungroomed' : 't-closed';
-      return `<div class="trail-chip ${cls}"><span class="t-dot"></span>${t.name}</div>`;
-    }).join('');
+    const el=document.getElementById(prefix+'-trails'); if(!el) return;
+    if(!Array.isArray(trails)||!trails.length){el.innerHTML='<div class="no-data">No named terrain is currently reported.</div>';return;}
+    const groups={};
+    trails.forEach(t=>{const difficulty=t.difficulty||'unclassified';(groups[difficulty]??=[]).push(t);});
+    el.innerHTML=difficultyOrder.filter(d=>groups[d]?.length).map(d=>`<div class="trail-group"><div class="trail-group-head"><span class="difficulty-symbol diff-${d}"></span>${difficultyLabels[d]}</div><div class="trail-chips">${groups[d].map(t=>`<div class="trail-chip ${trailStatusClass(t.status)}"><span class="t-dot"></span>${escapeHtml(t.name)}</div>`).join('')}</div></div>`).join('');
+  }
+  function renderWeather(prefix, weather){
+    const el=document.getElementById(prefix+'-weather'); if(!el)return;
+    if(!weather){el.innerHTML='<span class="muted-inline">Weather unavailable</span>';return;}
+    const temp=weather.temperature_c!=null?`${weather.temperature_c}°C`:'—';
+    const details=[weather.condition,weather.feels_like_c!=null?`Feels ${weather.feels_like_c}°C`:null,weather.wind].filter(Boolean);
+    el.innerHTML=`<div class="weather-temp">${escapeHtml(temp)}</div><div>${escapeHtml(details[0]||'Current conditions')}</div><div class="weather-detail">${escapeHtml(details.slice(1).join(' · '))}</div>`;
+  }
+  function parkClass(status){const v=(status||'').toLowerCase();if(v.includes('full')||v.includes('closed'))return'park-full';if(v.includes('limited')||v.includes('filling'))return'park-limited';if(v.includes('available')||v.includes('open')||v.includes('spaces'))return'park-open';return'park-unknown';}
+  function renderCarparks(prefix, parks){
+    const el=document.getElementById(prefix+'-carparks');if(!el)return;
+    if(!Array.isArray(parks)||!parks.length){el.innerHTML='<span class="muted-inline">Not reported</span>';return;}
+    el.innerHTML=parks.map(p=>`<div class="carpark-pill"><span>${escapeHtml(p.name)}</span><span class="park-state ${parkClass(p.status)}">${escapeHtml(p.status||'Unknown')}</span></div>`).join('');
+  }
+  function renderWebcam(prefix, webcam){
+    const el=document.getElementById(prefix+'-webcam');if(!el||!webcam)return;
+    if(webcam.image_url)el.style.backgroundImage=`url('${String(webcam.image_url).replace(/'/g,'%27')}')`;
+    if(webcam.page_url){el.onclick=()=>window.open(webcam.page_url,'_blank','noopener');el.setAttribute('role','link');el.tabIndex=0;el.onkeydown=e=>{if(e.key==='Enter')el.click();};}
   }
 
   function bindResort(prefix, r){
     if(!r) return;
-    const statusEl = document.getElementById(prefix + '-status');
-    if(statusEl && r.status){
-      statusEl.textContent = r.lifts_total ? `${r.status} · ${r.lifts_open}/${r.lifts_total} lifts` : r.status;
-      statusEl.className = 'status-tag ' + (r.status.toLowerCase() === 'open' ? 'status-open' : 'status-storm');
-    }
-    if(r.base_upper != null){
-      const baseEl = document.getElementById(prefix + '-base');
-      if(baseEl) baseEl.textContent = r.base_lower != null ? `${r.base_lower}–${r.base_upper}cm` : `${r.base_upper}cm`;
-    }
-    renderLifts(prefix, r.lifts);
-    renderTrails(prefix, r.trails);
+    const statusEl=document.getElementById(prefix+'-status');
+    if(statusEl&&r.status){statusEl.textContent=r.lifts_total?`${r.status} · ${r.lifts_open}/${r.lifts_total} lifts`:r.status;statusEl.className='status-tag '+(r.status.toLowerCase()==='open'?'status-open':'status-storm');}
+    if(r.base_upper!=null){const baseEl=document.getElementById(prefix+'-base');if(baseEl)baseEl.textContent=r.base_lower!=null?`${r.base_lower}–${r.base_upper}cm`:`${r.base_upper}cm`;}
+    const seven=document.getElementById(prefix+'-7d');if(seven)seven.textContent=r.new_snow_7d!=null?`${r.new_snow_7d}cm`:'—';
+    renderLifts(prefix,r.lifts);renderTrails(prefix,r.trails);renderWeather(prefix,r.weather);renderCarparks(prefix,r.carparks);renderWebcam(prefix,r.webcam);
   }
 
-  fetch('./data.json', {cache:'no-store'})
-    .then(res => res.ok ? res.json() : Promise.reject())
-    .then(data => {
-      if(!data || !data.resorts) return;
-      bindResort('rm', data.resorts.remarkables);
-      bindResort('cp', data.resorts.coronetpeak);
-      bindResort('cd', data.resorts.cardrona);
-      bindResort('tc', data.resorts.treblecone);
-      renderSnowfallRow('remarkables', data.resorts.remarkables && data.resorts.remarkables.forecast);
-      renderSnowfallRow('coronetpeak', data.resorts.coronetpeak && data.resorts.coronetpeak.forecast);
-      renderSnowfallRow('cardrona', data.resorts.cardrona && data.resorts.cardrona.forecast);
-      renderSnowfallRow('treblecone', data.resorts.treblecone && data.resorts.treblecone.forecast);
-      if(data.updated){
-        const stampEl = document.querySelector('.stamp-tag');
-        if(stampEl) stampEl.textContent = 'Live · ' + new Date(data.updated).toLocaleString('en-NZ');
-      }
-    })
-    .catch(() => { /* no pipeline deployed yet — static snapshot stands */ });
+  let latestUpdated=null;
+  function updateClock(){
+    const nextEl=document.getElementById('next-update'),dot=document.getElementById('live-dot');if(!nextEl||!dot)return;
+    const now=Date.now(),updated=latestUpdated?new Date(latestUpdated).getTime():null,age=updated?now-updated:null;
+    dot.className='live-dot '+(age!=null&&age<90*60*1000?'fresh':'stale');
+    const next=updated?updated+60*60*1000:now+60*60*1000,minutes=Math.max(0,Math.ceil((next-now)/60000));
+    nextEl.textContent=minutes===0?'Hourly update due now':`Next hourly update in about ${minutes} min`;
+  }
+  async function loadLiveData(){
+    try{
+      const res=await fetch('./data.json?t='+Date.now(),{cache:'no-store'});if(!res.ok)throw new Error(`HTTP ${res.status}`);
+      const data=await res.json();if(!data||!data.resorts)return;
+      bindResort('rm',data.resorts.remarkables);bindResort('cp',data.resorts.coronetpeak);bindResort('cd',data.resorts.cardrona);bindResort('tc',data.resorts.treblecone);
+      renderSnowfallRow('remarkables',data.resorts.remarkables?.forecast);renderSnowfallRow('coronetpeak',data.resorts.coronetpeak?.forecast);renderSnowfallRow('cardrona',data.resorts.cardrona?.forecast);renderSnowfallRow('treblecone',data.resorts.treblecone?.forecast);
+      if(data.updated){latestUpdated=data.updated;const updated=new Date(data.updated),stamp=document.getElementById('live-stamp');if(stamp)stamp.textContent='Last updated '+updated.toLocaleString('en-NZ',{timeZone:'Pacific/Auckland',dateStyle:'medium',timeStyle:'short'});}
+      updateClock();
+    }catch(error){console.warn('Live data unavailable; showing embedded snapshot.',error);const stamp=document.getElementById('live-stamp');if(stamp)stamp.textContent='Live data unavailable · showing snapshot';document.getElementById('live-dot').className='live-dot stale';}
+  }
+  loadLiveData();setInterval(loadLiveData,5*60*1000);setInterval(updateClock,30*1000);
 </script>
 </body>
 </html>
