@@ -6,7 +6,6 @@ adjacent lifts, trails, facilities and car parks being merged together.
 from __future__ import annotations
 
 import json
-import os
 import re
 import sys
 from copy import deepcopy
@@ -444,33 +443,52 @@ def parse_current_weather(soup: BeautifulSoup, source_url: str, source_name: str
         "source_url": source_url,
     }
 
-def google_current_weather(name: str) -> dict[str, Any] | None:
-    key = os.environ.get("GOOGLE_WEATHER_API_KEY", "").strip()
-    if not key:
-        return None
+def open_meteo_current_weather(name: str) -> dict[str, Any] | None:
+    """Return current mountain weather from Open-Meteo using the resort coordinates."""
     lat, lon = RESORT_COORDS[name]
-    url = "https://weather.googleapis.com/v1/currentConditions:lookup"
-    response = requests.get(url, params={
-        "key": key,
-        "location.latitude": lat,
-        "location.longitude": lon,
-        "unitsSystem": "METRIC",
-    }, headers=HEADERS, timeout=TIMEOUT)
+    response = requests.get(
+        "https://api.open-meteo.com/v1/forecast",
+        params={
+            "latitude": lat,
+            "longitude": lon,
+            "current": "temperature_2m,weather_code,snowfall",
+            "temperature_unit": "celsius",
+            "precipitation_unit": "mm",
+            "timezone": "Pacific/Auckland",
+            "forecast_days": 1,
+        },
+        headers=HEADERS,
+        timeout=TIMEOUT,
+    )
     response.raise_for_status()
     payload = response.json()
-    condition = payload.get("weatherCondition", {}).get("description", {}).get("text")
-    condition_type = payload.get("weatherCondition", {}).get("type", "")
-    precip_type = payload.get("precipitation", {}).get("probability", {}).get("type", "")
-    temp = payload.get("temperature", {}).get("degrees")
+    current = payload.get("current") or {}
+    temp = current.get("temperature_2m")
+    code = current.get("weather_code")
+    snowfall = current.get("snowfall")
     if temp is None:
         return None
-    snowing = "SNOW" in str(condition_type).upper() or "SNOW" in str(precip_type).upper() or snowing_from_condition(condition)
+
+    snow_codes = {71, 73, 75, 77, 85, 86}
+    try:
+        code_number = int(code) if code is not None else None
+    except (TypeError, ValueError):
+        code_number = None
+    try:
+        snowfall_number = float(snowfall or 0)
+    except (TypeError, ValueError):
+        snowfall_number = 0.0
+
+    snowing = snowfall_number > 0 or code_number in snow_codes
     return {
         "temperature_c": round(float(temp), 1),
         "snowing": snowing,
-        "condition": condition,
-        "source": "Google Weather",
-        "source_url": "https://developers.google.com/maps/documentation/weather",
+        "condition": "Snow" if snowing else "Not snowing",
+        "weather_code": code_number,
+        "snowfall_cm": snowfall_number,
+        "observed": current.get("time"),
+        "source": "Open-Meteo",
+        "source_url": "https://open-meteo.com/",
     }
 
 def find_webcam_image(soup: BeautifulSoup, base_url: str) -> str | None:
@@ -593,10 +611,10 @@ def scrape_resort(name: str, previous: dict[str, Any] | None) -> dict[str, Any]:
         except Exception as exc:
             print(f"SnowNZ parking fallback failed for {name}: {exc}", file=sys.stderr)
     try:
-        data["weather"] = google_current_weather(name) or parse_current_weather(soup, URLS[name], source_name)
+        data["weather"] = open_meteo_current_weather(name)
     except Exception as exc:
-        print(f"Google Weather failed for {name}: {exc}", file=sys.stderr)
-        data["weather"] = parse_current_weather(soup, URLS[name], source_name)
+        print(f"Open-Meteo weather failed for {name}: {exc}", file=sys.stderr)
+        data["weather"] = None
     data["trails"] = apply_trail_colours(data.get("trails", []))
     try:
         webcam_soup, _ = fetch(WEBCAM_PAGES[name])
