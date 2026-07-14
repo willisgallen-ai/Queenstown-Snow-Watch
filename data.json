@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T03:18:35.733858+00:00",
+  "updated": "2026-07-14T04:01:46.197831+00:00",
   "next_scheduled_update": "2026-07-14T04:17:00+00:00",
   "schedule_minutes": 60,
   "health": {
@@ -95,11 +95,18 @@
         }
       ],
       "carparks": [],
-      "weather": null,
+      "weather": {
+        "temperature_c": 1.0,
+        "snowing": false,
+        "condition": null,
+        "source": "Official resort report",
+        "source_url": "https://www.theremarkables.co.nz/weather-report/"
+      },
       "webcam": {
-        "page_url": "https://www.theremarkables.co.nz/weather-report/",
-        "image_url": null,
-        "embeddable": false
+        "page_url": "https://www.mountainwatch.com/new-zealand/the-remarkables/snow-cams",
+        "image_url": "https://www.mountainwatch.com/Resort/The-Remarkables-BaseCamera-Angle-1/LiveStill.jpg",
+        "embeddable": false,
+        "source": "Mountainwatch"
       },
       "forecast": {
         "issued": "11 am 14 Jul 2026",
@@ -378,17 +385,17 @@
         }
       ],
       "weather": {
-        "temperature_c": 4,
+        "temperature_c": 3.7,
+        "snowing": true,
         "condition": "Snow",
-        "feels_like_c": null,
-        "wind": null,
-        "source": "SnowNZ fallback",
+        "source": "SnowNZ mountain report",
         "source_url": "https://www.snow.nz/area/nz/queenstown/coronetpeak/"
       },
       "webcam": {
-        "page_url": "https://www.coronetpeak.co.nz/weather-report",
-        "image_url": null,
-        "embeddable": false
+        "page_url": "https://www.mountainwatch.com/new-zealand/coronet-peak/snow-cams",
+        "image_url": "https://www.mountainwatch.com/Resort/Coronet-Peak-ExpressCamera-Angle-1/LiveStill.jpg",
+        "embeddable": false,
+        "source": "Mountainwatch"
       },
       "forecast": {
         "issued": "11 am 14 Jul 2026",
@@ -435,7 +442,7 @@
     },
     "cardrona": {
       "status": "Open",
-      "lifts_open": 7,
+      "lifts_open": 4,
       "lifts_total": 10,
       "base_lower": 37,
       "base_upper": 37,
@@ -566,9 +573,10 @@
         "source_url": "https://www.accuweather.com/en/nz/cardrona-alpine-resort/64922_poi/current-weather/64922_poi"
       },
       "webcam": {
-        "page_url": "https://cardrona-treblecone.com/webcams",
-        "image_url": null,
-        "embeddable": false
+        "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
+        "image_url": "https://www.mountainwatch.com/wp-content/uploads/2026/06/Screenshot-2026-06-26-at-8.11.57 AM-300x170.png",
+        "embeddable": false,
+        "source": "Mountainwatch"
       },
       "forecast": {
         "issued": "11 am 14 Jul 2026",
@@ -652,9 +660,10 @@
       ],
       "weather": null,
       "webcam": {
-        "page_url": "https://cardrona-treblecone.com/webcams",
-        "image_url": null,
-        "embeddable": false
+        "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
+        "image_url": "https://www.mountainwatch.com/wp-content/uploads/2026/06/Screenshot-2026-06-26-at-8.11.57 AM-300x170.png",
+        "embeddable": false,
+        "source": "Mountainwatch"
       },
       "forecast": {
         "issued": "11 am 14 Jul 2026",
