@@ -1,7 +1,8 @@
 {
-  "updated": "2026-07-14T04:21:06.710755+00:00",
+  "updated": "2026-07-14T04:51:34.884977+00:00",
   "news": {
     "title": "New Zealand Weekend Forecast, Friday July 10th – Last Dregs of the Storm Clear for a Magical Matariki Weekend",
+    "summary": "With a tonne of fresh powder and fine, sunny weather settling over the country, it’ll be one you won’t want to miss out",
     "url": "https://www.mountainwatch.com/Snow-news/new-zealand-weekend-forecast-friday-july-10th-last-dregs-of-the-storm-clear-for-a-magical-matariki-weekend/",
     "source": "The Grasshopper · Mountainwatch"
   },
@@ -101,11 +102,14 @@
       ],
       "carparks": [],
       "weather": {
-        "temperature_c": 1.0,
+        "temperature_c": -2.4,
         "snowing": false,
-        "condition": null,
-        "source": "Official resort report",
-        "source_url": "https://www.theremarkables.co.nz/weather-report/"
+        "condition": "Not snowing",
+        "weather_code": 51,
+        "snowfall_cm": 0.0,
+        "observed": "2026-07-14T16:45",
+        "source": "Open-Meteo",
+        "source_url": "https://open-meteo.com/"
       },
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/the-remarkables/snow-cams",
@@ -370,11 +374,14 @@
         }
       ],
       "weather": {
-        "temperature_c": 3.7,
-        "snowing": true,
-        "condition": "Snow",
-        "source": "SnowNZ mountain report",
-        "source_url": "https://www.snow.nz/area/nz/queenstown/coronetpeak/"
+        "temperature_c": 0.9,
+        "snowing": false,
+        "condition": "Not snowing",
+        "weather_code": 51,
+        "snowfall_cm": 0.0,
+        "observed": "2026-07-14T16:45",
+        "source": "Open-Meteo",
+        "source_url": "https://open-meteo.com/"
       },
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/coronet-peak/snow-cams",
@@ -525,27 +532,27 @@
       "carparks": [
         {
           "name": "Carpark A",
-          "status": "Full"
+          "status": "Closed"
         },
         {
           "name": "Carpark B",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Carpark C",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "The Yard",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Valley View",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "The Pines",
-          "status": "Available"
+          "status": "Closed"
         }
       ],
       "weather": {
@@ -632,15 +639,15 @@
       "carparks": [
         {
           "name": "Carpark 1",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Carpark 2",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Carpark 3",
-          "status": "Available"
+          "status": "Closed"
         }
       ],
       "weather": null,
