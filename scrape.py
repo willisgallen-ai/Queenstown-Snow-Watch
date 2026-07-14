@@ -59,6 +59,45 @@ DIFFICULTY_MAP = {
 
 
 TRAIL_COLOURS_FILE = ROOT / "trail-colours.json"
+
+ONTHESNOW_URLS = {
+    "cardrona": "https://www.onthesnow.com/new-zealand/cardrona-alpine-resort/skireport",
+    "treblecone": "https://www.onthesnow.com/new-zealand/treble-cone/skireport",
+}
+
+# Cardrona and Treble Cone's own site (cardrona-treblecone.com) loads its
+# lift/terrain/park widget via client-side JS that a plain fetch can't see —
+# confirmed by direct testing, not assumed. These names are hardcoded from a
+# screenshot of that live widget (14 Jul 2026) rather than scraped, because
+# there's currently no known plain-HTTP-fetchable source for them by name.
+# Status for each is DERIVED from the aggregate open-count (see
+# scrape_onthesnow / apply_uniform_status below), not scraped per-item —
+# accurate when the mountain is fully open or fully closed, honestly
+# "unknown" for individual items when it's a partial-open day, since there's
+# no way to know *which* specific ones without JS rendering. If a name here
+# goes stale (resort renames or adds a lift/zone), it needs a manual update —
+# there's no live source to keep it in sync automatically.
+KNOWN_LIFTS = {
+    "cardrona": ["Learner Conveyors", "McDougall's Chondola", "Whitestar Express",
+                 "Captains Express", "Willow's Quad", "Soho Express", "T-Bar",
+                 "Valley View", "Kindy Conveyor", "Wells Pipe Platter"],
+    "treblecone": ["Home Basin Express", "Saddle Quad", "Beginner Platter"],
+}
+TERRAIN_ZONES = {
+    "cardrona": ["Learners Slope", "Main Basin", "Captains", "Soho", "Little Willows",
+                 "Big Willows", "Backcountry Access", "Mt Cardrona", "Arcadia Chutes", "Summit"],
+    "treblecone": ["Home Basin", "Saddle Basin", "Matukituki Basin", "Summit Slopes",
+                   "Motatapu Chutes", "Sundance", "Backcountry Access", "Morning Skinning"],
+}
+# Park features are a genuinely separate category from terrain on the resort's
+# own site (a "PARK" box distinct from the "TERRAIN" box) — kept separate here
+# rather than folded into trails, which is what the previous version wrongly did.
+PARK_FEATURES = {
+    "cardrona": ["Baby Bucks", "Little Bucks", "Antlers Alley", "Stag Lane", "Big Bucks",
+                 "Peoples Pipe", "Olympic Pipe", "Big Air", "Mc Park", "Gravity Cross"],
+    "treblecone": [],
+}
+
 RESORT_COORDS = {
     "remarkables": (-45.0556, 168.8140),
     "coronetpeak": (-44.9277, 168.7366),
@@ -414,6 +453,78 @@ def parse_carparks_strict(soup: BeautifulSoup) -> list[dict[str, str]]:
     return out
 
 
+def scrape_onthesnow(resort: str) -> dict[str, Any] | None:
+    """OnTheSnow.com mirrors the same OpenSnow-sourced data as the official
+    cardrona-treblecone.com report widget — but unlike the official site
+    (which loads that widget via client-side JS a plain fetch can't see),
+    OnTheSnow's own page is server-rendered. This is the new primary status/
+    lift-count/summary source for Cardrona and Treble Cone, replacing the
+    previous unanchored 'first Open or Closed word anywhere on the page'
+    regex, which was the most likely cause of resorts showing Open when they
+    were actually fully closed.
+
+    Patterns below are built from one real fetch of the Treble Cone page —
+    unverified against what BeautifulSoup's own get_text() produces from the
+    raw HTML (a different rendering pipeline caught me out on this exact
+    mistake earlier — see parse_facility_section's history). Debug prints
+    included so a mismatch shows real evidence instead of needing another
+    guess."""
+    try:
+        soup, _ = fetch(ONTHESNOW_URLS[resort])
+    except Exception as exc:
+        print(f"  [debug] OnTheSnow fetch failed for {resort}: {exc}", file=sys.stderr)
+        return None
+    text = soup.get_text("\n", strip=True)
+    out: dict[str, Any] = {"lifts_open": None, "lifts_total": None,
+                            "runs_open": None, "runs_total": None,
+                            "base_cm": None, "summary": None}
+
+    m = re.search(r"Lifts\s*Open\s*\n+\s*(\d+)\s*/\s*(\d+)\s*open", text, re.I)
+    if m:
+        out["lifts_open"], out["lifts_total"] = int(m.group(1)), int(m.group(2))
+    else:
+        print(f"  [debug] OnTheSnow {resort}: 'Lifts Open X/Y' pattern not found", file=sys.stderr)
+
+    m = re.search(r"Runs\s*Open\s*\n+\s*(\d+)\s*/\s*(\d+)\s*open", text, re.I)
+    if m:
+        out["runs_open"], out["runs_total"] = int(m.group(1)), int(m.group(2))
+
+    m = re.search(r'Base\s*\n+\s*(\d+)\s*"', text, re.I)
+    if m:
+        out["base_cm"] = round(int(m.group(1)) * 2.54)
+
+    m = re.search(
+        r"Snow Reporter Comments:?\s*(?:Last Updated:?\s*([^\n]{3,40}))?\s*\n+(.+?)"
+        r"(?=\n(?:Try SkiGPT|How are conditions|Provide Feedback|Resort Overview|#))",
+        text, re.I | re.S,
+    )
+    if m:
+        date_part = clean(m.group(1) or "")
+        body = clean(re.sub(r"\n+", " ", m.group(2)))
+        out["summary"] = (f"{date_part}: " if date_part else "") + body[:500]
+    else:
+        print(f"  [debug] OnTheSnow {resort}: 'Snow Reporter Comments' block not found", file=sys.stderr)
+
+    if all(v is None for v in out.values()):
+        return None
+    return out
+
+
+def apply_uniform_status(names: list[str], open_count: int | None, total: int | None) -> list[dict[str, str]]:
+    """Builds a [{name, status}] list from hardcoded names, using an
+    aggregate open-count as the only signal available (no source publishes
+    per-item status for these that a plain fetch can reach). Accurate at the
+    two extremes — everything open, or everything closed — which covers the
+    common cases (pre-season, storm closures, or full operation). Genuinely
+    unknown on a partial-open day, and honestly marked as such rather than
+    guessing which specific ones."""
+    if open_count == 0:
+        return [{"name": n, "status": "Closed"} for n in names]
+    if open_count is not None and total is not None and open_count >= len(names):
+        return [{"name": n, "status": "Open"} for n in names]
+    return [{"name": n, "status": "Unknown"} for n in names]
+
+
 def scrape_grasshopper_headline() -> dict[str, Any] | None:
     """Pull a short summary + link from the Grasshopper's own NZ forecast page.
     The previous version searched for a headline LINK matching news-listing
@@ -637,7 +748,7 @@ def merge_fallback(current: dict[str, Any], previous: dict[str, Any] | None) -> 
     for key in ("status", "lifts_open", "lifts_total", "base_lower", "base_upper", "new_snow_7d", "weather", "summary"):
         if current.get(key) is None:
             current[key] = deepcopy(previous.get(key))
-    for key in ("terrain", "lifts", "trails", "carparks"):
+    for key in ("terrain", "lifts", "trails", "park", "carparks"):
         if not current.get(key):
             current[key] = deepcopy(previous.get(key, current.get(key)))
     if not current.get("forecast"):
@@ -656,17 +767,52 @@ def scrape_resort(name: str, previous: dict[str, Any] | None) -> dict[str, Any]:
         data["carparks"] = parse_carparks_strict(soup)
         source_name = "SnowNZ mountain report"
     else:
-        data = parse_metservice_operational(soup, name)
-        source_name = "MetService ski-field report"
-        # MetService does not consistently publish parking; use strict SnowNZ parking only.
+        # MetService's DOM scan (previous version) used an unanchored 'first
+        # Open or Closed word anywhere on the page' regex for overall status,
+        # which is very likely what caused resorts to show Open when fully
+        # closed — that single word can land on completely unrelated page
+        # text. Replaced with OnTheSnow.com (server-rendered mirror of the
+        # same OpenSnow data the official site's own JS-only widget uses) as
+        # the primary status/lift-count/summary source, with hardcoded,
+        # screenshot-verified lift/terrain/park names and status derived from
+        # the aggregate open-count rather than scraped per-item.
+        source_name = "OnTheSnow / OpenSnow"
+        data = {"status": None, "lifts_open": None, "lifts_total": None,
+                "base_lower": None, "base_upper": None, "new_snow_7d": None,
+                "terrain": {}, "lifts": [], "trails": [], "park": [], "carparks": []}
         try:
             fallback_soup, _ = fetch(FALLBACK_URLS[name])
             data["carparks"] = parse_carparks_strict(fallback_soup)
             summary = parse_summary_snownz(fallback_soup)
-            for key in ("status","base_lower","base_upper","new_snow_7d"):
+            for key in ("status", "base_lower", "base_upper", "new_snow_7d"):
                 if data.get(key) is None: data[key] = summary.get(key)
         except Exception as exc:
-            print(f"SnowNZ parking fallback failed for {name}: {exc}", file=sys.stderr)
+            print(f"SnowNZ fallback failed for {name}: {exc}", file=sys.stderr)
+
+        onthesnow = scrape_onthesnow(name)
+        known_total = len(KNOWN_LIFTS[name])
+        lifts_open = None
+        if onthesnow and onthesnow.get("lifts_open") is not None:
+            lifts_open = min(onthesnow["lifts_open"], known_total)
+            data["status"] = "Closed" if lifts_open == 0 else "Open"
+        data["lifts_open"] = lifts_open
+        data["lifts_total"] = known_total
+        # Only populate the hardcoded name lists when there's an actual status
+        # signal (from OnTheSnow or the SnowNZ fallback) — otherwise leave them
+        # empty so validate_resort() correctly detects a total scrape failure
+        # rather than this always appearing 'valid' just because the hardcoded
+        # names are always there.
+        if data.get("status") is not None:
+            data["lifts"] = apply_uniform_status(KNOWN_LIFTS[name], lifts_open, known_total)
+            data["trails"] = [
+                {**item, "difficulty": None}  # None (not "unclassified") signals: render flat, no difficulty grouping
+                for item in apply_uniform_status(TERRAIN_ZONES[name], lifts_open, known_total)
+            ]
+            data["park"] = apply_uniform_status(PARK_FEATURES[name], lifts_open, known_total)
+        if onthesnow and onthesnow.get("base_cm") and data.get("base_upper") is None:
+            data["base_upper"] = data["base_lower"] = onthesnow["base_cm"]
+        if onthesnow and onthesnow.get("summary"):
+            data["onthesnow_summary"] = onthesnow["summary"]
 
     data["weather"] = None
     for attempt_soup, attempt_source in ((soup, source_name), (fallback_soup, "SnowNZ mountain report")):
@@ -687,11 +833,14 @@ def scrape_resort(name: str, previous: dict[str, Any] | None) -> dict[str, Any]:
             print(f"Open-Meteo weather failed for {name}: {exc}", file=sys.stderr)
             data["weather"] = None
     data["trails"] = apply_trail_colours(data.get("trails", []))
-    try:
-        data["summary"] = find_summary_text(soup)
-    except Exception as exc:
-        print(f"Summary text extraction failed for {name}: {exc}", file=sys.stderr)
-        data["summary"] = None
+    if data.get("onthesnow_summary"):
+        data["summary"] = data.pop("onthesnow_summary")
+    else:
+        try:
+            data["summary"] = find_summary_text(soup)
+        except Exception as exc:
+            print(f"Summary text extraction failed for {name}: {exc}", file=sys.stderr)
+            data["summary"] = None
     try:
         webcam_soup, _ = fetch(WEBCAM_PAGES[name])
         webcam_image = find_webcam_image(webcam_soup, WEBCAM_PAGES[name])
@@ -735,16 +884,17 @@ def main() -> int:
         resorts[name] = resort
 
     now = datetime.now(timezone.utc)
-    next_hour = now.replace(minute=17, second=0, microsecond=0)
-    if next_hour <= now:
-        next_hour += timedelta(hours=1)
+    SCHEDULE_MINUTES = 5
+    next_run = now.replace(second=0, microsecond=0)
+    minutes_past = next_run.minute % SCHEDULE_MINUTES
+    next_run += timedelta(minutes=(SCHEDULE_MINUTES - minutes_past) or SCHEDULE_MINUTES)
     usable = sum(validate_resort(r) for r in resorts.values())
     news = scrape_grasshopper_headline() or deepcopy(previous_doc.get("news"))
     output = {
         "updated": now.isoformat(),
         "news": news,
-        "next_scheduled_update": next_hour.isoformat(),
-        "schedule_minutes": 60,
+        "next_scheduled_update": next_run.isoformat(),
+        "schedule_minutes": SCHEDULE_MINUTES,
         "health": {"usable_resorts": usable, "total_resorts": 4, "stale_resorts": stale},
         "resorts": resorts,
     }
