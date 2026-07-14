@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Snow Watch</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
   :root{
     --bg: #0a1119;
@@ -183,298 +184,260 @@
   footer{text-align:center;color:var(--muted-2);font-size:10.5px;font-family:'JetBrains Mono',monospace;margin-top:10px;}
 
   .live-cluster{display:flex;gap:9px;align-items:center;text-align:right}.live-dot{width:9px;height:9px;border-radius:50%;background:var(--muted-2)}.live-dot.fresh{background:var(--good);box-shadow:0 0 0 4px rgba(111,207,151,.12)}.live-dot.stale{background:var(--storm);box-shadow:0 0 0 4px rgba(232,162,60,.12)}.next-tag{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--muted-2);margin-top:2px}.live-panels{display:grid;grid-template-columns:1fr 1fr;gap:8px}.mini-panel{background:var(--bg-alt);border:1px solid var(--line);border-radius:10px;padding:10px}.weather-now{font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.55}.weather-temp{font-family:'Big Shoulders Display',sans-serif;font-size:24px;font-weight:800}.weather-detail,.muted-inline{color:var(--muted-2);font-size:9.5px}.carpark-list{display:flex;flex-direction:column;gap:5px}.carpark-pill{display:flex;justify-content:space-between;gap:8px;font-family:'JetBrains Mono',monospace;font-size:9.5px}.park-state{font-weight:600}.park-open{color:var(--good)}.park-limited{color:var(--storm)}.park-full{color:var(--bad)}.park-unknown{color:var(--muted-2)}.webcam-card{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background-size:cover;background-position:center;min-height:68px;cursor:pointer;position:relative;overflow:hidden}.webcam-card::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,17,25,.94),rgba(10,17,25,.48))}.webcam-card>*{position:relative}.webcam-title{font-size:11px;font-weight:600}.trail-groups{display:flex;flex-direction:column;gap:10px}.trail-group{border-left:3px solid var(--line);padding-left:9px}.trail-group-head{display:flex;align-items:center;gap:7px;margin-bottom:6px;font-family:'JetBrains Mono',monospace;font-size:9.5px;text-transform:uppercase}.difficulty-symbol{width:10px;height:10px;display:inline-block}.diff-green{border-radius:50%;background:#5fd07e}.diff-blue{border-radius:3px;background:#5fb0e8}.diff-red{border-radius:3px;background:#e88f5f;transform:rotate(45deg)}.diff-black{border-radius:3px;background:#171717;border:1px solid #777;transform:rotate(45deg)}.diff-double-black{position:relative;width:18px}.diff-double-black::before,.diff-double-black::after{content:'';position:absolute;width:9px;height:9px;border-radius:2px;background:#171717;border:1px solid #777;transform:rotate(45deg);top:0}.diff-double-black::after{left:7px}.diff-unclassified{border-radius:50%;border:1px solid var(--muted-2)}@media(max-width:560px){.live-panels{grid-template-columns:1fr}.live-cluster{text-align:left;width:100%}}
+
+.news-ticker{overflow:hidden;border-bottom:1px solid var(--line);margin-bottom:18px;padding:9px 0;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--ice);white-space:nowrap}.news-track{display:inline-block;min-width:100%;padding-left:100%;animation:ticker 28s linear infinite}.news-track a{color:inherit;text-decoration:none}.news-track:hover{animation-play-state:paused}@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-200%)}}.footer-live{justify-content:center;text-align:center;margin:28px auto 0}.trail-chip.t-wind{color:var(--storm);border-color:var(--storm-dim)}.trail-chip.t-wind .t-dot{background:var(--storm)}.trail-chip.t-ungroomed{color:var(--ice);border-color:var(--ice-dim)}.trail-chip.t-ungroomed .t-dot{background:var(--ice)}.webcam-card{cursor:default;min-height:150px;background-position:center;background-size:cover}.webcam-card::before{background:linear-gradient(180deg,rgba(10,17,25,.18),rgba(10,17,25,.72))}.webcam-card>div{align-self:flex-end}.webcam-source{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted)}
 </style>
 </head>
 <body>
-<svg style="display:none" aria-hidden="true">
-  <symbol id="ic-chair" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M2 6h20"/><path d="M12 6v5"/><path d="M9 11h6v4H9z"/><path d="M10 15v2M14 15v2"/>
-  </symbol>
-  <symbol id="ic-gondola" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M2 6h20"/><path d="M12 6v3"/><rect x="8" y="9" width="8" height="7" rx="2"/>
-  </symbol>
-  <symbol id="ic-tbar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M2 6h20"/><path d="M12 6v10"/><path d="M8 11h8"/>
-  </symbol>
-  <symbol id="ic-conveyor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="3" y="10" width="18" height="5" rx="2.5"/><path d="M8 12.5h1M12 12.5h1M16 12.5h1"/>
-  </symbol>
-  <symbol id="ic-platter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M2 6h20"/><path d="M12 6v11"/><circle cx="12" cy="19" r="2"/>
-  </symbol>
+<svg aria-hidden="true" style="display:none">
+<symbol fill="none" id="ic-chair" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M2 6h20"></path><path d="M12 6v5"></path><path d="M9 11h6v4H9z"></path><path d="M10 15v2M14 15v2"></path>
+</symbol>
+<symbol fill="none" id="ic-gondola" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M2 6h20"></path><path d="M12 6v3"></path><rect height="7" rx="2" width="8" x="8" y="9"></rect>
+</symbol>
+<symbol fill="none" id="ic-tbar" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M2 6h20"></path><path d="M12 6v10"></path><path d="M8 11h8"></path>
+</symbol>
+<symbol fill="none" id="ic-conveyor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24">
+<rect height="5" rx="2.5" width="18" x="3" y="10"></rect><path d="M8 12.5h1M12 12.5h1M16 12.5h1"></path>
+</symbol>
+<symbol fill="none" id="ic-platter" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M2 6h20"></path><path d="M12 6v11"></path><circle cx="12" cy="19" r="2"></circle>
+</symbol>
 </svg>
-<div class="wrap">
+<div class="wrap"><div class="news-ticker" id="news-ticker"><div class="news-track" id="news-track">Latest Grasshopper New Zealand report loading…</div></div>
 
-  <header>
-    <div class="live-cluster"><span class="live-dot" id="live-dot"></span><div><div class="stamp-tag" id="live-stamp">Loading live data…</div><div class="next-tag" id="next-update">Next check calculating…</div></div></div>
-  </header>
+<div class="lift-legend">
+<div class="lg-group">
+<span class="lg-item"><svg><use href="#ic-chair"></use></svg>Chairlift</span>
+<span class="lg-item"><svg><use href="#ic-gondola"></use></svg>Gondola</span>
+<span class="lg-item"><svg><use href="#ic-tbar"></use></svg>T-bar</span>
+<span class="lg-item"><svg><use href="#ic-conveyor"></use></svg>Conveyor</span>
+<span class="lg-item"><svg><use href="#ic-platter"></use></svg>Platter</span>
+</div>
+<div class="lg-sep"></div>
+<div class="lg-group">
+<span class="lg-item"><span class="lg-dot" style="background:var(--good);"></span>Open</span>
+<span class="lg-item"><span class="lg-dot" style="background:var(--bad);"></span>Closed</span>
 
-  <div class="lift-legend">
-    <div class="lg-group">
-      <span class="lg-item"><svg><use href="#ic-chair"/></svg>Chairlift</span>
-      <span class="lg-item"><svg><use href="#ic-gondola"/></svg>Gondola</span>
-      <span class="lg-item"><svg><use href="#ic-tbar"/></svg>T-bar</span>
-      <span class="lg-item"><svg><use href="#ic-conveyor"/></svg>Conveyor</span>
-      <span class="lg-item"><svg><use href="#ic-platter"/></svg>Platter</span>
-    </div>
-    <div class="lg-sep"></div>
-    <div class="lg-group">
-      <span class="lg-item"><span class="lg-dot" style="background:var(--good);"></span>Open</span>
-      <span class="lg-item"><span class="lg-dot" style="background:var(--bad);"></span>Closed</span>
-      <span class="lg-item"><span class="lg-dot" style="background:var(--storm);"></span>Wind hold/ungroomed</span>
-      <span class="lg-item"><span class="lg-dot" style="background:var(--muted-2);"></span>Not confirmed</span>
-      <span class="lg-item"><span class="lg-dot" style="background:var(--rain);"></span>Rain (forecast)</span>
-    </div>
-  </div>
-
-  <div class="group-label">Queenstown</div>
-  <div class="grid">
-
-    <div class="card" id="card-remarkables">
-      <div class="card-top">
-        <h3>Remarkables</h3>
-        <span class="status-tag status-open" id="rm-status">Open · 6/7 lifts</span>
-      </div>
-      <div class="stat-row">
-        <div class="stat"><div class="v" id="rm-base">15–60cm</div><div class="k">Base</div></div>
-        <div class="stat"><div class="v">53cm</div><div class="k">Season</div></div>
-        <div class="stat"><div class="v">8cm</div><div class="k">Last 24h</div></div><div class="stat"><div class="v" id="rm-7d">—</div><div class="k">Last 7d</div></div>
-      </div>
-      <div>
-        <div class="section-lbl">Lifts</div>
-        <div class="lift-chips" id="rm-lifts">
-          <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-conveyor"/></svg><span class="lift-name">Shorty Conveyor</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-conveyor"/></svg><span class="lift-name">Tahi Conveyor</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-conveyor"/></svg><span class="lift-name">Rua Conveyor</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-chair"/></svg><span class="lift-name">Alta Chair</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-chair"/></svg><span class="lift-name">Sugar Bowl Express</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-chair"/></svg><span class="lift-name">Curvey Basin Express</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-closed"><svg class="lift-icon"><use href="#ic-chair"/></svg><span class="lift-name">Shadow Basin Chair</span><span class="lift-dot"></span></div>
-        </div>
-      </div>
-      <div>
-        <div class="section-lbl">% Terrain open</div>
-        <div class="open-terrain" id="rm-terrain">
-          <div class="open-row"><span class="open-label">Novice</span><div class="open-track"><div class="open-fill fill-beg" style="width:100%"></div></div><span class="open-pct">100%</span></div>
-          <div class="open-row"><span class="open-label">Intermediate</span><div class="open-track"><div class="open-fill fill-int" style="width:60%"></div></div><span class="open-pct">60%</span></div>
-          <div class="open-row"><span class="open-label">Advanced</span><div class="open-track"><div class="open-fill fill-adv" style="width:5%"></div></div><span class="open-pct">5%</span></div>
-          <div class="open-row"><span class="open-label">Expert</span><div class="open-track"><div class="open-fill fill-exp" style="width:0%"></div></div><span class="open-pct">0%</span></div>
-        </div>
-      </div>
-      <div>
-        <div class="section-lbl">Named trails</div>
-        <div class="trail-groups" id="rm-trails"><div class="no-data">Loading named terrain…</div></div>
-      </div>
-      <div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div id="rm-weather" class="weather-now">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div id="rm-carparks" class="carpark-list"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="rm-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Open official camera</div></div><span>↗</span></div><div class="card-note">Live source · The Remarkables</div>
-    </div>
-
-    <div class="card" id="card-coronetpeak">
-      <div class="card-top">
-        <h3>Coronet Peak</h3>
-        <span class="status-tag status-open" id="cp-status">Open · 7/8 lifts</span>
-      </div>
-      <div class="stat-row">
-        <div class="stat"><div class="v" id="cp-base">20–30cm</div><div class="k">Base</div></div>
-        <div class="stat"><div class="v" id="cp-7d">—</div><div class="k">Last 7d</div></div>
-      </div>
-      <div>
-        <div class="section-lbl">Lifts</div>
-        <div class="lift-chips" id="cp-lifts">
-          <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-gondola"/></svg><span class="lift-name">Coronet Express</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-chair"/></svg><span class="lift-name">Greengates Express</span><span class="qual">Adv only</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-chair"/></svg><span class="lift-name">Meadows Learner Express</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-tbar"/></svg><span class="lift-name">Rocky Gully T-bar</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-conveyor"/></svg><span class="lift-name">Magic Carpet</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-conveyor"/></svg><span class="lift-name">Beginner Carpet</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-conveyor"/></svg><span class="lift-name">Skiwiland Conveyor</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-conveyor"/></svg><span class="lift-name">Kidszone Carpet</span><span class="lift-dot"></span></div>
-        </div>
-      </div>
-      <div>
-        <div class="section-lbl">% Terrain open <span style="opacity:.6;">(computed from named trails, not by difficulty)</span></div>
-        <div class="open-terrain">
-          <div class="open-row"><span class="open-label">All trails</span><div class="open-track"><div class="open-fill fill-all" style="width:66%"></div></div><span class="open-pct">66%</span></div>
-        </div>
-      </div>
-      <div>
-        <div class="section-lbl">Named trails · 19/29 open</div>
-        <div class="trail-groups" id="cp-trails">
-          <div class="trail-chip t-open"><span class="t-dot"></span>Big Easy</div>
-          <div class="trail-chip t-open"><span class="t-dot"></span>Little Easy</div>
-          <div class="trail-chip t-open"><span class="t-dot"></span>Gentle Annie</div>
-          <div class="trail-chip t-open"><span class="t-dot"></span>Fun Zone</div>
-          <div class="trail-chip t-open"><span class="t-dot"></span>M1</div>
-          <div class="trail-chip t-open"><span class="t-dot"></span>Easy Rider</div>
-          <div class="trail-chip t-open"><span class="t-dot"></span>Dual Carpet Slopes</div>
-          <div class="trail-chip t-open"><span class="t-dot"></span>Shirt Front</div>
-          <div class="trail-chip t-open"><span class="t-dot"></span>Brough's Lane</div>
-          <div class="trail-chip t-open"><span class="t-dot"></span>Million Dollar</div>
-          <div class="trail-chip t-open"><span class="t-dot"></span>Pro Am</div>
-          <div class="trail-chip t-open"><span class="t-dot"></span>Carpet Rail Garden</div>
-          <div class="trail-chip t-ungroomed"><span class="t-dot"></span>Greengates Bumps</div>
-          <div class="trail-chip t-ungroomed"><span class="t-dot"></span>Wall Street</div>
-          <div class="trail-chip t-ungroomed"><span class="t-dot"></span>Eighth Basin</div>
-          <div class="trail-chip t-ungroomed"><span class="t-dot"></span>Mid Gully</div>
-          <div class="trail-chip t-ungroomed"><span class="t-dot"></span>Overrun</div>
-          <div class="trail-chip t-ungroomed"><span class="t-dot"></span>West Gates</div>
-          <div class="trail-chip t-ungroomed"><span class="t-dot"></span>Sugar's Run</div>
-          <div class="trail-chip t-closed"><span class="t-dot"></span>The Chimney</div>
-          <div class="trail-chip t-closed"><span class="t-dot"></span>The Hurdle</div>
-          <div class="trail-chip t-closed"><span class="t-dot"></span>Exchange Drop</div>
-          <div class="trail-chip t-closed"><span class="t-dot"></span>Tuck</div>
-          <div class="trail-chip t-closed"><span class="t-dot"></span>Upper Walkabout</div>
-          <div class="trail-chip t-closed"><span class="t-dot"></span>Rocky Return</div>
-          <div class="trail-chip t-closed"><span class="t-dot"></span>Race Arena</div>
-          <div class="trail-chip t-closed"><span class="t-dot"></span>Powder Run</div>
-          <div class="trail-chip t-closed"><span class="t-dot"></span>Back Bowls</div>
-          <div class="trail-chip t-closed"><span class="t-dot"></span>Walkabout Park</div>
-        </div>
-      </div>
-      <div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div id="cp-weather" class="weather-now">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div id="cp-carparks" class="carpark-list"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cp-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Open official camera</div></div><span>↗</span></div><div class="card-note">Live source · Coronet Peak / snow.nz</div>
-    </div>
-
-  </div>
-
-  <div class="group-label">Wanaka</div>
-  <div class="grid">
-
-    <div class="card" id="card-cardrona">
-      <div class="card-top">
-        <h3>Cardrona</h3>
-        <span class="status-tag status-open" id="cd-status">Open</span>
-      </div>
-      <div class="stat-row">
-        <div class="stat"><div class="v" id="cd-base">37cm</div><div class="k">Base</div></div>
-        <div class="stat"><div class="v">10</div><div class="k">Lifts total</div></div>
-        <div class="stat"><div class="v" id="cd-7d">—</div><div class="k">Last 7d</div></div>
-      </div>
-      <div>
-        <div class="section-lbl">Lifts</div>
-        <div class="lift-chips" id="cd-lifts">
-          <div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-conveyor"/></svg><span class="lift-name">Learner Conveyors</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-gondola"/></svg><span class="lift-name">McDougall's Chondola</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-chair"/></svg><span class="lift-name">Whitestar Express</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-chair"/></svg><span class="lift-name">Captains Express</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-chair"/></svg><span class="lift-name">Willow's Quad</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-chair"/></svg><span class="lift-name">Soho Express</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-tbar"/></svg><span class="lift-name">T-Bar</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-chair"/></svg><span class="lift-name">Valley View</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-conveyor"/></svg><span class="lift-name">Kindy Conveyor</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-platter"/></svg><span class="lift-name">Wells Pipe Platter</span><span class="lift-dot"></span></div>
-        </div>
-      </div>
-      <div>
-        <div class="section-lbl">% Terrain open</div>
-        <div class="no-data">Not published on this resort's feed — lift status above is the available detail.</div>
-      </div>
-      <div>
-        <div class="section-lbl">Named trails</div>
-        <div class="trail-groups" id="cd-trails"><div class="no-data">Not currently reported.</div></div>
-      </div>
-      <div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div id="cd-weather" class="weather-now">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div id="cd-carparks" class="carpark-list"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cd-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Open official camera</div></div><span>↗</span></div><div class="card-note">Live source · Cardrona / snow.nz</div>
-    </div>
-
-    <div class="card" id="card-treblecone">
-      <div class="card-top">
-        <h3>Treble Cone</h3>
-        <span class="status-tag status-open" id="tc-status">Open · 3/3 lifts</span>
-      </div>
-      <div class="stat-row">
-        <div class="stat"><div class="v" id="tc-base">52cm</div><div class="k">Base</div></div>
-        <div class="stat"><div class="v" id="tc-7d">—</div><div class="k">Last 7d</div></div>
-      </div>
-      <div>
-        <div class="section-lbl">Lifts</div>
-        <div class="lift-chips" id="tc-lifts">
-          <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-chair"/></svg><span class="lift-name">Home Basin Express</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-chair"/></svg><span class="lift-name">Saddle Quad</span><span class="lift-dot"></span></div>
-          <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-platter"/></svg><span class="lift-name">Beginner Platter</span><span class="lift-dot"></span></div>
-        </div>
-      </div>
-      <div>
-        <div class="section-lbl">% Terrain open</div>
-        <div class="no-data">Not published on this resort's feed — only 3 lifts total, all confirmed open.</div>
-      </div>
-      <div>
-        <div class="section-lbl">Named trails</div>
-        <div class="trail-groups" id="tc-trails"><div class="no-data">Not currently reported.</div></div>
-      </div>
-      <div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div id="tc-weather" class="weather-now">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div id="tc-carparks" class="carpark-list"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="tc-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Open official camera</div></div><span>↗</span></div><div class="card-note">Live source · Treble Cone / snow.nz</div>
-    </div>
-
-  </div>
-
-  <section class="snowfall">
-    <div class="group-label" style="margin-bottom:2px;">6-Day Snowfall — Daily Totals</div>
-
-    <div class="fc-row" id="fc-remarkables">
-      <div class="fc-row-head"><span class="fc-name">Remarkables</span><span class="fc-meta">6-day: <b>21cm</b> · issued 12 Jul 5pm</span></div>
-      <div class="fc-ribbon" style="background:linear-gradient(90deg, #e8a23c 0%, #5f7286 20%, #5f7286 40%, #6fcf97 60%, #5f7286 80%, #5f7286 100%);"></div>
-      <div class="fc-days">
-        <div class="fc-day"><span class="fc-cm" style="color:#e8a23c;">15cm</span><span class="fc-lbl">Tue 14</span></div>
-        <div class="fc-day"><span class="fc-cm">0cm</span><span class="fc-lbl">Wed 15</span></div>
-        <div class="fc-day"><span class="fc-cm">0cm</span><span class="fc-lbl">Thu 16</span></div>
-        <div class="fc-day"><span class="fc-cm" style="color:#6fcf97;">6cm</span><span class="fc-lbl">Fri 17</span></div>
-        <div class="fc-day"><span class="fc-cm" style="color:var(--muted-2);">—</span><span class="fc-lbl">Sat 18</span></div>
-        <div class="fc-day"><span class="fc-cm" style="color:var(--muted-2);">—</span><span class="fc-lbl">Sun 19</span></div>
-      </div>
-    </div>
-
-    <div class="fc-row" id="fc-coronetpeak">
-      <div class="fc-row-head"><span class="fc-name">Coronet Peak</span><span class="fc-meta">6-day: <b>22cm</b> · issued 12 Jul 5pm</span></div>
-      <div class="fc-ribbon" style="background:linear-gradient(90deg, #e8a23c 0%, #5f7286 20%, #5f7286 40%, #6fcf97 60%, #5f7286 80%, #5f7286 100%);"></div>
-      <div class="fc-days">
-        <div class="fc-day"><span class="fc-cm" style="color:#e85f6f;">18cm</span><span class="fc-lbl">Tue 14</span></div>
-        <div class="fc-day"><span class="fc-cm">0cm</span><span class="fc-lbl">Wed 15</span></div>
-        <div class="fc-day"><span class="fc-cm">0cm</span><span class="fc-lbl">Thu 16</span></div>
-        <div class="fc-day"><span class="fc-cm" style="color:#6fcf97;">4cm</span><span class="fc-lbl">Fri 17</span></div>
-        <div class="fc-day"><span class="fc-cm" style="color:var(--muted-2);">—</span><span class="fc-lbl">Sat 18</span></div>
-        <div class="fc-day"><span class="fc-cm" style="color:var(--muted-2);">—</span><span class="fc-lbl">Sun 19</span></div>
-      </div>
-    </div>
-
-    <div class="fc-row" id="fc-cardrona">
-      <div class="fc-row-head"><span class="fc-name">Cardrona</span><span class="fc-meta">6-day: <b>20cm</b> · issued 14 Jul 5am</span></div>
-      <div class="fc-ribbon" style="background:linear-gradient(90deg, #e8a23c 0%, #6fcf97 20%, #5f7286 40%, #5f7286 60%, #6fcf97 80%, #5f7286 100%);"></div>
-      <div class="fc-days">
-        <div class="fc-day"><span class="fc-cm" style="color:#e8a23c;">11cm</span><span class="fc-lbl">Tue 14</span></div>
-        <div class="fc-day"><span class="fc-cm" style="color:#6fcf97;">6cm</span><span class="fc-lbl">Wed 15</span></div>
-        <div class="fc-day"><span class="fc-cm">0cm</span><span class="fc-lbl">Thu 16</span></div>
-        <div class="fc-day"><span class="fc-cm">0cm</span><span class="fc-lbl">Fri 17</span></div>
-        <div class="fc-day"><span class="fc-cm" style="color:#6fcf97;">3cm</span><span class="fc-lbl">Sat 18</span></div>
-        <div class="fc-day"><span class="fc-cm">0cm</span><span class="fc-lbl">Sun 19</span></div>
-      </div>
-    </div>
-
-    <div class="fc-row" id="fc-treblecone">
-      <div class="fc-row-head"><span class="fc-name">Treble Cone</span><span class="fc-meta">6-day: <b>47cm</b> · issued 11 Jul 11am (oldest of the four)</span></div>
-      <div class="fc-ribbon" style="background:linear-gradient(90deg, #e85f6f 0%, #6fcf97 20%, #5f7286 40%, #5f7286 60%, #5f7286 80%, #5f7286 100%);"></div>
-      <div class="fc-days">
-        <div class="fc-day"><span class="fc-cm" style="color:#e85f6f;">44cm</span><span class="fc-lbl">Tue 14</span></div>
-        <div class="fc-day"><span class="fc-cm" style="color:#6fcf97;">3cm</span><span class="fc-lbl">Wed 15</span></div>
-        <div class="fc-day"><span class="fc-cm">0cm</span><span class="fc-lbl">Thu 16</span></div>
-        <div class="fc-day"><span class="fc-cm" style="color:var(--muted-2);">—</span><span class="fc-lbl">Fri 17</span></div>
-        <div class="fc-day"><span class="fc-cm" style="color:var(--muted-2);">—</span><span class="fc-lbl">Sat 18</span></div>
-        <div class="fc-day"><span class="fc-cm" style="color:var(--muted-2);">—</span><span class="fc-lbl">Sun 19</span></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="sources">
-    <a class="src-chip" href="https://www.theremarkables.co.nz/weather-report/" target="_blank">Remarkables report <span class="arrow">↗</span></a>
-    <a class="src-chip" href="https://www.snow.nz/area/nz/queenstown/coronetpeak/" target="_blank">Coronet Peak report <span class="arrow">↗</span></a>
-    <a class="src-chip" href="https://www.snow.nz/area/nz/wanaka/cardrona/" target="_blank">Cardrona report <span class="arrow">↗</span></a>
-    <a class="src-chip" href="https://www.snow.nz/area/nz/wanaka/treble-cone/" target="_blank">Treble Cone report <span class="arrow">↗</span></a>
-    <a class="src-chip" href="https://www.snow-forecast.com/resorts/Remarkables/6day/mid" target="_blank">Remarkables forecast <span class="arrow">↗</span></a>
-    <a class="src-chip" href="https://www.snow-forecast.com/resorts/Coronet-Peak/6day/mid" target="_blank">Coronet Peak forecast <span class="arrow">↗</span></a>
-    <a class="src-chip" href="https://www.snow-forecast.com/resorts/Cardrona/6day/mid" target="_blank">Cardrona forecast <span class="arrow">↗</span></a>
-    <a class="src-chip" href="https://www.snow-forecast.com/resorts/Treble-Cone/6day/mid" target="_blank">Treble Cone forecast <span class="arrow">↗</span></a>
-  </div>
-
-  <footer>Live data checks every 5 minutes · previous valid readings remain visible if a source temporarily fails</footer>
-
+<span class="lg-item"><span class="lg-dot" style="background:var(--muted-2);"></span>Not confirmed</span>
+<span class="lg-item"><span class="lg-dot" style="background:var(--rain);"></span>Rain (forecast)</span>
+<span class="lg-item"><span class="lg-dot" style="background:var(--storm);"></span>Wind hold</span><span class="lg-item"><span class="lg-dot" style="background:var(--ice);"></span>Ungroomed</span></div>
+</div>
+<div class="group-label">Queenstown</div>
+<div class="grid">
+<div class="card" id="card-remarkables">
+<div class="card-top">
+<h3>Remarkables</h3>
+<span class="status-tag status-open" id="rm-status">Open · 6/7 lifts</span>
+</div>
+<div class="stat-row">
+<div class="stat"><div class="v" id="rm-base">15–60cm</div><div class="k">Base</div></div>
+<div class="stat"><div class="v">53cm</div><div class="k">Season</div></div>
+<div class="stat"><div class="v">8cm</div><div class="k">Last 24h</div></div><div class="stat"><div class="v" id="rm-7d">—</div><div class="k">Last 7d</div></div>
+</div>
+<div>
+<div class="section-lbl">Lifts</div>
+<div class="lift-chips" id="rm-lifts">
+<div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-conveyor"></use></svg><span class="lift-name">Shorty Conveyor</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-conveyor"></use></svg><span class="lift-name">Tahi Conveyor</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-conveyor"></use></svg><span class="lift-name">Rua Conveyor</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-chair"></use></svg><span class="lift-name">Alta Chair</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-chair"></use></svg><span class="lift-name">Sugar Bowl Express</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-chair"></use></svg><span class="lift-name">Curvey Basin Express</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-closed"><svg class="lift-icon"><use href="#ic-chair"></use></svg><span class="lift-name">Shadow Basin Chair</span><span class="lift-dot"></span></div>
+</div>
 </div>
 
+<div>
+<div class="section-lbl">Named trails</div>
+<div class="trail-groups" id="rm-trails"><div class="no-data">Loading named terrain…</div></div>
+</div>
+<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="rm-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="rm-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="rm-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Latest Mountainwatch image</div></div></div><div class="card-note">Live source · The Remarkables</div>
+</div>
+<div class="card" id="card-coronetpeak">
+<div class="card-top">
+<h3>Coronet Peak</h3>
+<span class="status-tag status-open" id="cp-status">Open · 7/8 lifts</span>
+</div>
+<div class="stat-row">
+<div class="stat"><div class="v" id="cp-base">20–30cm</div><div class="k">Base</div></div>
+<div class="stat"><div class="v" id="cp-7d">—</div><div class="k">Last 7d</div></div>
+</div>
+<div>
+<div class="section-lbl">Lifts</div>
+<div class="lift-chips" id="cp-lifts">
+<div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-gondola"></use></svg><span class="lift-name">Coronet Express</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-chair"></use></svg><span class="lift-name">Greengates Express</span><span class="qual">Adv only</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-chair"></use></svg><span class="lift-name">Meadows Learner Express</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-tbar"></use></svg><span class="lift-name">Rocky Gully T-bar</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-conveyor"></use></svg><span class="lift-name">Magic Carpet</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-conveyor"></use></svg><span class="lift-name">Beginner Carpet</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-conveyor"></use></svg><span class="lift-name">Skiwiland Conveyor</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-conveyor"></use></svg><span class="lift-name">Kidszone Carpet</span><span class="lift-dot"></span></div>
+</div>
+</div>
+
+<div>
+<div class="section-lbl">Named trails · 19/29 open</div>
+<div class="trail-groups" id="cp-trails">
+<div class="trail-chip t-open"><span class="t-dot"></span>Big Easy</div>
+<div class="trail-chip t-open"><span class="t-dot"></span>Little Easy</div>
+<div class="trail-chip t-open"><span class="t-dot"></span>Gentle Annie</div>
+<div class="trail-chip t-open"><span class="t-dot"></span>Fun Zone</div>
+<div class="trail-chip t-open"><span class="t-dot"></span>M1</div>
+<div class="trail-chip t-open"><span class="t-dot"></span>Easy Rider</div>
+<div class="trail-chip t-open"><span class="t-dot"></span>Dual Carpet Slopes</div>
+<div class="trail-chip t-open"><span class="t-dot"></span>Shirt Front</div>
+<div class="trail-chip t-open"><span class="t-dot"></span>Brough's Lane</div>
+<div class="trail-chip t-open"><span class="t-dot"></span>Million Dollar</div>
+<div class="trail-chip t-open"><span class="t-dot"></span>Pro Am</div>
+<div class="trail-chip t-open"><span class="t-dot"></span>Carpet Rail Garden</div>
+<div class="trail-chip t-ungroomed"><span class="t-dot"></span>Greengates Bumps</div>
+<div class="trail-chip t-ungroomed"><span class="t-dot"></span>Wall Street</div>
+<div class="trail-chip t-ungroomed"><span class="t-dot"></span>Eighth Basin</div>
+<div class="trail-chip t-ungroomed"><span class="t-dot"></span>Mid Gully</div>
+<div class="trail-chip t-ungroomed"><span class="t-dot"></span>Overrun</div>
+<div class="trail-chip t-ungroomed"><span class="t-dot"></span>West Gates</div>
+<div class="trail-chip t-ungroomed"><span class="t-dot"></span>Sugar's Run</div>
+<div class="trail-chip t-closed"><span class="t-dot"></span>The Chimney</div>
+<div class="trail-chip t-closed"><span class="t-dot"></span>The Hurdle</div>
+<div class="trail-chip t-closed"><span class="t-dot"></span>Exchange Drop</div>
+<div class="trail-chip t-closed"><span class="t-dot"></span>Tuck</div>
+<div class="trail-chip t-closed"><span class="t-dot"></span>Upper Walkabout</div>
+<div class="trail-chip t-closed"><span class="t-dot"></span>Rocky Return</div>
+<div class="trail-chip t-closed"><span class="t-dot"></span>Race Arena</div>
+<div class="trail-chip t-closed"><span class="t-dot"></span>Powder Run</div>
+<div class="trail-chip t-closed"><span class="t-dot"></span>Back Bowls</div>
+<div class="trail-chip t-closed"><span class="t-dot"></span>Walkabout Park</div>
+</div>
+</div>
+<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="cp-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="cp-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cp-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Latest Mountainwatch image</div></div></div><div class="card-note">Live source · Coronet Peak / snow.nz</div>
+</div>
+</div>
+<div class="group-label">Wanaka</div>
+<div class="grid">
+<div class="card" id="card-cardrona">
+<div class="card-top">
+<h3>Cardrona</h3>
+<span class="status-tag status-open" id="cd-status">Open</span>
+</div>
+<div class="stat-row">
+<div class="stat"><div class="v" id="cd-base">37cm</div><div class="k">Base</div></div>
+<div class="stat"><div class="v">10</div><div class="k">Lifts total</div></div>
+<div class="stat"><div class="v" id="cd-7d">—</div><div class="k">Last 7d</div></div>
+</div>
+<div>
+<div class="section-lbl">Lifts</div>
+<div class="lift-chips" id="cd-lifts">
+<div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-conveyor"></use></svg><span class="lift-name">Learner Conveyors</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-gondola"></use></svg><span class="lift-name">McDougall's Chondola</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-chair"></use></svg><span class="lift-name">Whitestar Express</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-chair"></use></svg><span class="lift-name">Captains Express</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-chair"></use></svg><span class="lift-name">Willow's Quad</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-chair"></use></svg><span class="lift-name">Soho Express</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-tbar"></use></svg><span class="lift-name">T-Bar</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-chair"></use></svg><span class="lift-name">Valley View</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-conveyor"></use></svg><span class="lift-name">Kindy Conveyor</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-platter"></use></svg><span class="lift-name">Wells Pipe Platter</span><span class="lift-dot"></span></div>
+</div>
+</div>
+
+<div>
+<div class="section-lbl">Named trails</div>
+<div class="trail-groups" id="cd-trails"><div class="no-data">Not currently reported.</div></div>
+</div>
+<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="cd-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="cd-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cd-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Latest Mountainwatch image</div></div></div><div class="card-note">Live source · Cardrona / MetService</div>
+</div>
+<div class="card" id="card-treblecone">
+<div class="card-top">
+<h3>Treble Cone</h3>
+<span class="status-tag status-open" id="tc-status">Open · 3/3 lifts</span>
+</div>
+<div class="stat-row">
+<div class="stat"><div class="v" id="tc-base">52cm</div><div class="k">Base</div></div>
+<div class="stat"><div class="v" id="tc-7d">—</div><div class="k">Last 7d</div></div>
+</div>
+<div>
+<div class="section-lbl">Lifts</div>
+<div class="lift-chips" id="tc-lifts">
+<div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-chair"></use></svg><span class="lift-name">Home Basin Express</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-chair"></use></svg><span class="lift-name">Saddle Quad</span><span class="lift-dot"></span></div>
+<div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-platter"></use></svg><span class="lift-name">Beginner Platter</span><span class="lift-dot"></span></div>
+</div>
+</div>
+
+<div>
+<div class="section-lbl">Named trails</div>
+<div class="trail-groups" id="tc-trails"><div class="no-data">Not currently reported.</div></div>
+</div>
+<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="tc-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="tc-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="tc-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Latest Mountainwatch image</div></div></div><div class="card-note">Live source · Treble Cone / MetService</div>
+</div>
+</div>
+<section class="snowfall">
+<div class="group-label" style="margin-bottom:2px;">6-Day Snowfall — Daily Totals</div>
+<div class="fc-row" id="fc-remarkables">
+<div class="fc-row-head"><span class="fc-name">Remarkables</span><span class="fc-meta">6-day: <b>21cm</b> · issued 12 Jul 5pm</span></div>
+<div class="fc-ribbon" style="background:linear-gradient(90deg, #e8a23c 0%, #5f7286 20%, #5f7286 40%, #6fcf97 60%, #5f7286 80%, #5f7286 100%);"></div>
+<div class="fc-days">
+<div class="fc-day"><span class="fc-cm" style="color:#e8a23c;">15cm</span><span class="fc-lbl">Tue 14</span></div>
+<div class="fc-day"><span class="fc-cm">0cm</span><span class="fc-lbl">Wed 15</span></div>
+<div class="fc-day"><span class="fc-cm">0cm</span><span class="fc-lbl">Thu 16</span></div>
+<div class="fc-day"><span class="fc-cm" style="color:#6fcf97;">6cm</span><span class="fc-lbl">Fri 17</span></div>
+<div class="fc-day"><span class="fc-cm" style="color:var(--muted-2);">—</span><span class="fc-lbl">Sat 18</span></div>
+<div class="fc-day"><span class="fc-cm" style="color:var(--muted-2);">—</span><span class="fc-lbl">Sun 19</span></div>
+</div>
+</div>
+<div class="fc-row" id="fc-coronetpeak">
+<div class="fc-row-head"><span class="fc-name">Coronet Peak</span><span class="fc-meta">6-day: <b>22cm</b> · issued 12 Jul 5pm</span></div>
+<div class="fc-ribbon" style="background:linear-gradient(90deg, #e8a23c 0%, #5f7286 20%, #5f7286 40%, #6fcf97 60%, #5f7286 80%, #5f7286 100%);"></div>
+<div class="fc-days">
+<div class="fc-day"><span class="fc-cm" style="color:#e85f6f;">18cm</span><span class="fc-lbl">Tue 14</span></div>
+<div class="fc-day"><span class="fc-cm">0cm</span><span class="fc-lbl">Wed 15</span></div>
+<div class="fc-day"><span class="fc-cm">0cm</span><span class="fc-lbl">Thu 16</span></div>
+<div class="fc-day"><span class="fc-cm" style="color:#6fcf97;">4cm</span><span class="fc-lbl">Fri 17</span></div>
+<div class="fc-day"><span class="fc-cm" style="color:var(--muted-2);">—</span><span class="fc-lbl">Sat 18</span></div>
+<div class="fc-day"><span class="fc-cm" style="color:var(--muted-2);">—</span><span class="fc-lbl">Sun 19</span></div>
+</div>
+</div>
+<div class="fc-row" id="fc-cardrona">
+<div class="fc-row-head"><span class="fc-name">Cardrona</span><span class="fc-meta">6-day: <b>20cm</b> · issued 14 Jul 5am</span></div>
+<div class="fc-ribbon" style="background:linear-gradient(90deg, #e8a23c 0%, #6fcf97 20%, #5f7286 40%, #5f7286 60%, #6fcf97 80%, #5f7286 100%);"></div>
+<div class="fc-days">
+<div class="fc-day"><span class="fc-cm" style="color:#e8a23c;">11cm</span><span class="fc-lbl">Tue 14</span></div>
+<div class="fc-day"><span class="fc-cm" style="color:#6fcf97;">6cm</span><span class="fc-lbl">Wed 15</span></div>
+<div class="fc-day"><span class="fc-cm">0cm</span><span class="fc-lbl">Thu 16</span></div>
+<div class="fc-day"><span class="fc-cm">0cm</span><span class="fc-lbl">Fri 17</span></div>
+<div class="fc-day"><span class="fc-cm" style="color:#6fcf97;">3cm</span><span class="fc-lbl">Sat 18</span></div>
+<div class="fc-day"><span class="fc-cm">0cm</span><span class="fc-lbl">Sun 19</span></div>
+</div>
+</div>
+<div class="fc-row" id="fc-treblecone">
+<div class="fc-row-head"><span class="fc-name">Treble Cone</span><span class="fc-meta">6-day: <b>47cm</b> · issued 11 Jul 11am (oldest of the four)</span></div>
+<div class="fc-ribbon" style="background:linear-gradient(90deg, #e85f6f 0%, #6fcf97 20%, #5f7286 40%, #5f7286 60%, #5f7286 80%, #5f7286 100%);"></div>
+<div class="fc-days">
+<div class="fc-day"><span class="fc-cm" style="color:#e85f6f;">44cm</span><span class="fc-lbl">Tue 14</span></div>
+<div class="fc-day"><span class="fc-cm" style="color:#6fcf97;">3cm</span><span class="fc-lbl">Wed 15</span></div>
+<div class="fc-day"><span class="fc-cm">0cm</span><span class="fc-lbl">Thu 16</span></div>
+<div class="fc-day"><span class="fc-cm" style="color:var(--muted-2);">—</span><span class="fc-lbl">Fri 17</span></div>
+<div class="fc-day"><span class="fc-cm" style="color:var(--muted-2);">—</span><span class="fc-lbl">Sat 18</span></div>
+<div class="fc-day"><span class="fc-cm" style="color:var(--muted-2);">—</span><span class="fc-lbl">Sun 19</span></div>
+</div>
+</div>
+</section>
+<div class="sources">
+<a class="src-chip" href="https://www.theremarkables.co.nz/weather-report/" target="_blank">Remarkables report <span class="arrow">↗</span></a>
+<a class="src-chip" href="https://www.snow.nz/area/nz/queenstown/coronetpeak/" target="_blank">Coronet Peak report <span class="arrow">↗</span></a>
+<a class="src-chip" href="https://www.snow.nz/area/nz/wanaka/cardrona/" target="_blank">Cardrona report <span class="arrow">↗</span></a>
+<a class="src-chip" href="https://www.snow.nz/area/nz/wanaka/treble-cone/" target="_blank">Treble Cone report <span class="arrow">↗</span></a>
+<a class="src-chip" href="https://www.snow-forecast.com/resorts/Remarkables/6day/mid" target="_blank">Remarkables forecast <span class="arrow">↗</span></a>
+<a class="src-chip" href="https://www.snow-forecast.com/resorts/Coronet-Peak/6day/mid" target="_blank">Coronet Peak forecast <span class="arrow">↗</span></a>
+<a class="src-chip" href="https://www.snow-forecast.com/resorts/Cardrona/6day/mid" target="_blank">Cardrona forecast <span class="arrow">↗</span></a>
+<a class="src-chip" href="https://www.snow-forecast.com/resorts/Treble-Cone/6day/mid" target="_blank">Treble Cone forecast <span class="arrow">↗</span></a>
+</div>
+
+<footer><div class="live-cluster footer-live"><span class="live-dot" id="live-dot"></span><div><div class="stamp-tag" id="live-stamp">Loading live data…</div><div class="next-tag" id="next-update">Next check calculating…</div></div></div></footer></div>
 <script>
   // snow-scale: grey(0) -> green(light) -> amber(moderate) -> red(heavy). Rain-only days render blue.
   function cmColor(cm){
@@ -547,6 +510,7 @@
   function escapeHtml(value){ return String(value ?? '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c])); }
   function trailStatusClass(status){
     const value=(status||'').toLowerCase();
+    if(value.includes('wind')) return 't-wind';
     if(value.includes('ungroomed')||value.includes('variable')) return 't-ungroomed';
     if(value.includes('open')||value.includes('available')) return 't-open';
     return 't-closed';
@@ -572,9 +536,23 @@
     el.innerHTML=parks.map(p=>`<div class="carpark-pill"><span>${escapeHtml(p.name)}</span><span class="park-state ${parkClass(p.status)}">${escapeHtml(p.status||'Unknown')}</span></div>`).join('');
   }
   function renderWebcam(prefix, webcam){
-    const el=document.getElementById(prefix+'-webcam');if(!el||!webcam)return;
-    if(webcam.image_url)el.style.backgroundImage=`url('${String(webcam.image_url).replace(/'/g,'%27')}')`;
-    if(webcam.page_url){el.onclick=()=>window.open(webcam.page_url,'_blank','noopener');el.setAttribute('role','link');el.tabIndex=0;el.onkeydown=e=>{if(e.key==='Enter')el.click();};}
+    const el=document.getElementById(prefix+'-webcam');if(!el)return;
+    const title=el.querySelector('.webcam-title');
+    if(webcam?.image_url){
+      const separator=String(webcam.image_url).includes('?')?'&':'?';
+      el.style.backgroundImage=`url('${String(webcam.image_url).replace(/'/g,'%27')}${separator}refresh=${Date.now()}')`;
+      if(title)title.textContent='Latest Mountainwatch image';
+    }else{
+      el.style.backgroundImage='none';
+      if(title)title.textContent='Camera image unavailable';
+    }
+    el.onclick=null;el.removeAttribute('role');el.removeAttribute('tabindex');el.onkeydown=null;
+  }
+
+  function renderNews(news){
+    const el=document.getElementById('news-track');if(!el)return;
+    if(!news?.title){el.textContent='Latest Grasshopper New Zealand report unavailable';return;}
+    el.innerHTML=`<a href="${escapeHtml(news.url||'#')}" target="_blank" rel="noopener">${escapeHtml(news.title)} · ${escapeHtml(news.source||'The Grasshopper')}</a>`;
   }
 
   function bindResort(prefix, r){
@@ -597,7 +575,7 @@
   async function loadLiveData(){
     try{
       const res=await fetch('./data.json?t='+Date.now(),{cache:'no-store'});if(!res.ok)throw new Error(`HTTP ${res.status}`);
-      const data=await res.json();if(!data||!data.resorts)return;
+      const data=await res.json();if(!data||!data.resorts)return;renderNews(data.news);
       bindResort('rm',data.resorts.remarkables);bindResort('cp',data.resorts.coronetpeak);bindResort('cd',data.resorts.cardrona);bindResort('tc',data.resorts.treblecone);
       renderSnowfallRow('remarkables',data.resorts.remarkables?.forecast);renderSnowfallRow('coronetpeak',data.resorts.coronetpeak?.forecast);renderSnowfallRow('cardrona',data.resorts.cardrona?.forecast);renderSnowfallRow('treblecone',data.resorts.treblecone?.forecast);
       if(data.updated){latestUpdated=data.updated;const updated=new Date(data.updated),stamp=document.getElementById('live-stamp');if(stamp)stamp.textContent='Last updated '+updated.toLocaleString('en-NZ',{timeZone:'Pacific/Auckland',dateStyle:'medium',timeStyle:'short'});}
