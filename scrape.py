@@ -1,28 +1,29 @@
-"""Southern Lakes Snow Watch scraper.
+"""Queenstown Snow Watch scraper.
 
-Collects resort operations, snowfall, parking, compact current weather and
-webcam references. Failed fields preserve their previous valid values rather
-than replacing them with misleading zeroes.
+Uses DOM sections and list items rather than flattened page text. This prevents
+adjacent lifts, trails, facilities and car parks being merged together.
 """
-
 from __future__ import annotations
 
 import json
-import os
 import re
 import sys
-from datetime import datetime, timezone
+from copy import deepcopy
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
 from typing import Any
 from urllib.parse import urljoin
 
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 
+ROOT = Path(__file__).resolve().parent
+DATA_FILE = ROOT / "data.json"
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                  "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36",
+    "Accept-Language": "en-NZ,en;q=0.9",
 }
-TIMEOUT = 25
+TIMEOUT = 30
 
 URLS = {
     "remarkables": "https://www.theremarkables.co.nz/weather-report/",
@@ -30,382 +31,413 @@ URLS = {
     "cardrona": "https://www.snow.nz/area/nz/wanaka/cardrona/",
     "treblecone": "https://www.snow.nz/area/nz/wanaka/treble-cone/",
 }
-FORECAST_URLS = {
-    "remarkables": "https://www.snow-forecast.com/resorts/Remarkables/6day/mid",
-    "coronetpeak": "https://www.snow-forecast.com/resorts/Coronet-Peak/6day/mid",
-    "cardrona": "https://www.snow-forecast.com/resorts/Cardrona/6day/mid",
-    "treblecone": "https://www.snow-forecast.com/resorts/Treble-Cone/6day/mid",
-}
-ACCUWEATHER_URLS = {
-    "remarkables": "https://www.accuweather.com/en/nz/the-remarkables/2524446/weather-forecast/2524446",
-    "coronetpeak": "https://www.accuweather.com/en/nz/coronet-peak-ski-resort/67336_poi/weather-forecast/67336_poi",
-    "cardrona": "https://www.accuweather.com/en/nz/cardrona-alpine-resort/64922_poi/weather-forecast/64922_poi",
-    "treblecone": "https://www.accuweather.com/en/nz/treble-cone-ski-area/64923_poi/weather-forecast/64923_poi",
+WEATHER_URLS = {
+    # Resort POIs where AccuWeather provides them; nearest named location otherwise.
+    "remarkables": "https://www.accuweather.com/en/nz/queenstown/249932/current-weather/249932",
+    "coronetpeak": "https://www.accuweather.com/en/nz/coronet-peak-ski-resort/67336_poi/current-weather/67336_poi",
+    "cardrona": "https://www.accuweather.com/en/nz/cardrona-alpine-resort/64922_poi/current-weather/64922_poi",
+    "treblecone": "https://www.accuweather.com/en/nz/wanaka/250069/current-weather/250069",
 }
 WEBCAM_PAGES = {
-    "remarkables": "https://www.theremarkables.co.nz/weather-report/",
+    "remarkables": URLS["remarkables"],
     "coronetpeak": "https://www.coronetpeak.co.nz/weather-report",
     "cardrona": "https://cardrona-treblecone.com/webcams",
     "treblecone": "https://cardrona-treblecone.com/webcams",
 }
 
-STATUS_PHRASES = [
-    "Advanced Riders Only", "Ungroomed fun bumps", "Ski Patrol Only",
-    "Wind Hold", "Weather Hold", "On Hold", "Opens Tuesday", "Variable",
-    "Limited", "Filling", "Spaces Available", "Available", "Full", "Open", "Closed",
-]
-
-CORONET_DIFFICULTY = {
-    # Green
-    "big easy": "green", "little easy": "green", "gentle annie": "green",
-    "fun zone": "green", "easy rider": "green", "dual carpet slopes": "green",
-    # Blue
+DIFFICULTY_MAP = {
+    # Coronet Peak
+    "big easy": "green", "beginner area": "green", "little easy": "green",
+    "gentle annie": "green", "easy rider": "green", "dual carpet slopes": "green",
     "m1": "blue", "shirt front": "blue", "brough's lane": "blue",
-    "million dollar": "blue", "pro am": "blue", "carpet rail garden": "blue",
-    # Red / advanced
-    "greengates bumps": "red", "wall street": "red", "eighth basin": "red",
-    "mid gully": "red", "overrun": "red", "west gates": "red", "sugar's run": "red",
-    # Black
-    "the chimney": "black", "the hurdle": "black", "exchange drop": "black",
-    "tuck": "black", "upper walkabout": "black", "rocky return": "black",
-    "race arena": "black", "walkabout park": "black",
-    # Double black
-    "powder run": "double-black", "back bowls": "double-black",
+    "million dollar": "blue", "pro am": "blue", "rocky return": "blue",
+    "greengates": "red", "wall street": "red", "the hurdle": "red",
+    "eighth basin": "red", "mid gully": "red", "overrun": "red",
+    "west gates": "red", "sugar's run": "red", "tuck": "black",
+    "upper walkabout": "black", "the chimney": "black", "exchange drop": "black",
+    "race arena": "black", "powder run": "double-black", "back bowls": "double-black",
+    # Parks / zones remain unclassified by design.
 }
 
+STATUS_PHRASES = sorted([
+    "Wind may affect chairlift ops", "Advanced Riders Only", "Closed for Racing",
+    "Ungroomed fun bumps", "Chains or 4WD", "Opening Delayed", "On Hold",
+    "Wind Hold", "Limited Spaces", "Filling Fast", "Ungroomed", "Available",
+    "Variable", "Spaces", "Full", "Open", "Closed",
+], key=len, reverse=True)
 
-def fetch(url: str) -> requests.Response:
+
+def fetch(url: str) -> tuple[BeautifulSoup, str]:
     response = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
     response.raise_for_status()
-    return response
+    return BeautifulSoup(response.text, "html.parser"), response.text
 
 
-def soup_and_text(url: str) -> tuple[BeautifulSoup, str]:
-    soup = BeautifulSoup(fetch(url).text, "html.parser")
-    return soup, soup.get_text("\n", strip=True)
+def clean(value: str | None) -> str:
+    return re.sub(r"\s+", " ", value or "").strip()
 
 
-def integer_before_label(text: str, label: str) -> int | None:
+def parse_number(value: str | None) -> int | None:
+    match = re.search(r"-?\d+(?:\.\d+)?", value or "")
+    return int(round(float(match.group()))) if match else None
+
+
+def split_status(label: str) -> tuple[str, str]:
+    label = clean(label)
+    for status in STATUS_PHRASES:
+        match = re.search(rf"\s+{re.escape(status)}(?:\s+.*)?$", label, re.I)
+        if match:
+            name = clean(label[:match.start()])
+            actual = clean(label[match.start():])
+            # Preserve the meaningful status phrase, but drop appended opening-hour prose.
+            canonical = status
+            if status == "Spaces": canonical = "Spaces available"
+            return name, canonical
+    return label, "Unknown"
+
+
+def normalise_heading(value: str) -> str:
+    return re.sub(r"\s*:\s*$", "", clean(value)).lower()
+
+
+def heading_matches(tag: Tag, title: str) -> bool:
+    return tag.name in {"h2", "h3", "h4", "h5", "h6"} and normalise_heading(tag.get_text(" ")) == normalise_heading(title)
+
+
+def find_heading(soup: BeautifulSoup, titles: list[str]) -> Tag | None:
+    wanted = {normalise_heading(t) for t in titles}
+    for tag in soup.find_all(["h2", "h3", "h4", "h5", "h6"]):
+        if normalise_heading(tag.get_text(" ")) in wanted:
+            return tag
+    return None
+
+
+def section_nodes(heading: Tag) -> list[Tag]:
+    nodes: list[Tag] = []
+    level = int(heading.name[1]) if heading.name and heading.name[1:].isdigit() else 6
+    for sibling in heading.next_siblings:
+        if isinstance(sibling, Tag):
+            if sibling.name in {"h2", "h3", "h4", "h5", "h6"}:
+                sibling_level = int(sibling.name[1])
+                if sibling_level <= level:
+                    break
+            nodes.append(sibling)
+    return nodes
+
+
+def parse_list_section(soup: BeautifulSoup, titles: list[str]) -> list[dict[str, str]]:
+    heading = find_heading(soup, titles)
+    if not heading:
+        return []
+    items: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for node in section_nodes(heading):
+        candidates = node.find_all("li") if node.name != "li" else [node]
+        for li in candidates:
+            anchor = li.find("a")
+            label = clean(anchor.get_text(" ") if anchor else li.get_text(" "))
+            if not label or label.lower() == "n/a":
+                continue
+            name, status = split_status(label)
+            key = name.lower()
+            if name and key not in seen:
+                seen.add(key)
+                items.append({"name": name, "status": status})
+    return items
+
+
+def text_value_near_label(soup: BeautifulSoup, label: str, unit: str = "cm") -> int | None:
+    # SnowNZ places the numeric value immediately before its descriptive h6 label.
+    label_node = soup.find(string=lambda s: s and clean(s).lower() == label.lower())
+    if label_node:
+        parent = label_node.parent
+        previous = parent.find_previous(string=re.compile(rf"\d+(?:\.\d+)?\s*{re.escape(unit)}", re.I))
+        if previous:
+            return parse_number(str(previous))
+    # Fallback against page text, restricted to a small distance around the label.
+    text = soup.get_text("\n", strip=True)
     patterns = [
-        rf"(\d+)\s*cm\s*\n+\s*{re.escape(label)}",
-        rf"{re.escape(label)}\s*\n+\s*(\d+)\s*cm",
+        rf"(\d+(?:\.\d+)?)\s*{re.escape(unit)}\s*\n\s*{re.escape(label)}",
+        rf"{re.escape(label)}\s*\n\s*(\d+(?:\.\d+)?)\s*{re.escape(unit)}",
     ]
     for pattern in patterns:
         match = re.search(pattern, text, re.I)
         if match:
-            return int(match.group(1))
+            return parse_number(match.group(1))
     return None
 
 
-def clean_name(value: str) -> str:
-    value = re.sub(r"\s+", " ", value).strip(" :-\n")
-    value = re.sub(r"^(?:N/A|Status)\s+", "", value, flags=re.I)
-    return value
-
-
-def extract_status_items(block: str, max_name_len: int = 70) -> list[dict[str, str]]:
-    anchor = "|".join(re.escape(x) for x in sorted(STATUS_PHRASES, key=len, reverse=True))
-    matches = list(re.finditer(rf"\b({anchor})\b", block, re.I))
-    items: list[dict[str, str]] = []
-    previous = 0
-    for match in matches:
-        name = clean_name(block[previous:match.start()])
-        if name and len(name) <= max_name_len:
-            items.append({"name": name, "status": match.group(1).title()})
-        previous = match.end()
-    return dedupe_items(items)
-
-
-def dedupe_items(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    seen: set[str] = set()
-    output = []
-    for item in items:
-        key = re.sub(r"\W+", "", str(item.get("name", "")).lower())
-        if key and key not in seen:
-            seen.add(key)
-            output.append(item)
-    return output
-
-
-def section(text: str, starts: list[str], stops: list[str], limit: int = 6000) -> str:
-    positions = [(text.find(marker), marker) for marker in starts if text.find(marker) >= 0]
-    if not positions:
-        return ""
-    start, marker = min(positions)
-    start += len(marker)
-    end = min([p for p in (text.find(stop, start) for stop in stops) if p >= 0] or [start + limit])
-    return text[start:end]
-
-
-def parse_carparks(text: str, all_headers: list[str]) -> list[dict[str, str]]:
-    block = section(text, ["Car Parks :", "Car Parks", "Carparks"], all_headers)
-    if not block:
-        return []
-    items = extract_status_items(block)
-    # Some feeds provide one overall status rather than named car parks.
-    if not items:
-        match = re.search(r"\b(Spaces Available|Available|Filling|Limited|Full|Closed|Open)\b", block, re.I)
-        if match:
-            items = [{"name": "Car parks", "status": match.group(1).title()}]
-    return items
-
-
-def parse_facilities(text: str, headers: list[str], stops: list[str]) -> list[dict[str, str]]:
-    block = section(text, headers, stops)
-    return extract_status_items(block) if block else []
-
-
-def parse_webcam_preview(page_url: str) -> dict[str, Any]:
-    result = {"page_url": page_url, "image_url": None, "embeddable": False}
-    try:
-        soup = BeautifulSoup(fetch(page_url).text, "html.parser")
-        meta = soup.select_one('meta[property="og:image"], meta[name="twitter:image"]')
-        if meta and meta.get("content"):
-            result["image_url"] = urljoin(page_url, meta["content"])
-        # A direct image is safer than an iframe; resort pages frequently block framing.
-        for image in soup.find_all("img"):
-            source = image.get("src") or image.get("data-src") or image.get("data-lazy-src")
-            alt = (image.get("alt") or "").lower()
-            if source and ("webcam" in alt or "snow cam" in alt or "camera" in alt):
-                result["image_url"] = urljoin(page_url, source)
-                break
-    except Exception as exc:
-        result["error"] = str(exc)
-    return result
-
-
-def parse_accuweather(url: str) -> dict[str, Any] | None:
-    try:
-        soup, text = soup_and_text(url)
-    except Exception as exc:
-        print(f"  ! AccuWeather failed: {exc}", file=sys.stderr)
-        return None
-
-    weather: dict[str, Any] = {"source": "AccuWeather", "source_url": url}
-    temp = None
-    for selector in (".display-temp", ".cur-con-weather-card__panel .temp", ".temp"):
-        node = soup.select_one(selector)
-        if node:
-            match = re.search(r"-?\d+", node.get_text(" ", strip=True))
-            if match:
-                temp = int(match.group())
-                break
-    if temp is None:
-        match = re.search(r"(?:Currently|Current Weather).*?(-?\d+)°", text, re.I | re.S)
-        if match:
-            temp = int(match.group(1))
-    weather["temperature_c"] = temp
-
-    phrase = None
-    for selector in (".phrase", ".cur-con-weather-card__panel .phrase", ".current-weather-info .phrase"):
-        node = soup.select_one(selector)
-        if node:
-            phrase = clean_name(node.get_text(" ", strip=True))
-            if phrase:
-                break
-    weather["condition"] = phrase
-
-    realfeel = re.search(r"RealFeel®?\s*(-?\d+)°", text, re.I)
-    weather["feels_like_c"] = int(realfeel.group(1)) if realfeel else None
-    wind = re.search(r"Wind\s+([A-Z]{1,3})\s+(\d+)\s*km/h", text, re.I)
-    if wind:
-        weather["wind"] = f"{wind.group(1).upper()} {wind.group(2)} km/h"
-
-    return weather if any(weather.get(k) is not None for k in ("temperature_c", "condition", "feels_like_c")) else None
-
-
-def scrape_remarkables() -> dict[str, Any]:
-    output: dict[str, Any] = blank_resort()
-    soup, text = soup_and_text(URLS["remarkables"])
-
-    status = re.search(r"Mountain Status\s*\n+\s*(Open|Closed)", text, re.I)
-    if status:
-        output["status"] = status.group(1).title()
-    lifts = re.search(r"Lift Status\s*\n+\s*(\d+)\s*/\s*(\d+)\s*Open", text, re.I)
-    if lifts:
-        output["lifts_open"], output["lifts_total"] = map(int, lifts.groups())
-    base = re.search(r"Snow Base\s*\n+\s*(\d+)\s*-\s*(\d+)\s*cm", text, re.I)
-    if base:
-        output["base_lower"], output["base_upper"] = map(int, base.groups())
-
-    for key, label in (("novice", "Novice"), ("intermediate", "Intermediate"),
-                       ("advanced", "Advanced"), ("expert", "Expert"),
-                       ("extreme", "Extreme")):
-        match = re.search(rf"(\d{{1,3}})%\s*OPEN\s*\n+\s*{label}", text, re.I)
-        if match:
-            output["terrain"][key] = int(match.group(1))
-        elif re.search(rf"CLOSED\s*\n+\s*{label}", text, re.I):
-            output["terrain"][key] = 0
-
-    output["lifts"] = parse_facilities(text, ["Lifts\n", "Lifts"], ["Terrain\n", "Terrain"])
-    terrain_block = section(text, ["Terrain\n", "Terrain"], ["Road Conditions", "Webcams", "Getting Here"])
-    named = extract_status_items(terrain_block, 85)
-    difficulty_labels = {"Novice", "Intermediate", "Advanced", "Expert", "Extreme"}
-    output["trails"] = [item for item in named if item["name"] not in difficulty_labels and "%" not in item["name"]]
-    output["carparks"] = parse_carparks(text, ["Lifts", "Terrain", "Road", "Webcams", "Car Parks"])
-    output["new_snow_7d"] = integer_before_label(text, "Last 7 Days")
-    output["webcam"] = parse_webcam_preview(WEBCAM_PAGES["remarkables"])
-    output["weather"] = parse_accuweather(ACCUWEATHER_URLS["remarkables"])
-    return output
-
-
-def blank_resort() -> dict[str, Any]:
-    return {
+def parse_summary_snownz(soup: BeautifulSoup) -> dict[str, Any]:
+    text = soup.get_text("\n", strip=True)
+    result: dict[str, Any] = {
         "status": None, "lifts_open": None, "lifts_total": None,
         "base_lower": None, "base_upper": None, "new_snow_7d": None,
         "terrain": {}, "lifts": [], "trails": [], "carparks": [],
-        "weather": None, "webcam": None,
+    }
+    match = re.search(r"\b(OPEN|CLOSED)\b\s*\n\s*Mountain status", text, re.I)
+    if match: result["status"] = match.group(1).title()
+    match = re.search(r"(\d+)\s*/\s*(\d+)\s*\n\s*Lifts open", text, re.I)
+    if match: result["lifts_open"], result["lifts_total"] = map(int, match.groups())
+    result["base_upper"] = text_value_near_label(soup, "Snow base (upper)")
+    result["base_lower"] = text_value_near_label(soup, "Snow base (lower)")
+    result["new_snow_7d"] = text_value_near_label(soup, "Last 7 Days")
+    return result
+
+
+def parse_snownz(resort: str, soup: BeautifulSoup) -> dict[str, Any]:
+    result = parse_summary_snownz(soup)
+    result["lifts"] = parse_list_section(soup, ["All Lifts"])
+    result["carparks"] = parse_list_section(soup, ["Car Parks"])
+    trails: list[dict[str, str]] = []
+    for heading in (["Trails"], ["Zones"], ["Parks"]):
+        trails.extend(parse_list_section(soup, heading))
+    # Remove accidental category leakage and assign known difficulty.
+    park_names = {p["name"].lower() for p in result["carparks"]}
+    clean_trails = []
+    seen = set()
+    for trail in trails:
+        key = trail["name"].lower()
+        if key in park_names or key in seen:
+            continue
+        seen.add(key)
+        trail["difficulty"] = DIFFICULTY_MAP.get(key, "unclassified")
+        clean_trails.append(trail)
+    result["trails"] = clean_trails
+    return result
+
+
+def parse_remarkables(soup: BeautifulSoup) -> dict[str, Any]:
+    text = soup.get_text("\n", strip=True)
+    result: dict[str, Any] = {
+        "status": None, "lifts_open": None, "lifts_total": None,
+        "base_lower": None, "base_upper": None, "new_snow_7d": None,
+        "terrain": {}, "lifts": [], "trails": [], "carparks": [],
+    }
+    match = re.search(r"Mountain Status\s*\n\s*(Open|Closed)", text, re.I)
+    if match: result["status"] = match.group(1).title()
+    match = re.search(r"Lift Status\s*\n\s*(\d+)\s*/\s*(\d+)\s*Open", text, re.I)
+    if match: result["lifts_open"], result["lifts_total"] = map(int, match.groups())
+    match = re.search(r"Snow Base\s*\n\s*(\d+)\s*[-–]\s*(\d+)\s*cm", text, re.I)
+    if match: result["base_lower"], result["base_upper"] = map(int, match.groups())
+    for key, label in [("novice", "Novice"), ("intermediate", "Intermediate"), ("advanced", "Advanced"), ("expert", "Expert"), ("extreme", "Extreme")]:
+        match = re.search(rf"(\d{{1,3}})%\s*OPEN\s*\n\s*{label}\b", text, re.I)
+        if match: result["terrain"][key] = int(match.group(1))
+        elif re.search(rf"CLOSED\s*\n\s*{label}\b", text, re.I): result["terrain"][key] = 0
+
+    result["lifts"] = parse_list_section(soup, ["Lifts"])
+    terrain_items = parse_list_section(soup, ["Terrain"])
+    # Keep only actual terrain/park/backcountry entries; facilities belong elsewhere.
+    terrain_keywords = ("park", "trail", "backcountry", "touring", "slopestyle", "stash")
+    result["trails"] = [
+        {**item, "difficulty": "unclassified"}
+        for item in terrain_items if any(k in item["name"].lower() for k in terrain_keywords)
+    ]
+    result["carparks"] = parse_list_section(soup, ["Car Parks", "Parking"])
+    return result
+
+
+def parse_accuweather(soup: BeautifulSoup, html: str, source_url: str) -> dict[str, Any] | None:
+    text = clean(soup.get_text(" "))
+    # Prefer semantic current-condition selectors where present.
+    current = soup.select_one(".current-weather-card, .cur-con-weather-card")
+    scope = clean(current.get_text(" ")) if current else text
+    temp = None
+    for selector in (".temperature", ".temp", "[class*='temperature']"):
+        node = current.select_one(selector) if current else soup.select_one(selector)
+        if node:
+            temp = parse_number(node.get_text(" "))
+            if temp is not None: break
+    if temp is None:
+        match = re.search(r"Current Weather.*?(-?\d+)°\s*C?", scope, re.I)
+        if not match:
+            match = re.search(r"currently\s+.+?temperature of\s+(-?\d+)°", text, re.I)
+        temp = parse_number(match.group(1)) if match else None
+
+    condition = None
+    node = current.select_one(".phrase") if current else soup.select_one(".phrase")
+    if node: condition = clean(node.get_text(" "))
+    if not condition:
+        match = re.search(r"Current Weather.*?°\s*C?\s+RealFeel.*?°\s+([^\d]+?)\s+More Details", scope, re.I)
+        if match: condition = clean(match.group(1))
+        else:
+            match = re.search(r"is currently ([A-Za-z ,&-]+?) with a temperature", text, re.I)
+            if match: condition = clean(match.group(1))
+
+    feels = None
+    match = re.search(r"RealFeel(?:®)?\s*(-?\d+)°", scope, re.I)
+    if match: feels = parse_number(match.group(1))
+    wind = None
+    match = re.search(r"Wind\s+([A-Z]{1,3}\s+\d+\s*km/h)", scope, re.I)
+    if match: wind = clean(match.group(1))
+    observed = None
+    match = re.search(r"Current Weather\s+(\d{1,2}:\d{2}\s*[AP]M)", scope, re.I)
+    if match: observed = match.group(1)
+    if temp is None and not condition:
+        return None
+    return {
+        "temperature_c": temp, "condition": condition, "feels_like_c": feels,
+        "wind": wind, "observed": observed, "source": "AccuWeather", "source_url": source_url,
     }
 
 
-def scrape_snownz(name: str, lift_headers: list[str], trail_headers: list[str]) -> dict[str, Any]:
-    output = blank_resort()
-    _, text = soup_and_text(URLS[name])
-    headers = ["Road :", "All Lifts :", "Chair Lifts :", "Facilities :", "Car Parks :",
-               "Trails :", "Zones :", "Parks :", "Snow report", "Webcams"]
-
-    if re.search(r"OPEN\s*\n+\s*Mountain status", text, re.I):
-        output["status"] = "Open"
-    elif re.search(r"CLOSED\s*\n+\s*Mountain status", text, re.I):
-        output["status"] = "Closed"
-    lifts = re.search(r"(\d+)\s*/\s*(\d+)\s*\n+\s*Lifts open", text, re.I)
-    if lifts:
-        output["lifts_open"], output["lifts_total"] = map(int, lifts.groups())
-    output["base_upper"] = integer_before_label(text, "Snow base (upper)")
-    output["base_lower"] = integer_before_label(text, "Snow base (lower)")
-    output["new_snow_7d"] = integer_before_label(text, "Last 7 Days")
-    output["lifts"] = parse_facilities(text, lift_headers, headers)
-
-    trails: list[dict[str, Any]] = []
-    for heading in trail_headers:
-        trails.extend(parse_facilities(text, [heading], headers))
-    trails = dedupe_items(trails)
-    if name == "coronetpeak":
-        for trail in trails:
-            trail["difficulty"] = CORONET_DIFFICULTY.get(trail["name"].lower(), "unclassified")
-    output["trails"] = trails
-    output["carparks"] = parse_carparks(text, headers)
-    output["webcam"] = parse_webcam_preview(WEBCAM_PAGES[name])
-    output["weather"] = parse_accuweather(ACCUWEATHER_URLS[name])
-    return output
+def parse_snownz_weather(soup: BeautifulSoup, source_url: str) -> dict[str, Any] | None:
+    text = soup.get_text("\n", strip=True)
+    match = re.search(r"(-?\d+(?:\.\d+)?)°\s*([^\n]+)\s*\n\s*Weather", text, re.I)
+    if not match:
+        match = re.search(r"Weather:\s*\n\s*(-?\d+(?:\.\d+)?)°\s*([^\n]+)", text, re.I)
+    if not match: return None
+    return {"temperature_c": round(float(match.group(1))), "condition": clean(match.group(2)), "feels_like_c": None, "wind": None, "source": "SnowNZ fallback", "source_url": source_url}
 
 
-def scrape_forecast(url: str) -> dict[str, Any] | None:
-    try:
-        soup = BeautifulSoup(fetch(url).text, "html.parser")
-    except Exception as exc:
-        print(f"  ! forecast failed: {exc}", file=sys.stderr)
-        return None
-    text = soup.get_text(" ", strip=True)
-    issued_match = re.search(r"Issued:\s*([^|]{5,50}?\d{4})", text, re.I)
-    issued = clean_name(issued_match.group(1)) if issued_match else None
+def find_webcam_image(soup: BeautifulSoup, base_url: str) -> str | None:
+    for img in soup.find_all("img"):
+        attrs = " ".join([clean(img.get("alt")), clean(img.get("class") and " ".join(img.get("class"))), clean(img.get("src"))]).lower()
+        if "webcam" not in attrs and "camera" not in attrs:
+            continue
+        src = img.get("src") or img.get("data-src") or img.get("data-lazy-src")
+        if src and not any(x in src.lower() for x in ("logo", "icon", "hero")):
+            return urljoin(base_url, src)
+    return None
 
+
+SNOWFORECAST_URLS = {
+    "remarkables": "https://www.snow-forecast.com/resorts/Remarkables/6day/mid",
+    "coronetpeak": "https://www.snow-forecast.com/resorts/Coronet-Peak/6day/mid",
+    "cardrona": "https://www.snow-forecast.com/resorts/Cardrona/6day/mid",
+    "treblecone": "https://www.snow-forecast.com/resorts/Treble-Cone/6day/mid",
+}
+
+def scrape_snow_forecast(url: str) -> dict[str, Any] | None:
+    soup, _ = fetch(url)
+    issued = None
+    match = re.search(r"Issued:\s*([^\n]+)", soup.get_text("\n", strip=True), re.I)
+    if match:
+        issued = clean(match.group(1))
     day_spans: list[tuple[str, int]] = []
     for row in soup.find_all("tr"):
         candidate = []
         for cell in row.find_all(["td", "th"]):
-            match = re.match(r"([A-Za-z]+)\s+(\d{1,2})$", cell.get_text(" ", strip=True))
-            if match:
-                candidate.append((f"{match.group(1)[:3]} {match.group(2)}", int(cell.get("colspan", 1))))
+            label = clean(cell.get_text(" "))
+            dm = re.match(r"([A-Za-z]+)\s+(\d{1,2})$", label)
+            if dm:
+                candidate.append((f"{dm.group(1)[:3]} {dm.group(2)}", int(cell.get("colspan", 1))))
         if len(candidate) >= 4:
-            day_spans = candidate[:6]
+            day_spans = candidate
             break
     if not day_spans:
         return None
-
-    def value_row(label: str) -> list[int | None]:
+    def value_row(unit: str) -> list[int | None] | None:
         for row in soup.find_all("tr"):
             cells = row.find_all(["td", "th"])
-            if cells and cells[0].get_text(" ", strip=True).lower() == label:
-                values = []
+            if cells and clean(cells[0].get_text(" ")).lower() == unit:
+                values=[]
                 for cell in cells[1:]:
-                    match = re.search(r"\d+", cell.get_text(" ", strip=True))
-                    values.append(int(match.group()) if match else None)
+                    raw=clean(cell.get_text(" ")).replace("—", "").replace("-", "")
+                    values.append(int(raw) if raw.isdigit() else None)
                 return values
-        return []
-
-    cms, mms = value_row("cm"), value_row("mm")
+        return None
+    cms=value_row("cm")
     if not cms:
         return None
-    days, index = [], 0
-    for label, span in day_spans:
-        snow = [x for x in cms[index:index + span] if x is not None]
-        rain = [x for x in mms[index:index + span] if x is not None]
-        index += span
-        cm, mm = sum(snow), sum(rain)
+    mms=value_row("mm") or [None]*len(cms)
+    days=[]; index=0
+    for label, span in day_spans[:6]:
+        cm_slice=cms[index:index+span]; mm_slice=mms[index:index+span]; index += span
+        known_cm=[v for v in cm_slice if v is not None]
+        known_mm=[v for v in mm_slice if v is not None]
+        cm=sum(known_cm) if known_cm else 0
+        mm=sum(known_mm) if known_mm else 0
         days.append({"label": label, "cm": cm, "mm": mm, "rain": mm > 0 and cm == 0})
     return {"issued": issued, "days": days}
 
+def forecast_stub(previous: dict[str, Any] | None) -> dict[str, Any] | None:
+    # Forecast scraping is independent and can remain from the previous valid run.
+    return deepcopy(previous.get("forecast")) if previous else None
 
-def load_previous(path: str = "data.json") -> dict[str, Any]:
+
+def load_previous() -> dict[str, Any]:
     try:
-        with open(path, encoding="utf-8") as handle:
-            value = json.load(handle)
-            return value if isinstance(value, dict) else {}
-    except (OSError, json.JSONDecodeError):
-        return {}
+        return json.loads(DATA_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        return {"resorts": {}}
 
 
-def merge_previous(name: str, current: dict[str, Any], previous: dict[str, Any]) -> dict[str, Any]:
-    old = (previous.get("resorts") or {}).get(name) or {}
-    # Preserve individual failed fields, but never manufacture zero.
-    for field in ("status", "lifts_open", "lifts_total", "base_lower", "base_upper", "new_snow_7d",
-                  "terrain", "lifts", "trails", "carparks", "weather", "webcam", "forecast"):
-        empty = current.get(field) is None or current.get(field) == [] or current.get(field) == {}
-        if empty and old.get(field) not in (None, [], {}):
-            current[field] = old[field]
-            current.setdefault("stale_fields", []).append(field)
-    current["stale"] = not any(current.get(field) not in (None, [], {}) for field in ("status", "base_upper", "lifts"))
+def merge_fallback(current: dict[str, Any], previous: dict[str, Any] | None) -> dict[str, Any]:
+    if not previous:
+        return current
+    for key in ("status", "lifts_open", "lifts_total", "base_lower", "base_upper", "new_snow_7d", "weather"):
+        if current.get(key) is None:
+            current[key] = deepcopy(previous.get(key))
+    for key in ("terrain", "lifts", "trails", "carparks"):
+        if not current.get(key):
+            current[key] = deepcopy(previous.get(key, current.get(key)))
+    if not current.get("forecast"):
+        current["forecast"] = deepcopy(previous.get("forecast"))
     return current
 
 
-def write_json(path: str, data: dict[str, Any]) -> None:
-    temp = path + ".tmp"
-    with open(temp, "w", encoding="utf-8") as handle:
-        json.dump(data, handle, indent=2, ensure_ascii=False)
-        handle.write("\n")
-    os.replace(temp, path)
-
-
-def main() -> None:
-    previous = load_previous()
-    scrapers = {
-        "remarkables": scrape_remarkables,
-        "coronetpeak": lambda: scrape_snownz("coronetpeak", ["All Lifts :"], ["Trails :", "Zones :", "Parks :"]),
-        "cardrona": lambda: scrape_snownz("cardrona", ["Chair Lifts :"], ["Trails :", "Parks :"]),
-        "treblecone": lambda: scrape_snownz("treblecone", ["Chair Lifts :"], ["Trails :"]),
+def scrape_resort(name: str, previous: dict[str, Any] | None) -> dict[str, Any]:
+    soup, html = fetch(URLS[name])
+    data = parse_remarkables(soup) if name == "remarkables" else parse_snownz(name, soup)
+    try:
+        weather_soup, weather_html = fetch(WEATHER_URLS[name])
+        data["weather"] = parse_accuweather(weather_soup, weather_html, WEATHER_URLS[name])
+    except Exception as exc:
+        print(f"Weather fetch failed for {name}: {exc}", file=sys.stderr)
+        data["weather"] = None
+    if not data.get("weather") and name != "remarkables":
+        data["weather"] = parse_snownz_weather(soup, URLS[name])
+    data["webcam"] = {
+        "page_url": WEBCAM_PAGES[name], "image_url": find_webcam_image(soup, URLS[name]), "embeddable": False,
     }
-    resorts: dict[str, Any] = {}
-    for name, scraper in scrapers.items():
-        print(f"Scraping {name}...")
-        try:
-            resort = scraper()
-        except Exception as exc:
-            print(f"  ! {name} operational scrape failed: {exc}", file=sys.stderr)
-            resort = blank_resort()
-            resort["scrape_error"] = str(exc)
-        resort["forecast"] = scrape_forecast(FORECAST_URLS[name])
-        resorts[name] = merge_previous(name, resort, previous)
+    try:
+        data["forecast"] = scrape_snow_forecast(SNOWFORECAST_URLS[name])
+    except Exception as exc:
+        print(f"Forecast fetch failed for {name}: {exc}", file=sys.stderr)
+        data["forecast"] = forecast_stub(previous)
+    data["stale"] = False
+    return merge_fallback(data, previous)
 
-    usable = sum(bool(r.get("status") or r.get("base_upper") is not None or r.get("lifts")) for r in resorts.values())
-    if usable == 0:
-        raise RuntimeError("No usable resort data was produced; existing data.json retained.")
+
+def validate_resort(data: dict[str, Any]) -> bool:
+    return bool(data.get("status") or data.get("lifts") or data.get("base_upper") is not None)
+
+
+def main() -> int:
+    previous_doc = load_previous()
+    previous_resorts = previous_doc.get("resorts", {})
+    resorts: dict[str, Any] = {}
+    stale: list[str] = []
+    for name in URLS:
+        try:
+            resort = scrape_resort(name, previous_resorts.get(name))
+            if not validate_resort(resort):
+                raise ValueError("no usable operational fields parsed")
+        except Exception as exc:
+            print(f"Scrape failed for {name}: {exc}", file=sys.stderr)
+            resort = deepcopy(previous_resorts.get(name, {}))
+            resort["stale"] = True
+            stale.append(name)
+        resorts[name] = resort
 
     now = datetime.now(timezone.utc)
-    data = {
+    next_hour = now.replace(minute=17, second=0, microsecond=0)
+    if next_hour <= now:
+        next_hour += timedelta(hours=1)
+    usable = sum(validate_resort(r) for r in resorts.values())
+    output = {
         "updated": now.isoformat(),
-        "next_scheduled_update": now.replace(minute=17, second=0, microsecond=0).isoformat(),
+        "next_scheduled_update": next_hour.isoformat(),
         "schedule_minutes": 60,
-        "health": {
-            "usable_resorts": usable,
-            "total_resorts": len(resorts),
-            "stale_resorts": [name for name, resort in resorts.items() if resort.get("stale")],
-        },
+        "health": {"usable_resorts": usable, "total_resorts": 4, "stale_resorts": stale},
         "resorts": resorts,
     }
-    write_json("data.json", data)
-    print(json.dumps(data, indent=2))
+    if usable == 0:
+        raise RuntimeError("No usable resort data; refusing to overwrite data.json")
+    DATA_FILE.write_text(json.dumps(output, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(json.dumps(output["health"], indent=2))
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
