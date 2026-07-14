@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T04:51:34.884977+00:00",
+  "updated": "2026-07-14T05:00:56.984168+00:00",
   "news": {
     "title": "New Zealand Weekend Forecast, Friday July 10th – Last Dregs of the Storm Clear for a Magical Matariki Weekend",
     "summary": "With a tonne of fresh powder and fine, sunny weather settling over the country, it’ll be one you won’t want to miss out",
@@ -555,15 +555,7 @@
           "status": "Closed"
         }
       ],
-      "weather": {
-        "temperature_c": 32,
-        "condition": "Cloudy",
-        "feels_like_c": 14,
-        "wind": null,
-        "observed": "3:18 PM",
-        "source": "AccuWeather",
-        "source_url": "https://www.accuweather.com/en/nz/cardrona-alpine-resort/64922_poi/current-weather/64922_poi"
-      },
+      "weather": null,
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
