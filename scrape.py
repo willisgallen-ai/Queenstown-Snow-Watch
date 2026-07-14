@@ -793,13 +793,21 @@ def scrape_resort(name: str, previous: dict[str, Any] | None) -> dict[str, Any]:
         # MetService's DOM scan (previous version) used an unanchored 'first
         # Open or Closed word anywhere on the page' regex for overall status,
         # which is very likely what caused resorts to show Open when fully
-        # closed — that single word can land on completely unrelated page
-        # text. Replaced with OnTheSnow.com (server-rendered mirror of the
-        # same OpenSnow data the official site's own JS-only widget uses) as
-        # the primary status/lift-count/summary source, with hardcoded,
-        # screenshot-verified lift/terrain/park names and status derived from
-        # the aggregate open-count rather than scraped per-item.
-        source_name = "OnTheSnow / OpenSnow"
+        # closed. Replaced with two sources, correctly prioritised this time:
+        # SnowNZ's individual Cardrona/Treble Cone page (the SAME mechanism
+        # already proven reliable for Coronet Peak — an explicit 'OPEN/CLOSED
+        # \n Mountain status' label, not a guess, and its lifts_open/total has
+        # matched the hardcoded name-list counts below exactly in every
+        # confirmed-good run) is now the PRIMARY source for status and lift
+        # count. OnTheSnow.com only fills in if SnowNZ's fetch fails
+        # entirely, and is still used for the summary text either way — but
+        # it must never be allowed to override an already-successful SnowNZ
+        # reading, which is what the previous version did by accident (and
+        # is the direct cause of resorts still showing the wrong open/closed
+        # state after the last fix: OnTheSnow returned the same "Jul 13"
+        # content on a second fetch just now, a day stale, and was
+        # unconditionally overwriting a correct SnowNZ status with it).
+        source_name = "SnowNZ mountain report"
         data = {"status": None, "lifts_open": None, "lifts_total": None,
                 "base_lower": None, "base_upper": None, "new_snow_7d": None,
                 "terrain": {}, "lifts": [], "trails": [], "park": [], "carparks": []}
@@ -807,24 +815,24 @@ def scrape_resort(name: str, previous: dict[str, Any] | None) -> dict[str, Any]:
             fallback_soup, _ = fetch(FALLBACK_URLS[name])
             data["carparks"] = parse_carparks_strict(fallback_soup)
             summary = parse_summary_snownz(fallback_soup)
-            for key in ("status", "base_lower", "base_upper", "new_snow_7d"):
+            for key in ("status", "lifts_open", "lifts_total", "base_lower", "base_upper", "new_snow_7d"):
                 if data.get(key) is None: data[key] = summary.get(key)
         except Exception as exc:
             print(f"SnowNZ fallback failed for {name}: {exc}", file=sys.stderr)
 
         onthesnow = scrape_onthesnow(name)
         known_total = len(KNOWN_LIFTS[name])
-        lifts_open = None
-        if onthesnow and onthesnow.get("lifts_open") is not None:
-            lifts_open = min(onthesnow["lifts_open"], known_total)
-            data["status"] = "Closed" if lifts_open == 0 else "Open"
-        data["lifts_open"] = lifts_open
-        data["lifts_total"] = known_total
+        if data.get("status") is None and onthesnow and onthesnow.get("lifts_open") is not None:
+            # SnowNZ gave us nothing this run — OnTheSnow as last resort.
+            source_name = "OnTheSnow / OpenSnow (SnowNZ unavailable this run)"
+            data["lifts_open"] = min(onthesnow["lifts_open"], known_total)
+            data["lifts_total"] = known_total
+            data["status"] = "Closed" if data["lifts_open"] == 0 else "Open"
+        lifts_open = data.get("lifts_open")
         # Only populate the hardcoded name lists when there's an actual status
-        # signal (from OnTheSnow or the SnowNZ fallback) — otherwise leave them
-        # empty so validate_resort() correctly detects a total scrape failure
-        # rather than this always appearing 'valid' just because the hardcoded
-        # names are always there.
+        # signal — otherwise leave them empty so validate_resort() correctly
+        # detects a total scrape failure rather than this always appearing
+        # 'valid' just because the hardcoded names are always there.
         if data.get("status") is not None:
             data["lifts"] = apply_uniform_status(KNOWN_LIFTS[name], lifts_open, known_total)
             data["trails"] = [
