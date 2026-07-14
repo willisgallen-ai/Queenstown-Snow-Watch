@@ -187,7 +187,7 @@
 
   .live-cluster{display:flex;gap:9px;align-items:center;text-align:right}.live-dot{width:9px;height:9px;border-radius:50%;background:var(--muted-2)}.live-dot.fresh{background:var(--good);box-shadow:0 0 0 4px rgba(111,207,151,.12)}.live-dot.stale{background:var(--storm);box-shadow:0 0 0 4px rgba(232,162,60,.12)}.next-tag{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--muted-2);margin-top:2px}.live-panels{display:grid;grid-template-columns:1fr 1fr;gap:8px}.mini-panel{background:var(--bg-alt);border:1px solid var(--line);border-radius:10px;padding:10px}.weather-now{font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.55}.weather-temp{font-family:'Big Shoulders Display',sans-serif;font-size:24px;font-weight:800}.weather-detail,.muted-inline{color:var(--muted-2);font-size:9.5px}.carpark-list{display:flex;flex-direction:column;gap:5px}.carpark-pill{display:flex;justify-content:space-between;gap:8px;font-family:'JetBrains Mono',monospace;font-size:9.5px}.park-state{font-weight:600}.park-open{color:var(--good)}.park-limited{color:var(--storm)}.park-full{color:var(--bad)}.park-unknown{color:var(--muted-2)}.webcam-card{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background-size:cover;background-position:center;min-height:68px;cursor:pointer;position:relative;overflow:hidden}.webcam-card::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,17,25,.94),rgba(10,17,25,.48))}.webcam-card>*{position:relative}.webcam-title{font-size:11px;font-weight:600}.trail-groups{display:flex;flex-direction:column;gap:10px}.trail-group{border-left:3px solid var(--line);padding-left:9px}.trail-group-head{display:flex;align-items:center;gap:7px;margin-bottom:6px;font-family:'JetBrains Mono',monospace;font-size:9.5px;text-transform:uppercase}.difficulty-symbol{width:10px;height:10px;display:inline-block}.diff-green{border-radius:50%;background:#5fd07e}.diff-blue{border-radius:3px;background:#5fb0e8}.diff-red{border-radius:3px;background:#e88f5f;transform:rotate(45deg)}.diff-black{border-radius:3px;background:#171717;border:1px solid #777;transform:rotate(45deg)}.diff-double-black{position:relative;width:18px}.diff-double-black::before,.diff-double-black::after{content:'';position:absolute;width:9px;height:9px;border-radius:2px;background:#171717;border:1px solid #777;transform:rotate(45deg);top:0}.diff-double-black::after{left:7px}.diff-unclassified{border-radius:50%;border:1px solid var(--muted-2)}@media(max-width:560px){.live-panels{grid-template-columns:1fr}.live-cluster{text-align:left;width:100%}}
 
-.news-ticker{overflow:hidden;border-bottom:1px solid var(--line);margin-bottom:18px;padding:9px 0;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--ice);white-space:nowrap}.news-track{display:inline-block;min-width:100%;padding-left:100%;animation:ticker 28s linear infinite}.news-track a{color:inherit;text-decoration:none}.news-track:hover{animation-play-state:paused}@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-200%)}}.footer-live{justify-content:center;text-align:center;margin:28px auto 0}.trail-chip.t-wind{color:var(--storm);border-color:var(--storm-dim)}.trail-chip.t-wind .t-dot{background:var(--storm)}.trail-chip.t-ungroomed{color:var(--ice);border-color:var(--ice-dim)}.trail-chip.t-ungroomed .t-dot{background:var(--ice)}.webcam-card{cursor:default;min-height:150px;background-position:center;background-size:cover}.webcam-card::before{background:linear-gradient(180deg,rgba(10,17,25,.18),rgba(10,17,25,.72))}.webcam-card>div{align-self:flex-end}.webcam-source{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted)}
+.news-ticker{overflow:hidden;border-bottom:1px solid var(--line);margin-bottom:18px;padding:9px 0;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--ice);white-space:nowrap}.news-track{display:inline-block;min-width:100%;padding-left:100%;animation:ticker 28s linear infinite}.news-track a{color:inherit;text-decoration:none}.news-track:hover{animation-play-state:paused}@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-200%)}}.footer-live{justify-content:center;text-align:center;margin:28px auto 0}.trail-chip.t-wind{color:var(--storm);border-color:var(--storm-dim)}.trail-chip.t-wind .t-dot{background:var(--storm)}.trail-chip.t-ungroomed{color:var(--ice);border-color:var(--ice-dim)}.trail-chip.t-ungroomed .t-dot{background:var(--ice)}.trail-chip.t-unknown{color:var(--muted-2);opacity:.6}.trail-chip.t-unknown .t-dot{background:var(--muted-2)}.park-block{margin-top:2px}.webcam-card{cursor:default;min-height:150px;background-position:center;background-size:cover}.webcam-card::before{background:linear-gradient(180deg,rgba(10,17,25,.18),rgba(10,17,25,.72))}.webcam-card>div{align-self:flex-end}.webcam-source{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted)}
 
 /* v7 layout */
 body{padding-top:26px}
@@ -354,7 +354,11 @@ body{padding-top:26px}
 <div class="section-lbl">Named trails</div>
 <div class="trail-groups" id="cd-trails"><div class="no-data">Not currently reported.</div></div>
 </div>
-<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="cd-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="cd-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cd-webcam" style="display:none"><img alt="Latest resort webcam image" id="cd-webcam-img"/></div><div class="report-summary" id="cd-summary"></div><div class="card-note">Live source · Cardrona / MetService</div>
+<div class="park-block" style="display:none">
+<div class="section-lbl">Park features</div>
+<div class="trail-chips" id="cd-park"></div>
+</div>
+<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="cd-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="cd-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cd-webcam" style="display:none"><img alt="Latest resort webcam image" id="cd-webcam-img"/></div><div class="report-summary" id="cd-summary"></div><div class="card-note">Live source · Cardrona / OnTheSnow · terrain &amp; lift names from resort site (14 Jul)</div>
 </div>
 <div class="card" id="card-treblecone">
 <div class="card-top">
@@ -377,7 +381,11 @@ body{padding-top:26px}
 <div class="section-lbl">Named trails</div>
 <div class="trail-groups" id="tc-trails"><div class="no-data">Not currently reported.</div></div>
 </div>
-<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="tc-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="tc-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="tc-webcam" style="display:none"><img alt="Latest resort webcam image" id="tc-webcam-img"/></div><div class="report-summary" id="tc-summary"></div><div class="card-note">Live source · Treble Cone / MetService</div>
+<div class="park-block" style="display:none">
+<div class="section-lbl">Park features</div>
+<div class="trail-chips" id="tc-park"></div>
+</div>
+<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="tc-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="tc-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="tc-webcam" style="display:none"><img alt="Latest resort webcam image" id="tc-webcam-img"/></div><div class="report-summary" id="tc-summary"></div><div class="card-note">Live source · Treble Cone / OnTheSnow · terrain &amp; lift names from resort site (14 Jul)</div>
 </div>
 </div>
 <section class="snowfall">
@@ -529,6 +537,7 @@ body{padding-top:26px}
   function escapeHtml(value){ return String(value ?? '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c])); }
   function trailStatusClass(status){
     const value=(status||'').toLowerCase();
+    if(value==='unknown'||!value) return 't-unknown';
     if(value.includes('wind')) return 't-wind';
     if(value.includes('ungroomed')||value.includes('variable')) return 't-ungroomed';
     if(value.includes('open')||value.includes('available')) return 't-open';
@@ -537,9 +546,23 @@ body{padding-top:26px}
   function renderTrails(prefix, trails){
     const el=document.getElementById(prefix+'-trails'); if(!el) return;
     if(!Array.isArray(trails)||!trails.length){el.innerHTML='<div class="no-data">No named terrain is currently reported.</div>';return;}
+    // difficulty == null (not the string 'unclassified') means this resort doesn't
+    // categorise by difficulty at all — render as one flat list, not grouped.
+    const isFlat = trails.every(t => t.difficulty == null);
+    if(isFlat){
+      el.innerHTML = `<div class="trail-chips">${trails.map(t=>`<div class="trail-chip ${trailStatusClass(t.status)}"><span class="t-dot"></span>${escapeHtml(t.name)}</div>`).join('')}</div>`;
+      return;
+    }
     const groups={};
     trails.forEach(t=>{const difficulty=t.difficulty||'unclassified';(groups[difficulty]??=[]).push(t);});
     el.innerHTML=difficultyOrder.filter(d=>groups[d]?.length).map(d=>`<div class="trail-group"><div class="trail-group-head"><span class="difficulty-symbol diff-${d}"></span>${difficultyLabels[d]}</div><div class="trail-chips">${groups[d].map(t=>`<div class="trail-chip ${trailStatusClass(t.status)}"><span class="t-dot"></span>${escapeHtml(t.name)}</div>`).join('')}</div></div>`).join('');
+  }
+  function renderPark(prefix, park){
+    const el=document.getElementById(prefix+'-park'); if(!el) return;
+    const wrap=el.closest('.park-block');
+    if(!Array.isArray(park)||!park.length){ if(wrap) wrap.style.display='none'; return; }
+    if(wrap) wrap.style.display='';
+    el.innerHTML = park.map(t=>`<div class="trail-chip ${trailStatusClass(t.status)}"><span class="t-dot"></span>${escapeHtml(t.name)}</div>`).join('');
   }
   const terrainLabels = {novice:'Novice',intermediate:'Intermediate',advanced:'Advanced',expert:'Expert',extreme:'Extreme'};
   const terrainFill = {novice:'fill-beg',intermediate:'fill-int',advanced:'fill-adv',expert:'fill-exp',extreme:'fill-exp'};
@@ -600,16 +623,18 @@ body{padding-top:26px}
     if(statusEl&&r.status){statusEl.textContent=r.lifts_total?`${r.status} · ${r.lifts_open}/${r.lifts_total} lifts`:r.status;statusEl.className='status-tag '+(r.status.toLowerCase()==='open'?'status-open':'status-storm');}
     if(r.base_upper!=null){const baseEl=document.getElementById(prefix+'-base');if(baseEl)baseEl.textContent=r.base_lower!=null?`${r.base_lower}–${r.base_upper}cm`:`${r.base_upper}cm`;}
     const seven=document.getElementById(prefix+'-7d');if(seven)seven.textContent=r.new_snow_7d!=null?`${r.new_snow_7d}cm`:'—';
-    renderLifts(prefix,r.lifts);renderTrails(prefix,r.trails);renderTerrain(prefix,r.terrain);renderSummary(prefix,r.summary);renderWeather(prefix,r.weather);renderCarparks(prefix,r.carparks);renderWebcam(prefix,r.webcam);
+    renderLifts(prefix,r.lifts);renderTrails(prefix,r.trails);renderTerrain(prefix,r.terrain);renderPark(prefix,r.park);renderSummary(prefix,r.summary);renderWeather(prefix,r.weather);renderCarparks(prefix,r.carparks);renderWebcam(prefix,r.webcam);
   }
 
-  let latestUpdated=null;
+  let latestUpdated=null, scheduleMinutes=5, nextScheduled=null;
   function updateClock(){
     const nextEl=document.getElementById('next-update'),dot=document.getElementById('live-dot');if(!nextEl||!dot)return;
     const now=Date.now(),updated=latestUpdated?new Date(latestUpdated).getTime():null,age=updated?now-updated:null;
-    dot.className='live-dot '+(age!=null&&age<90*60*1000?'fresh':'stale');
-    const next=updated?updated+60*60*1000:now+60*60*1000,minutes=Math.max(0,Math.ceil((next-now)/60000));
-    nextEl.textContent=minutes===0?'Hourly update due now':`Next hourly update in about ${minutes} min`;
+    const freshWindow=Math.max(scheduleMinutes*3,10)*60*1000;
+    dot.className='live-dot '+(age!=null&&age<freshWindow?'fresh':'stale');
+    const next=nextScheduled?new Date(nextScheduled).getTime():(updated?updated+scheduleMinutes*60*1000:now+scheduleMinutes*60*1000);
+    const minutes=Math.max(0,Math.ceil((next-now)/60000));
+    nextEl.textContent=minutes===0?'Update due now':`Next update in about ${minutes} min · checking every ${scheduleMinutes} min`;
   }
   async function loadLiveData(){
     try{
@@ -617,6 +642,8 @@ body{padding-top:26px}
       const data=await res.json();if(!data||!data.resorts)return;renderNews(data.news);
       bindResort('rm',data.resorts.remarkables);bindResort('cp',data.resorts.coronetpeak);bindResort('cd',data.resorts.cardrona);bindResort('tc',data.resorts.treblecone);
       renderSnowfallRow('remarkables',data.resorts.remarkables?.forecast);renderSnowfallRow('coronetpeak',data.resorts.coronetpeak?.forecast);renderSnowfallRow('cardrona',data.resorts.cardrona?.forecast);renderSnowfallRow('treblecone',data.resorts.treblecone?.forecast);
+      if(data.schedule_minutes) scheduleMinutes=data.schedule_minutes;
+      if(data.next_scheduled_update) nextScheduled=data.next_scheduled_update;
       if(data.updated){latestUpdated=data.updated;const updated=new Date(data.updated),stamp=document.getElementById('live-stamp');if(stamp)stamp.textContent='Last updated '+updated.toLocaleString('en-NZ',{timeZone:'Pacific/Auckland',dateStyle:'medium',timeStyle:'short'});}
       updateClock();
     }catch(error){console.warn('Live data unavailable; showing embedded snapshot.',error);const stamp=document.getElementById('live-stamp');if(stamp)stamp.textContent='Live data unavailable · showing snapshot';document.getElementById('live-dot').className='live-dot stale';}
