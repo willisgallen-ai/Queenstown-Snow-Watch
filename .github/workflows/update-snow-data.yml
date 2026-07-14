@@ -2,32 +2,60 @@ name: Update snow data
 
 on:
   schedule:
-    - cron: '0 */3 * * *'
-  workflow_dispatch: {}
+    - cron: "17 * * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: snow-data-update
+  cancel-in-progress: false
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
+          cache: pip
 
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run scraper
-        run: python scrape.py
+      - name: Run scraper with retries
+        run: |
+          for attempt in 1 2 3; do
+            python scrape.py && break
+            if [ "$attempt" -eq 3 ]; then exit 1; fi
+            sleep 30
+          done
 
-      - name: Commit updated data.json
+      - name: Validate generated JSON
+        run: |
+          python - <<'PY'
+          import json
+          with open("data.json", encoding="utf-8") as f:
+              data = json.load(f)
+          assert data.get("updated")
+          resorts = data.get("resorts", {})
+          assert len(resorts) == 4
+          assert data.get("health", {}).get("usable_resorts", 0) > 0
+          print(json.dumps(data.get("health", {}), indent=2))
+          PY
+
+      - name: Commit updated data
         run: |
           git config user.name "snow-watch-bot"
           git config user.email "snow-watch-bot@users.noreply.github.com"
           git add data.json
-          git diff --staged --quiet || git commit -m "Update snow data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git diff --staged --quiet && exit 0
+          git commit -m "Update snow data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git pull --rebase origin main
           git push
