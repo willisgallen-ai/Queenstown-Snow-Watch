@@ -101,6 +101,23 @@ PARK_FEATURES = {
     "treblecone": [],
 }
 
+# Fallback car park names — only used if a real scrape of the resort's own
+# "Car Parks" section comes back empty. From a screenshot of Remarkables'
+# report (14 Jul 2026); Coronet Peak/Cardrona/Treble Cone already have real
+# scraped car park data most of the time, so this is Remarkables-only for now.
+FALLBACK_CARPARKS = {
+    "remarkables": ["Car Park 1", "Car Park 2", "Car Park 4"],
+}
+
+# Standing requirements that are a fixed property of a specific car park
+# (not a live status) — e.g. Remarkables' Car Park 1/2 require carpooling
+# regardless of how full they are. Shown as a persistent note alongside
+# whatever the live open/closed/spaces status is. Keyed by resort, then by a
+# lowercase substring match against the car park name.
+CARPARK_NOTES = {
+    "remarkables": {"car park 1": "3+ per car", "car park 2": "3+ per car"},
+}
+
 RESORT_COORDS = {
     "remarkables": (-45.0556, 168.8140),
     "coronetpeak": (-44.9277, 168.7366),
@@ -168,6 +185,35 @@ def resolve_scheduled_times(text: str, now: datetime | None = None) -> str:
     return _SCHEDULED_TIME_RE.sub(replace, text)
 
 
+def extract_scheduled_times(text: str) -> dict[str, str]:
+    """Captures 'LiftName ... Open From 9:30am' style pairs into a
+    {lift_name_lower: '9:30am'} map, so a lift can still show its scheduled
+    opening time even after its live status has been resolved to a plain
+    Open/Closed elsewhere. Best-effort name matching — call this on the
+    ORIGINAL text, before resolve_scheduled_times has replaced those phrases."""
+    out: dict[str, str] = {}
+    for m in re.finditer(
+        r"([A-Z][A-Za-z0-9'’\- ]{2,40}?)\s+(?:Open\s+From|Opens?)\s+(\d{1,2}(?::\d{2})?\s*[ap]m)",
+        text, re.I,
+    ):
+        name = clean(m.group(1))
+        out[name.lower()] = m.group(2).lower().replace(" ", "")
+    return out
+
+
+def apply_scheduled_times(lifts: list[dict[str, str]], schedule: dict[str, str]) -> None:
+    """Enriches lift entries in place with a 'scheduled' field (e.g. '9:30am')
+    when a matching name was found by extract_scheduled_times. Matches by
+    substring either direction, since scraped names and schedule-text names
+    don't always line up character-for-character."""
+    for lift in lifts:
+        lname = lift.get("name", "").lower()
+        for sched_name, time_str in schedule.items():
+            if sched_name in lname or lname in sched_name:
+                lift["scheduled"] = time_str
+                break
+
+
 def apply_hours_backstop(name: str, resort: dict[str, Any]) -> dict[str, Any]:
     """Final sanity check applied after scraping: if it's currently outside
     this resort's typical operating hours, force status/lifts/trails/park to
@@ -182,7 +228,7 @@ def apply_hours_backstop(name: str, resort: dict[str, Any]) -> dict[str, Any]:
     resort = deepcopy(resort)
     resort["status"] = "Closed"
     resort["lifts_open"] = 0
-    for key in ("lifts", "trails", "park"):
+    for key in ("lifts", "trails", "park", "carparks"):
         if resort.get(key):
             resort[key] = [{**item, "status": "Closed"} for item in resort[key]]
     resort["hours_closed"] = True
@@ -236,6 +282,42 @@ EXCLUDE_TERMS = (
     "retail", "shop", "store", "atm", "eftpos", "toilet", "bathroom",
     "locker", "day lodge", "lodge access", "accommodation", "booking",
 )
+
+
+def extract_remarkables_daily_report(soup: BeautifulSoup) -> str | None:
+    """Remarkables' report page carries a distinct daily write-up — a short
+    headline (e.g. 'A Winter Wonderland at the Remarks!') followed by several
+    short paragraphs, consistently closing with something like 'Check back
+    here after <time> for the latest snow report. See you soon!' (confirmed
+    from a real example). That closing line looks like a reliable daily
+    anchor — this works backward from it to find where the write-up starts.
+    Unverified against the live page's actual raw HTML structure (built from
+    the text example alone) — falls back to find_summary_text's more
+    generic approach if the anchor isn't present, and prints what it found
+    either way so a bad match is visible in the Action log rather than
+    silently wrong."""
+    text = soup.get_text("\n", strip=True)
+    end_match = re.search(r"Check back here.{0,120}?See you soon!?", text, re.I | re.S)
+    if not end_match:
+        print("  [debug] Remarkables daily-report anchor ('Check back here...') not found", file=sys.stderr)
+        return find_summary_text(soup)
+    lines_before = text[:end_match.start()].split("\n")
+    block_lines: list[str] = []
+    for line in reversed(lines_before[-40:]):
+        line = clean(line)
+        if not line:
+            if block_lines:
+                break
+            continue
+        if len(line) > 250 or re.match(r"^(Home|Menu|Snow Report|Weather|Lifts|Terrain|Summary)$", line, re.I):
+            break
+        block_lines.append(line)
+        if len(block_lines) > 15:
+            break
+    block_lines.reverse()
+    body = clean(" ".join(block_lines) + " " + end_match.group(0))
+    print(f"  [debug] Remarkables daily report extracted ({len(body)} chars): {body[:200]!r}...", file=sys.stderr)
+    return body if len(body) > 60 else find_summary_text(soup)
 
 
 def find_summary_text(soup: BeautifulSoup) -> str | None:
@@ -362,7 +444,7 @@ def parse_summary_snownz(soup: BeautifulSoup) -> dict[str, Any]:
     text = resolve_scheduled_times(soup.get_text("\n", strip=True))
     result: dict[str, Any] = {
         "status": None, "lifts_open": None, "lifts_total": None,
-        "base_lower": None, "base_upper": None, "new_snow_7d": None,
+        "base_lower": None, "base_upper": None, "new_snow_7d": None, "new_snow_24h": None, "season_cm": None,
         "terrain": {}, "lifts": [], "trails": [], "carparks": [],
     }
     match = re.search(r"\b(OPEN|CLOSED)\b\s*\n\s*Mountain status", text, re.I)
@@ -372,13 +454,17 @@ def parse_summary_snownz(soup: BeautifulSoup) -> dict[str, Any]:
     result["base_upper"] = text_value_near_label(soup, "Snow base (upper)")
     result["base_lower"] = text_value_near_label(soup, "Snow base (lower)")
     result["new_snow_7d"] = text_value_near_label(soup, "Last 7 Days")
+    result["new_snow_24h"] = text_value_near_label(soup, "Last 24 Hours") or text_value_near_label(soup, "Last 24 hrs")
+    result["season_cm"] = text_value_near_label(soup, "Season Total") or text_value_near_label(soup, "Season Snowfall")
     return result
 
 
 def parse_snownz(resort: str, soup: BeautifulSoup) -> dict[str, Any]:
     result = parse_summary_snownz(soup)
     result["lifts"] = parse_list_section(soup, ["All Lifts"])
+    apply_scheduled_times(result["lifts"], extract_scheduled_times(soup.get_text("\n", strip=True)))
     result["carparks"] = parse_list_section(soup, ["Car Parks"])
+    result["carparks"] = attach_carpark_notes(resort, result["carparks"])
     trails: list[dict[str, str]] = []
     for heading in (["Trails"], ["Zones"], ["Parks"]):
         trails.extend(parse_list_section(soup, heading))
@@ -398,10 +484,12 @@ def parse_snownz(resort: str, soup: BeautifulSoup) -> dict[str, Any]:
 
 
 def parse_remarkables(soup: BeautifulSoup) -> dict[str, Any]:
-    text = resolve_scheduled_times(soup.get_text("\n", strip=True))
+    raw_text = soup.get_text("\n", strip=True)
+    schedule = extract_scheduled_times(raw_text)
+    text = resolve_scheduled_times(raw_text)
     result: dict[str, Any] = {
         "status": None, "lifts_open": None, "lifts_total": None,
-        "base_lower": None, "base_upper": None, "new_snow_7d": None,
+        "base_lower": None, "base_upper": None, "new_snow_7d": None, "new_snow_24h": None, "season_cm": None,
         "terrain": {}, "lifts": [], "trails": [], "carparks": [],
     }
     match = re.search(r"Mountain Status\s*\n\s*(Open|Closed)", text, re.I)
@@ -410,12 +498,26 @@ def parse_remarkables(soup: BeautifulSoup) -> dict[str, Any]:
     if match: result["lifts_open"], result["lifts_total"] = map(int, match.groups())
     match = re.search(r"Snow Base\s*\n\s*(\d+)\s*[-–]\s*(\d+)\s*cm", text, re.I)
     if match: result["base_lower"], result["base_upper"] = map(int, match.groups())
+    match = re.search(r"Last 24 Hours\s*\n\s*(\d+)\s*cm", text, re.I)
+    if match: result["new_snow_24h"] = int(match.group(1))
+    match = re.search(r"Season Snowfall\s*\n\s*(\d+)\s*cm", text, re.I)
+    if match: result["season_cm"] = int(match.group(1))
     for key, label in [("novice", "Novice"), ("intermediate", "Intermediate"), ("advanced", "Advanced"), ("expert", "Expert"), ("extreme", "Extreme")]:
         match = re.search(rf"(\d{{1,3}})%\s*OPEN\s*\n\s*{label}\b", text, re.I)
         if match: result["terrain"][key] = int(match.group(1))
         elif re.search(rf"CLOSED\s*\n\s*{label}\b", text, re.I): result["terrain"][key] = 0
 
     result["lifts"] = parse_list_section(soup, ["Lifts"])
+    apply_scheduled_times(result["lifts"], schedule)
+    result["carparks"] = parse_carparks_strict(soup)
+    if not result["carparks"] and result.get("status"):
+        # Real scrape came back empty — fall back to known names with status
+        # derived from the resort's own status (these aren't independently
+        # live-tracked the way lifts are, so they simply follow whether the
+        # mountain itself is open).
+        fallback_status = "Open" if result["status"] == "Open" else "Closed"
+        result["carparks"] = [{"name": n, "status": fallback_status} for n in FALLBACK_CARPARKS.get("remarkables", [])]
+    result["carparks"] = attach_carpark_notes("remarkables", result["carparks"])
     terrain_items = parse_list_section(soup, ["Terrain"])
     # Keep only actual terrain/park/backcountry entries; facilities belong elsewhere.
     terrain_keywords = ("park", "trail", "backcountry", "touring", "slopestyle", "stash")
@@ -445,7 +547,7 @@ def parse_metservice_operational(soup: BeautifulSoup, resort: str) -> dict[str, 
     """Parse MetService ski-field operational cards, tables or embedded JSON."""
     result: dict[str, Any] = {
         "status": None, "lifts_open": None, "lifts_total": None,
-        "base_lower": None, "base_upper": None, "new_snow_7d": None,
+        "base_lower": None, "base_upper": None, "new_snow_7d": None, "new_snow_24h": None, "season_cm": None,
         "terrain": {}, "lifts": [], "trails": [], "carparks": [],
     }
     text = soup.get_text("\n", strip=True)
@@ -519,6 +621,20 @@ def parse_metservice_operational(soup: BeautifulSoup, resort: str) -> dict[str, 
     if resort == "cardrona":
         result["trails"] = [t for t in result["trails"] if t.get("difficulty") != "unclassified"]
     return result
+
+
+def attach_carpark_notes(name: str, carparks: list[dict[str, str]]) -> list[dict[str, str]]:
+    """Adds a persistent 'note' field (e.g. '3+ per car') to car parks with a
+    known standing requirement — a fixed property of that car park, not a
+    live status, so it's shown alongside whatever the live status is rather
+    than replacing it."""
+    notes = CARPARK_NOTES.get(name, {})
+    for cp in carparks:
+        for pattern, note in notes.items():
+            if pattern in cp.get("name", "").lower():
+                cp["note"] = note
+                break
+    return carparks
 
 
 def parse_carparks_strict(soup: BeautifulSoup) -> list[dict[str, str]]:
@@ -912,13 +1028,13 @@ def scrape_resort(name: str, previous: dict[str, Any] | None) -> dict[str, Any]:
         # unconditionally overwriting a correct SnowNZ status with it).
         source_name = "SnowNZ mountain report"
         data = {"status": None, "lifts_open": None, "lifts_total": None,
-                "base_lower": None, "base_upper": None, "new_snow_7d": None,
+                "base_lower": None, "base_upper": None, "new_snow_7d": None, "new_snow_24h": None, "season_cm": None,
                 "terrain": {}, "lifts": [], "trails": [], "park": [], "carparks": []}
         try:
             fallback_soup, _ = fetch(FALLBACK_URLS[name])
             data["carparks"] = parse_carparks_strict(fallback_soup)
             summary = parse_summary_snownz(fallback_soup)
-            for key in ("status", "lifts_open", "lifts_total", "base_lower", "base_upper", "new_snow_7d"):
+            for key in ("status", "lifts_open", "lifts_total", "base_lower", "base_upper", "new_snow_7d", "new_snow_24h", "season_cm"):
                 if data.get(key) is None: data[key] = summary.get(key)
         except Exception as exc:
             print(f"SnowNZ fallback failed for {name}: {exc}", file=sys.stderr)
@@ -964,7 +1080,7 @@ def scrape_resort(name: str, previous: dict[str, Any] | None) -> dict[str, Any]:
         data["summary"] = data.pop("onthesnow_summary")
     else:
         try:
-            data["summary"] = find_summary_text(soup)
+            data["summary"] = extract_remarkables_daily_report(soup) if name == "remarkables" else find_summary_text(soup)
         except Exception as exc:
             print(f"Summary text extraction failed for {name}: {exc}", file=sys.stderr)
             data["summary"] = None
