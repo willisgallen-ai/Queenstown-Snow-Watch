@@ -607,10 +607,14 @@ def parse_current_weather(soup: BeautifulSoup, source_url: str, source_name: str
     }
 
 def open_meteo_current_weather(name: str) -> dict[str, Any] | None:
-    """Return current mountain weather from Open-Meteo using the resort coordinates.
-    This is a FALLBACK — scrape_resort() prefers the resort's own on-site
-    reading (parse_current_weather) when the report page publishes one, since
-    that's the actual on-mountain station rather than a regional model."""
+    """Return current mountain weather from Open-Meteo using the resort
+    coordinates and real elevation. This is now the single weather source
+    for all four resorts (previously tried each resort's own on-site
+    reading first via parse_current_weather, which is no longer called —
+    left defined below in case it's useful again later, but every resort
+    now goes through this same path so results are directly comparable
+    rather than depending on which page's text structure happened to parse
+    that run)."""
     lat, lon = RESORT_COORDS[name]
     response = requests.get(
         "https://api.open-meteo.com/v1/forecast",
@@ -743,16 +747,35 @@ def load_previous() -> dict[str, Any]:
 
 
 def merge_fallback(current: dict[str, Any], previous: dict[str, Any] | None) -> dict[str, Any]:
+    """Status, lifts, and trails all describe the SAME moment and must stay
+    internally consistent with each other. The previous version of this
+    function patched each field independently from the last good run —
+    meaning if only the lift-list parse failed on a given run while status
+    succeeded, the result was today's fresh status stitched to an old lift
+    list from a previous run. That produces exactly the kind of
+    self-contradictory output that was reported: resorts showing Closed
+    overall while individual lifts still showed Open, and lift/trail chips
+    that didn't track live reality. Now: if the core operational fields
+    didn't all come through together on this run, the WHOLE previous
+    snapshot is used instead of cherry-picking field by field, so
+    status/lifts/trails always describe one consistent point in time.
+    Independent fields (forecast, webcam, carparks) still prefer whatever
+    this run actually got, since they come from separate sources/requests
+    and don't need to match the operational snapshot's timing."""
     if not previous:
         return current
-    for key in ("status", "lifts_open", "lifts_total", "base_lower", "base_upper", "new_snow_7d", "weather", "summary"):
-        if current.get(key) is None:
-            current[key] = deepcopy(previous.get(key))
-    for key in ("terrain", "lifts", "trails", "park", "carparks"):
-        if not current.get(key):
-            current[key] = deepcopy(previous.get(key, current.get(key)))
+    core_ok = all(current.get(k) not in (None, [], {}) for k in ("status", "lifts", "trails"))
+    if not core_ok:
+        restored = deepcopy(previous)
+        for key in ("weather", "forecast", "carparks", "park", "webcam"):
+            if current.get(key):
+                restored[key] = current[key]
+        restored["stale"] = True
+        return restored
     if not current.get("forecast"):
         current["forecast"] = deepcopy(previous.get("forecast"))
+    if not current.get("weather"):
+        current["weather"] = deepcopy(previous.get("weather"))
     return current
 
 
@@ -814,24 +837,17 @@ def scrape_resort(name: str, previous: dict[str, Any] | None) -> dict[str, Any]:
         if onthesnow and onthesnow.get("summary"):
             data["onthesnow_summary"] = onthesnow["summary"]
 
-    data["weather"] = None
-    for attempt_soup, attempt_source in ((soup, source_name), (fallback_soup, "SnowNZ mountain report")):
-        if attempt_soup is None:
-            continue
-        try:
-            weather = parse_current_weather(attempt_soup, URLS[name], attempt_source)
-        except Exception as exc:
-            print(f"On-site weather parse errored for {name} ({attempt_source}): {exc}", file=sys.stderr)
-            weather = None
-        if weather is not None:
-            data["weather"] = weather
-            break
-    if data["weather"] is None:
-        try:
-            data["weather"] = open_meteo_current_weather(name)
-        except Exception as exc:
-            print(f"Open-Meteo weather failed for {name}: {exc}", file=sys.stderr)
-            data["weather"] = None
+    # All four resorts now use the same weather source (Open-Meteo, with each
+    # resort's real elevation for an accurate reading) rather than trying an
+    # on-site reading per resort first — that meant each resort's weather
+    # depended on a different page's text structure succeeding or failing
+    # independently, which was part of why results looked inconsistent
+    # across resorts. One source, same method, every time.
+    try:
+        data["weather"] = open_meteo_current_weather(name)
+    except Exception as exc:
+        print(f"Open-Meteo weather failed for {name}: {exc}", file=sys.stderr)
+        data["weather"] = None
     data["trails"] = apply_trail_colours(data.get("trails", []))
     if data.get("onthesnow_summary"):
         data["summary"] = data.pop("onthesnow_summary")
