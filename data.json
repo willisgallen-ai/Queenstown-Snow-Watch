@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-14T03:08:52.526976+00:00",
-  "next_scheduled_update": "2026-07-14T03:17:00+00:00",
+  "updated": "2026-07-14T03:18:35.733858+00:00",
+  "next_scheduled_update": "2026-07-14T04:17:00+00:00",
   "schedule_minutes": 60,
   "health": {
     "usable_resorts": 4,
@@ -158,6 +158,14 @@
           "status": "Open"
         },
         {
+          "name": "Greengates Express",
+          "status": "Wind may affect chairlift ops"
+        },
+        {
+          "name": "Meadows Learner Express",
+          "status": "Open"
+        },
+        {
           "name": "Rocky Gully T-bar",
           "status": "Open"
         },
@@ -187,7 +195,7 @@
         {
           "name": "Beginner Area",
           "status": "Open",
-          "difficulty": "unclassified"
+          "difficulty": "green"
         },
         {
           "name": "Little Easy",
@@ -196,11 +204,11 @@
         },
         {
           "name": "Gentle Annie",
-          "status": "Closed",
+          "status": "Closed for Racing",
           "difficulty": "green"
         },
         {
-          "name": "for Racing N/A Fun Zone",
+          "name": "Fun Zone",
           "status": "Open",
           "difficulty": "unclassified"
         },
@@ -216,28 +224,38 @@
         },
         {
           "name": "Greengates",
-          "status": "Ungroomed Fun Bumps",
-          "difficulty": "unclassified"
+          "status": "Ungroomed fun bumps",
+          "difficulty": "red"
         },
         {
-          "name": "Wall Street Ungroomed N/A The Chimney",
+          "name": "Wall Street",
+          "status": "Ungroomed",
+          "difficulty": "red"
+        },
+        {
+          "name": "The Chimney",
           "status": "Closed",
-          "difficulty": "unclassified"
+          "difficulty": "black"
         },
         {
-          "name": "The Hurdle Ungroomed N/A Exchange Drop",
+          "name": "The Hurdle",
+          "status": "Ungroomed",
+          "difficulty": "red"
+        },
+        {
+          "name": "Exchange Drop",
           "status": "Variable",
-          "difficulty": "unclassified"
+          "difficulty": "black"
         },
         {
           "name": "KidsZone carpet",
-          "status": "Closed",
+          "status": "Closed for Racing",
           "difficulty": "unclassified"
         },
         {
-          "name": "for Racing N/A Dual Carpet slopes",
+          "name": "Dual Carpet slopes",
           "status": "Open",
-          "difficulty": "unclassified"
+          "difficulty": "green"
         },
         {
           "name": "Shirt Front",
@@ -245,9 +263,14 @@
           "difficulty": "blue"
         },
         {
-          "name": "Eighth Basin Ungroomed N/A Brough's Lane",
+          "name": "Eighth Basin",
+          "status": "Ungroomed",
+          "difficulty": "red"
+        },
+        {
+          "name": "Brough's Lane",
           "status": "Open",
-          "difficulty": "unclassified"
+          "difficulty": "blue"
         },
         {
           "name": "Tuck",
@@ -265,19 +288,34 @@
           "difficulty": "black"
         },
         {
-          "name": "Mid Gully Ungroomed N/A Pro Am",
-          "status": "Open",
-          "difficulty": "unclassified"
+          "name": "Mid Gully",
+          "status": "Ungroomed",
+          "difficulty": "red"
         },
         {
-          "name": "Overrun Ungroomed N/A Rocky Return",
+          "name": "Pro Am",
           "status": "Open",
-          "difficulty": "unclassified"
+          "difficulty": "blue"
         },
         {
-          "name": "West Gates Ungroomed N/A Race Arena",
+          "name": "Overrun",
+          "status": "Ungroomed",
+          "difficulty": "red"
+        },
+        {
+          "name": "Rocky Return",
+          "status": "Open",
+          "difficulty": "blue"
+        },
+        {
+          "name": "West Gates",
+          "status": "Ungroomed",
+          "difficulty": "red"
+        },
+        {
+          "name": "Race Arena",
           "status": "Closed",
-          "difficulty": "unclassified"
+          "difficulty": "black"
         },
         {
           "name": "Powder Run",
@@ -285,28 +323,72 @@
           "difficulty": "double-black"
         },
         {
+          "name": "Sugar's Run",
+          "status": "Ungroomed",
+          "difficulty": "red"
+        },
+        {
           "name": "Back Bowls",
           "status": "Closed",
           "difficulty": "double-black"
         },
         {
-          "name": "Car Parks 3-6 Spaces N/A Car Parks 1-3",
-          "status": "Full",
+          "name": "Walkabout Terrain Park",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Carpet Rail garden",
+          "status": "Closed",
           "difficulty": "unclassified"
         }
       ],
       "carparks": [
         {
-          "name": "Car Parks 3-6 Spaces N/A Car Parks 1-3",
+          "name": "Lower Carpark 7",
+          "status": "Spaces available"
+        },
+        {
+          "name": "Car Park 1-5",
+          "status": "Spaces available"
+        },
+        {
+          "name": "Car Parks 6",
+          "status": "Spaces available"
+        },
+        {
+          "name": "Car Park 1-3",
+          "status": "Spaces available"
+        },
+        {
+          "name": "Car Parks 1-3",
+          "status": "Spaces available"
+        },
+        {
+          "name": "Car Parks 4-6",
+          "status": "Spaces available"
+        },
+        {
+          "name": "Car Parks 1-2",
           "status": "Full"
+        },
+        {
+          "name": "Car Parks 3-6",
+          "status": "Spaces available"
         }
       ],
-      "weather": null,
+      "weather": {
+        "temperature_c": 4,
+        "condition": "Snow",
+        "feels_like_c": null,
+        "wind": null,
+        "source": "SnowNZ fallback",
+        "source_url": "https://www.snow.nz/area/nz/queenstown/coronetpeak/"
+      },
       "webcam": {
         "page_url": "https://www.coronetpeak.co.nz/weather-report",
         "image_url": null,
-        "embeddable": false,
-        "error": "403 Client Error: Forbidden for url: https://www.coronetpeak.co.nz/weather-report"
+        "embeddable": false
       },
       "forecast": {
         "issued": "11 am 14 Jul 2026",
@@ -404,39 +486,48 @@
       "trails": [
         {
           "name": "Baby Bucks",
-          "status": "Open"
+          "status": "Open",
+          "difficulty": "unclassified"
         },
         {
           "name": "Little Bucks",
-          "status": "Closed"
+          "status": "Closed",
+          "difficulty": "unclassified"
         },
         {
           "name": "Antlers Alley",
-          "status": "Closed"
+          "status": "Closed",
+          "difficulty": "unclassified"
         },
         {
           "name": "Big Bucks",
-          "status": "Closed"
+          "status": "Closed",
+          "difficulty": "unclassified"
         },
         {
           "name": "Stag Lane",
-          "status": "Closed"
+          "status": "Closed",
+          "difficulty": "unclassified"
         },
         {
           "name": "Peoples Pipe",
-          "status": "Closed"
+          "status": "Closed",
+          "difficulty": "unclassified"
         },
         {
           "name": "Big Air",
-          "status": "Closed"
+          "status": "Closed",
+          "difficulty": "unclassified"
         },
         {
           "name": "Mc Park",
-          "status": "Open"
+          "status": "Open",
+          "difficulty": "unclassified"
         },
         {
           "name": "Gravity Cross",
-          "status": "Closed"
+          "status": "Closed",
+          "difficulty": "unclassified"
         }
       ],
       "carparks": [
@@ -465,10 +556,18 @@
           "status": "Available"
         }
       ],
-      "weather": null,
+      "weather": {
+        "temperature_c": 32,
+        "condition": "Cloudy",
+        "feels_like_c": 14,
+        "wind": null,
+        "observed": "3:18 PM",
+        "source": "AccuWeather",
+        "source_url": "https://www.accuweather.com/en/nz/cardrona-alpine-resort/64922_poi/current-weather/64922_poi"
+      },
       "webcam": {
         "page_url": "https://cardrona-treblecone.com/webcams",
-        "image_url": "https://images.ctfassets.net/2atbvuhykqrn/1HOrQBELsJd9vkoglQ2SAb/bab65f08ee419819e5ee4d914166f26b/W24-Mountains_TCs_Imagery_HeroDesktop.webp",
+        "image_url": null,
         "embeddable": false
       },
       "forecast": {
@@ -554,7 +653,7 @@
       "weather": null,
       "webcam": {
         "page_url": "https://cardrona-treblecone.com/webcams",
-        "image_url": "https://images.ctfassets.net/2atbvuhykqrn/1HOrQBELsJd9vkoglQ2SAb/bab65f08ee419819e5ee4d914166f26b/W24-Mountains_TCs_Imagery_HeroDesktop.webp",
+        "image_url": null,
         "embeddable": false
       },
       "forecast": {
