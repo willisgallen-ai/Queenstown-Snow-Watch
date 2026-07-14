@@ -61,27 +61,32 @@ def find_pct_before_label(label, text):
 
 
 def parse_lifts_block_remarkables(text):
-    """The '## Lifts' section on theremarkables.co.nz reads as 'Open From /
-    9am / <name>' or 'Closed / <name>' triples in extracted text — that was
-    my read of it via a different fetch tool. lifts_open/lifts_total came
-    back correct in the first live run but lifts=[] came back empty, so that
-    assumption is wrong somewhere. Debug prints below show the real text so
-    the regex can be fixed from evidence instead of another guess."""
-    start = text.find("## Lifts")
+    """The lift-status section on theremarkables.co.nz. My original section
+    markers ('## Lifts' / '## Terrain') had a '##' prefix baked in that was
+    actually just a *different* fetch tool's own markdown-heading rendering
+    from earlier research, not real text on the page — so this search almost
+    certainly never found the section at all, which independently explains
+    the empty result even before the anchor-extraction fix below. This tries
+    the plain heading text first, falling back to the old '##' version in
+    case that assumption was somehow right after all."""
+    start = -1
+    for marker in ("Lifts\n", "## Lifts"):
+        idx = text.find(marker)
+        if idx != -1:
+            start = idx + len(marker)
+            break
     if start == -1:
-        print("  [debug] '## Lifts' marker not found on Remarkables page", file=sys.stderr)
+        print("  [debug] no 'Lifts' section heading found on Remarkables page", file=sys.stderr)
         return []
-    end = text.find("## Terrain", start)
+    end = -1
+    for marker in ("Terrain\n", "## Terrain"):
+        idx = text.find(marker, start + 1)
+        if idx != -1 and (end == -1 or idx < end):
+            end = idx
     block = text[start: end if end != -1 else start + 3000]
-    print(f"  [debug] Remarkables lifts block, raw (first 800 chars):\n{block[:800]!r}", file=sys.stderr)
-    lifts = []
-    for m in re.finditer(
-        r"(Open From\s*\n\s*\d{1,2}\s*[ap]m|Closed|Wind\s*Hold)\s*\n+\s*([A-Z][A-Za-z0-9'’\- ]{2,40})",
-        block,
-    ):
-        raw, name = m.group(1).lower(), m.group(2).strip()
-        status = "Open" if raw.startswith("open") else ("Wind Hold" if "wind" in raw else "Closed")
-        lifts.append({"name": name, "status": status})
+    lifts = extract_status_anchored_items(block)
+    if not lifts:
+        print(f"  [debug] still 0 Remarkables lifts — raw block (first 800 chars):\n{block[:800]!r}", file=sys.stderr)
     print(f"  [debug] parsed {len(lifts)} Remarkables lifts", file=sys.stderr)
     return lifts
 
@@ -132,6 +137,43 @@ def split_name_status(label):
     return label, None
 
 
+def clean_name(chunk):
+    """Strips whitespace and known noise from a text chunk sitting between
+    two status-word anchors — mainly the trailing 'N/A' note field that sits
+    after every entry's status and was bleeding into the START of the next
+    entry's name (confirmed from the first live run's data.json: every name
+    but the first in a section came back prefixed with a literal 'N/A ')."""
+    name = re.sub(r"\s+", " ", chunk).strip(" :\n-")
+    name = re.sub(r"^N/A\s*", "", name).strip(" :\n-")
+    return name
+
+
+def extract_status_anchored_items(block, max_name_len=45):
+    """Finds every occurrence of a known status word/phrase in block and
+    takes the cleaned text immediately before it as that entry's name. This
+    is the plain-text approach that actually worked against the real page
+    text from snow.nz in the first live run — used here for both the
+    SnowNZ-sourced resorts and Remarkables. Prints anything rejected for
+    being too long, since a too-long gap usually means a status phrase
+    between two entries wasn't recognised (not in STATUS_SUFFIXES) and swallowed
+    a whole extra entry along with it — the print shows what that phrase
+    actually is so it can be added next time instead of guessed."""
+    anchor = "|".join(re.escape(s) for s in sorted(STATUS_SUFFIXES, key=len, reverse=True))
+    matches = list(re.finditer(rf"\b({anchor})\b", block))
+    items = []
+    prev_end = 0
+    for m in matches:
+        name = clean_name(block[prev_end: m.start()])
+        if name and len(name) <= max_name_len:
+            items.append({"name": name, "status": m.group(1)})
+        elif name:
+            print(f"  [debug] rejected as too long ({len(name)} chars) — probably an "
+                  f"unrecognised status phrase in here, add it to STATUS_SUFFIXES: "
+                  f"{name[:150]!r}", file=sys.stderr)
+        prev_end = m.end()
+    return items
+
+
 def parse_facility_section(text, header_variants, stop_headers):
     """Finds the first header in header_variants and extracts every lift/trail
     entry up to whichever stop_header comes next. Tries two patterns: the
@@ -167,15 +209,7 @@ def parse_facility_section(text, header_variants, stop_headers):
             items.append({"name": name, "status": status or "Unknown"})
 
     if not items:
-        anchor = "|".join(re.escape(s) for s in sorted(STATUS_SUFFIXES, key=len, reverse=True))
-        matches = list(re.finditer(rf"\b({anchor})\b", block))
-        prev_end = 0
-        for m in matches:
-            chunk = block[prev_end: m.start()]
-            name = re.sub(r"\s+", " ", chunk).strip(" :\n-")
-            if name and len(name) < 45:
-                items.append({"name": name, "status": m.group(1)})
-            prev_end = m.end()
+        items = extract_status_anchored_items(block)
 
     print(f"  [debug] parsed {len(items)} items from this section", file=sys.stderr)
     return items
