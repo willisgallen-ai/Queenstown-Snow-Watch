@@ -291,31 +291,27 @@ def extract_remarkables_daily_report(soup: BeautifulSoup) -> str | None:
     here after <time> for the latest snow report. See you soon!' (confirmed
     from a real example). That closing line looks like a reliable daily
     anchor — this works backward from it to find where the write-up starts.
-    Unverified against the live page's actual raw HTML structure (built from
-    the text example alone) — falls back to find_summary_text's more
-    generic approach if the anchor isn't present, and prints what it found
-    either way so a bad match is visible in the Action log rather than
-    silently wrong."""
+
+    First version of this capped the backward walk at 15 TEXT LINES, which
+    got reported as truncating the report mid-sentence. That cap assumed
+    each sentence/paragraph is roughly one line once flattened — clearly
+    wrong for the real page, which produces many more (shorter) lines per
+    sentence than a hand-built test guessed. Replaced with a generous
+    CHARACTER window instead (2500 chars, comfortably more than any
+    realistic daily write-up) with no line-count cap at all — prioritising
+    'never truncate the real content' over being clever about excluding any
+    nav/chrome text that might occasionally get swept in at the start."""
     text = soup.get_text("\n", strip=True)
-    end_match = re.search(r"Check back here.{0,120}?See you soon!?", text, re.I | re.S)
+    end_match = (
+        re.search(r"Check back here.{0,200}?See you soon!?", text, re.I | re.S)
+        or re.search(r"Check back here.{0,200}?\.", text, re.I | re.S)
+    )
     if not end_match:
         print("  [debug] Remarkables daily-report anchor ('Check back here...') not found", file=sys.stderr)
         return find_summary_text(soup)
-    lines_before = text[:end_match.start()].split("\n")
-    block_lines: list[str] = []
-    for line in reversed(lines_before[-40:]):
-        line = clean(line)
-        if not line:
-            if block_lines:
-                break
-            continue
-        if len(line) > 250 or re.match(r"^(Home|Menu|Snow Report|Weather|Lifts|Terrain|Summary)$", line, re.I):
-            break
-        block_lines.append(line)
-        if len(block_lines) > 15:
-            break
-    block_lines.reverse()
-    body = clean(" ".join(block_lines) + " " + end_match.group(0))
+    window_start = max(0, end_match.start() - 2500)
+    preceding = clean(text[window_start:end_match.start()].replace("\n", " "))
+    body = clean(preceding + " " + end_match.group(0))
     print(f"  [debug] Remarkables daily report extracted ({len(body)} chars): {body[:200]!r}...", file=sys.stderr)
     return body if len(body) > 60 else find_summary_text(soup)
 
@@ -509,13 +505,19 @@ def parse_remarkables(soup: BeautifulSoup) -> dict[str, Any]:
 
     result["lifts"] = parse_list_section(soup, ["Lifts"])
     apply_scheduled_times(result["lifts"], schedule)
-    result["carparks"] = parse_carparks_strict(soup)
-    if not result["carparks"] and result.get("status"):
-        # Real scrape came back empty — fall back to known names with status
-        # derived from the resort's own status (these aren't independently
-        # live-tracked the way lifts are, so they simply follow whether the
-        # mountain itself is open).
-        fallback_status = "Open" if result["status"] == "Open" else "Closed"
+    scraped_carparks = parse_carparks_strict(soup)
+    real_carparks = [c for c in scraped_carparks if re.search(r"car\s*park\s*\d", c.get("name", ""), re.I)]
+    if real_carparks:
+        result["carparks"] = real_carparks
+    else:
+        # Real scrape came back empty, or didn't match the known 'Car Park N'
+        # naming pattern — fall back to known names with status derived from
+        # the resort's own status (these aren't independently live-tracked
+        # the way lifts are, so they simply follow whether the mountain
+        # itself is open). Always applying this fallback rather than only
+        # when scraped_carparks is empty guards against a non-empty-but-
+        # wrong scrape result silently blocking the fallback from running.
+        fallback_status = "Open" if result.get("status") == "Open" else "Closed"
         result["carparks"] = [{"name": n, "status": fallback_status} for n in FALLBACK_CARPARKS.get("remarkables", [])]
     result["carparks"] = attach_carpark_notes("remarkables", result["carparks"])
     terrain_items = parse_list_section(soup, ["Terrain"])
@@ -525,7 +527,6 @@ def parse_remarkables(soup: BeautifulSoup) -> dict[str, Any]:
         {**item, "difficulty": "unclassified"}
         for item in terrain_items if any(k in item["name"].lower() for k in terrain_keywords)
     ]
-    result["carparks"] = parse_list_section(soup, ["Car Parks", "Parking"])
     return result
 
 
