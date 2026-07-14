@@ -123,9 +123,12 @@ def scrape_remarkables():
 # Longest-first: these are stripped off the end of a facility link's label to
 # separate the name from its status, e.g. "Greengates Express Advanced Riders
 # Only" -> name "Greengates Express", status "Advanced Riders Only".
+# "Variable" was added after the second live run showed a garbled trail entry
+# ("Exchange Drop Variable N/A KidsZone carpet") — that's a trail-condition
+# status word I hadn't accounted for, confirmed from real data.json output.
 STATUS_SUFFIXES = [
     "Advanced Riders Only", "Ungroomed fun bumps", "Ungroomed",
-    "Wind Hold", "Opens Tuesday", "Open", "Closed", "Available",
+    "Wind Hold", "Opens Tuesday", "Variable", "Open", "Closed", "Available",
 ]
 
 
