@@ -1,0 +1,214 @@
+{
+  "updated": "2026-07-14T01:44:55.318159+00:00",
+  "resorts": {
+    "remarkables": {
+      "status": "Open",
+      "lifts_open": 6,
+      "lifts_total": 7,
+      "base_lower": 15,
+      "base_upper": 60,
+      "terrain": {
+        "novice": 100,
+        "intermediate": 60,
+        "advanced": 5,
+        "expert": 0
+      },
+      "lifts": [],
+      "trails": null,
+      "forecast": {
+        "issued": "11 am 14 Jul 2026",
+        "days": [
+          {
+            "label": "Tue 14",
+            "cm": 9,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Wed 15",
+            "cm": 2,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Thu 16",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Fri 17",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 18",
+            "cm": 5,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sun 19",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          }
+        ]
+      }
+    },
+    "coronetpeak": {
+      "status": "Open",
+      "lifts_open": 7,
+      "lifts_total": 8,
+      "base_lower": 20,
+      "base_upper": 30,
+      "terrain": {},
+      "lifts": [],
+      "trails": [],
+      "forecast": {
+        "issued": "11 am 14 Jul 2026",
+        "days": [
+          {
+            "label": "Tue 14",
+            "cm": 13,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Wed 15",
+            "cm": 2,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Thu 16",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Fri 17",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 18",
+            "cm": 3,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sun 19",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          }
+        ]
+      }
+    },
+    "cardrona": {
+      "status": "Open",
+      "lifts_open": 7,
+      "lifts_total": 10,
+      "base_lower": 37,
+      "base_upper": 37,
+      "terrain": {},
+      "lifts": [],
+      "trails": null,
+      "forecast": {
+        "issued": "11 am 14 Jul 2026",
+        "days": [
+          {
+            "label": "Tue 14",
+            "cm": 11,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Wed 15",
+            "cm": 1,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Thu 16",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Fri 17",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 18",
+            "cm": 2,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sun 19",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          }
+        ]
+      }
+    },
+    "treblecone": {
+      "status": "Open",
+      "lifts_open": 2,
+      "lifts_total": 3,
+      "base_lower": 54,
+      "base_upper": 54,
+      "terrain": {},
+      "lifts": [],
+      "trails": null,
+      "forecast": {
+        "issued": "11 am 14 Jul 2026",
+        "days": [
+          {
+            "label": "Tue 14",
+            "cm": 22,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Wed 15",
+            "cm": 5,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Thu 16",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Fri 17",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 18",
+            "cm": 2,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sun 19",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          }
+        ]
+      }
+    }
+  }
+}
