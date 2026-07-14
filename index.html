@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Southern Lakes Snow Watch</title>
+<title>Snow Watch</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -42,7 +42,7 @@
   .wrap{max-width:1180px;margin:0 auto;}
 
   header{
-    display:flex;justify-content:space-between;align-items:center;
+    display:flex;justify-content:flex-end;align-items:center;
     flex-wrap:wrap;gap:10px;
     padding-bottom:16px;border-bottom:2px solid var(--line);margin-bottom:20px;
   }
@@ -206,7 +206,6 @@
 <div class="wrap">
 
   <header>
-    <h1>Southern Lakes Snow Watch</h1>
     <div class="live-cluster"><span class="live-dot" id="live-dot"></span><div><div class="stamp-tag" id="live-stamp">Loading live data…</div><div class="next-tag" id="next-update">Next check calculating…</div></div></div>
   </header>
 
@@ -266,7 +265,7 @@
         <div class="section-lbl">Named trails</div>
         <div class="trail-groups" id="rm-trails"><div class="no-data">Loading named terrain…</div></div>
       </div>
-      <div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · AccuWeather</div><div id="rm-weather" class="weather-now">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div id="rm-carparks" class="carpark-list"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="rm-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Open official camera</div></div><span>↗</span></div><div class="card-note">Live source · The Remarkables</div>
+      <div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div id="rm-weather" class="weather-now">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div id="rm-carparks" class="carpark-list"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="rm-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Open official camera</div></div><span>↗</span></div><div class="card-note">Live source · The Remarkables</div>
     </div>
 
     <div class="card" id="card-coronetpeak">
@@ -331,7 +330,7 @@
           <div class="trail-chip t-closed"><span class="t-dot"></span>Walkabout Park</div>
         </div>
       </div>
-      <div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · AccuWeather</div><div id="cp-weather" class="weather-now">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div id="cp-carparks" class="carpark-list"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cp-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Open official camera</div></div><span>↗</span></div><div class="card-note">Live source · Coronet Peak / snow.nz</div>
+      <div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div id="cp-weather" class="weather-now">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div id="cp-carparks" class="carpark-list"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cp-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Open official camera</div></div><span>↗</span></div><div class="card-note">Live source · Coronet Peak / snow.nz</div>
     </div>
 
   </div>
@@ -372,7 +371,7 @@
         <div class="section-lbl">Named trails</div>
         <div class="trail-groups" id="cd-trails"><div class="no-data">Not currently reported.</div></div>
       </div>
-      <div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · AccuWeather</div><div id="cd-weather" class="weather-now">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div id="cd-carparks" class="carpark-list"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cd-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Open official camera</div></div><span>↗</span></div><div class="card-note">Live source · Cardrona / snow.nz</div>
+      <div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div id="cd-weather" class="weather-now">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div id="cd-carparks" class="carpark-list"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cd-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Open official camera</div></div><span>↗</span></div><div class="card-note">Live source · Cardrona / snow.nz</div>
     </div>
 
     <div class="card" id="card-treblecone">
@@ -400,7 +399,7 @@
         <div class="section-lbl">Named trails</div>
         <div class="trail-groups" id="tc-trails"><div class="no-data">Not currently reported.</div></div>
       </div>
-      <div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · AccuWeather</div><div id="tc-weather" class="weather-now">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div id="tc-carparks" class="carpark-list"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="tc-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Open official camera</div></div><span>↗</span></div><div class="card-note">Live source · Treble Cone / snow.nz</div>
+      <div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div id="tc-weather" class="weather-now">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div id="tc-carparks" class="carpark-list"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="tc-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Open official camera</div></div><span>↗</span></div><div class="card-note">Live source · Treble Cone / snow.nz</div>
     </div>
 
   </div>
@@ -563,8 +562,8 @@
     const el=document.getElementById(prefix+'-weather'); if(!el)return;
     if(!weather){el.innerHTML='<span class="muted-inline">Weather unavailable</span>';return;}
     const temp=weather.temperature_c!=null?`${weather.temperature_c}°C`:'—';
-    const details=[weather.condition,weather.feels_like_c!=null?`Feels ${weather.feels_like_c}°C`:null,weather.wind].filter(Boolean);
-    el.innerHTML=`<div class="weather-temp">${escapeHtml(temp)}</div><div>${escapeHtml(details[0]||'Current conditions')}</div><div class="weather-detail">${escapeHtml(details.slice(1).join(' · '))}</div>`;
+    const snowState=weather.snowing?'Snowing':'Not snowing';
+    el.innerHTML=`<div class="weather-temp">${escapeHtml(temp)}</div><div>${escapeHtml(snowState)}</div>`;
   }
   function parkClass(status){const v=(status||'').toLowerCase();if(v.includes('full')||v.includes('closed'))return'park-full';if(v.includes('limited')||v.includes('filling'))return'park-limited';if(v.includes('available')||v.includes('open')||v.includes('spaces'))return'park-open';return'park-unknown';}
   function renderCarparks(prefix, parks){
