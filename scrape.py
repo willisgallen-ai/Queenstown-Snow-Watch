@@ -62,12 +62,18 @@ def find_pct_before_label(label, text):
 
 def parse_lifts_block_remarkables(text):
     """The '## Lifts' section on theremarkables.co.nz reads as 'Open From /
-    9am / <name>' or 'Closed / <name>' triples in extracted text."""
+    9am / <name>' or 'Closed / <name>' triples in extracted text — that was
+    my read of it via a different fetch tool. lifts_open/lifts_total came
+    back correct in the first live run but lifts=[] came back empty, so that
+    assumption is wrong somewhere. Debug prints below show the real text so
+    the regex can be fixed from evidence instead of another guess."""
     start = text.find("## Lifts")
     if start == -1:
+        print("  [debug] '## Lifts' marker not found on Remarkables page", file=sys.stderr)
         return []
     end = text.find("## Terrain", start)
     block = text[start: end if end != -1 else start + 3000]
+    print(f"  [debug] Remarkables lifts block, raw (first 800 chars):\n{block[:800]!r}", file=sys.stderr)
     lifts = []
     for m in re.finditer(
         r"(Open From\s*\n\s*\d{1,2}\s*[ap]m|Closed|Wind\s*Hold)\s*\n+\s*([A-Z][A-Za-z0-9'’\- ]{2,40})",
@@ -76,6 +82,7 @@ def parse_lifts_block_remarkables(text):
         raw, name = m.group(1).lower(), m.group(2).strip()
         status = "Open" if raw.startswith("open") else ("Wind Hold" if "wind" in raw else "Closed")
         lifts.append({"name": name, "status": status})
+    print(f"  [debug] parsed {len(lifts)} Remarkables lifts", file=sys.stderr)
     return lifts
 
 
@@ -126,15 +133,23 @@ def split_name_status(label):
 
 
 def parse_facility_section(text, header_variants, stop_headers):
-    """Finds the first header in header_variants and extracts every
-    '[Name Status](#facility-NNNNN)' bullet up to whichever stop_header comes
-    next, so sections don't bleed into each other."""
+    """Finds the first header in header_variants and extracts every lift/trail
+    entry up to whichever stop_header comes next. Tries two patterns: the
+    original markdown-link-style match, then (if that finds nothing) a plain-
+    text fallback that just looks for each known status word and takes
+    whatever text runs immediately before it as the name. lifts_open/
+    lifts_total came back correct in the first live run but lifts=[] came
+    back empty, meaning the markdown-bracket assumption was wrong — the debug
+    print below shows the real text so this can be fixed precisely next."""
     start = -1
+    matched_header = None
     for h in header_variants:
         start = text.find(h)
         if start != -1:
+            matched_header = h
             break
     if start == -1:
+        print(f"  [debug] none of {header_variants} found in page text", file=sys.stderr)
         return []
     start = text.find("\n", start)
     end = len(text)
@@ -143,11 +158,26 @@ def parse_facility_section(text, header_variants, stop_headers):
         if idx != -1:
             end = min(end, idx)
     block = text[start:end]
+    print(f"  [debug] found '{matched_header}', block raw (first 800 chars):\n{block[:800]!r}", file=sys.stderr)
+
     items = []
     for m in re.finditer(r"\[([^\]]+)\]\(#facility-\d+\)", block):
         name, status = split_name_status(m.group(1))
         if name:
             items.append({"name": name, "status": status or "Unknown"})
+
+    if not items:
+        anchor = "|".join(re.escape(s) for s in sorted(STATUS_SUFFIXES, key=len, reverse=True))
+        matches = list(re.finditer(rf"\b({anchor})\b", block))
+        prev_end = 0
+        for m in matches:
+            chunk = block[prev_end: m.start()]
+            name = re.sub(r"\s+", " ", chunk).strip(" :\n-")
+            if name and len(name) < 45:
+                items.append({"name": name, "status": m.group(1)})
+            prev_end = m.end()
+
+    print(f"  [debug] parsed {len(items)} items from this section", file=sys.stderr)
     return items
 
 
