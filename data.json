@@ -1,6 +1,11 @@
 {
-  "updated": "2026-07-14T04:01:46.197831+00:00",
-  "next_scheduled_update": "2026-07-14T04:17:00+00:00",
+  "updated": "2026-07-14T04:21:06.710755+00:00",
+  "news": {
+    "title": "New Zealand Weekend Forecast, Friday July 10th – Last Dregs of the Storm Clear for a Magical Matariki Weekend",
+    "url": "https://www.mountainwatch.com/Snow-news/new-zealand-weekend-forecast-friday-july-10th-last-dregs-of-the-storm-clear-for-a-magical-matariki-weekend/",
+    "source": "The Grasshopper · Mountainwatch"
+  },
+  "next_scheduled_update": "2026-07-14T05:17:00+00:00",
   "schedule_minutes": 60,
   "health": {
     "usable_resorts": 4,
@@ -105,7 +110,7 @@
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/the-remarkables/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/The-Remarkables-BaseCamera-Angle-1/LiveStill.jpg",
-        "embeddable": false,
+        "embeddable": true,
         "source": "Mountainwatch"
       },
       "forecast": {
@@ -152,7 +157,7 @@
       "stale": false
     },
     "coronetpeak": {
-      "status": "Open",
+      "status": "Closed",
       "lifts_open": 7,
       "lifts_total": 8,
       "base_lower": 20,
@@ -360,27 +365,7 @@
           "status": "Spaces available"
         },
         {
-          "name": "Car Parks 6",
-          "status": "Spaces available"
-        },
-        {
           "name": "Car Park 1-3",
-          "status": "Spaces available"
-        },
-        {
-          "name": "Car Parks 1-3",
-          "status": "Spaces available"
-        },
-        {
-          "name": "Car Parks 4-6",
-          "status": "Spaces available"
-        },
-        {
-          "name": "Car Parks 1-2",
-          "status": "Full"
-        },
-        {
-          "name": "Car Parks 3-6",
           "status": "Spaces available"
         }
       ],
@@ -394,7 +379,7 @@
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/coronet-peak/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Coronet-Peak-ExpressCamera-Angle-1/LiveStill.jpg",
-        "embeddable": false,
+        "embeddable": true,
         "source": "Mountainwatch"
       },
       "forecast": {
@@ -441,7 +426,7 @@
       "stale": false
     },
     "cardrona": {
-      "status": "Open",
+      "status": "Closed",
       "lifts_open": 4,
       "lifts_total": 10,
       "base_lower": 37,
@@ -574,8 +559,8 @@
       },
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
-        "image_url": "https://www.mountainwatch.com/wp-content/uploads/2026/06/Screenshot-2026-06-26-at-8.11.57 AM-300x170.png",
-        "embeddable": false,
+        "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
+        "embeddable": true,
         "source": "Mountainwatch"
       },
       "forecast": {
@@ -622,7 +607,7 @@
       "stale": false
     },
     "treblecone": {
-      "status": "Open",
+      "status": "Closed",
       "lifts_open": 2,
       "lifts_total": 3,
       "base_lower": 54,
@@ -661,8 +646,8 @@
       "weather": null,
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
-        "image_url": "https://www.mountainwatch.com/wp-content/uploads/2026/06/Screenshot-2026-06-26-at-8.11.57 AM-300x170.png",
-        "embeddable": false,
+        "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
+        "embeddable": true,
         "source": "Mountainwatch"
       },
       "forecast": {
