@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T01:44:55.318159+00:00",
+  "updated": "2026-07-14T01:51:43.633248+00:00",
   "resorts": {
     "remarkables": {
       "status": "Open",
@@ -64,8 +64,142 @@
       "base_lower": 20,
       "base_upper": 30,
       "terrain": {},
-      "lifts": [],
-      "trails": [],
+      "lifts": [
+        {
+          "name": "Coronet Express",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Rocky Gully T-bar",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Magic Carpet Conveyor",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Beginner Carpet Conveyor",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Skiwiland Conveyor",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Kidszone carpet",
+          "status": "Open"
+        }
+      ],
+      "trails": [
+        {
+          "name": "Big Easy",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Beginner Area",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Little Easy",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Gentle Annie",
+          "status": "Closed"
+        },
+        {
+          "name": "for Racing N/A Fun Zone",
+          "status": "Open"
+        },
+        {
+          "name": "N/A M1",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Easy Rider",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Greengates",
+          "status": "Ungroomed fun bumps"
+        },
+        {
+          "name": "N/A Wall Street",
+          "status": "Ungroomed"
+        },
+        {
+          "name": "N/A The Chimney",
+          "status": "Closed"
+        },
+        {
+          "name": "N/A The Hurdle",
+          "status": "Ungroomed"
+        },
+        {
+          "name": "for Racing N/A Dual Carpet slopes",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Shirt Front",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Eighth Basin",
+          "status": "Ungroomed"
+        },
+        {
+          "name": "N/A Brough's Lane",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Tuck",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Million Dollar",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Upper Walkabout",
+          "status": "Closed"
+        },
+        {
+          "name": "N/A Mid Gully",
+          "status": "Ungroomed"
+        },
+        {
+          "name": "N/A Pro Am",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Overrun",
+          "status": "Ungroomed"
+        },
+        {
+          "name": "N/A Rocky Return",
+          "status": "Open"
+        },
+        {
+          "name": "N/A West Gates",
+          "status": "Ungroomed"
+        },
+        {
+          "name": "N/A Race Arena",
+          "status": "Closed"
+        },
+        {
+          "name": "N/A Powder Run",
+          "status": "Closed"
+        },
+        {
+          "name": "N/A Sugar's Run",
+          "status": "Ungroomed"
+        },
+        {
+          "name": "Back Bowls",
+          "status": "Closed"
+        }
+      ],
       "forecast": {
         "issued": "11 am 14 Jul 2026",
         "days": [
@@ -115,7 +249,48 @@
       "base_lower": 37,
       "base_upper": 37,
       "terrain": {},
-      "lifts": [],
+      "lifts": [
+        {
+          "name": "Learner Conveyors",
+          "status": "Open"
+        },
+        {
+          "name": "N/A McDougall\u2019s Chondola",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Whitestar Express",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Captains Express",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Willow\u2019s Quad",
+          "status": "Closed"
+        },
+        {
+          "name": "N/A Soho Express",
+          "status": "Closed"
+        },
+        {
+          "name": "N/A T-Bar",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Valley View",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Kindy Conveyor",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Wells Pipe Platter",
+          "status": "Closed"
+        }
+      ],
       "trails": null,
       "forecast": {
         "issued": "11 am 14 Jul 2026",
@@ -166,7 +341,20 @@
       "base_lower": 54,
       "base_upper": 54,
       "terrain": {},
-      "lifts": [],
+      "lifts": [
+        {
+          "name": "Saddle Quad",
+          "status": "Closed"
+        },
+        {
+          "name": "N/A Beginner Platter",
+          "status": "Open"
+        },
+        {
+          "name": "N/A Home Basin Express",
+          "status": "Open"
+        }
+      ],
       "trails": null,
       "forecast": {
         "issued": "11 am 14 Jul 2026",
