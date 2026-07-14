@@ -9,13 +9,16 @@ import json
 import re
 import sys
 from copy import deepcopy
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta, timezone, time as dt_time
 from pathlib import Path
 from typing import Any
 from urllib.parse import urljoin
+from zoneinfo import ZoneInfo
 
 import requests
 from bs4 import BeautifulSoup, Tag
+
+NZ_TZ = ZoneInfo("Pacific/Auckland")
 
 ROOT = Path(__file__).resolve().parent
 DATA_FILE = ROOT / "data.json"
@@ -104,6 +107,86 @@ RESORT_COORDS = {
     "cardrona": (-44.8717, 168.9497),
     "treblecone": (-44.6320, 168.8804),
 }
+
+# Sourced from each resort's own site (14 Jul 2026) — worth rechecking each
+# season, since night-ski dates/times are seasonal and could shift. weekday()
+# is Monday=0 .. Sunday=6, so Wed=2, Fri=4.
+RESORT_HOURS = {
+    "remarkables": {"open": (9, 0), "close": (16, 0)},
+    "coronetpeak": {"open": (9, 0), "close": (16, 0),
+                     "night_ski_weekdays": (2, 4), "night_open": (16, 0), "night_close": (21, 0)},
+    "cardrona": {"open": (8, 30), "close": (16, 0)},
+    "treblecone": {"open": (9, 0), "close": (16, 0)},
+}
+
+
+def is_within_operating_hours(resort: str, now: datetime | None = None) -> bool:
+    """Sanity backstop, not a primary data source: is NOW (NZ local time)
+    within this resort's typical daily window? Accounts for Coronet Peak's
+    Wed/Fri (+ occasional Saturday, not modelled here since those dates move
+    every season) night skiing. Used to force a resort closed outside hours
+    regardless of what a stale scrape might otherwise say — it does NOT force
+    a resort open just because it's within hours, since a real weather
+    closure during normal hours is still valid and should come from the
+    actual scraped status."""
+    now = now or datetime.now(NZ_TZ)
+    hours = RESORT_HOURS[resort]
+    t = now.time()
+    if dt_time(*hours["open"]) <= t <= dt_time(*hours["close"]):
+        return True
+    night_days = hours.get("night_ski_weekdays")
+    if night_days and now.weekday() in night_days:
+        if dt_time(*hours["night_open"]) <= t <= dt_time(*hours["night_close"]):
+            return True
+    return False
+
+
+_SCHEDULED_TIME_RE = re.compile(r"(?:Open\s+From|Opens?)\s+(\d{1,2})(?::(\d{2}))?\s*([ap]m)", re.I)
+
+
+def resolve_scheduled_times(text: str, now: datetime | None = None) -> str:
+    """Replaces 'Open From 9am' / 'Opens 9am' style phrases with a plain
+    'Open' or 'Closed' token, resolved by comparing the stated time against
+    the current NZ time. Without this, 'Open From 9am' was being read as
+    simply 'Open' regardless of whether it was actually 9am yet — which is
+    very likely why some lifts appeared open when they genuinely weren't, or
+    were showing a scheduled future time as if it were current status. Call
+    this on raw page text BEFORE the status-word extraction runs, so the
+    downstream matching sees a resolved 'Open' or 'Closed' like any other."""
+    now = now or datetime.now(NZ_TZ)
+
+    def replace(m: re.Match) -> str:
+        hour = int(m.group(1))
+        minute = int(m.group(2) or 0)
+        if m.group(3).lower() == "pm" and hour != 12:
+            hour += 12
+        if m.group(3).lower() == "am" and hour == 12:
+            hour = 0
+        scheduled = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+        return "Open" if now >= scheduled else "Closed"
+
+    return _SCHEDULED_TIME_RE.sub(replace, text)
+
+
+def apply_hours_backstop(name: str, resort: dict[str, Any]) -> dict[str, Any]:
+    """Final sanity check applied after scraping: if it's currently outside
+    this resort's typical operating hours, force status/lifts/trails/park to
+    Closed regardless of what was scraped. This protects against a stale
+    cached page — or a genuinely correct 'opens at 9am' reading that just
+    hasn't been superseded yet — showing as open when the mountain simply
+    isn't running right now. Deliberately does NOT force a resort open just
+    because it's within hours: a real weather closure during normal
+    operating hours is valid and should still come through as scraped."""
+    if is_within_operating_hours(name):
+        return resort
+    resort = deepcopy(resort)
+    resort["status"] = "Closed"
+    resort["lifts_open"] = 0
+    for key in ("lifts", "trails", "park"):
+        if resort.get(key):
+            resort[key] = [{**item, "status": "Closed"} for item in resort[key]]
+    resort["hours_closed"] = True
+    return resort
 # Open-Meteo picks an elevation from its own terrain model for a bare lat/lon,
 # which for these sites often lands well below the actual base area — these
 # ski fields climb from ~1200m to ~2000m+, so an uncorrected reading can be
@@ -167,11 +250,11 @@ def find_summary_text(soup: BeautifulSoup) -> str | None:
     if meta and meta.get("content"):
         text = clean(meta["content"])
         if len(text) > 30:
-            return text[:400].rsplit(" ", 1)[0] + ("…" if len(text) > 400 else "")
+            return text
     for p in soup.find_all("p"):
         text = clean(p.get_text(" "))
         if len(text) > 60 and not any(bad in text.lower() for bad in ("cookie", "javascript", "subscribe", "newsletter")):
-            return text[:400].rsplit(" ", 1)[0] + ("…" if len(text) > 400 else "")
+            return text
     return None
 
 
@@ -191,7 +274,7 @@ def parse_number(value: str | None) -> int | None:
 
 
 def split_status(label: str) -> tuple[str, str]:
-    label = clean(label)
+    label = resolve_scheduled_times(clean(label))
     for status in STATUS_PHRASES:
         match = re.search(rf"\s+{re.escape(status)}(?:\s+.*)?$", label, re.I)
         if match:
@@ -276,7 +359,7 @@ def text_value_near_label(soup: BeautifulSoup, label: str, unit: str = "cm") -> 
 
 
 def parse_summary_snownz(soup: BeautifulSoup) -> dict[str, Any]:
-    text = soup.get_text("\n", strip=True)
+    text = resolve_scheduled_times(soup.get_text("\n", strip=True))
     result: dict[str, Any] = {
         "status": None, "lifts_open": None, "lifts_total": None,
         "base_lower": None, "base_upper": None, "new_snow_7d": None,
@@ -315,7 +398,7 @@ def parse_snownz(resort: str, soup: BeautifulSoup) -> dict[str, Any]:
 
 
 def parse_remarkables(soup: BeautifulSoup) -> dict[str, Any]:
-    text = soup.get_text("\n", strip=True)
+    text = resolve_scheduled_times(soup.get_text("\n", strip=True))
     result: dict[str, Any] = {
         "status": None, "lifts_open": None, "lifts_total": None,
         "base_lower": None, "base_upper": None, "new_snow_7d": None,
@@ -446,7 +529,12 @@ def parse_carparks_strict(soup: BeautifulSoup) -> list[dict[str, str]]:
         name=clean(item.get("name")); status=status_from_text(item.get("status", ""))
         if not re.search(r"\b(car\s*park|carpark|parking|the yard|the pines|valley view)\b", name, re.I):
             continue
-        if status not in {"Open","Closed","Full","Available","Spaces available","Limited Spaces","Filling Fast","Unknown"}:
+        # Carpool/space-requirement phrases (e.g. "3 or more per car") are
+        # real statuses some resorts use instead of simple Open/Closed —
+        # previously coerced to generic "Unknown" by a fixed whitelist that
+        # didn't include them. Just a length sanity check now instead of a
+        # fixed vocabulary, so real short phrases pass through unchanged.
+        if not status or len(status) > 40:
             status = "Unknown"
         if name.lower() not in seen:
             seen.add(name.lower()); out.append({"name":name,"status":status})
@@ -501,7 +589,7 @@ def scrape_onthesnow(resort: str) -> dict[str, Any] | None:
     if m:
         date_part = clean(m.group(1) or "")
         body = clean(re.sub(r"\n+", " ", m.group(2)))
-        out["summary"] = (f"{date_part}: " if date_part else "") + body[:500]
+        out["summary"] = (f"{date_part}: " if date_part else "") + body
     else:
         print(f"  [debug] OnTheSnow {resort}: 'Snow Reporter Comments' block not found", file=sys.stderr)
 
@@ -526,26 +614,33 @@ def apply_uniform_status(names: list[str], open_count: int | None, total: int | 
 
 
 def scrape_grasshopper_headline() -> dict[str, Any] | None:
-    """Pull a short summary + link from the Grasshopper's own NZ forecast page.
-    The previous version searched for a headline LINK matching news-listing
-    patterns ('new zealand' + forecast/snow/outlook in the anchor text) and
-    tried to fetch further into it — but mountainwatch.com/grasshopper is
-    itself one continuous forecast page, not an index of articles, so that
-    search almost certainly matched nothing every single run, silently
-    falling back to 'unavailable' forever. This reads the page's own content
-    directly instead."""
+    """Pull the actual current forecast text + link from the Grasshopper's NZ
+    forecast page. Two things fixed from the previous version: it searched
+    for a headline LINK matching news-listing patterns, but
+    mountainwatch.com/grasshopper is one continuous forecast page, not an
+    index of articles, so that search matched nothing. Then, once fixed to
+    read the page directly, it still prioritised the page's generic meta
+    description over the actual forecast paragraphs — a meta description is
+    static SEO text written once, not updated per-forecast, which is very
+    likely why it read as 'some random sentence' rather than real content.
+    Now prioritises real forecast prose, preferring a paragraph that
+    actually mentions the Southern Lakes (the region Queenstown/Wanaka sit
+    in) since that's what's relevant to these four resorts specifically,
+    falling back to the first substantial paragraph, and only using the meta
+    description as a last resort if no real paragraph is found at all."""
     try:
         soup, _ = fetch(GRASSHOPPER_URL)
-        summary = ""
-        meta = soup.find("meta", attrs={"name": "description"}) or soup.find("meta", attrs={"property": "og:description"})
-        if meta and meta.get("content"):
-            summary = clean(meta["content"])
+        paras = [clean(p.get_text(" ")) for p in soup.find_all("p")]
+        paras = [p for p in paras if len(p) > 80]
+        summary = next((p for p in paras if "southern lakes" in p.lower()), None)
+        if not summary and paras:
+            summary = paras[0]
         if not summary:
-            paras = [clean(p.get_text(" ")) for p in soup.find_all("p") if len(clean(p.get_text(" "))) > 80]
-            summary = paras[0] if paras else ""
+            meta = soup.find("meta", attrs={"name": "description"}) or soup.find("meta", attrs={"property": "og:description"})
+            if meta and meta.get("content"):
+                summary = clean(meta["content"])
         if not summary:
             return None
-        summary = summary[:360].rsplit(" ", 1)[0] + ("…" if len(summary) > 360 else "")
         issued = None
         match = re.search(r"Issued:?\s*([^\n]{5,40})", soup.get_text("\n", strip=True), re.I)
         if match:
@@ -746,7 +841,7 @@ def load_previous() -> dict[str, Any]:
         return {"resorts": {}}
 
 
-def merge_fallback(current: dict[str, Any], previous: dict[str, Any] | None) -> dict[str, Any]:
+def merge_fallback(name: str, current: dict[str, Any], previous: dict[str, Any] | None) -> dict[str, Any]:
     """Status, lifts, and trails all describe the SAME moment and must stay
     internally consistent with each other. The previous version of this
     function patched each field independently from the last good run —
@@ -761,10 +856,18 @@ def merge_fallback(current: dict[str, Any], previous: dict[str, Any] | None) -> 
     status/lifts/trails always describe one consistent point in time.
     Independent fields (forecast, webcam, carparks) still prefer whatever
     this run actually got, since they come from separate sources/requests
-    and don't need to match the operational snapshot's timing."""
+    and don't need to match the operational snapshot's timing.
+
+    'trails' is resort-specific: Remarkables' trails list is legitimately
+    near-empty by design (parse_remarkables only keeps park/backcountry-
+    keyword items, which often matches nothing) — treating that as a core
+    field there meant Remarkables failed this check on nearly every run,
+    even fully successful ones, which is why it kept showing 'delayed' for
+    no real reason. Its real per-run signal is the terrain % dict instead."""
     if not previous:
         return current
-    core_ok = all(current.get(k) not in (None, [], {}) for k in ("status", "lifts", "trails"))
+    core_fields = ("status", "lifts", "terrain") if name == "remarkables" else ("status", "lifts", "trails")
+    core_ok = all(current.get(k) not in (None, [], {}) for k in core_fields)
     if not core_ok:
         restored = deepcopy(previous)
         for key in ("weather", "forecast", "carparks", "park", "webcam"):
@@ -883,7 +986,7 @@ def scrape_resort(name: str, previous: dict[str, Any] | None) -> dict[str, Any]:
         print(f"Forecast fetch failed for {name}: {exc}", file=sys.stderr)
         data["forecast"] = forecast_stub(previous)
     data["stale"] = False
-    return merge_fallback(data, previous)
+    return merge_fallback(name, data, previous)
 
 
 def validate_resort(data: dict[str, Any]) -> bool:
@@ -900,6 +1003,7 @@ def main() -> int:
             resort = scrape_resort(name, previous_resorts.get(name))
             if not validate_resort(resort):
                 raise ValueError("no usable operational fields parsed")
+            resort = apply_hours_backstop(name, resort)
         except Exception as exc:
             print(f"Scrape failed for {name}: {exc}", file=sys.stderr)
             resort = deepcopy(previous_resorts.get(name, {}))
