@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T01:51:43.633248+00:00",
+  "updated": "2026-07-14T02:01:28.477375+00:00",
   "resorts": {
     "remarkables": {
       "status": "Open",
@@ -13,7 +13,32 @@
         "advanced": 5,
         "expert": 0
       },
-      "lifts": [],
+      "lifts": [
+        {
+          "name": "Shorty Conveyor",
+          "status": "Open"
+        },
+        {
+          "name": "Tahi Conveyor",
+          "status": "Open"
+        },
+        {
+          "name": "Rua Conveyor",
+          "status": "Open"
+        },
+        {
+          "name": "Alta Chair",
+          "status": "Open"
+        },
+        {
+          "name": "Sugar Bowl Express",
+          "status": "Open"
+        },
+        {
+          "name": "Curvey Basin Express",
+          "status": "Closed"
+        }
+      ],
       "trails": null,
       "forecast": {
         "issued": "11 am 14 Jul 2026",
@@ -70,23 +95,23 @@
           "status": "Open"
         },
         {
-          "name": "N/A Rocky Gully T-bar",
+          "name": "Rocky Gully T-bar",
           "status": "Open"
         },
         {
-          "name": "N/A Magic Carpet Conveyor",
+          "name": "Magic Carpet Conveyor",
           "status": "Open"
         },
         {
-          "name": "N/A Beginner Carpet Conveyor",
+          "name": "Beginner Carpet Conveyor",
           "status": "Open"
         },
         {
-          "name": "N/A Skiwiland Conveyor",
+          "name": "Skiwiland Conveyor",
           "status": "Open"
         },
         {
-          "name": "N/A Kidszone carpet",
+          "name": "Kidszone carpet",
           "status": "Open"
         }
       ],
@@ -96,15 +121,15 @@
           "status": "Open"
         },
         {
-          "name": "N/A Beginner Area",
+          "name": "Beginner Area",
           "status": "Open"
         },
         {
-          "name": "N/A Little Easy",
+          "name": "Little Easy",
           "status": "Open"
         },
         {
-          "name": "N/A Gentle Annie",
+          "name": "Gentle Annie",
           "status": "Closed"
         },
         {
@@ -112,87 +137,91 @@
           "status": "Open"
         },
         {
-          "name": "N/A M1",
+          "name": "M1",
           "status": "Open"
         },
         {
-          "name": "N/A Easy Rider",
+          "name": "Easy Rider",
           "status": "Open"
         },
         {
-          "name": "N/A Greengates",
+          "name": "Greengates",
           "status": "Ungroomed fun bumps"
         },
         {
-          "name": "N/A Wall Street",
+          "name": "Wall Street",
           "status": "Ungroomed"
         },
         {
-          "name": "N/A The Chimney",
+          "name": "The Chimney",
           "status": "Closed"
         },
         {
-          "name": "N/A The Hurdle",
+          "name": "The Hurdle",
           "status": "Ungroomed"
+        },
+        {
+          "name": "Exchange Drop Variable N/A KidsZone carpet",
+          "status": "Closed"
         },
         {
           "name": "for Racing N/A Dual Carpet slopes",
           "status": "Open"
         },
         {
-          "name": "N/A Shirt Front",
+          "name": "Shirt Front",
           "status": "Open"
         },
         {
-          "name": "N/A Eighth Basin",
+          "name": "Eighth Basin",
           "status": "Ungroomed"
         },
         {
-          "name": "N/A Brough's Lane",
+          "name": "Brough's Lane",
           "status": "Open"
         },
         {
-          "name": "N/A Tuck",
+          "name": "Tuck",
           "status": "Open"
         },
         {
-          "name": "N/A Million Dollar",
+          "name": "Million Dollar",
           "status": "Open"
         },
         {
-          "name": "N/A Upper Walkabout",
+          "name": "Upper Walkabout",
           "status": "Closed"
         },
         {
-          "name": "N/A Mid Gully",
+          "name": "Mid Gully",
           "status": "Ungroomed"
         },
         {
-          "name": "N/A Pro Am",
+          "name": "Pro Am",
           "status": "Open"
         },
         {
-          "name": "N/A Overrun",
+          "name": "Overrun",
           "status": "Ungroomed"
         },
         {
-          "name": "N/A Rocky Return",
+          "name": "Rocky Return",
           "status": "Open"
         },
         {
-          "name": "N/A West Gates",
+          "name": "West Gates",
           "status": "Ungroomed"
         },
         {
-          "name": "N/A Race Arena",
+          "name": "Race Arena",
           "status": "Closed"
         },
         {
-          "name": "N/A Powder Run",
+          "name": "Powder Run",
           "status": "Closed"
         },
         {
-          "name": "N/A Sugar's Run",
+          "name": "Sugar's Run",
           "status": "Ungroomed"
         },
         {
@@ -255,39 +284,39 @@
           "status": "Open"
         },
         {
-          "name": "N/A McDougall\u2019s Chondola",
+          "name": "McDougall\u2019s Chondola",
           "status": "Open"
         },
         {
-          "name": "N/A Whitestar Express",
+          "name": "Whitestar Express",
           "status": "Open"
         },
         {
-          "name": "N/A Captains Express",
+          "name": "Captains Express",
           "status": "Open"
         },
         {
-          "name": "N/A Willow\u2019s Quad",
+          "name": "Willow\u2019s Quad",
           "status": "Closed"
         },
         {
-          "name": "N/A Soho Express",
+          "name": "Soho Express",
           "status": "Closed"
         },
         {
-          "name": "N/A T-Bar",
+          "name": "T-Bar",
           "status": "Open"
         },
         {
-          "name": "N/A Valley View",
+          "name": "Valley View",
           "status": "Open"
         },
         {
-          "name": "N/A Kindy Conveyor",
+          "name": "Kindy Conveyor",
           "status": "Open"
         },
         {
-          "name": "N/A Wells Pipe Platter",
+          "name": "Wells Pipe Platter",
           "status": "Closed"
         }
       ],
@@ -347,11 +376,11 @@
           "status": "Closed"
         },
         {
-          "name": "N/A Beginner Platter",
+          "name": "Beginner Platter",
           "status": "Open"
         },
         {
-          "name": "N/A Home Basin Express",
+          "name": "Home Basin Express",
           "status": "Open"
         }
       ],
