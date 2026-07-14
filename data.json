@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-14T05:00:56.984168+00:00",
+  "updated": "2026-07-14T06:11:32.954666+00:00",
   "news": {
-    "title": "New Zealand Weekend Forecast, Friday July 10th – Last Dregs of the Storm Clear for a Magical Matariki Weekend",
-    "summary": "With a tonne of fresh powder and fine, sunny weather settling over the country, it’ll be one you won’t want to miss out",
-    "url": "https://www.mountainwatch.com/Snow-news/new-zealand-weekend-forecast-friday-july-10th-last-dregs-of-the-storm-clear-for-a-magical-matariki-weekend/",
+    "title": "The Grasshopper — NZ forecast",
+    "summary": "The Grasshopper. The Southern Hemisphere's most reputable 6-legged snow forecaster for season outlooks, daily synoptic reviews & predictions.",
+    "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-14T05:17:00+00:00",
+  "next_scheduled_update": "2026-07-14T06:17:00+00:00",
   "schedule_minutes": 60,
   "health": {
     "usable_resorts": 4,
@@ -102,15 +102,13 @@
       ],
       "carparks": [],
       "weather": {
-        "temperature_c": -2.4,
+        "temperature_c": 1.0,
         "snowing": false,
-        "condition": "Not snowing",
-        "weather_code": 51,
-        "snowfall_cm": 0.0,
-        "observed": "2026-07-14T16:45",
-        "source": "Open-Meteo",
-        "source_url": "https://open-meteo.com/"
+        "condition": null,
+        "source": "Official resort report",
+        "source_url": "https://www.theremarkables.co.nz/weather-report/"
       },
+      "summary": "View The Remarkables snow and weather report with webcams. Our report is updated daily during the ski season and includes Queenstown mountain conditions, lift status, temperature & latest snow conditions the",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/the-remarkables/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/The-Remarkables-BaseCamera-Angle-1/LiveStill.jpg",
@@ -374,15 +372,13 @@
         }
       ],
       "weather": {
-        "temperature_c": 0.9,
-        "snowing": false,
-        "condition": "Not snowing",
-        "weather_code": 51,
-        "snowfall_cm": 0.0,
-        "observed": "2026-07-14T16:45",
-        "source": "Open-Meteo",
-        "source_url": "https://open-meteo.com/"
+        "temperature_c": 3.4,
+        "snowing": true,
+        "condition": "Snow",
+        "source": "SnowNZ mountain report",
+        "source_url": "https://www.snow.nz/area/nz/queenstown/coronetpeak/"
       },
+      "summary": "The latest Queenstown & Coronet Peak Snow Report, Ski Conditions, Weather Forecast, Snow Forecast, Snowfall History & Webcams from",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/coronet-peak/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Coronet-Peak-ExpressCamera-Angle-1/LiveStill.jpg",
@@ -555,7 +551,17 @@
           "status": "Closed"
         }
       ],
-      "weather": null,
+      "weather": {
+        "temperature_c": -2.7,
+        "snowing": false,
+        "condition": "Not snowing",
+        "weather_code": 0,
+        "snowfall_cm": 0.0,
+        "observed": "2026-07-14T18:00",
+        "source": "Open-Meteo",
+        "source_url": "https://open-meteo.com/"
+      },
+      "summary": null,
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -642,7 +648,17 @@
           "status": "Closed"
         }
       ],
-      "weather": null,
+      "weather": {
+        "temperature_c": 1.8,
+        "snowing": false,
+        "condition": "Not snowing",
+        "weather_code": 1,
+        "snowfall_cm": 0.0,
+        "observed": "2026-07-14T18:00",
+        "source": "Open-Meteo",
+        "source_url": "https://open-meteo.com/"
+      },
+      "summary": null,
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
