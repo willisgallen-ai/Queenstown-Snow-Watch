@@ -28,9 +28,14 @@ TIMEOUT = 30
 URLS = {
     "remarkables": "https://www.theremarkables.co.nz/weather-report/",
     "coronetpeak": "https://www.snow.nz/area/nz/queenstown/coronetpeak/",
+    "cardrona": "https://www.metservice.com/mountains-and-parks/ski-fields/cardrona",
+    "treblecone": "https://www.metservice.com/mountains-and-parks/ski-fields/treble-cone",
+}
+FALLBACK_URLS = {
     "cardrona": "https://www.snow.nz/area/nz/wanaka/cardrona/",
     "treblecone": "https://www.snow.nz/area/nz/wanaka/treble-cone/",
 }
+GRASSHOPPER_URL = "https://www.mountainwatch.com/grasshopper"
 WEBCAM_PAGES = {
     "remarkables": "https://www.mountainwatch.com/new-zealand/the-remarkables/snow-cams",
     "coronetpeak": "https://www.mountainwatch.com/new-zealand/coronet-peak/snow-cams",
@@ -229,6 +234,130 @@ def parse_remarkables(soup: BeautifulSoup) -> dict[str, Any]:
     return result
 
 
+
+def status_from_text(value: str) -> str:
+    v = clean(value).lower()
+    if "wind" in v and any(x in v for x in ("hold", "held", "affected", "closed")):
+        return "Wind hold"
+    if "ungroomed" in v:
+        return "Ungroomed"
+    if any(x in v for x in ("open", "operating", "running")):
+        return "Open"
+    if any(x in v for x in ("closed", "not operating")):
+        return "Closed"
+    return clean(value) or "Unknown"
+
+
+def parse_metservice_operational(soup: BeautifulSoup, resort: str) -> dict[str, Any]:
+    """Parse MetService ski-field operational cards, tables or embedded JSON."""
+    result: dict[str, Any] = {
+        "status": None, "lifts_open": None, "lifts_total": None,
+        "base_lower": None, "base_upper": None, "new_snow_7d": None,
+        "terrain": {}, "lifts": [], "trails": [], "carparks": [],
+    }
+    text = soup.get_text("\n", strip=True)
+    # Current state and temperature are commonly rendered in visible text.
+    m = re.search(r"\b(Open|Closed)\b\s*(?:for the day|ski field status|field status)?", text, re.I)
+    if m:
+        result["status"] = m.group(1).title()
+
+    # Read structured rows. MetService has used table rows and card-like list items.
+    seen_lifts: set[str] = set(); seen_trails: set[str] = set()
+    containers = soup.select("tr, li, [class*='lift'], [class*='trail'], [class*='run'], [class*='facility']")
+    lift_terms = ("chair", "express", "quad", "chondola", "conveyor", "carpet", "platter", "t-bar", "t bar", "gondola")
+    for node in containers:
+        label = clean(node.get_text(" "))
+        if len(label) < 3 or len(label) > 180:
+            continue
+        status = status_from_text(label)
+        # Strip the final status phrase from the item name.
+        name = re.sub(r"\s+(open|closed|operating|running|wind\s*(?:hold|held)|on hold|ungroomed|not operating).*$", "", label, flags=re.I).strip(" -–|")
+        if not name or name.lower() in {"lifts", "trails", "runs", "status"}:
+            continue
+        lower = name.lower()
+        if any(term in lower for term in lift_terms):
+            if lower not in seen_lifts:
+                seen_lifts.add(lower); result["lifts"].append({"name": name, "status": status})
+        elif any(k in (" "+label.lower()+" ") for k in (" open ", " closed ", " ungroomed ", " wind hold ", " wind held ")):
+            # Exclude weather prose, facilities and car-park text.
+            if any(bad in lower for bad in ("forecast", "temperature", "weather", "car park", "carpark", "road", "cafe", "restaurant", "rental", "guest service")):
+                continue
+            if lower not in seen_trails:
+                seen_trails.add(lower)
+                result["trails"].append({"name": name, "status": status, "difficulty": DIFFICULTY_MAP.get(lower, "unclassified")})
+
+    # Embedded JSON can contain cleaner lift/run records.
+    for script in soup.find_all("script"):
+        raw = script.string or script.get_text("", strip=True)
+        if not raw or len(raw) < 20:
+            continue
+        if not any(term in raw.lower() for term in ("lift", "trail", "run")):
+            continue
+        try:
+            data = json.loads(raw)
+        except Exception:
+            continue
+        stack=[data]
+        while stack:
+            obj=stack.pop()
+            if isinstance(obj, dict):
+                name = clean(str(obj.get("name") or obj.get("title") or obj.get("label") or ""))
+                stat = clean(str(obj.get("status") or obj.get("state") or obj.get("condition") or ""))
+                typ = clean(str(obj.get("type") or obj.get("category") or "")).lower()
+                if name and stat:
+                    lower=name.lower(); record={"name":name,"status":status_from_text(stat)}
+                    if "lift" in typ or any(t in lower for t in lift_terms):
+                        if lower not in seen_lifts: seen_lifts.add(lower); result["lifts"].append(record)
+                    elif any(t in typ for t in ("trail","run","terrain")):
+                        if lower not in seen_trails:
+                            seen_trails.add(lower); record["difficulty"]=DIFFICULTY_MAP.get(lower,"unclassified"); result["trails"].append(record)
+                stack.extend(obj.values())
+            elif isinstance(obj, list): stack.extend(obj)
+
+    if result["lifts"]:
+        result["lifts_total"] = len(result["lifts"])
+        result["lifts_open"] = sum(1 for x in result["lifts"] if x["status"] == "Open")
+    # Cardrona's park/feature list is not wanted. Keep only classified pistes there.
+    if resort == "cardrona":
+        result["trails"] = [t for t in result["trails"] if t.get("difficulty") != "unclassified"]
+    return result
+
+
+def parse_carparks_strict(soup: BeautifulSoup) -> list[dict[str, str]]:
+    """Only accept explicit car-park rows, never nearby trail or road prose."""
+    items = parse_list_section(soup, ["Car Parks", "Carparks", "Parking"])
+    out=[]; seen=set()
+    for item in items:
+        name=clean(item.get("name")); status=status_from_text(item.get("status", ""))
+        if not re.search(r"\b(car\s*park|carpark|parking|the yard|the pines|valley view)\b", name, re.I):
+            continue
+        if status not in {"Open","Closed","Full","Available","Spaces available","Limited Spaces","Filling Fast","Unknown"}:
+            status = "Unknown"
+        if name.lower() not in seen:
+            seen.add(name.lower()); out.append({"name":name,"status":status})
+    return out
+
+
+def scrape_grasshopper_headline() -> dict[str, Any] | None:
+    try:
+        soup, _ = fetch(GRASSHOPPER_URL)
+        candidates=[]
+        for a in soup.find_all("a", href=True):
+            title=clean(a.get_text(" "))
+            href=urljoin(GRASSHOPPER_URL, a["href"])
+            if len(title) < 25:
+                continue
+            low=title.lower()
+            if "new zealand" in low and any(k in low for k in ("forecast", "snow", "outlook")):
+                candidates.append((title, href))
+        if not candidates:
+            return None
+        title, url = candidates[0]
+        return {"title": title, "url": url, "source": "The Grasshopper · Mountainwatch"}
+    except Exception as exc:
+        print(f"Grasshopper headline failed: {exc}", file=sys.stderr)
+        return None
+
 def snowing_from_condition(condition: str | None) -> bool:
     value = (condition or "").lower()
     snow_terms = ("snow", "flurr", "sleet", "wintry")
@@ -280,30 +409,25 @@ def parse_current_weather(soup: BeautifulSoup, source_url: str, source_name: str
     }
 
 def find_webcam_image(soup: BeautifulSoup, base_url: str) -> str | None:
-    """Find a genuine camera still on a Mountainwatch snow-cams page."""
+    """Return the latest Mountainwatch camera still, not a page hero image."""
     candidates: list[tuple[int, str]] = []
     for img in soup.find_all("img"):
-        src = img.get("data-src") or img.get("data-lazy-src") or img.get("src")
+        sources = [img.get("data-src"), img.get("data-lazy-src"), img.get("data-original"), img.get("src")]
+        src = next((x for x in sources if x), None)
         if not src:
             continue
         full = urljoin(base_url, src)
-        attrs = " ".join([
-            clean(img.get("alt")),
-            clean(" ".join(img.get("class", []))),
-            clean(src),
-        ]).lower()
-        if any(bad in attrs for bad in ("logo", "avatar", "icon", "newsletter", "advert", "hero", "trail-map")):
+        attrs = " ".join([clean(img.get("alt")), clean(" ".join(img.get("class", []))), clean(src)]).lower()
+        if any(bad in attrs for bad in ("logo", "avatar", "icon", "newsletter", "advert", "banner", "hero", "travel", "deal")):
             continue
         score = 0
-        if any(word in attrs for word in ("cam", "camera", "snow-cam", "webcam")):
-            score += 5
-        if any(word in attrs for word in ("base", "basin", "express", "captain", "curvey", "summit")):
-            score += 2
-        if re.search(r"\.(?:jpe?g|png|webp)(?:\?|$)", full, re.I):
-            score += 1
-        if score:
-            candidates.append((score, full))
-    return max(candidates, default=(0, None), key=lambda item: item[0])[1]
+        if any(word in attrs for word in ("snowcam", "snow-cam", "webcam", "camera", "cam-image")): score += 12
+        if any(word in attrs for word in ("basin", "base", "chair", "express", "summit", "captain", "home basin", "saddle")): score += 4
+        parent_text = clean(img.parent.get_text(" ") if img.parent else "").lower()
+        if any(word in parent_text for word in ("snow cams", "webcam", "camera")): score += 5
+        if re.search(r"\.(?:jpe?g|png|webp)(?:\?|$)", full, re.I): score += 1
+        if score >= 5: candidates.append((score, full))
+    return max(candidates, default=(0, None), key=lambda x:x[0])[1]
 
 
 SNOWFORECAST_URLS = {
@@ -384,8 +508,25 @@ def merge_fallback(current: dict[str, Any], previous: dict[str, Any] | None) -> 
 
 def scrape_resort(name: str, previous: dict[str, Any] | None) -> dict[str, Any]:
     soup, html = fetch(URLS[name])
-    data = parse_remarkables(soup) if name == "remarkables" else parse_snownz(name, soup)
-    source_name = "Official resort report" if name == "remarkables" else "SnowNZ mountain report"
+    if name == "remarkables":
+        data = parse_remarkables(soup)
+        source_name = "Official resort report"
+    elif name == "coronetpeak":
+        data = parse_snownz(name, soup)
+        data["carparks"] = parse_carparks_strict(soup)
+        source_name = "SnowNZ mountain report"
+    else:
+        data = parse_metservice_operational(soup, name)
+        source_name = "MetService ski-field report"
+        # MetService does not consistently publish parking; use strict SnowNZ parking only.
+        try:
+            fallback_soup, _ = fetch(FALLBACK_URLS[name])
+            data["carparks"] = parse_carparks_strict(fallback_soup)
+            summary = parse_summary_snownz(fallback_soup)
+            for key in ("status","base_lower","base_upper","new_snow_7d"):
+                if data.get(key) is None: data[key] = summary.get(key)
+        except Exception as exc:
+            print(f"SnowNZ parking fallback failed for {name}: {exc}", file=sys.stderr)
     data["weather"] = parse_current_weather(soup, URLS[name], source_name)
     try:
         webcam_soup, _ = fetch(WEBCAM_PAGES[name])
@@ -396,7 +537,7 @@ def scrape_resort(name: str, previous: dict[str, Any] | None) -> dict[str, Any]:
     data["webcam"] = {
         "page_url": WEBCAM_PAGES[name],
         "image_url": webcam_image,
-        "embeddable": False,
+        "embeddable": bool(webcam_image),
         "source": "Mountainwatch",
     }
     try:
@@ -434,8 +575,10 @@ def main() -> int:
     if next_hour <= now:
         next_hour += timedelta(hours=1)
     usable = sum(validate_resort(r) for r in resorts.values())
+    news = scrape_grasshopper_headline() or deepcopy(previous_doc.get("news"))
     output = {
         "updated": now.isoformat(),
+        "news": news,
         "next_scheduled_update": next_hour.isoformat(),
         "schedule_minutes": 60,
         "health": {"usable_resorts": usable, "total_resorts": 4, "stale_resorts": stale},
