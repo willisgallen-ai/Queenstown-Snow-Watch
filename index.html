@@ -242,7 +242,7 @@ body{padding-top:26px}
 <div class="stat-row">
 <div class="stat"><div class="v" id="rm-base">15–60cm</div><div class="k">Base</div></div>
 <div class="stat"><div class="v">53cm</div><div class="k">Season</div></div>
-<div class="stat"><div class="v">8cm</div><div class="k">Last 24h</div></div><div class="stat"><div class="v" id="rm-7d">—</div><div class="k">Last 7d</div></div>
+<div class="stat"><div class="v">8cm</div><div class="k">Last 24h</div></div>
 </div>
 <div>
 <div class="section-lbl">Lifts</div>
@@ -271,7 +271,6 @@ body{padding-top:26px}
 </div>
 <div class="stat-row">
 <div class="stat"><div class="v" id="cp-base">20–30cm</div><div class="k">Base</div></div>
-<div class="stat"><div class="v" id="cp-7d">—</div><div class="k">Last 7d</div></div>
 </div>
 <div>
 <div class="section-lbl">Lifts</div>
@@ -333,7 +332,6 @@ body{padding-top:26px}
 <div class="stat-row">
 <div class="stat"><div class="v" id="cd-base">37cm</div><div class="k">Base</div></div>
 <div class="stat"><div class="v">10</div><div class="k">Lifts total</div></div>
-<div class="stat"><div class="v" id="cd-7d">—</div><div class="k">Last 7d</div></div>
 </div>
 <div>
 <div class="section-lbl">Lifts</div>
@@ -367,7 +365,6 @@ body{padding-top:26px}
 </div>
 <div class="stat-row">
 <div class="stat"><div class="v" id="tc-base">52cm</div><div class="k">Base</div></div>
-<div class="stat"><div class="v" id="tc-7d">—</div><div class="k">Last 7d</div></div>
 </div>
 <div>
 <div class="section-lbl">Lifts</div>
@@ -620,9 +617,12 @@ body{padding-top:26px}
   function bindResort(prefix, r){
     if(!r) return;
     const statusEl=document.getElementById(prefix+'-status');
-    if(statusEl&&r.status){statusEl.textContent=r.lifts_total?`${r.status} · ${r.lifts_open}/${r.lifts_total} lifts`:r.status;statusEl.className='status-tag '+(r.status.toLowerCase()==='open'?'status-open':'status-storm');}
+    if(statusEl&&r.status){
+      const staleTag = r.stale ? ' ⚠ delayed' : '';
+      statusEl.textContent=(r.lifts_total?`${r.status} · ${r.lifts_open}/${r.lifts_total} lifts`:r.status)+staleTag;
+      statusEl.className='status-tag '+(r.stale?'status-storm':(r.status.toLowerCase()==='open'?'status-open':'status-storm'));
+    }
     if(r.base_upper!=null){const baseEl=document.getElementById(prefix+'-base');if(baseEl)baseEl.textContent=r.base_lower!=null?`${r.base_lower}–${r.base_upper}cm`:`${r.base_upper}cm`;}
-    const seven=document.getElementById(prefix+'-7d');if(seven)seven.textContent=r.new_snow_7d!=null?`${r.new_snow_7d}cm`:'—';
     renderLifts(prefix,r.lifts);renderTrails(prefix,r.trails);renderTerrain(prefix,r.terrain);renderPark(prefix,r.park);renderSummary(prefix,r.summary);renderWeather(prefix,r.weather);renderCarparks(prefix,r.carparks);renderWebcam(prefix,r.webcam);
   }
 
