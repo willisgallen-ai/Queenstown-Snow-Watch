@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-14T06:11:32.954666+00:00",
+  "updated": "2026-07-14T06:33:14.659482+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The Grasshopper. The Southern Hemisphere's most reputable 6-legged snow forecaster for season outlooks, daily synoptic reviews & predictions.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-14T06:17:00+00:00",
-  "schedule_minutes": 60,
+  "next_scheduled_update": "2026-07-14T06:35:00+00:00",
+  "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
     "total_resorts": 4,
@@ -156,7 +156,8 @@
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "park": null
     },
     "coronetpeak": {
       "status": "Closed",
@@ -426,11 +427,12 @@
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "park": null
     },
     "cardrona": {
-      "status": "Closed",
-      "lifts_open": 4,
+      "status": "Open",
+      "lifts_open": 3,
       "lifts_total": 10,
       "base_lower": 37,
       "base_upper": 37,
@@ -439,90 +441,137 @@
       "lifts": [
         {
           "name": "Learner Conveyors",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
-          "name": "McDougall’s Chondola",
-          "status": "Open"
+          "name": "McDougall's Chondola",
+          "status": "Unknown"
         },
         {
           "name": "Whitestar Express",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Captains Express",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
-          "name": "Willow’s Quad",
-          "status": "Closed"
+          "name": "Willow's Quad",
+          "status": "Unknown"
         },
         {
           "name": "Soho Express",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "T-Bar",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Valley View",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Kindy Conveyor",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Wells Pipe Platter",
-          "status": "Closed"
+          "status": "Unknown"
         }
       ],
       "trails": [
         {
+          "name": "Learners Slope",
+          "status": "Unknown",
+          "difficulty": null
+        },
+        {
+          "name": "Main Basin",
+          "status": "Unknown",
+          "difficulty": null
+        },
+        {
+          "name": "Captains",
+          "status": "Unknown",
+          "difficulty": null
+        },
+        {
+          "name": "Soho",
+          "status": "Unknown",
+          "difficulty": null
+        },
+        {
+          "name": "Little Willows",
+          "status": "Unknown",
+          "difficulty": null
+        },
+        {
+          "name": "Big Willows",
+          "status": "Unknown",
+          "difficulty": null
+        },
+        {
+          "name": "Backcountry Access",
+          "status": "Unknown",
+          "difficulty": null
+        },
+        {
+          "name": "Mt Cardrona",
+          "status": "Unknown",
+          "difficulty": null
+        },
+        {
+          "name": "Arcadia Chutes",
+          "status": "Unknown",
+          "difficulty": null
+        },
+        {
+          "name": "Summit",
+          "status": "Unknown",
+          "difficulty": null
+        }
+      ],
+      "park": [
+        {
           "name": "Baby Bucks",
-          "status": "Open",
-          "difficulty": "unclassified"
+          "status": "Unknown"
         },
         {
           "name": "Little Bucks",
-          "status": "Closed",
-          "difficulty": "unclassified"
+          "status": "Unknown"
         },
         {
           "name": "Antlers Alley",
-          "status": "Closed",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Big Bucks",
-          "status": "Closed",
-          "difficulty": "unclassified"
+          "status": "Unknown"
         },
         {
           "name": "Stag Lane",
-          "status": "Closed",
-          "difficulty": "unclassified"
+          "status": "Unknown"
+        },
+        {
+          "name": "Big Bucks",
+          "status": "Unknown"
         },
         {
           "name": "Peoples Pipe",
-          "status": "Closed",
-          "difficulty": "unclassified"
+          "status": "Unknown"
+        },
+        {
+          "name": "Olympic Pipe",
+          "status": "Unknown"
         },
         {
           "name": "Big Air",
-          "status": "Closed",
-          "difficulty": "unclassified"
+          "status": "Unknown"
         },
         {
           "name": "Mc Park",
-          "status": "Open",
-          "difficulty": "unclassified"
+          "status": "Unknown"
         },
         {
           "name": "Gravity Cross",
-          "status": "Closed",
-          "difficulty": "unclassified"
+          "status": "Unknown"
         }
       ],
       "carparks": [
@@ -552,16 +601,16 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.7,
+        "temperature_c": -3.0,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-14T18:00",
+        "observed": "2026-07-14T18:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": null,
+      "summary": ": Monday 13/7 Mōrena koutou We have a little blustery Monday for the start to your week - The groomers have been back out in action across the mountain laying down some cord and the wind is blowing around some freshies! The weather forecast for today is moderate - high winds with snow showers coming in around lunchtime. Our lifts may be subject to some wind holds today. Chains MUST be carried today as you may need them for the way home. McDougall's, Learners, White star and Valley View scheduled",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -612,7 +661,7 @@
       "stale": false
     },
     "treblecone": {
-      "status": "Closed",
+      "status": "Open",
       "lifts_open": 2,
       "lifts_total": 3,
       "base_lower": 54,
@@ -621,19 +670,61 @@
       "terrain": {},
       "lifts": [
         {
+          "name": "Home Basin Express",
+          "status": "Unknown"
+        },
+        {
           "name": "Saddle Quad",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Beginner Platter",
-          "status": "Open"
-        },
-        {
-          "name": "Home Basin Express",
-          "status": "Open"
+          "status": "Unknown"
         }
       ],
-      "trails": [],
+      "trails": [
+        {
+          "name": "Home Basin",
+          "status": "Unknown",
+          "difficulty": null
+        },
+        {
+          "name": "Saddle Basin",
+          "status": "Unknown",
+          "difficulty": null
+        },
+        {
+          "name": "Matukituki Basin",
+          "status": "Unknown",
+          "difficulty": null
+        },
+        {
+          "name": "Summit Slopes",
+          "status": "Unknown",
+          "difficulty": null
+        },
+        {
+          "name": "Motatapu Chutes",
+          "status": "Unknown",
+          "difficulty": null
+        },
+        {
+          "name": "Sundance",
+          "status": "Unknown",
+          "difficulty": null
+        },
+        {
+          "name": "Backcountry Access",
+          "status": "Unknown",
+          "difficulty": null
+        },
+        {
+          "name": "Morning Skinning",
+          "status": "Unknown",
+          "difficulty": null
+        }
+      ],
+      "park": [],
       "carparks": [
         {
           "name": "Carpark 1",
@@ -649,16 +740,16 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.8,
+        "temperature_c": 0.9,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 1,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-14T18:00",
+        "observed": "2026-07-14T18:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": null,
+      "summary": ": Last Updated: July 13 The next 24–48 hours look promising, with the forecast tracking a decent hit of new snow overnight and into tomorrow. If it delivers, expect a solid boost to the base and a good shot at opening more terrain. We're already seeing snow and strong winds setting in on the upper mountain, The Saddle will remain CLOSED today.",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
