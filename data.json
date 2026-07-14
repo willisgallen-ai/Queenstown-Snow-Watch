@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T02:01:28.477375+00:00",
+  "updated": "2026-07-14T02:05:05.076895+00:00",
   "resorts": {
     "remarkables": {
       "status": "Open",
@@ -161,7 +161,11 @@
           "status": "Ungroomed"
         },
         {
-          "name": "Exchange Drop Variable N/A KidsZone carpet",
+          "name": "Exchange Drop",
+          "status": "Variable"
+        },
+        {
+          "name": "KidsZone carpet",
           "status": "Closed"
         },
         {
