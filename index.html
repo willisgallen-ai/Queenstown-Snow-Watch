@@ -89,6 +89,7 @@
   }
   .status-open{background:var(--good-dim);color:var(--good);}
   .status-storm{background:var(--storm-dim);color:var(--storm);}
+  .status-closed-badge{background:var(--bad-dim);color:var(--bad);}
 
   /* de-emphasized stat row — base depth is one of several, not the hero */
   .stat-row{display:flex;gap:20px;flex-wrap:wrap;padding-bottom:2px;border-bottom:1px solid var(--line);padding-bottom:12px;}
@@ -583,7 +584,7 @@ body{padding-top:26px}
     const snowState=weather.snowing?'Snowing':'Not snowing';
     el.innerHTML=`<div class="weather-temp">${escapeHtml(temp)}</div><div>${escapeHtml(snowState)}</div>`;
   }
-  function parkClass(status){const v=(status||'').toLowerCase();if(v.includes('full')||v.includes('closed'))return'park-full';if(v.includes('limited')||v.includes('filling'))return'park-limited';if(v.includes('available')||v.includes('open')||v.includes('spaces'))return'park-open';return'park-unknown';}
+  function parkClass(status){const v=(status||'').toLowerCase();if(v.includes('full')||v.includes('closed'))return'park-full';if(v.includes('limited')||v.includes('filling')||v.includes('per car'))return'park-limited';if(v.includes('available')||v.includes('open')||v.includes('spaces'))return'park-open';return'park-unknown';}
   function renderCarparks(prefix, parks){
     const el=document.getElementById(prefix+'-carparks');if(!el)return;
     if(!Array.isArray(parks)||!parks.length){el.innerHTML='<span class="muted-inline">Not reported</span>';return;}
@@ -620,7 +621,8 @@ body{padding-top:26px}
     if(statusEl&&r.status){
       const staleTag = r.stale ? ' ⚠ delayed' : '';
       statusEl.textContent=(r.lifts_total?`${r.status} · ${r.lifts_open}/${r.lifts_total} lifts`:r.status)+staleTag;
-      statusEl.className='status-tag '+(r.stale?'status-storm':(r.status.toLowerCase()==='open'?'status-open':'status-storm'));
+      const cls = r.stale ? 'status-storm' : (r.status.toLowerCase()==='open' ? 'status-open' : 'status-closed-badge');
+      statusEl.className='status-tag '+cls;
     }
     if(r.base_upper!=null){const baseEl=document.getElementById(prefix+'-base');if(baseEl)baseEl.textContent=r.base_lower!=null?`${r.base_lower}–${r.base_upper}cm`:`${r.base_upper}cm`;}
     renderLifts(prefix,r.lifts);renderTrails(prefix,r.trails);renderTerrain(prefix,r.terrain);renderPark(prefix,r.park);renderSummary(prefix,r.summary);renderWeather(prefix,r.weather);renderCarparks(prefix,r.carparks);renderWebcam(prefix,r.webcam);
