@@ -6,7 +6,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Snow Watch</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Orbitron:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
   :root{
     --bg: #0a1119;
@@ -186,6 +186,28 @@
   .live-cluster{display:flex;gap:9px;align-items:center;text-align:right}.live-dot{width:9px;height:9px;border-radius:50%;background:var(--muted-2)}.live-dot.fresh{background:var(--good);box-shadow:0 0 0 4px rgba(111,207,151,.12)}.live-dot.stale{background:var(--storm);box-shadow:0 0 0 4px rgba(232,162,60,.12)}.next-tag{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--muted-2);margin-top:2px}.live-panels{display:grid;grid-template-columns:1fr 1fr;gap:8px}.mini-panel{background:var(--bg-alt);border:1px solid var(--line);border-radius:10px;padding:10px}.weather-now{font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.55}.weather-temp{font-family:'Big Shoulders Display',sans-serif;font-size:24px;font-weight:800}.weather-detail,.muted-inline{color:var(--muted-2);font-size:9.5px}.carpark-list{display:flex;flex-direction:column;gap:5px}.carpark-pill{display:flex;justify-content:space-between;gap:8px;font-family:'JetBrains Mono',monospace;font-size:9.5px}.park-state{font-weight:600}.park-open{color:var(--good)}.park-limited{color:var(--storm)}.park-full{color:var(--bad)}.park-unknown{color:var(--muted-2)}.webcam-card{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background-size:cover;background-position:center;min-height:68px;cursor:pointer;position:relative;overflow:hidden}.webcam-card::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,17,25,.94),rgba(10,17,25,.48))}.webcam-card>*{position:relative}.webcam-title{font-size:11px;font-weight:600}.trail-groups{display:flex;flex-direction:column;gap:10px}.trail-group{border-left:3px solid var(--line);padding-left:9px}.trail-group-head{display:flex;align-items:center;gap:7px;margin-bottom:6px;font-family:'JetBrains Mono',monospace;font-size:9.5px;text-transform:uppercase}.difficulty-symbol{width:10px;height:10px;display:inline-block}.diff-green{border-radius:50%;background:#5fd07e}.diff-blue{border-radius:3px;background:#5fb0e8}.diff-red{border-radius:3px;background:#e88f5f;transform:rotate(45deg)}.diff-black{border-radius:3px;background:#171717;border:1px solid #777;transform:rotate(45deg)}.diff-double-black{position:relative;width:18px}.diff-double-black::before,.diff-double-black::after{content:'';position:absolute;width:9px;height:9px;border-radius:2px;background:#171717;border:1px solid #777;transform:rotate(45deg);top:0}.diff-double-black::after{left:7px}.diff-unclassified{border-radius:50%;border:1px solid var(--muted-2)}@media(max-width:560px){.live-panels{grid-template-columns:1fr}.live-cluster{text-align:left;width:100%}}
 
 .news-ticker{overflow:hidden;border-bottom:1px solid var(--line);margin-bottom:18px;padding:9px 0;font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--ice);white-space:nowrap}.news-track{display:inline-block;min-width:100%;padding-left:100%;animation:ticker 28s linear infinite}.news-track a{color:inherit;text-decoration:none}.news-track:hover{animation-play-state:paused}@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-200%)}}.footer-live{justify-content:center;text-align:center;margin:28px auto 0}.trail-chip.t-wind{color:var(--storm);border-color:var(--storm-dim)}.trail-chip.t-wind .t-dot{background:var(--storm)}.trail-chip.t-ungroomed{color:var(--ice);border-color:var(--ice-dim)}.trail-chip.t-ungroomed .t-dot{background:var(--ice)}.webcam-card{cursor:default;min-height:150px;background-position:center;background-size:cover}.webcam-card::before{background:linear-gradient(180deg,rgba(10,17,25,.18),rgba(10,17,25,.72))}.webcam-card>div{align-self:flex-end}.webcam-source{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted)}
+
+/* v7 layout */
+body{padding-top:26px}
+.wrap{max-width:1180px}
+.grid{align-items:start}
+.card{align-self:start}
+.news-ticker{
+  width:100vw;margin-left:calc(50% - 50vw);margin-top:-26px;margin-bottom:28px;
+  border:0;padding:13px 0;background:#05090d;color:#7dff9b;overflow:hidden;
+  font-family:'Orbitron','JetBrains Mono',monospace;font-size:11px;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;
+  box-shadow:none;
+}
+.news-track{display:flex;width:max-content;min-width:0;padding:0;animation:ticker 70s linear infinite;will-change:transform}
+.news-copy{display:inline-flex;align-items:center;gap:30px;padding-right:30px}
+.news-copy::after{content:'◆';opacity:.55}
+.news-track a{color:inherit;text-decoration:none}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.webcam-card{display:block;padding:0;min-height:0;border:1px solid var(--line);background:none!important;overflow:hidden}
+.webcam-card::before{display:none!important}
+.webcam-card img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;background:#05090d}
+.lift-legend{margin-top:28px;margin-bottom:18px}
 </style>
 </head>
 <body>
@@ -208,23 +230,6 @@
 </svg>
 <div class="wrap"><div class="news-ticker" id="news-ticker"><div class="news-track" id="news-track">Latest Grasshopper New Zealand report loading…</div></div>
 
-<div class="lift-legend">
-<div class="lg-group">
-<span class="lg-item"><svg><use href="#ic-chair"></use></svg>Chairlift</span>
-<span class="lg-item"><svg><use href="#ic-gondola"></use></svg>Gondola</span>
-<span class="lg-item"><svg><use href="#ic-tbar"></use></svg>T-bar</span>
-<span class="lg-item"><svg><use href="#ic-conveyor"></use></svg>Conveyor</span>
-<span class="lg-item"><svg><use href="#ic-platter"></use></svg>Platter</span>
-</div>
-<div class="lg-sep"></div>
-<div class="lg-group">
-<span class="lg-item"><span class="lg-dot" style="background:var(--good);"></span>Open</span>
-<span class="lg-item"><span class="lg-dot" style="background:var(--bad);"></span>Closed</span>
-
-<span class="lg-item"><span class="lg-dot" style="background:var(--muted-2);"></span>Not confirmed</span>
-<span class="lg-item"><span class="lg-dot" style="background:var(--rain);"></span>Rain (forecast)</span>
-<span class="lg-item"><span class="lg-dot" style="background:var(--storm);"></span>Wind hold</span><span class="lg-item"><span class="lg-dot" style="background:var(--ice);"></span>Ungroomed</span></div>
-</div>
 <div class="group-label">Queenstown</div>
 <div class="grid">
 <div class="card" id="card-remarkables">
@@ -249,12 +254,11 @@
 <div class="lift-chip status-closed"><svg class="lift-icon"><use href="#ic-chair"></use></svg><span class="lift-name">Shadow Basin Chair</span><span class="lift-dot"></span></div>
 </div>
 </div>
-
 <div>
 <div class="section-lbl">Named trails</div>
 <div class="trail-groups" id="rm-trails"><div class="no-data">Loading named terrain…</div></div>
 </div>
-<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="rm-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="rm-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="rm-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Latest Mountainwatch image</div></div></div><div class="card-note">Live source · The Remarkables</div>
+<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="rm-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="rm-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="rm-webcam"><img alt="Latest resort webcam image" id="rm-webcam-img"/></div><div class="card-note">Live source · The Remarkables</div>
 </div>
 <div class="card" id="card-coronetpeak">
 <div class="card-top">
@@ -278,7 +282,6 @@
 <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-conveyor"></use></svg><span class="lift-name">Kidszone Carpet</span><span class="lift-dot"></span></div>
 </div>
 </div>
-
 <div>
 <div class="section-lbl">Named trails · 19/29 open</div>
 <div class="trail-groups" id="cp-trails">
@@ -313,7 +316,7 @@
 <div class="trail-chip t-closed"><span class="t-dot"></span>Walkabout Park</div>
 </div>
 </div>
-<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="cp-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="cp-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cp-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Latest Mountainwatch image</div></div></div><div class="card-note">Live source · Coronet Peak / snow.nz</div>
+<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="cp-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="cp-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cp-webcam"><img alt="Latest resort webcam image" id="cp-webcam-img"/></div><div class="card-note">Live source · Coronet Peak / snow.nz</div>
 </div>
 </div>
 <div class="group-label">Wanaka</div>
@@ -343,12 +346,11 @@
 <div class="lift-chip status-unknown"><svg class="lift-icon"><use href="#ic-platter"></use></svg><span class="lift-name">Wells Pipe Platter</span><span class="lift-dot"></span></div>
 </div>
 </div>
-
 <div>
 <div class="section-lbl">Named trails</div>
 <div class="trail-groups" id="cd-trails"><div class="no-data">Not currently reported.</div></div>
 </div>
-<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="cd-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="cd-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cd-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Latest Mountainwatch image</div></div></div><div class="card-note">Live source · Cardrona / MetService</div>
+<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="cd-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="cd-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cd-webcam"><img alt="Latest resort webcam image" id="cd-webcam-img"/></div><div class="card-note">Live source · Cardrona / MetService</div>
 </div>
 <div class="card" id="card-treblecone">
 <div class="card-top">
@@ -367,12 +369,11 @@
 <div class="lift-chip status-open"><svg class="lift-icon"><use href="#ic-platter"></use></svg><span class="lift-name">Beginner Platter</span><span class="lift-dot"></span></div>
 </div>
 </div>
-
 <div>
 <div class="section-lbl">Named trails</div>
 <div class="trail-groups" id="tc-trails"><div class="no-data">Not currently reported.</div></div>
 </div>
-<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="tc-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="tc-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="tc-webcam"><div><div class="section-lbl">Live webcam</div><div class="webcam-title">Latest Mountainwatch image</div></div></div><div class="card-note">Live source · Treble Cone / MetService</div>
+<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="tc-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="tc-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="tc-webcam"><img alt="Latest resort webcam image" id="tc-webcam-img"/></div><div class="card-note">Live source · Treble Cone / MetService</div>
 </div>
 </div>
 <section class="snowfall">
@@ -426,7 +427,22 @@
 </div>
 </div>
 </section>
-<div class="sources">
+<div class="lift-legend">
+<div class="lg-group">
+<span class="lg-item"><svg><use href="#ic-chair"></use></svg>Chairlift</span>
+<span class="lg-item"><svg><use href="#ic-gondola"></use></svg>Gondola</span>
+<span class="lg-item"><svg><use href="#ic-tbar"></use></svg>T-bar</span>
+<span class="lg-item"><svg><use href="#ic-conveyor"></use></svg>Conveyor</span>
+<span class="lg-item"><svg><use href="#ic-platter"></use></svg>Platter</span>
+</div>
+<div class="lg-sep"></div>
+<div class="lg-group">
+<span class="lg-item"><span class="lg-dot" style="background:var(--good);"></span>Open</span>
+<span class="lg-item"><span class="lg-dot" style="background:var(--bad);"></span>Closed</span>
+<span class="lg-item"><span class="lg-dot" style="background:var(--muted-2);"></span>Not confirmed</span>
+<span class="lg-item"><span class="lg-dot" style="background:var(--rain);"></span>Rain (forecast)</span>
+<span class="lg-item"><span class="lg-dot" style="background:var(--storm);"></span>Wind hold</span><span class="lg-item"><span class="lg-dot" style="background:var(--ice);"></span>Ungroomed</span></div>
+</div><div class="sources">
 <a class="src-chip" href="https://www.theremarkables.co.nz/weather-report/" target="_blank">Remarkables report <span class="arrow">↗</span></a>
 <a class="src-chip" href="https://www.snow.nz/area/nz/queenstown/coronetpeak/" target="_blank">Coronet Peak report <span class="arrow">↗</span></a>
 <a class="src-chip" href="https://www.snow.nz/area/nz/wanaka/cardrona/" target="_blank">Cardrona report <span class="arrow">↗</span></a>
@@ -436,7 +452,6 @@
 <a class="src-chip" href="https://www.snow-forecast.com/resorts/Cardrona/6day/mid" target="_blank">Cardrona forecast <span class="arrow">↗</span></a>
 <a class="src-chip" href="https://www.snow-forecast.com/resorts/Treble-Cone/6day/mid" target="_blank">Treble Cone forecast <span class="arrow">↗</span></a>
 </div>
-
 <footer><div class="live-cluster footer-live"><span class="live-dot" id="live-dot"></span><div><div class="stamp-tag" id="live-stamp">Loading live data…</div><div class="next-tag" id="next-update">Next check calculating…</div></div></div></footer></div>
 <script>
   // snow-scale: grey(0) -> green(light) -> amber(moderate) -> red(heavy). Rain-only days render blue.
@@ -536,23 +551,25 @@
     el.innerHTML=parks.map(p=>`<div class="carpark-pill"><span>${escapeHtml(p.name)}</span><span class="park-state ${parkClass(p.status)}">${escapeHtml(p.status||'Unknown')}</span></div>`).join('');
   }
   function renderWebcam(prefix, webcam){
-    const el=document.getElementById(prefix+'-webcam');if(!el)return;
-    const title=el.querySelector('.webcam-title');
+    const img=document.getElementById(prefix+'-webcam-img');if(!img)return;
     if(webcam?.image_url){
       const separator=String(webcam.image_url).includes('?')?'&':'?';
-      el.style.backgroundImage=`url('${String(webcam.image_url).replace(/'/g,'%27')}${separator}refresh=${Date.now()}')`;
-      if(title)title.textContent='Latest Mountainwatch image';
+      img.src=String(webcam.image_url)+separator+'refresh='+Date.now();
+      img.style.display='block';
     }else{
-      el.style.backgroundImage='none';
-      if(title)title.textContent='Camera image unavailable';
+      img.removeAttribute('src');
+      img.style.display='none';
     }
-    el.onclick=null;el.removeAttribute('role');el.removeAttribute('tabindex');el.onkeydown=null;
   }
 
   function renderNews(news){
     const el=document.getElementById('news-track');if(!el)return;
-    if(!news?.title){el.textContent='Latest Grasshopper New Zealand report unavailable';return;}
-    el.innerHTML=`<a href="${escapeHtml(news.url||'#')}" target="_blank" rel="noopener">${escapeHtml(news.title)} · ${escapeHtml(news.source||'The Grasshopper')}</a>`;
+    const title=news?.title||'Latest Grasshopper New Zealand report unavailable';
+    const summary=news?.summary?` — ${news.summary}`:'';
+    const text=`${title}${summary}`;
+    const href=escapeHtml(news?.url||'#');
+    const copy=`<span class="news-copy"><a href="${href}" target="_blank" rel="noopener">${escapeHtml(text)}</a></span>`;
+    el.innerHTML=copy+copy;
   }
 
   function bindResort(prefix, r){
