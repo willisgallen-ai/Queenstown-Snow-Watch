@@ -31,18 +31,11 @@ URLS = {
     "cardrona": "https://www.snow.nz/area/nz/wanaka/cardrona/",
     "treblecone": "https://www.snow.nz/area/nz/wanaka/treble-cone/",
 }
-WEATHER_URLS = {
-    # Resort POIs where AccuWeather provides them; nearest named location otherwise.
-    "remarkables": "https://www.accuweather.com/en/nz/queenstown/249932/current-weather/249932",
-    "coronetpeak": "https://www.accuweather.com/en/nz/coronet-peak-ski-resort/67336_poi/current-weather/67336_poi",
-    "cardrona": "https://www.accuweather.com/en/nz/cardrona-alpine-resort/64922_poi/current-weather/64922_poi",
-    "treblecone": "https://www.accuweather.com/en/nz/wanaka/250069/current-weather/250069",
-}
 WEBCAM_PAGES = {
-    "remarkables": URLS["remarkables"],
-    "coronetpeak": "https://www.coronetpeak.co.nz/weather-report",
-    "cardrona": "https://cardrona-treblecone.com/webcams",
-    "treblecone": "https://cardrona-treblecone.com/webcams",
+    "remarkables": "https://www.mountainwatch.com/new-zealand/the-remarkables/snow-cams",
+    "coronetpeak": "https://www.mountainwatch.com/new-zealand/coronet-peak/snow-cams",
+    "cardrona": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
+    "treblecone": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
 }
 
 DIFFICULTY_MAP = {
@@ -236,68 +229,81 @@ def parse_remarkables(soup: BeautifulSoup) -> dict[str, Any]:
     return result
 
 
-def parse_accuweather(soup: BeautifulSoup, html: str, source_url: str) -> dict[str, Any] | None:
-    text = clean(soup.get_text(" "))
-    # Prefer semantic current-condition selectors where present.
-    current = soup.select_one(".current-weather-card, .cur-con-weather-card")
-    scope = clean(current.get_text(" ")) if current else text
-    temp = None
-    for selector in (".temperature", ".temp", "[class*='temperature']"):
-        node = current.select_one(selector) if current else soup.select_one(selector)
-        if node:
-            temp = parse_number(node.get_text(" "))
-            if temp is not None: break
+def snowing_from_condition(condition: str | None) -> bool:
+    value = (condition or "").lower()
+    snow_terms = ("snow", "flurr", "sleet", "wintry")
+    negations = ("no snow", "snow unlikely", "snow clearing")
+    return any(term in value for term in snow_terms) and not any(term in value for term in negations)
+
+
+def parse_current_weather(soup: BeautifulSoup, source_url: str, source_name: str) -> dict[str, Any] | None:
+    """Read the current mountain temperature and condition from the resort report."""
+    text = soup.get_text("\n", strip=True)
+    temp: float | None = None
+    condition: str | None = None
+
+    patterns = [
+        r"CURRENTLY\s*\n\s*(-?\d+(?:\.\d+)?)°c\s*\n\s*([^\n]+)",
+        r"Today\s*\n\s*(-?\d+(?:\.\d+)?)°c\s*\n\s*([^\n]+)",
+        r"Weather:?\s*\n\s*(-?\d+(?:\.\d+)?)°\s*([^\n]+)",
+        r"(-?\d+(?:\.\d+)?)°\s*([^\n]+)\s*\n\s*Weather",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, text, re.I)
+        if match:
+            temp = float(match.group(1))
+            condition = clean(match.group(2))
+            break
+
     if temp is None:
-        match = re.search(r"Current Weather.*?(-?\d+)°\s*C?", scope, re.I)
-        if not match:
-            match = re.search(r"currently\s+.+?temperature of\s+(-?\d+)°", text, re.I)
-        temp = parse_number(match.group(1)) if match else None
+        node = soup.select_one("[class*='temperature'], [class*='current-temp'], [class*='weather-temp']")
+        if node:
+            found = re.search(r"-?\d+(?:\.\d+)?", node.get_text(" "))
+            if found:
+                temp = float(found.group())
 
-    condition = None
-    node = current.select_one(".phrase") if current else soup.select_one(".phrase")
-    if node: condition = clean(node.get_text(" "))
-    if not condition:
-        match = re.search(r"Current Weather.*?°\s*C?\s+RealFeel.*?°\s+([^\d]+?)\s+More Details", scope, re.I)
-        if match: condition = clean(match.group(1))
-        else:
-            match = re.search(r"is currently ([A-Za-z ,&-]+?) with a temperature", text, re.I)
-            if match: condition = clean(match.group(1))
+    if condition is None:
+        for selector in ("[class*='weather-condition']", "[class*='condition']", "[class*='weather-description']"):
+            node = soup.select_one(selector)
+            if node:
+                condition = clean(node.get_text(" "))
+                break
 
-    feels = None
-    match = re.search(r"RealFeel(?:®)?\s*(-?\d+)°", scope, re.I)
-    if match: feels = parse_number(match.group(1))
-    wind = None
-    match = re.search(r"Wind\s+([A-Z]{1,3}\s+\d+\s*km/h)", scope, re.I)
-    if match: wind = clean(match.group(1))
-    observed = None
-    match = re.search(r"Current Weather\s+(\d{1,2}:\d{2}\s*[AP]M)", scope, re.I)
-    if match: observed = match.group(1)
-    if temp is None and not condition:
+    if temp is None:
         return None
     return {
-        "temperature_c": temp, "condition": condition, "feels_like_c": feels,
-        "wind": wind, "observed": observed, "source": "AccuWeather", "source_url": source_url,
+        "temperature_c": round(temp, 1),
+        "snowing": snowing_from_condition(condition),
+        "condition": condition,
+        "source": source_name,
+        "source_url": source_url,
     }
 
-
-def parse_snownz_weather(soup: BeautifulSoup, source_url: str) -> dict[str, Any] | None:
-    text = soup.get_text("\n", strip=True)
-    match = re.search(r"(-?\d+(?:\.\d+)?)°\s*([^\n]+)\s*\n\s*Weather", text, re.I)
-    if not match:
-        match = re.search(r"Weather:\s*\n\s*(-?\d+(?:\.\d+)?)°\s*([^\n]+)", text, re.I)
-    if not match: return None
-    return {"temperature_c": round(float(match.group(1))), "condition": clean(match.group(2)), "feels_like_c": None, "wind": None, "source": "SnowNZ fallback", "source_url": source_url}
-
-
 def find_webcam_image(soup: BeautifulSoup, base_url: str) -> str | None:
+    """Find a genuine camera still on a Mountainwatch snow-cams page."""
+    candidates: list[tuple[int, str]] = []
     for img in soup.find_all("img"):
-        attrs = " ".join([clean(img.get("alt")), clean(img.get("class") and " ".join(img.get("class"))), clean(img.get("src"))]).lower()
-        if "webcam" not in attrs and "camera" not in attrs:
+        src = img.get("data-src") or img.get("data-lazy-src") or img.get("src")
+        if not src:
             continue
-        src = img.get("src") or img.get("data-src") or img.get("data-lazy-src")
-        if src and not any(x in src.lower() for x in ("logo", "icon", "hero")):
-            return urljoin(base_url, src)
-    return None
+        full = urljoin(base_url, src)
+        attrs = " ".join([
+            clean(img.get("alt")),
+            clean(" ".join(img.get("class", []))),
+            clean(src),
+        ]).lower()
+        if any(bad in attrs for bad in ("logo", "avatar", "icon", "newsletter", "advert", "hero", "trail-map")):
+            continue
+        score = 0
+        if any(word in attrs for word in ("cam", "camera", "snow-cam", "webcam")):
+            score += 5
+        if any(word in attrs for word in ("base", "basin", "express", "captain", "curvey", "summit")):
+            score += 2
+        if re.search(r"\.(?:jpe?g|png|webp)(?:\?|$)", full, re.I):
+            score += 1
+        if score:
+            candidates.append((score, full))
+    return max(candidates, default=(0, None), key=lambda item: item[0])[1]
 
 
 SNOWFORECAST_URLS = {
@@ -379,16 +385,19 @@ def merge_fallback(current: dict[str, Any], previous: dict[str, Any] | None) -> 
 def scrape_resort(name: str, previous: dict[str, Any] | None) -> dict[str, Any]:
     soup, html = fetch(URLS[name])
     data = parse_remarkables(soup) if name == "remarkables" else parse_snownz(name, soup)
+    source_name = "Official resort report" if name == "remarkables" else "SnowNZ mountain report"
+    data["weather"] = parse_current_weather(soup, URLS[name], source_name)
     try:
-        weather_soup, weather_html = fetch(WEATHER_URLS[name])
-        data["weather"] = parse_accuweather(weather_soup, weather_html, WEATHER_URLS[name])
+        webcam_soup, _ = fetch(WEBCAM_PAGES[name])
+        webcam_image = find_webcam_image(webcam_soup, WEBCAM_PAGES[name])
     except Exception as exc:
-        print(f"Weather fetch failed for {name}: {exc}", file=sys.stderr)
-        data["weather"] = None
-    if not data.get("weather") and name != "remarkables":
-        data["weather"] = parse_snownz_weather(soup, URLS[name])
+        print(f"Mountainwatch webcam fetch failed for {name}: {exc}", file=sys.stderr)
+        webcam_image = None
     data["webcam"] = {
-        "page_url": WEBCAM_PAGES[name], "image_url": find_webcam_image(soup, URLS[name]), "embeddable": False,
+        "page_url": WEBCAM_PAGES[name],
+        "image_url": webcam_image,
+        "embeddable": False,
+        "source": "Mountainwatch",
     }
     try:
         data["forecast"] = scrape_snow_forecast(SNOWFORECAST_URLS[name])
