@@ -157,6 +157,8 @@
   .trail-chip.t-closed .t-dot{background:var(--bad);} .trail-chip.t-closed{color:var(--bad);}
 
   .card-note{font-size:9.5px;color:var(--muted-2);font-family:'JetBrains Mono',monospace;}
+  .report-summary{font-size:11.5px;line-height:1.5;color:var(--muted);border-left:2px solid var(--line);padding-left:10px;}
+  .report-summary:empty{display:none;}
 
   /* ---- snowfall ---- */
   .snowfall{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 22px 22px;margin-bottom:24px;}
@@ -255,10 +257,12 @@ body{padding-top:26px}
 </div>
 </div>
 <div>
-<div class="section-lbl">Named trails</div>
-<div class="trail-groups" id="rm-trails"><div class="no-data">Loading named terrain…</div></div>
+<div class="section-lbl">% Terrain open</div>
+<div class="open-terrain" id="rm-terrain">
+<div class="no-data">Loading…</div>
 </div>
-<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="rm-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="rm-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="rm-webcam"><img alt="Latest resort webcam image" id="rm-webcam-img"/></div><div class="card-note">Live source · The Remarkables</div>
+</div>
+<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="rm-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="rm-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="rm-webcam" style="display:none"><img alt="Latest resort webcam image" id="rm-webcam-img"/></div><div class="report-summary" id="rm-summary"></div><div class="card-note">Live source · The Remarkables</div>
 </div>
 <div class="card" id="card-coronetpeak">
 <div class="card-top">
@@ -316,7 +320,7 @@ body{padding-top:26px}
 <div class="trail-chip t-closed"><span class="t-dot"></span>Walkabout Park</div>
 </div>
 </div>
-<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="cp-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="cp-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cp-webcam"><img alt="Latest resort webcam image" id="cp-webcam-img"/></div><div class="card-note">Live source · Coronet Peak / snow.nz</div>
+<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="cp-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="cp-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cp-webcam" style="display:none"><img alt="Latest resort webcam image" id="cp-webcam-img"/></div><div class="report-summary" id="cp-summary"></div><div class="card-note">Live source · Coronet Peak / snow.nz</div>
 </div>
 </div>
 <div class="group-label">Wanaka</div>
@@ -350,7 +354,7 @@ body{padding-top:26px}
 <div class="section-lbl">Named trails</div>
 <div class="trail-groups" id="cd-trails"><div class="no-data">Not currently reported.</div></div>
 </div>
-<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="cd-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="cd-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cd-webcam"><img alt="Latest resort webcam image" id="cd-webcam-img"/></div><div class="card-note">Live source · Cardrona / MetService</div>
+<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="cd-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="cd-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="cd-webcam" style="display:none"><img alt="Latest resort webcam image" id="cd-webcam-img"/></div><div class="report-summary" id="cd-summary"></div><div class="card-note">Live source · Cardrona / MetService</div>
 </div>
 <div class="card" id="card-treblecone">
 <div class="card-top">
@@ -373,7 +377,7 @@ body{padding-top:26px}
 <div class="section-lbl">Named trails</div>
 <div class="trail-groups" id="tc-trails"><div class="no-data">Not currently reported.</div></div>
 </div>
-<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="tc-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="tc-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="tc-webcam"><img alt="Latest resort webcam image" id="tc-webcam-img"/></div><div class="card-note">Live source · Treble Cone / MetService</div>
+<div class="live-panels"><div class="mini-panel"><div class="section-lbl">Current weather · mountain report</div><div class="weather-now" id="tc-weather">Loading…</div></div><div class="mini-panel"><div class="section-lbl">Car parks</div><div class="carpark-list" id="tc-carparks"><span class="muted-inline">Not reported</span></div></div></div><div class="webcam-card" id="tc-webcam" style="display:none"><img alt="Latest resort webcam image" id="tc-webcam-img"/></div><div class="report-summary" id="tc-summary"></div><div class="card-note">Live source · Treble Cone / MetService</div>
 </div>
 </div>
 <section class="snowfall">
@@ -537,6 +541,21 @@ body{padding-top:26px}
     trails.forEach(t=>{const difficulty=t.difficulty||'unclassified';(groups[difficulty]??=[]).push(t);});
     el.innerHTML=difficultyOrder.filter(d=>groups[d]?.length).map(d=>`<div class="trail-group"><div class="trail-group-head"><span class="difficulty-symbol diff-${d}"></span>${difficultyLabels[d]}</div><div class="trail-chips">${groups[d].map(t=>`<div class="trail-chip ${trailStatusClass(t.status)}"><span class="t-dot"></span>${escapeHtml(t.name)}</div>`).join('')}</div></div>`).join('');
   }
+  const terrainLabels = {novice:'Novice',intermediate:'Intermediate',advanced:'Advanced',expert:'Expert',extreme:'Extreme'};
+  const terrainFill = {novice:'fill-beg',intermediate:'fill-int',advanced:'fill-adv',expert:'fill-exp',extreme:'fill-exp'};
+  function renderTerrain(prefix, terrain){
+    const el=document.getElementById(prefix+'-terrain'); if(!el) return;
+    const entries=Object.entries(terrain||{}).filter(([,v])=>v!=null);
+    if(!entries.length){el.innerHTML='<div class="no-data">Not currently reported.</div>';return;}
+    el.innerHTML=entries.map(([key,pct])=>{
+      const label=terrainLabels[key]||key; const fill=terrainFill[key]||'fill-all';
+      return `<div class="open-row"><span class="open-label">${label}</span><div class="open-track"><div class="open-fill ${fill}" style="width:${pct}%"></div></div><span class="open-pct">${pct}%</span></div>`;
+    }).join('');
+  }
+  function renderSummary(prefix, summary){
+    const el=document.getElementById(prefix+'-summary'); if(!el) return;
+    el.textContent = summary ? summary : '';
+  }
   function renderWeather(prefix, weather){
     const el=document.getElementById(prefix+'-weather'); if(!el)return;
     if(!weather){el.innerHTML='<span class="muted-inline">Weather unavailable</span>';return;}
@@ -551,14 +570,17 @@ body{padding-top:26px}
     el.innerHTML=parks.map(p=>`<div class="carpark-pill"><span>${escapeHtml(p.name)}</span><span class="park-state ${parkClass(p.status)}">${escapeHtml(p.status||'Unknown')}</span></div>`).join('');
   }
   function renderWebcam(prefix, webcam){
-    const img=document.getElementById(prefix+'-webcam-img');if(!img)return;
+    const card=document.getElementById(prefix+'-webcam');const img=document.getElementById(prefix+'-webcam-img');
+    if(!img||!card)return;
     if(webcam?.image_url){
       const separator=String(webcam.image_url).includes('?')?'&':'?';
       img.src=String(webcam.image_url)+separator+'refresh='+Date.now();
       img.style.display='block';
+      card.style.display='block';
     }else{
       img.removeAttribute('src');
       img.style.display='none';
+      card.style.display='none';
     }
   }
 
@@ -578,7 +600,7 @@ body{padding-top:26px}
     if(statusEl&&r.status){statusEl.textContent=r.lifts_total?`${r.status} · ${r.lifts_open}/${r.lifts_total} lifts`:r.status;statusEl.className='status-tag '+(r.status.toLowerCase()==='open'?'status-open':'status-storm');}
     if(r.base_upper!=null){const baseEl=document.getElementById(prefix+'-base');if(baseEl)baseEl.textContent=r.base_lower!=null?`${r.base_lower}–${r.base_upper}cm`:`${r.base_upper}cm`;}
     const seven=document.getElementById(prefix+'-7d');if(seven)seven.textContent=r.new_snow_7d!=null?`${r.new_snow_7d}cm`:'—';
-    renderLifts(prefix,r.lifts);renderTrails(prefix,r.trails);renderWeather(prefix,r.weather);renderCarparks(prefix,r.carparks);renderWebcam(prefix,r.webcam);
+    renderLifts(prefix,r.lifts);renderTrails(prefix,r.trails);renderTerrain(prefix,r.terrain);renderSummary(prefix,r.summary);renderWeather(prefix,r.weather);renderCarparks(prefix,r.carparks);renderWebcam(prefix,r.webcam);
   }
 
   let latestUpdated=null;
