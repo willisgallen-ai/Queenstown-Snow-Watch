@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-14T06:33:14.659482+00:00",
+  "updated": "2026-07-14T06:45:58.191205+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The Grasshopper. The Southern Hemisphere's most reputable 6-legged snow forecaster for season outlooks, daily synoptic reviews & predictions.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-14T06:35:00+00:00",
+  "next_scheduled_update": "2026-07-14T06:50:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -102,11 +102,14 @@
       ],
       "carparks": [],
       "weather": {
-        "temperature_c": 1.0,
+        "temperature_c": -2.9,
         "snowing": false,
-        "condition": null,
-        "source": "Official resort report",
-        "source_url": "https://www.theremarkables.co.nz/weather-report/"
+        "condition": "Not snowing",
+        "weather_code": 2,
+        "snowfall_cm": 0.0,
+        "observed": "2026-07-14T18:30",
+        "source": "Open-Meteo",
+        "source_url": "https://open-meteo.com/"
       },
       "summary": "View The Remarkables snow and weather report with webcams. Our report is updated daily during the ski season and includes Queenstown mountain conditions, lift status, temperature & latest snow conditions the",
       "webcam": {
@@ -156,7 +159,7 @@
           }
         ]
       },
-      "stale": false,
+      "stale": true,
       "park": null
     },
     "coronetpeak": {
@@ -373,11 +376,14 @@
         }
       ],
       "weather": {
-        "temperature_c": 3.4,
-        "snowing": true,
-        "condition": "Snow",
-        "source": "SnowNZ mountain report",
-        "source_url": "https://www.snow.nz/area/nz/queenstown/coronetpeak/"
+        "temperature_c": -1.8,
+        "snowing": false,
+        "condition": "Not snowing",
+        "weather_code": 0,
+        "snowfall_cm": 0.0,
+        "observed": "2026-07-14T18:30",
+        "source": "Open-Meteo",
+        "source_url": "https://open-meteo.com/"
       },
       "summary": "The latest Queenstown & Coronet Peak Snow Report, Ski Conditions, Weather Forecast, Snow Forecast, Snowfall History & Webcams from",
       "webcam": {
@@ -427,8 +433,7 @@
           }
         ]
       },
-      "stale": false,
-      "park": null
+      "stale": false
     },
     "cardrona": {
       "status": "Open",
