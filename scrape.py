@@ -35,7 +35,7 @@ FALLBACK_URLS = {
     "cardrona": "https://www.snow.nz/area/nz/wanaka/cardrona/",
     "treblecone": "https://www.snow.nz/area/nz/wanaka/treble-cone/",
 }
-GRASSHOPPER_URL = "https://www.mountainwatch.com/grasshopper"
+GRASSHOPPER_URL = "https://www.mountainwatch.com/grasshopper/"
 WEBCAM_PAGES = {
     "remarkables": "https://www.mountainwatch.com/new-zealand/the-remarkables/snow-cams",
     "coronetpeak": "https://www.mountainwatch.com/new-zealand/coronet-peak/snow-cams",
@@ -65,6 +65,18 @@ RESORT_COORDS = {
     "cardrona": (-44.8717, 168.9497),
     "treblecone": (-44.6320, 168.8804),
 }
+# Open-Meteo picks an elevation from its own terrain model for a bare lat/lon,
+# which for these sites often lands well below the actual base area — these
+# ski fields climb from ~1200m to ~2000m+, so an uncorrected reading can be
+# noticeably milder than what's really happening on the mountain. Passing an
+# explicit elevation (base-area height, roughly) fixes that. These are
+# approximate on-mountain base elevations, not surveyed values.
+RESORT_ELEVATIONS = {
+    "remarkables": 1610,
+    "coronetpeak": 1220,
+    "cardrona": 1670,
+    "treblecone": 1260,
+}
 
 def load_trail_colours() -> dict[str, str]:
     mapping = dict(DIFFICULTY_MAP)
@@ -89,6 +101,39 @@ STATUS_PHRASES = sorted([
     "Wind Hold", "Limited Spaces", "Filling Fast", "Ungroomed", "Available",
     "Variable", "Spaces", "Full", "Open", "Closed",
 ], key=len, reverse=True)
+
+# Amenity/facility noise that occasionally slips into lift or trail listings
+# on less-structured pages (MetService in particular) — none of these are
+# skiable terrain or lift infrastructure, so they're excluded outright rather
+# than risking them being misclassified as either.
+EXCLUDE_TERMS = (
+    "forecast", "temperature", "weather", "car park", "carpark", "road",
+    "cafe", "restaurant", "rental", "hire", "guest service",
+    "information", "info centre", "ski school", "snowsports school",
+    "lesson", "creche", "childcare", "medical centre", "first aid",
+    "retail", "shop", "store", "atm", "eftpos", "toilet", "bathroom",
+    "locker", "day lodge", "lodge access", "accommodation", "booking",
+)
+
+
+def find_summary_text(soup: BeautifulSoup) -> str | None:
+    """Best-effort short prose summary from a resort's own report page — the
+    human-written 'conditions today' blurb these pages often carry, distinct
+    from the structured stat fields (base depth, lift counts) already
+    scraped elsewhere. Tries the page's own meta description first (concise,
+    site-authored), then falls back to the first substantial paragraph in
+    the page body. Not guaranteed to exist on every page — returns None
+    rather than guessing if nothing suitable is found."""
+    meta = soup.find("meta", attrs={"name": "description"}) or soup.find("meta", attrs={"property": "og:description"})
+    if meta and meta.get("content"):
+        text = clean(meta["content"])
+        if len(text) > 30:
+            return text[:400].rsplit(" ", 1)[0] + ("…" if len(text) > 400 else "")
+    for p in soup.find_all("p"):
+        text = clean(p.get_text(" "))
+        if len(text) > 60 and not any(bad in text.lower() for bad in ("cookie", "javascript", "subscribe", "newsletter")):
+            return text[:400].rsplit(" ", 1)[0] + ("…" if len(text) > 400 else "")
+    return None
 
 
 def fetch(url: str) -> tuple[BeautifulSoup, str]:
@@ -301,13 +346,15 @@ def parse_metservice_operational(soup: BeautifulSoup, resort: str) -> dict[str, 
         if not name or name.lower() in {"lifts", "trails", "runs", "status"}:
             continue
         lower = name.lower()
+        # Applied before classification (not just inside the trail branch) so a
+        # facility item can't slip through by accidentally containing a lift
+        # word like "express" (e.g. a shuttle/transfer service).
+        if any(bad in lower for bad in EXCLUDE_TERMS):
+            continue
         if any(term in lower for term in lift_terms):
             if lower not in seen_lifts:
                 seen_lifts.add(lower); result["lifts"].append({"name": name, "status": status})
         elif any(k in (" "+label.lower()+" ") for k in (" open ", " closed ", " ungroomed ", " wind hold ", " wind held ")):
-            # Exclude weather prose, facilities and car-park text.
-            if any(bad in lower for bad in ("forecast", "temperature", "weather", "car park", "carpark", "road", "cafe", "restaurant", "rental", "guest service")):
-                continue
             if lower not in seen_trails:
                 seen_trails.add(lower)
                 result["trails"].append({"name": name, "status": status, "difficulty": DIFFICULTY_MAP.get(lower, "unclassified")})
@@ -331,7 +378,10 @@ def parse_metservice_operational(soup: BeautifulSoup, resort: str) -> dict[str, 
                 stat = clean(str(obj.get("status") or obj.get("state") or obj.get("condition") or ""))
                 typ = clean(str(obj.get("type") or obj.get("category") or "")).lower()
                 if name and stat:
-                    lower=name.lower(); record={"name":name,"status":status_from_text(stat)}
+                    lower=name.lower()
+                    if any(bad in lower for bad in EXCLUDE_TERMS):
+                        stack.extend(obj.values()); continue
+                    record={"name":name,"status":status_from_text(stat)}
                     if "lift" in typ or any(t in lower for t in lift_terms):
                         if lower not in seen_lifts: seen_lifts.add(lower); result["lifts"].append(record)
                     elif any(t in typ for t in ("trail","run","terrain")):
@@ -365,30 +415,32 @@ def parse_carparks_strict(soup: BeautifulSoup) -> list[dict[str, str]]:
 
 
 def scrape_grasshopper_headline() -> dict[str, Any] | None:
-    """Return the latest NZ Grasshopper headline and a short licensed-safe summary."""
+    """Pull a short summary + link from the Grasshopper's own NZ forecast page.
+    The previous version searched for a headline LINK matching news-listing
+    patterns ('new zealand' + forecast/snow/outlook in the anchor text) and
+    tried to fetch further into it — but mountainwatch.com/grasshopper is
+    itself one continuous forecast page, not an index of articles, so that
+    search almost certainly matched nothing every single run, silently
+    falling back to 'unavailable' forever. This reads the page's own content
+    directly instead."""
     try:
         soup, _ = fetch(GRASSHOPPER_URL)
-        candidates=[]
-        for a in soup.find_all("a", href=True):
-            title=clean(a.get_text(" "))
-            href=urljoin(GRASSHOPPER_URL, a["href"])
-            low=title.lower()
-            if len(title) >= 25 and "new zealand" in low and any(k in low for k in ("forecast", "snow", "outlook")):
-                candidates.append((title, href))
-        if not candidates:
-            return None
-        title, url = candidates[0]
-        article, _ = fetch(url)
         summary = ""
-        meta = article.find("meta", attrs={"name":"description"}) or article.find("meta", attrs={"property":"og:description"})
+        meta = soup.find("meta", attrs={"name": "description"}) or soup.find("meta", attrs={"property": "og:description"})
         if meta and meta.get("content"):
             summary = clean(meta["content"])
         if not summary:
-            paras=[clean(p.get_text(" ")) for p in article.find_all("p") if len(clean(p.get_text(" "))) > 80]
+            paras = [clean(p.get_text(" ")) for p in soup.find_all("p") if len(clean(p.get_text(" "))) > 80]
             summary = paras[0] if paras else ""
-        # Keep the ticker informative without reproducing the full copyrighted report.
+        if not summary:
+            return None
         summary = summary[:360].rsplit(" ", 1)[0] + ("…" if len(summary) > 360 else "")
-        return {"title": title, "summary": summary, "url": url, "source": "The Grasshopper · Mountainwatch"}
+        issued = None
+        match = re.search(r"Issued:?\s*([^\n]{5,40})", soup.get_text("\n", strip=True), re.I)
+        if match:
+            issued = clean(match.group(1))
+        title = "The Grasshopper — NZ forecast" + (f" (issued {issued})" if issued else "")
+        return {"title": title, "summary": summary, "url": GRASSHOPPER_URL, "source": "The Grasshopper · Mountainwatch"}
     except Exception as exc:
         print(f"Grasshopper headline failed: {exc}", file=sys.stderr)
         return None
@@ -444,13 +496,17 @@ def parse_current_weather(soup: BeautifulSoup, source_url: str, source_name: str
     }
 
 def open_meteo_current_weather(name: str) -> dict[str, Any] | None:
-    """Return current mountain weather from Open-Meteo using the resort coordinates."""
+    """Return current mountain weather from Open-Meteo using the resort coordinates.
+    This is a FALLBACK — scrape_resort() prefers the resort's own on-site
+    reading (parse_current_weather) when the report page publishes one, since
+    that's the actual on-mountain station rather than a regional model."""
     lat, lon = RESORT_COORDS[name]
     response = requests.get(
         "https://api.open-meteo.com/v1/forecast",
         params={
             "latitude": lat,
             "longitude": lon,
+            "elevation": RESORT_ELEVATIONS[name],
             "current": "temperature_2m,weather_code,snowfall",
             "temperature_unit": "celsius",
             "precipitation_unit": "mm",
@@ -578,7 +634,7 @@ def load_previous() -> dict[str, Any]:
 def merge_fallback(current: dict[str, Any], previous: dict[str, Any] | None) -> dict[str, Any]:
     if not previous:
         return current
-    for key in ("status", "lifts_open", "lifts_total", "base_lower", "base_upper", "new_snow_7d"):
+    for key in ("status", "lifts_open", "lifts_total", "base_lower", "base_upper", "new_snow_7d", "weather", "summary"):
         if current.get(key) is None:
             current[key] = deepcopy(previous.get(key))
     for key in ("terrain", "lifts", "trails", "carparks"):
@@ -591,6 +647,7 @@ def merge_fallback(current: dict[str, Any], previous: dict[str, Any] | None) -> 
 
 def scrape_resort(name: str, previous: dict[str, Any] | None) -> dict[str, Any]:
     soup, html = fetch(URLS[name])
+    fallback_soup = None
     if name == "remarkables":
         data = parse_remarkables(soup)
         source_name = "Official resort report"
@@ -610,12 +667,31 @@ def scrape_resort(name: str, previous: dict[str, Any] | None) -> dict[str, Any]:
                 if data.get(key) is None: data[key] = summary.get(key)
         except Exception as exc:
             print(f"SnowNZ parking fallback failed for {name}: {exc}", file=sys.stderr)
-    try:
-        data["weather"] = open_meteo_current_weather(name)
-    except Exception as exc:
-        print(f"Open-Meteo weather failed for {name}: {exc}", file=sys.stderr)
-        data["weather"] = None
+
+    data["weather"] = None
+    for attempt_soup, attempt_source in ((soup, source_name), (fallback_soup, "SnowNZ mountain report")):
+        if attempt_soup is None:
+            continue
+        try:
+            weather = parse_current_weather(attempt_soup, URLS[name], attempt_source)
+        except Exception as exc:
+            print(f"On-site weather parse errored for {name} ({attempt_source}): {exc}", file=sys.stderr)
+            weather = None
+        if weather is not None:
+            data["weather"] = weather
+            break
+    if data["weather"] is None:
+        try:
+            data["weather"] = open_meteo_current_weather(name)
+        except Exception as exc:
+            print(f"Open-Meteo weather failed for {name}: {exc}", file=sys.stderr)
+            data["weather"] = None
     data["trails"] = apply_trail_colours(data.get("trails", []))
+    try:
+        data["summary"] = find_summary_text(soup)
+    except Exception as exc:
+        print(f"Summary text extraction failed for {name}: {exc}", file=sys.stderr)
+        data["summary"] = None
     try:
         webcam_soup, _ = fetch(WEBCAM_PAGES[name])
         webcam_image = find_webcam_image(webcam_soup, WEBCAM_PAGES[name])
@@ -654,8 +730,6 @@ def main() -> int:
         except Exception as exc:
             print(f"Scrape failed for {name}: {exc}", file=sys.stderr)
             resort = deepcopy(previous_resorts.get(name, {}))
-            # Never retain old weather from AccuWeather or another source.
-            resort["weather"] = None
             resort["stale"] = True
             stale.append(name)
         resorts[name] = resort
