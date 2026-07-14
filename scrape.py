@@ -578,7 +578,7 @@ def load_previous() -> dict[str, Any]:
 def merge_fallback(current: dict[str, Any], previous: dict[str, Any] | None) -> dict[str, Any]:
     if not previous:
         return current
-    for key in ("status", "lifts_open", "lifts_total", "base_lower", "base_upper", "new_snow_7d", "weather"):
+    for key in ("status", "lifts_open", "lifts_total", "base_lower", "base_upper", "new_snow_7d"):
         if current.get(key) is None:
             current[key] = deepcopy(previous.get(key))
     for key in ("terrain", "lifts", "trails", "carparks"):
@@ -654,6 +654,8 @@ def main() -> int:
         except Exception as exc:
             print(f"Scrape failed for {name}: {exc}", file=sys.stderr)
             resort = deepcopy(previous_resorts.get(name, {}))
+            # Never retain old weather from AccuWeather or another source.
+            resort["weather"] = None
             resort["stale"] = True
             stale.append(name)
         resorts[name] = resort
