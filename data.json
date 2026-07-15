@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-15T16:54:47.869989+00:00",
+  "updated": "2026-07-15T20:39:01.839161+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "It’s been a stormy start to the week that brought a mix of rain, snow and strong northwest winds to the country on Monday and Tuesday. Through it all, the Southern Lakes ski fields received decent snowfall at upper elevations. The Remarkables reported 20cm Tuesday morning, Cardrona 8cm, and Treble Cone 10cm, while more fell during the day. Coronet Peak didn’t report any new snow, being at a lower elevation, while Canterbury ski fields were forced to take a couple of days off due to gale-force winds. Mt Ruapehu also received a dusting early Tuesday, with Turoa reporting 5cm.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-15T16:55:00+00:00",
+  "next_scheduled_update": "2026-07-15T20:40:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.2,
+        "temperature_c": -4.3,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 1,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-16T04:45",
+        "observed": "2026-07-16T08:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,11 +134,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 15 Jul 2026",
+        "issued": "5 am 16 Jul 2026",
         "days": [
           {
             "label": "Thu 16",
-            "cm": 2,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -150,18 +150,24 @@
           },
           {
             "label": "Sat 18",
-            "cm": 0,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 19",
-            "cm": 1,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 20",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Tue 21",
             "cm": 0,
             "mm": 0,
             "rain": false
@@ -377,15 +383,23 @@
         {
           "name": "Lower Carpark 7",
           "status": "Closed"
+        },
+        {
+          "name": "Car Park 1",
+          "status": "Closed"
+        },
+        {
+          "name": "Car Park 1-2",
+          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": -1.9,
+        "temperature_c": -5.1,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 1,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-16T04:45",
+        "observed": "2026-07-16T08:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -397,11 +411,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 15 Jul 2026",
+        "issued": "5 am 16 Jul 2026",
         "days": [
           {
             "label": "Thu 16",
-            "cm": 2,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -413,18 +427,24 @@
           },
           {
             "label": "Sat 18",
-            "cm": 0,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 19",
-            "cm": 1,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 20",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Tue 21",
             "cm": 0,
             "mm": 0,
             "rain": false
@@ -435,175 +455,175 @@
       "hours_closed": true
     },
     "cardrona": {
-      "status": "Closed",
-      "lifts_open": 0,
+      "status": "Open",
+      "lifts_open": 8,
       "lifts_total": 10,
-      "base_lower": 37,
-      "base_upper": 37,
-      "new_snow_7d": 0,
-      "new_snow_24h": null,
+      "base_lower": 40,
+      "base_upper": 40,
+      "new_snow_7d": 3,
+      "new_snow_24h": 3,
       "season_cm": null,
       "terrain": {},
       "lifts": [
         {
           "name": "Learner Conveyors",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "McDougall's Chondola",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Whitestar Express",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Captains Express",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Willow's Quad",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Soho Express",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "T-Bar",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Valley View",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Kindy Conveyor",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Wells Pipe Platter",
-          "status": "Closed"
+          "status": "Unknown"
         }
       ],
       "trails": [
         {
           "name": "Learners Slope",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Main Basin",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Captains",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Soho",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Little Willows",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Big Willows",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Mt Cardrona",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Arcadia Chutes",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Summit",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         }
       ],
       "park": [
         {
           "name": "Baby Bucks",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Little Bucks",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Antlers Alley",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Stag Lane",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Big Bucks",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Peoples Pipe",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Olympic Pipe",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Big Air",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Mc Park",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Gravity Cross",
-          "status": "Closed"
+          "status": "Unknown"
         }
       ],
       "carparks": [
         {
           "name": "Carpark A",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "Carpark B",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "Carpark C",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "The Yard",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "Valley View",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "The Pines",
-          "status": "Closed"
+          "status": "Available"
         }
       ],
       "weather": {
@@ -624,11 +644,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 15 Jul 2026",
+        "issued": "5 am 16 Jul 2026",
         "days": [
           {
             "label": "Thu 16",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -640,13 +660,13 @@
           },
           {
             "label": "Sat 18",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 19",
-            "cm": 0,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
@@ -655,20 +675,25 @@
             "cm": 0,
             "mm": 0,
             "rain": false
+          },
+          {
+            "label": "Tue 21",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
           }
         ]
       },
-      "stale": false,
-      "hours_closed": true
+      "stale": false
     },
     "treblecone": {
       "status": "Closed",
       "lifts_open": 0,
       "lifts_total": 3,
-      "base_lower": 54,
-      "base_upper": 54,
-      "new_snow_7d": 17,
-      "new_snow_24h": 4,
+      "base_lower": 56,
+      "base_upper": 56,
+      "new_snow_7d": 15,
+      "new_snow_24h": 2,
       "season_cm": null,
       "terrain": {},
       "lifts": [
@@ -743,12 +768,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 0.4,
+        "temperature_c": -3.2,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 1,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-14T18:45",
+        "observed": "2026-07-16T08:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -760,11 +785,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 15 Jul 2026",
+        "issued": "5 am 16 Jul 2026",
         "days": [
           {
             "label": "Thu 16",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -776,18 +801,24 @@
           },
           {
             "label": "Sat 18",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sun 19",
             "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
+            "label": "Sun 19",
+            "cm": 2,
+            "mm": 0,
+            "rain": false
+          },
+          {
             "label": "Mon 20",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Tue 21",
             "cm": 0,
             "mm": 0,
             "rain": false
