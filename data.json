@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-15T12:09:02.484902+00:00",
+  "updated": "2026-07-15T16:54:47.869989+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "It’s been a stormy start to the week that brought a mix of rain, snow and strong northwest winds to the country on Monday and Tuesday. Through it all, the Southern Lakes ski fields received decent snowfall at upper elevations. The Remarkables reported 20cm Tuesday morning, Cardrona 8cm, and Treble Cone 10cm, while more fell during the day. Coronet Peak didn’t report any new snow, being at a lower elevation, while Canterbury ski fields were forced to take a couple of days off due to gale-force winds. Mt Ruapehu also received a dusting early Tuesday, with Turoa reporting 5cm.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-15T12:10:00+00:00",
+  "next_scheduled_update": "2026-07-15T16:55:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.3,
+        "temperature_c": -3.2,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-16T00:00",
+        "observed": "2026-07-16T04:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,17 +134,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 15 Jul 2026",
+        "issued": "11 pm 15 Jul 2026",
         "days": [
           {
-            "label": "Wed 15",
-            "cm": 1,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Thu 16",
-            "cm": 0,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
@@ -156,13 +150,13 @@
           },
           {
             "label": "Sat 18",
-            "cm": 5,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 19",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -386,12 +380,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.7,
+        "temperature_c": -1.9,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 1,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-16T00:00",
+        "observed": "2026-07-16T04:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -403,17 +397,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 15 Jul 2026",
+        "issued": "11 pm 15 Jul 2026",
         "days": [
           {
-            "label": "Wed 15",
-            "cm": 2,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Thu 16",
-            "cm": 0,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
@@ -425,13 +413,13 @@
           },
           {
             "label": "Sat 18",
-            "cm": 3,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 19",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -628,7 +616,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Monday 13/7 Mōrena koutou We have a little blustery Monday for the start to your week - The groomers have been back out in action across the mountain laying down some cord and the wind is blowing around some freshies! The weather forecast for today is moderate - high winds with snow showers coming in around lunchtime. Our lifts may be subject to some wind holds today. Chains MUST be carried today as you may need them for the way home. McDougall's, Learners, White star and Valley View scheduled from 08:30 am. Captains, Soho, Willows and T-Bar to follow from 09:00am Soho and Willows recommended for advanced skiers only due to early season conditions and limited grooming.",
+      "summary": ": Wednesday 15/7 Yesterday's snow has dried out nicely overnight. Cold overnight temps and low humidity have combined for some great grooming conditions. Snow on the lower mountain is firm. Today will start out clear but we are expecting a few snow flurries through the day. Little Bucks Park opens today with two jumps and 6 jibs. Get your laps in off the T-Bar! McDougall's, Learners, Whitestar and Valley View scheduled from 08:30 am. Captains and T-Bar to follow from 09:00 am. Soho OPEN (09:30am) recommended for advanced skiers only due to early season conditions and limited grooming. Willows closed for the day due to snow conditions (11am). Pines Shuttle buses will run as quickly as conditions allow. We may reach capacity on our shuttle service before 11:30am.",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -636,17 +624,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 15 Jul 2026",
+        "issued": "11 pm 15 Jul 2026",
         "days": [
           {
-            "label": "Wed 15",
-            "cm": 3,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Thu 16",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -658,7 +640,7 @@
           },
           {
             "label": "Sat 18",
-            "cm": 3,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -770,7 +752,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Last Updated: July 13 The next 24–48 hours look promising, with the forecast tracking a decent hit of new snow overnight and into tomorrow. If it delivers, expect a solid boost to the base and a good shot at opening more terrain. We're already seeing snow and strong winds setting in on the upper mountain, The Saddle will remain CLOSED today.",
+      "summary": ": 15 July Update Some great skiing/riding in upper part of the Saddle. Lots of nice turns to be enjoyed. Trickier down low as you hit the rain crust band so caution required and it's advanced skiers/riders only. Light is flat with a few snow flurries up high. This may clear out this afternoon. No wind to speak of and a nice cold but not freezing temperature. Summit slopes are on hold.",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
@@ -778,17 +760,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 15 Jul 2026",
+        "issued": "11 pm 15 Jul 2026",
         "days": [
           {
-            "label": "Wed 15",
-            "cm": 7,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Thu 16",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -800,13 +776,13 @@
           },
           {
             "label": "Sat 18",
-            "cm": 2,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 19",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
