@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-15T07:27:16.028980+00:00",
+  "updated": "2026-07-15T12:09:02.484902+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
-    "summary": "Published early Wednesday, 15 th July 2026 It’s been a stormy start to the week that brought a mix of rain, snow and strong northwest winds to the country on Monday and Tuesday. Through it all, the Southern Lakes ski fields received decent snowfall at upper elevations. The Remarkables reported 20cm Tuesday morning, Cardrona 8cm, and Treble Cone 10cm, while more fell during the day. Coronet Peak didn’t report any new snow, being at a lower elevation, while Canterbury ski fields were forced to take a couple of days off due to gale-force winds. Mt Ruapehu also received a dusting early Tuesday, with Turoa reporting 5cm. The Southern Lakes will pick up another 2-5cm during Wednesday and early Thursday as a pair of weak fronts moving up the country give the region a couple of dustings. Canterbury will only see a little snow about the tops at some ski fields on Wednesday, and will be hit with strong northwesterlies again. Mt Ruapehu will also receive a little snow up high on Thursday. Then on Saturday, a weak and sluggish cold southerly change will bring more snow to the South Island. Exactly how much snow will fall is still up in the air, but we could see anywhere from a dusting up to 15cm for the Southern Lakes, and up to 10cm for Canterbury, plus a good chance for the snow guns to get a good run. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Wednesday 15 th July A weak storm system crossing the South Island will give the Southern Lakes a dusting of a couple of centimetres from light snowfalls during the morning and early afternoon. Clouds will then break up for a brighter end to the day. Chilly northwest winds. Northwest winds will strengthen in Canterbury, likely reaching gale force in exposed areas, which may affect lift ops again, as rain spreads over the region in the afternoon. Some snow will fall about the tops at ski fields closest to the Main Divide, whereas Mt Hutt will just see some light rain showers. The precip clears from the south during the evening. Mt Ruapehu will be mostly cloudy with a few spots of drizzle in the afternoon and westerly winds. Thursday 16 th July A mostly fine day for South Island ski fields as brisk westerly winds turn southwest. However, a weak front passing by will give the Southern Lakes a dusting of up to a couple of centimetres of snow before dawn and throw some cloud over Canterbury early in the morning. A weak front also passes over Mt Ruapehu, bringing light rain and drizzle throughout the day, falling as snow to around 2000m. Moderate westerly winds turn southwest late afternoon as the rain clears. Friday 17 th July A mostly fine day across Kiwi ski fields with west-to-northwest winds. There’ll just be a little cloud over the Southern Lakes, and clouds may affect the lower slopes of Mt Ruapehu. Saturday 18 th July A cold front slowly moves over the Southern Lakes, bringing snowfall throughout the day. Ski fields could see anywhere from a couple of centimetres up to 15cm of fresh snow. Brisk westerly winds gradually ease before turning to a light southerly late in the day as the snow clears. Canterbury will start fine, but clouds will gradually build during the day before the front crosses the region during the evening and overnight. Again, ski fields here could see anywhere between 1 and 10cm of fresh snow. Stiff west-to-northwest winds turn to a light, cold southerly behind the front. Moderate westerlies continue for Mt Ruapehu, bringing cloud and drizzle, especially about the mid and lower slopes. Sunday 19 th July It’ll be nice and cold over the South Island with light winds. Southern Lakes ski fields should sit above a deck of cloud in clear air, while Canterbury fields will be thick amongst it, with the odd snow flurry possible. Mt Ruapehu will be fine with light winds, although there’ll be some afternoon cloud. Extended Forecast South Island ski fields, particularly Canterbury, could receive a shot of snow on Monday, the 20 th , as another weak storm system passes by. We’ll then see mostly fine weather across the country for the rest of the working week as a ridge of high pressure parks up over the North Island while northwesterlies blow over the South Island. The next storm is possible next weekend, the 25 th and 26 th July. It’s still a long way off, and models aren’t well aligned, but at this stage there’s potential for cold temperatures and a top-up of powder. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great couple of days, and I’ll see you back here on Friday. Grasshopper",
+    "summary": "It’s been a stormy start to the week that brought a mix of rain, snow and strong northwest winds to the country on Monday and Tuesday. Through it all, the Southern Lakes ski fields received decent snowfall at upper elevations. The Remarkables reported 20cm Tuesday morning, Cardrona 8cm, and Treble Cone 10cm, while more fell during the day. Coronet Peak didn’t report any new snow, being at a lower elevation, while Canterbury ski fields were forced to take a couple of days off due to gale-force winds. Mt Ruapehu also received a dusting early Tuesday, with Turoa reporting 5cm.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-15T07:30:00+00:00",
+  "next_scheduled_update": "2026-07-15T12:10:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.1,
+        "temperature_c": -3.3,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-15T19:15",
+        "observed": "2026-07-16T00:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -179,8 +179,8 @@
       "hours_closed": true
     },
     "coronetpeak": {
-      "status": "Open",
-      "lifts_open": 2,
+      "status": "Closed",
+      "lifts_open": 0,
       "lifts_total": 8,
       "base_lower": 20,
       "base_upper": 30,
@@ -191,15 +191,15 @@
       "lifts": [
         {
           "name": "Coronet Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Greengates Express",
-          "status": "Ungroomed"
+          "status": "Closed"
         },
         {
           "name": "Meadows Learner Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Rocky Gully T-bar",
@@ -225,47 +225,47 @@
       "trails": [
         {
           "name": "Big Easy",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "green"
         },
         {
           "name": "Beginner Area",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "green"
         },
         {
           "name": "Little Easy",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "green"
         },
         {
           "name": "Gentle Annie",
-          "status": "Closed for Racing",
+          "status": "Closed",
           "difficulty": "green"
         },
         {
           "name": "Fun Zone",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "M1",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "blue"
         },
         {
           "name": "Easy Rider",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "green"
         },
         {
           "name": "Greengates",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Wall Street",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
@@ -275,27 +275,27 @@
         },
         {
           "name": "The Hurdle",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Exchange Drop",
-          "status": "Variable",
+          "status": "Closed",
           "difficulty": "black"
         },
         {
           "name": "KidsZone carpet",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Dual Carpet slopes",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "green"
         },
         {
           "name": "Shirt Front",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "blue"
         },
         {
@@ -305,17 +305,17 @@
         },
         {
           "name": "Brough's Lane",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "blue"
         },
         {
           "name": "Tuck",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "black"
         },
         {
           "name": "Million Dollar",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "blue"
         },
         {
@@ -325,27 +325,27 @@
         },
         {
           "name": "Mid Gully",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Pro Am",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "blue"
         },
         {
           "name": "Overrun",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Rocky Return",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "blue"
         },
         {
           "name": "West Gates",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
@@ -360,7 +360,7 @@
         },
         {
           "name": "Sugar's Run",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
@@ -375,23 +375,23 @@
         },
         {
           "name": "Carpet Rail garden",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         }
       ],
       "carparks": [
         {
           "name": "Lower Carpark 7",
-          "status": "Spaces available"
+          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": -4.1,
+        "temperature_c": -1.7,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-15T19:15",
+        "observed": "2026-07-16T00:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -403,11 +403,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 15 Jul 2026",
+        "issued": "5 pm 15 Jul 2026",
         "days": [
           {
             "label": "Wed 15",
-            "cm": 1,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
@@ -425,7 +425,7 @@
           },
           {
             "label": "Sat 18",
-            "cm": 4,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
@@ -443,7 +443,8 @@
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "hours_closed": true
     },
     "cardrona": {
       "status": "Closed",
@@ -635,11 +636,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 15 Jul 2026",
+        "issued": "5 pm 15 Jul 2026",
         "days": [
           {
             "label": "Wed 15",
-            "cm": 2,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
@@ -684,7 +685,7 @@
       "lifts_total": 3,
       "base_lower": 54,
       "base_upper": 54,
-      "new_snow_7d": 19,
+      "new_snow_7d": 17,
       "new_snow_24h": 4,
       "season_cm": null,
       "terrain": {},
@@ -777,11 +778,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 15 Jul 2026",
+        "issued": "5 pm 15 Jul 2026",
         "days": [
           {
             "label": "Wed 15",
-            "cm": 6,
+            "cm": 7,
             "mm": 0,
             "rain": false
           },
