@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-16T13:06:52.216486+00:00",
+  "updated": "2026-07-16T17:49:23.958391+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "It’s been a stormy start to the week that brought a mix of rain, snow and strong northwest winds to the country on Monday and Tuesday. Through it all, the Southern Lakes ski fields received decent snowfall at upper elevations. The Remarkables reported 20cm Tuesday morning, Cardrona 8cm, and Treble Cone 10cm, while more fell during the day. Coronet Peak didn’t report any new snow, being at a lower elevation, while Canterbury ski fields were forced to take a couple of days off due to gale-force winds. Mt Ruapehu also received a dusting early Tuesday, with Turoa reporting 5cm.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-16T13:10:00+00:00",
+  "next_scheduled_update": "2026-07-16T17:50:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -4.4,
+        "temperature_c": -3.6,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 0,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-17T01:00",
+        "observed": "2026-07-17T05:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,14 +134,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 16 Jul 2026",
+        "issued": "11 pm 16 Jul 2026",
         "days": [
-          {
-            "label": "Thu 16",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Fri 17",
             "cm": 0,
@@ -150,13 +144,13 @@
           },
           {
             "label": "Sat 18",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 19",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -168,7 +162,7 @@
           },
           {
             "label": "Tue 21",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
@@ -390,12 +384,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -9.7,
+        "temperature_c": -9.3,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-17T01:00",
+        "observed": "2026-07-17T05:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -407,14 +401,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 16 Jul 2026",
+        "issued": "11 pm 16 Jul 2026",
         "days": [
-          {
-            "label": "Thu 16",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Fri 17",
             "cm": 0,
@@ -423,13 +411,13 @@
           },
           {
             "label": "Sat 18",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 19",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -441,7 +429,7 @@
           },
           {
             "label": "Tue 21",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
@@ -640,14 +628,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 16 Jul 2026",
+        "issued": "11 pm 16 Jul 2026",
         "days": [
-          {
-            "label": "Thu 16",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Fri 17",
             "cm": 0,
@@ -782,14 +764,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 16 Jul 2026",
+        "issued": "11 pm 16 Jul 2026",
         "days": [
-          {
-            "label": "Thu 16",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Fri 17",
             "cm": 0,
