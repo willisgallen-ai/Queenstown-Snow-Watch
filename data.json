@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-17T12:01:16.793501+00:00",
+  "updated": "2026-07-17T16:39:12.886893+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "It was an absolute stunner down in the Southern Lakes on Thursday after the ski fields there received a couple of dustings from a pair of passing fronts on Wednesday and Wednesday night. Treble Cone scored a total of 6 cm of fresh powder, The Remarkables 5cm, Cardrona 4cm, and Coronet Peak 2cm, while the snow guns also got some run-time.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-17T12:05:00+00:00",
+  "next_scheduled_update": "2026-07-17T16:40:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.7,
+        "temperature_c": -2.0,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-17T23:45",
+        "observed": "2026-07-18T04:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,14 +134,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 17 Jul 2026",
+        "issued": "11 pm 17 Jul 2026",
         "days": [
-          {
-            "label": "Fri 17",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Sat 18",
             "cm": 0,
@@ -383,19 +377,15 @@
         {
           "name": "Lower Carpark 7",
           "status": "Closed"
-        },
-        {
-          "name": "Car Park 1-4",
-          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": -1.9,
+        "temperature_c": -2.4,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-17T19:30",
+        "observed": "2026-07-18T04:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -407,14 +397,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 17 Jul 2026",
+        "issued": "11 pm 17 Jul 2026",
         "days": [
-          {
-            "label": "Fri 17",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Sat 18",
             "cm": 0,
@@ -640,14 +624,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 17 Jul 2026",
+        "issued": "11 pm 17 Jul 2026",
         "days": [
-          {
-            "label": "Fri 17",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Sat 18",
             "cm": 0,
@@ -782,14 +760,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 17 Jul 2026",
+        "issued": "11 pm 17 Jul 2026",
         "days": [
-          {
-            "label": "Fri 17",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Sat 18",
             "cm": 0,
@@ -810,7 +782,7 @@
           },
           {
             "label": "Tue 21",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
