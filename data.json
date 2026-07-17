@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-17T16:39:12.886893+00:00",
+  "updated": "2026-07-17T20:15:40.093600+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "It was an absolute stunner down in the Southern Lakes on Thursday after the ski fields there received a couple of dustings from a pair of passing fronts on Wednesday and Wednesday night. Treble Cone scored a total of 6 cm of fresh powder, The Remarkables 5cm, Cardrona 4cm, and Coronet Peak 2cm, while the snow guns also got some run-time.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-17T16:40:00+00:00",
+  "next_scheduled_update": "2026-07-17T20:20:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.0,
+        "temperature_c": -2.3,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-18T04:30",
+        "observed": "2026-07-18T08:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,11 +134,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 17 Jul 2026",
+        "issued": "5 am 18 Jul 2026",
         "days": [
           {
             "label": "Sat 18",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -163,6 +163,12 @@
           {
             "label": "Wed 22",
             "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Thu 23",
+            "cm": 6,
             "mm": 0,
             "rain": false
           }
@@ -380,12 +386,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.4,
+        "temperature_c": -0.9,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-18T04:30",
+        "observed": "2026-07-18T08:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -397,11 +403,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 17 Jul 2026",
+        "issued": "5 am 18 Jul 2026",
         "days": [
           {
             "label": "Sat 18",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -426,6 +432,12 @@
           {
             "label": "Wed 22",
             "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Thu 23",
+            "cm": 4,
             "mm": 0,
             "rain": false
           }
@@ -624,7 +636,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 17 Jul 2026",
+        "issued": "5 am 18 Jul 2026",
         "days": [
           {
             "label": "Sat 18",
@@ -653,6 +665,12 @@
           {
             "label": "Wed 22",
             "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Thu 23",
+            "cm": 2,
             "mm": 0,
             "rain": false
           }
@@ -743,12 +761,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.2,
+        "temperature_c": 0.3,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 51,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-16T08:30",
+        "observed": "2026-07-18T08:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -760,7 +778,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 17 Jul 2026",
+        "issued": "5 am 18 Jul 2026",
         "days": [
           {
             "label": "Sat 18",
@@ -789,6 +807,12 @@
           {
             "label": "Wed 22",
             "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Thu 23",
+            "cm": 5,
             "mm": 0,
             "rain": false
           }
