@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-18T06:33:05.152428+00:00",
+  "updated": "2026-07-18T10:49:38.916396+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "It was an absolute stunner down in the Southern Lakes on Thursday after the ski fields there received a couple of dustings from a pair of passing fronts on Wednesday and Wednesday night. Treble Cone scored a total of 6 cm of fresh powder, The Remarkables 5cm, Cardrona 4cm, and Coronet Peak 2cm, while the snow guns also got some run-time.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-18T06:35:00+00:00",
+  "next_scheduled_update": "2026-07-18T10:50:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.3,
+        "temperature_c": -0.7,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 53,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-18T18:30",
+        "observed": "2026-07-18T22:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,7 +134,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 18 Jul 2026",
+        "issued": "5 pm 18 Jul 2026",
         "days": [
           {
             "label": "Sat 18",
@@ -168,7 +168,7 @@
           },
           {
             "label": "Thu 23",
-            "cm": 8,
+            "cm": 6,
             "mm": 0,
             "rain": false
           }
@@ -391,12 +391,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.1,
+        "temperature_c": -0.8,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 51,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-18T18:30",
+        "observed": "2026-07-18T22:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -408,7 +408,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 18 Jul 2026",
+        "issued": "5 pm 18 Jul 2026",
         "days": [
           {
             "label": "Sat 18",
@@ -442,7 +442,7 @@
           },
           {
             "label": "Thu 23",
-            "cm": 9,
+            "cm": 8,
             "mm": 0,
             "rain": false
           }
@@ -641,7 +641,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 18 Jul 2026",
+        "issued": "5 pm 18 Jul 2026",
         "days": [
           {
             "label": "Sat 18",
@@ -675,7 +675,7 @@
           },
           {
             "label": "Thu 23",
-            "cm": 11,
+            "cm": 9,
             "mm": 0,
             "rain": false
           }
@@ -783,7 +783,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 18 Jul 2026",
+        "issued": "5 pm 18 Jul 2026",
         "days": [
           {
             "label": "Sat 18",
@@ -811,13 +811,13 @@
           },
           {
             "label": "Wed 22",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 23",
-            "cm": 19,
+            "cm": 17,
             "mm": 0,
             "rain": false
           }
