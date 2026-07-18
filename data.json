@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-18T17:44:38.315912+00:00",
+  "updated": "2026-07-18T20:28:18.844946+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "It was an absolute stunner down in the Southern Lakes on Thursday after the ski fields there received a couple of dustings from a pair of passing fronts on Wednesday and Wednesday night. Treble Cone scored a total of 6 cm of fresh powder, The Remarkables 5cm, Cardrona 4cm, and Coronet Peak 2cm, while the snow guns also got some run-time.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-18T17:45:00+00:00",
+  "next_scheduled_update": "2026-07-18T20:30:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.3,
+        "temperature_c": -4.3,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-19T05:30",
+        "observed": "2026-07-19T08:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,11 +134,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 18 Jul 2026",
+        "issued": "5 am 19 Jul 2026",
         "days": [
           {
             "label": "Sun 19",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -150,19 +150,25 @@
           },
           {
             "label": "Tue 21",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Wed 22",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 23",
-            "cm": 1,
+            "cm": 10,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Fri 24",
+            "cm": 8,
             "mm": 0,
             "rain": false
           }
@@ -368,7 +374,7 @@
           "difficulty": "unclassified"
         },
         {
-          "name": "Tuck Rail garden Rebuild",
+          "name": "Tuck Rail garden",
           "status": "Closed",
           "difficulty": "unclassified"
         }
@@ -377,15 +383,19 @@
         {
           "name": "Lower Carpark 7",
           "status": "Closed"
+        },
+        {
+          "name": "Car Park 1",
+          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": -2.9,
+        "temperature_c": -1.1,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-19T05:30",
+        "observed": "2026-07-19T08:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -397,11 +407,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 18 Jul 2026",
+        "issued": "5 am 19 Jul 2026",
         "days": [
           {
             "label": "Sun 19",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -413,19 +423,25 @@
           },
           {
             "label": "Tue 21",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Wed 22",
             "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
+            "label": "Wed 22",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
             "label": "Thu 23",
-            "cm": 2,
+            "cm": 15,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Fri 24",
+            "cm": 9,
             "mm": 0,
             "rain": false
           }
@@ -440,8 +456,8 @@
       "lifts_total": 10,
       "base_lower": 40,
       "base_upper": 40,
-      "new_snow_7d": 3,
-      "new_snow_24h": null,
+      "new_snow_7d": 4,
+      "new_snow_24h": 1,
       "season_cm": null,
       "terrain": {},
       "lifts": [
@@ -624,7 +640,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 18 Jul 2026",
+        "issued": "5 am 19 Jul 2026",
         "days": [
           {
             "label": "Sun 19",
@@ -640,7 +656,7 @@
           },
           {
             "label": "Tue 21",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -652,7 +668,13 @@
           },
           {
             "label": "Thu 23",
-            "cm": 1,
+            "cm": 12,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Fri 24",
+            "cm": 6,
             "mm": 0,
             "rain": false
           }
@@ -760,11 +782,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 18 Jul 2026",
+        "issued": "5 am 19 Jul 2026",
         "days": [
           {
             "label": "Sun 19",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -776,7 +798,7 @@
           },
           {
             "label": "Tue 21",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -788,7 +810,13 @@
           },
           {
             "label": "Thu 23",
-            "cm": 6,
+            "cm": 30,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Fri 24",
+            "cm": 15,
             "mm": 0,
             "rain": false
           }
