@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-21T09:39:49.897745+00:00",
+  "updated": "2026-07-21T15:54:32.709896+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Monday, 20 th July 2026 It’s been mostly fine and dry across the South Island the last few days, except for a super light dusting of 1cm or less over the Southern Lakes overnight Saturday to see out the last day of the school holidays on Sunday. Conditions will remain settled over New Zealand during the next few days as high pressure continues to dominate. The only mention of snow is some light snow flurries on Mt Ruapehu today, Monday, and another super-light dusting of 1cm or less for the Southern Lakes late Tuesday as a weak front moves up the west. The weather ramps up on Thursday as we enter a long storm window that may last into early August with a tonne of snow on the cards. The first of many fronts crosses the South Island during the latter half of Thursday, bringing a bout of heavy rain. However, colder winds will see light snow falling behind it before another, short, sharp and colder front crosses later on Friday, dumping around 5-20+ cm of fresh powder. Mt Ruapehu will also see some snow falling on mid and upper slopes either side of a soaking on Friday. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Monday 20 th July A mint, sunny day for South Island ski fields. A northwest breeze develops over the Southern Lakes in the afternoon, while a light southwesterly blows over Canterbury. On Mt Ruapehu, light but cold south-to-southeast breezes bring cloudy skies and some light snow flurries Tuesday 21 st July A mostly cloudy day for the Southern Lakes with brisk west-to-northwest winds. Light snow showers will spill over the Main Divide late afternoon and early evening as a weak front passes by on the west coast, giving ski fields another sprinkling of 1cm or less. Canterbury will be fine with some high cloud and a southwest breeze. Fine and sunny for Mt Ruapehu, where southerly breezes turn southwest. Wednesday 22 nd July South Island ski fields will see some morning cloud before brightening in the afternoon, alongside light west-to-northwest breezes. A partly cloudy, partly sunny day for Mt Ruapehu with a southwest breeze. Thursday 23 rd July Clouds increase over the South Island as a front approaches and northwest winds strengthen, reaching gale force in exposed areas, especially in Canterbury, where lift ops may be affected. The front brings rain to the Southern Lakes in the afternoon and evening as it crosses, although there’ll be some snow mixed in initially, followed by lighter showers which gradually turn to snow overnight as colder air arrives. Canterbury ski fields will also cop a load of rain in the evening and overnight as the front moves up the region. A fine start for Mt Ruapehu, but then the cloud will move in as winds swing northwest. Showers develop in the evening, falling as snow on mid and upper slopes. Friday 24 th July The South Island will be partly cloudy with strong northwest winds blowing light snow showers over the Main Divide, which may reach some ski fields from time to time. Winds will be particularly strong in Canterbury, where gale-force winds will likely affect lift ops again. The next front, a short, sharp cold one, crosses the Southern Lakes in the afternoon and Canterbury in the evening, bringing a shot of between 5-20cm, although Treble Cone and Temple Basin may receive more. Mt Hutt will be at the lower end of that range, being furthest from the action. Showers on Mt Ruapehu turn to heavy rain as a front moves in, falling as snow on the upper slopes. Behind the front, the rain backs off through the latter half of the day as snow levels lower to mid slopes. Extended Forecast The outlook is looking juicy and stormy, with Kiwi ski fields likely receiving another solid load of powder this weekend, the 25 th and 26 th of July, as active cold fronts continue to cross the country. Storms are likely to continue throughout much of next week, too, with the potential for deep totals. If current forecasts hold, it’ll be a turning point for the NZ season, propelling it into peak-season conditions with more off-piste terrain on offer. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great couple of days, and I’ll see you back here on Wednesday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-21T09:40:00+00:00",
+  "next_scheduled_update": "2026-07-21T15:55:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -120,9 +120,9 @@
         "temperature_c": -2.3,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 51,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-21T21:30",
+        "observed": "2026-07-22T03:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,14 +134,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 21 Jul 2026",
+        "issued": "11 pm 21 Jul 2026",
         "days": [
-          {
-            "label": "Tue 21",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Wed 22",
             "cm": 0,
@@ -150,25 +144,25 @@
           },
           {
             "label": "Thu 23",
-            "cm": 3,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 24",
-            "cm": 12,
+            "cm": 8,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 25",
-            "cm": 3,
+            "cm": 6,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 26",
-            "cm": 0,
+            "cm": 5,
             "mm": 0,
             "rain": false
           }
@@ -385,25 +379,17 @@
           "status": "Closed"
         },
         {
-          "name": "Car Park 1",
-          "status": "Closed"
-        },
-        {
-          "name": "Car Park 1-2",
-          "status": "Closed"
-        },
-        {
           "name": "Car Park 1-3",
           "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": -1.2,
+        "temperature_c": -1.1,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-21T21:30",
+        "observed": "2026-07-22T03:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -415,14 +401,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 21 Jul 2026",
+        "issued": "11 pm 21 Jul 2026",
         "days": [
-          {
-            "label": "Tue 21",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Wed 22",
             "cm": 0,
@@ -431,25 +411,25 @@
           },
           {
             "label": "Thu 23",
-            "cm": 4,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Fri 24",
-            "cm": 13,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sat 25",
             "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
+            "label": "Fri 24",
+            "cm": 10,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 25",
+            "cm": 5,
+            "mm": 0,
+            "rain": false
+          },
+          {
             "label": "Sun 26",
-            "cm": 0,
+            "cm": 5,
             "mm": 0,
             "rain": false
           }
@@ -648,14 +628,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 21 Jul 2026",
+        "issued": "11 pm 21 Jul 2026",
         "days": [
-          {
-            "label": "Tue 21",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Wed 22",
             "cm": 0,
@@ -664,25 +638,25 @@
           },
           {
             "label": "Thu 23",
-            "cm": 3,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Fri 24",
-            "cm": 13,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sat 25",
             "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
+            "label": "Fri 24",
+            "cm": 7,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 25",
+            "cm": 6,
+            "mm": 0,
+            "rain": false
+          },
+          {
             "label": "Sun 26",
-            "cm": 0,
+            "cm": 4,
             "mm": 0,
             "rain": false
           }
@@ -697,7 +671,7 @@
       "lifts_total": 3,
       "base_lower": 56,
       "base_upper": 56,
-      "new_snow_7d": 6,
+      "new_snow_7d": 2,
       "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
@@ -790,41 +764,35 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 21 Jul 2026",
+        "issued": "11 pm 21 Jul 2026",
         "days": [
           {
-            "label": "Tue 21",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Wed 22",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 23",
-            "cm": 12,
+            "cm": 6,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 24",
-            "cm": 21,
+            "cm": 18,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 25",
-            "cm": 2,
+            "cm": 5,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 26",
-            "cm": 0,
+            "cm": 4,
             "mm": 0,
             "rain": false
           }
