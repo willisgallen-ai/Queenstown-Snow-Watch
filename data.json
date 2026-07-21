@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-20T20:52:19.145273+00:00",
+  "updated": "2026-07-21T00:13:58.549495+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Monday, 20 th July 2026 It’s been mostly fine and dry across the South Island the last few days, except for a super light dusting of 1cm or less over the Southern Lakes overnight Saturday to see out the last day of the school holidays on Sunday. Conditions will remain settled over New Zealand during the next few days as high pressure continues to dominate. The only mention of snow is some light snow flurries on Mt Ruapehu today, Monday, and another super-light dusting of 1cm or less for the Southern Lakes late Tuesday as a weak front moves up the west. The weather ramps up on Thursday as we enter a long storm window that may last into early August with a tonne of snow on the cards. The first of many fronts crosses the South Island during the latter half of Thursday, bringing a bout of heavy rain. However, colder winds will see light snow falling behind it before another, short, sharp and colder front crosses later on Friday, dumping around 5-20+ cm of fresh powder. Mt Ruapehu will also see some snow falling on mid and upper slopes either side of a soaking on Friday. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Monday 20 th July A mint, sunny day for South Island ski fields. A northwest breeze develops over the Southern Lakes in the afternoon, while a light southwesterly blows over Canterbury. On Mt Ruapehu, light but cold south-to-southeast breezes bring cloudy skies and some light snow flurries Tuesday 21 st July A mostly cloudy day for the Southern Lakes with brisk west-to-northwest winds. Light snow showers will spill over the Main Divide late afternoon and early evening as a weak front passes by on the west coast, giving ski fields another sprinkling of 1cm or less. Canterbury will be fine with some high cloud and a southwest breeze. Fine and sunny for Mt Ruapehu, where southerly breezes turn southwest. Wednesday 22 nd July South Island ski fields will see some morning cloud before brightening in the afternoon, alongside light west-to-northwest breezes. A partly cloudy, partly sunny day for Mt Ruapehu with a southwest breeze. Thursday 23 rd July Clouds increase over the South Island as a front approaches and northwest winds strengthen, reaching gale force in exposed areas, especially in Canterbury, where lift ops may be affected. The front brings rain to the Southern Lakes in the afternoon and evening as it crosses, although there’ll be some snow mixed in initially, followed by lighter showers which gradually turn to snow overnight as colder air arrives. Canterbury ski fields will also cop a load of rain in the evening and overnight as the front moves up the region. A fine start for Mt Ruapehu, but then the cloud will move in as winds swing northwest. Showers develop in the evening, falling as snow on mid and upper slopes. Friday 24 th July The South Island will be partly cloudy with strong northwest winds blowing light snow showers over the Main Divide, which may reach some ski fields from time to time. Winds will be particularly strong in Canterbury, where gale-force winds will likely affect lift ops again. The next front, a short, sharp cold one, crosses the Southern Lakes in the afternoon and Canterbury in the evening, bringing a shot of between 5-20cm, although Treble Cone and Temple Basin may receive more. Mt Hutt will be at the lower end of that range, being furthest from the action. Showers on Mt Ruapehu turn to heavy rain as a front moves in, falling as snow on the upper slopes. Behind the front, the rain backs off through the latter half of the day as snow levels lower to mid slopes. Extended Forecast The outlook is looking juicy and stormy, with Kiwi ski fields likely receiving another solid load of powder this weekend, the 25 th and 26 th of July, as active cold fronts continue to cross the country. Storms are likely to continue throughout much of next week, too, with the potential for deep totals. If current forecasts hold, it’ll be a turning point for the NZ season, propelling it into peak-season conditions with more off-piste terrain on offer. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great couple of days, and I’ll see you back here on Wednesday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-20T20:55:00+00:00",
+  "next_scheduled_update": "2026-07-21T00:15:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -103,26 +103,26 @@
       "carparks": [
         {
           "name": "Car Park 1",
-          "status": "Closed",
+          "status": "Open",
           "note": "3+ per car"
         },
         {
           "name": "Car Park 2",
-          "status": "Closed",
+          "status": "Open",
           "note": "3+ per car"
         },
         {
           "name": "Car Park 4",
-          "status": "Closed"
+          "status": "Open"
         }
       ],
       "weather": {
-        "temperature_c": -4.8,
+        "temperature_c": -2.7,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-21T08:45",
+        "observed": "2026-07-21T12:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -179,8 +179,8 @@
       "hours_closed": true
     },
     "coronetpeak": {
-      "status": "Closed",
-      "lifts_open": 0,
+      "status": "Open",
+      "lifts_open": 8,
       "lifts_total": 8,
       "base_lower": 20,
       "base_upper": 30,
@@ -191,81 +191,81 @@
       "lifts": [
         {
           "name": "Coronet Express",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Greengates Express",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Meadows Learner Express",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Rocky Gully T-bar",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Magic Carpet Conveyor",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Beginner Carpet Conveyor",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Skiwiland Conveyor",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Kidszone carpet",
-          "status": "Closed"
+          "status": "Open"
         }
       ],
       "trails": [
         {
           "name": "Big Easy",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "green"
         },
         {
           "name": "Beginner Area",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "green"
         },
         {
           "name": "Little Easy",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "green"
         },
         {
           "name": "Gentle Annie",
-          "status": "Closed",
+          "status": "Closed for Racing",
           "difficulty": "green"
         },
         {
           "name": "Fun Zone",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "unclassified"
         },
         {
           "name": "M1",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "blue"
         },
         {
           "name": "Easy Rider",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "green"
         },
         {
           "name": "Greengates",
-          "status": "Closed",
+          "status": "Ungroomed",
           "difficulty": "red"
         },
         {
           "name": "Wall Street",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "red"
         },
         {
@@ -275,27 +275,27 @@
         },
         {
           "name": "The Hurdle",
-          "status": "Closed",
+          "status": "Ungroomed",
           "difficulty": "red"
         },
         {
           "name": "Exchange Drop",
-          "status": "Closed",
+          "status": "Variable",
           "difficulty": "black"
         },
         {
           "name": "KidsZone carpet",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "unclassified"
         },
         {
           "name": "Dual Carpet slopes",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "green"
         },
         {
           "name": "Shirt Front",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "blue"
         },
         {
@@ -305,17 +305,17 @@
         },
         {
           "name": "Brough's Lane",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "blue"
         },
         {
           "name": "Tuck",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "black"
         },
         {
           "name": "Million Dollar",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "blue"
         },
         {
@@ -325,27 +325,27 @@
         },
         {
           "name": "Mid Gully",
-          "status": "Closed",
+          "status": "Ungroomed",
           "difficulty": "red"
         },
         {
           "name": "Pro Am",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "blue"
         },
         {
           "name": "Overrun",
-          "status": "Closed",
+          "status": "Ungroomed",
           "difficulty": "red"
         },
         {
           "name": "Rocky Return",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "blue"
         },
         {
           "name": "West Gates",
-          "status": "Closed",
+          "status": "Ungroomed",
           "difficulty": "red"
         },
         {
@@ -360,7 +360,7 @@
         },
         {
           "name": "Sugar's Run",
-          "status": "Closed",
+          "status": "Ungroomed",
           "difficulty": "red"
         },
         {
@@ -375,31 +375,35 @@
         },
         {
           "name": "Tuck Rail garden",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "unclassified"
         }
       ],
       "carparks": [
         {
           "name": "Lower Carpark 7",
-          "status": "Closed"
+          "status": "Spaces available"
         },
         {
           "name": "Car Park 1",
-          "status": "Closed"
+          "status": "Spaces available"
         },
         {
           "name": "Car Park 1-2",
-          "status": "Closed"
+          "status": "Full"
+        },
+        {
+          "name": "Car Park 1-3",
+          "status": "Full"
         }
       ],
       "weather": {
-        "temperature_c": -7.3,
+        "temperature_c": 1.3,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-21T04:00",
+        "observed": "2026-07-21T12:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -451,12 +455,11 @@
           }
         ]
       },
-      "stale": false,
-      "hours_closed": true
+      "stale": false
     },
     "cardrona": {
       "status": "Open",
-      "lifts_open": 9,
+      "lifts_open": 8,
       "lifts_total": 10,
       "base_lower": 40,
       "base_upper": 40,
@@ -687,8 +690,8 @@
       "stale": false
     },
     "treblecone": {
-      "status": "Closed",
-      "lifts_open": 0,
+      "status": "Open",
+      "lifts_open": 3,
       "lifts_total": 3,
       "base_lower": 56,
       "base_upper": 56,
@@ -699,56 +702,56 @@
       "lifts": [
         {
           "name": "Home Basin Express",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Saddle Quad",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Beginner Platter",
-          "status": "Closed"
+          "status": "Open"
         }
       ],
       "trails": [
         {
           "name": "Home Basin",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Saddle Basin",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Matukituki Basin",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Summit Slopes",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Motatapu Chutes",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Sundance",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Morning Skinning",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         }
       ],
@@ -756,15 +759,15 @@
       "carparks": [
         {
           "name": "Carpark 1",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "Carpark 2",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "Carpark 3",
-          "status": "Closed"
+          "status": "Available"
         }
       ],
       "weather": {
@@ -825,8 +828,7 @@
           }
         ]
       },
-      "stale": false,
-      "hours_closed": true
+      "stale": false
     }
   }
 }
