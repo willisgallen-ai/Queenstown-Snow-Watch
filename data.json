@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-21T23:45:03.903628+00:00",
+  "updated": "2026-07-22T08:01:15.905631+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Wednesday, 22 nd July 2026 Monday’s flurries on Mt Ruapehu turned out to be a bit more than that. It was a welcoming surprise when webcams showed more than a dusting, and Turoa reported a tidy 10cm on Tuesday morning. You should also wake up to a fresh dusting of up to a couple of centimetres over the Southern Lakes this Wednesday morning from light overnight snowfall. These weak weather systems have been a precursor to what will come when the storm window swings wide open on Thursday. The leading front to a strong weather system will bring strong northwest winds and a bout of heavy rain to the South Island on Thursday and Mt Ruapehu on Friday. Fortunately, icy, cold winds sweep in behind this initial front and the South Island will see snowfall from Friday into early Saturday, or possibly later. Totals are likely to range from 5 to 20+ cm, although there’s still significant uncertainty around this. Mt Ruapehu will also see good snowfall throughout the weekend, with totals of 20-50cm possible, which will be a game changer for resorts there if this comes to fruition. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Wednesday 22 nd July After a fresh dusting for the Southern Lakes overnight, any remaining clouds clear in the morning for a fine, sunny day as a light westerly breeze turns northwest. A weak system moves up Canterbury during the morning, bringing cloud and a few showers, which will fall as snow about the tops and possibly upper slopes. Light west-to-northwest breezes. A partly cloudy, partly sunny day for Mt Ruapehu with a southwest breeze. Thursday 23 rd July Clouds increase over the South Island through the morning hours as a front approaches and northwest winds strengthen, reaching gale force in exposed areas, especially in Canterbury, where lift ops may be affected. The front brings rain to the Southern Lakes in the afternoon and evening as it crosses, although there’ll be some snow mixed in initially, followed by showers which gradually turn to snow overnight as colder air arrives. Canterbury ski fields will also cop a load of rain in the evening and overnight as the front moves up the region, with heavy falls close to the Main Divide. A fine start for Mt Ruapehu, but then the cloud will move in as winds swing northwest. Light showers develop in the evening, falling as snow mostly on mid and upper slopes. Friday 24 th July Brisk northwest winds will send snow showers over the Main Divide onto Southern Lakes ski fields to around base levels. In Canterbury, northwest winds continue at gale-force, likely affecting lift ops. Rain and showers spilling over the Main Divide will be heavier closer to the Main Divide, but they’ll eventually turn to snow about the tops and upper slopes. The next front, a short, sharp cold one, crosses the Southern Lakes in the evening and Canterbury overnight, bringing an extra 5-15cm shot of powder, although Treble Cone and Temple Basin may receive more, being closest to the Main Divide. A stormy day for Mt Ruapehu as a front moves in. Showers build into heavy rain in the afternoon, with snow falling about the top, while northwest winds rise to gale-force. Behind the front, the rain backs off a touch in the evening and then gradually turns to snow overnight as colder westerlies arrive. Saturday 25 th Remaining snowfall over South Island ski fields clears early for a fine, powder-filled day as strong, cold southwest winds abate. Although some cloud will linger over the Southern Lakes. A stormy, snowy day for Mt Ruapehu, with strong, gale-force westerlies and snowfall to low levels throughout the day. The day’s totals are likely to be 10 to 30+cm. Sunday 26 th Strong, cold southwesterlies over the South Island bring cloudy skies and light snow showers to the Southern Lakes, and fine and cloudy periods to Canterbury. Mt Ruapehu will pick up another 10-20cm shot of powder to low levels as the next front passes over during the day, turning cold westerlies to the south. Extended Forecast Kiwi ski fields are likely to receive more snow early next week, between Monday the 27 th and Wednesday the 29 th of July, before the current storm window closes. Mt Ruapehu could be in the firing line and do quite well, but models aren’t well-aligned so we can’t make any big calls yet. Another storm later next week could bring another round of snowfall during the start of August. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great couple of days, and I’ll see you back here on Friday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-21T23:50:00+00:00",
+  "next_scheduled_update": "2026-07-22T08:05:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -103,17 +103,17 @@
       "carparks": [
         {
           "name": "Car Park 1",
-          "status": "Open",
+          "status": "Closed",
           "note": "3+ per car"
         },
         {
           "name": "Car Park 2",
-          "status": "Open",
+          "status": "Closed",
           "note": "3+ per car"
         },
         {
           "name": "Car Park 4",
-          "status": "Open"
+          "status": "Closed"
         }
       ],
       "weather": {
@@ -122,19 +122,19 @@
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-22T11:30",
+        "observed": "2026-07-22T20:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
       "summary": "View The Remarkables snow and weather report with webcams. Our report is updated daily during the ski season and includes Queenstown mountain conditions, lift status, temperature & latest snow conditions the",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/the-remarkables/snow-cams",
-        "image_url": "https://www.mountainwatch.com/Resort/The-Remarkables-BaseCamera-Angle-1/LiveStill.jpg",
-        "embeddable": true,
+        "image_url": null,
+        "embeddable": false,
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 22 Jul 2026",
+        "issued": "5 pm 22 Jul 2026",
         "days": [
           {
             "label": "Wed 22",
@@ -144,19 +144,19 @@
           },
           {
             "label": "Thu 23",
-            "cm": 5,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Fri 24",
             "cm": 11,
             "mm": 0,
             "rain": false
           },
           {
+            "label": "Fri 24",
+            "cm": 4,
+            "mm": 0,
+            "rain": false
+          },
+          {
             "label": "Sat 25",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -180,7 +180,7 @@
     },
     "coronetpeak": {
       "status": "Open",
-      "lifts_open": 8,
+      "lifts_open": 5,
       "lifts_total": 8,
       "base_lower": 20,
       "base_upper": 30,
@@ -195,7 +195,7 @@
         },
         {
           "name": "Greengates Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Meadows Learner Express",
@@ -203,7 +203,7 @@
         },
         {
           "name": "Rocky Gully T-bar",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Magic Carpet Conveyor",
@@ -215,7 +215,7 @@
         },
         {
           "name": "Skiwiland Conveyor",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Kidszone carpet",
@@ -403,24 +403,24 @@
         }
       ],
       "weather": {
-        "temperature_c": 2.1,
+        "temperature_c": -2.4,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 0,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-22T11:30",
+        "observed": "2026-07-22T20:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
       "summary": "The latest Queenstown & Coronet Peak Snow Report, Ski Conditions, Weather Forecast, Snow Forecast, Snowfall History & Webcams from SnowNZ",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/coronet-peak/snow-cams",
-        "image_url": "https://www.mountainwatch.com/Resort/Coronet-Peak-ExpressCamera-Angle-1/LiveStill.jpg",
-        "embeddable": true,
+        "image_url": null,
+        "embeddable": false,
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 22 Jul 2026",
+        "issued": "5 pm 22 Jul 2026",
         "days": [
           {
             "label": "Wed 22",
@@ -430,19 +430,19 @@
           },
           {
             "label": "Thu 23",
-            "cm": 8,
+            "cm": 13,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 24",
-            "cm": 10,
+            "cm": 6,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 25",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -463,8 +463,8 @@
       "stale": false
     },
     "cardrona": {
-      "status": "Open",
-      "lifts_open": 8,
+      "status": "Closed",
+      "lifts_open": 0,
       "lifts_total": 10,
       "base_lower": 40,
       "base_upper": 40,
@@ -475,172 +475,172 @@
       "lifts": [
         {
           "name": "Learner Conveyors",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "McDougall's Chondola",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Whitestar Express",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Captains Express",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Willow's Quad",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Soho Express",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "T-Bar",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Valley View",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Kindy Conveyor",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Wells Pipe Platter",
-          "status": "Unknown"
+          "status": "Closed"
         }
       ],
       "trails": [
         {
           "name": "Learners Slope",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Main Basin",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Captains",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Soho",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Little Willows",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Big Willows",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Mt Cardrona",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Arcadia Chutes",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Summit",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         }
       ],
       "park": [
         {
           "name": "Baby Bucks",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Little Bucks",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Antlers Alley",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Stag Lane",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Big Bucks",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Peoples Pipe",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Olympic Pipe",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Big Air",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Mc Park",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Gravity Cross",
-          "status": "Unknown"
+          "status": "Closed"
         }
       ],
       "carparks": [
         {
           "name": "Carpark A",
-          "status": "Full"
+          "status": "Closed"
         },
         {
           "name": "Carpark B",
-          "status": "Full"
+          "status": "Closed"
         },
         {
           "name": "Carpark C",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "The Yard",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Valley View",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "The Pines",
-          "status": "Available"
+          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": -5.3,
+        "temperature_c": -3.3,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-21T08:45",
+        "observed": "2026-07-22T20:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -652,7 +652,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 22 Jul 2026",
+        "issued": "5 pm 22 Jul 2026",
         "days": [
           {
             "label": "Wed 22",
@@ -662,19 +662,19 @@
           },
           {
             "label": "Thu 23",
-            "cm": 5,
+            "cm": 8,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 24",
-            "cm": 12,
+            "cm": 6,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 25",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -692,11 +692,12 @@
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "hours_closed": true
     },
     "treblecone": {
-      "status": "Open",
-      "lifts_open": 3,
+      "status": "Closed",
+      "lifts_open": 0,
       "lifts_total": 3,
       "base_lower": 54,
       "base_upper": 54,
@@ -707,56 +708,56 @@
       "lifts": [
         {
           "name": "Home Basin Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Saddle Quad",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Beginner Platter",
-          "status": "Open"
+          "status": "Closed"
         }
       ],
       "trails": [
         {
           "name": "Home Basin",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Saddle Basin",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Matukituki Basin",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Summit Slopes",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Motatapu Chutes",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Sundance",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Morning Skinning",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         }
       ],
@@ -764,24 +765,24 @@
       "carparks": [
         {
           "name": "Carpark 1",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Carpark 2",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Carpark 3",
-          "status": "Available"
+          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": -9.9,
+        "temperature_c": 0.9,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-20T22:30",
+        "observed": "2026-07-22T20:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -793,7 +794,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 22 Jul 2026",
+        "issued": "5 pm 22 Jul 2026",
         "days": [
           {
             "label": "Wed 22",
@@ -803,19 +804,19 @@
           },
           {
             "label": "Thu 23",
-            "cm": 17,
+            "cm": 19,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 24",
-            "cm": 14,
+            "cm": 10,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 25",
-            "cm": 3,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -833,7 +834,8 @@
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "hours_closed": true
     }
   }
 }
