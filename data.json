@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-22T08:01:15.905631+00:00",
+  "updated": "2026-07-22T13:12:49.325913+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
-    "summary": "Published early Wednesday, 22 nd July 2026 Monday’s flurries on Mt Ruapehu turned out to be a bit more than that. It was a welcoming surprise when webcams showed more than a dusting, and Turoa reported a tidy 10cm on Tuesday morning. You should also wake up to a fresh dusting of up to a couple of centimetres over the Southern Lakes this Wednesday morning from light overnight snowfall. These weak weather systems have been a precursor to what will come when the storm window swings wide open on Thursday. The leading front to a strong weather system will bring strong northwest winds and a bout of heavy rain to the South Island on Thursday and Mt Ruapehu on Friday. Fortunately, icy, cold winds sweep in behind this initial front and the South Island will see snowfall from Friday into early Saturday, or possibly later. Totals are likely to range from 5 to 20+ cm, although there’s still significant uncertainty around this. Mt Ruapehu will also see good snowfall throughout the weekend, with totals of 20-50cm possible, which will be a game changer for resorts there if this comes to fruition. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Wednesday 22 nd July After a fresh dusting for the Southern Lakes overnight, any remaining clouds clear in the morning for a fine, sunny day as a light westerly breeze turns northwest. A weak system moves up Canterbury during the morning, bringing cloud and a few showers, which will fall as snow about the tops and possibly upper slopes. Light west-to-northwest breezes. A partly cloudy, partly sunny day for Mt Ruapehu with a southwest breeze. Thursday 23 rd July Clouds increase over the South Island through the morning hours as a front approaches and northwest winds strengthen, reaching gale force in exposed areas, especially in Canterbury, where lift ops may be affected. The front brings rain to the Southern Lakes in the afternoon and evening as it crosses, although there’ll be some snow mixed in initially, followed by showers which gradually turn to snow overnight as colder air arrives. Canterbury ski fields will also cop a load of rain in the evening and overnight as the front moves up the region, with heavy falls close to the Main Divide. A fine start for Mt Ruapehu, but then the cloud will move in as winds swing northwest. Light showers develop in the evening, falling as snow mostly on mid and upper slopes. Friday 24 th July Brisk northwest winds will send snow showers over the Main Divide onto Southern Lakes ski fields to around base levels. In Canterbury, northwest winds continue at gale-force, likely affecting lift ops. Rain and showers spilling over the Main Divide will be heavier closer to the Main Divide, but they’ll eventually turn to snow about the tops and upper slopes. The next front, a short, sharp cold one, crosses the Southern Lakes in the evening and Canterbury overnight, bringing an extra 5-15cm shot of powder, although Treble Cone and Temple Basin may receive more, being closest to the Main Divide. A stormy day for Mt Ruapehu as a front moves in. Showers build into heavy rain in the afternoon, with snow falling about the top, while northwest winds rise to gale-force. Behind the front, the rain backs off a touch in the evening and then gradually turns to snow overnight as colder westerlies arrive. Saturday 25 th Remaining snowfall over South Island ski fields clears early for a fine, powder-filled day as strong, cold southwest winds abate. Although some cloud will linger over the Southern Lakes. A stormy, snowy day for Mt Ruapehu, with strong, gale-force westerlies and snowfall to low levels throughout the day. The day’s totals are likely to be 10 to 30+cm. Sunday 26 th Strong, cold southwesterlies over the South Island bring cloudy skies and light snow showers to the Southern Lakes, and fine and cloudy periods to Canterbury. Mt Ruapehu will pick up another 10-20cm shot of powder to low levels as the next front passes over during the day, turning cold westerlies to the south. Extended Forecast Kiwi ski fields are likely to receive more snow early next week, between Monday the 27 th and Wednesday the 29 th of July, before the current storm window closes. Mt Ruapehu could be in the firing line and do quite well, but models aren’t well-aligned so we can’t make any big calls yet. Another storm later next week could bring another round of snowfall during the start of August. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great couple of days, and I’ll see you back here on Friday. Grasshopper",
+    "summary": "Monday’s flurries on Mt Ruapehu turned out to be a bit more than that. It was a welcoming surprise when webcams showed more than a dusting, and Turoa reported a tidy 10cm on Tuesday morning. You should also wake up to a fresh dusting of up to a couple of centimetres over the Southern Lakes this Wednesday morning from light overnight snowfall.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-22T08:05:00+00:00",
+  "next_scheduled_update": "2026-07-22T13:15:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,20 +117,20 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.4,
+        "temperature_c": -2.9,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-22T20:00",
+        "observed": "2026-07-23T01:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
       "summary": "View The Remarkables snow and weather report with webcams. Our report is updated daily during the ski season and includes Queenstown mountain conditions, lift status, temperature & latest snow conditions the",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/the-remarkables/snow-cams",
-        "image_url": null,
-        "embeddable": false,
+        "image_url": "https://www.mountainwatch.com/Resort/The-Remarkables-BaseCamera-Angle-1/LiveStill.jpg",
+        "embeddable": true,
         "source": "Mountainwatch"
       },
       "forecast": {
@@ -179,8 +179,8 @@
       "hours_closed": true
     },
     "coronetpeak": {
-      "status": "Open",
-      "lifts_open": 5,
+      "status": "Closed",
+      "lifts_open": 0,
       "lifts_total": 8,
       "base_lower": 20,
       "base_upper": 30,
@@ -191,7 +191,7 @@
       "lifts": [
         {
           "name": "Coronet Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Greengates Express",
@@ -199,7 +199,7 @@
         },
         {
           "name": "Meadows Learner Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Rocky Gully T-bar",
@@ -207,11 +207,11 @@
         },
         {
           "name": "Magic Carpet Conveyor",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Beginner Carpet Conveyor",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Skiwiland Conveyor",
@@ -219,53 +219,53 @@
         },
         {
           "name": "Kidszone carpet",
-          "status": "Open"
+          "status": "Closed"
         }
       ],
       "trails": [
         {
           "name": "Big Easy",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "green"
         },
         {
           "name": "Beginner Area",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "green"
         },
         {
           "name": "Little Easy",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "green"
         },
         {
           "name": "Gentle Annie",
-          "status": "Closed for Racing",
+          "status": "Closed",
           "difficulty": "green"
         },
         {
           "name": "Fun Zone",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "M1",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "blue"
         },
         {
           "name": "Easy Rider",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "green"
         },
         {
           "name": "Greengates",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Wall Street",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
@@ -275,27 +275,27 @@
         },
         {
           "name": "The Hurdle",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Exchange Drop",
-          "status": "Variable",
+          "status": "Closed",
           "difficulty": "black"
         },
         {
           "name": "KidsZone carpet",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Dual Carpet slopes",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "green"
         },
         {
           "name": "Shirt Front",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "blue"
         },
         {
@@ -305,17 +305,17 @@
         },
         {
           "name": "Brough's Lane",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "blue"
         },
         {
           "name": "Tuck",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "black"
         },
         {
           "name": "Million Dollar",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "blue"
         },
         {
@@ -325,27 +325,27 @@
         },
         {
           "name": "Mid Gully",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Pro Am",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "blue"
         },
         {
           "name": "Overrun",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Rocky Return",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "blue"
         },
         {
           "name": "West Gates",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
@@ -360,12 +360,12 @@
         },
         {
           "name": "Sugar's Run",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Express Way",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
@@ -380,43 +380,35 @@
         },
         {
           "name": "Tuck Rail garden",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         }
       ],
       "carparks": [
         {
           "name": "Lower Carpark 7",
-          "status": "Spaces available"
+          "status": "Closed"
         },
         {
           "name": "Car Park 1-3",
-          "status": "Spaces available"
-        },
-        {
-          "name": "Car Park 1",
-          "status": "Full"
-        },
-        {
-          "name": "Car Park 1-2",
-          "status": "Full"
+          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": -2.4,
+        "temperature_c": -1.1,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-22T20:00",
+        "observed": "2026-07-23T01:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
       "summary": "The latest Queenstown & Coronet Peak Snow Report, Ski Conditions, Weather Forecast, Snow Forecast, Snowfall History & Webcams from SnowNZ",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/coronet-peak/snow-cams",
-        "image_url": null,
-        "embeddable": false,
+        "image_url": "https://www.mountainwatch.com/Resort/Coronet-Peak-ExpressCamera-Angle-1/LiveStill.jpg",
+        "embeddable": true,
         "source": "Mountainwatch"
       },
       "forecast": {
@@ -460,7 +452,8 @@
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "hours_closed": true
     },
     "cardrona": {
       "status": "Closed",
@@ -468,7 +461,7 @@
       "lifts_total": 10,
       "base_lower": 40,
       "base_upper": 40,
-      "new_snow_7d": 4,
+      "new_snow_7d": 1,
       "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
@@ -644,7 +637,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Monday - 20/7 ✅ Learners Slope ✅ Main Basin ✅ Captains ✅ Soho ✅ Little Willows ✅ Big Willows ✅ Backcountry Access ✅ Mt Cardrona ✅ Arcadia Chutes ❌ Summit We are Open today with a fine bluebird day and light winds! The groomers have been out laying down some fresh cord overnight for your Monday and the mountain is looking great! Come on up and enjoy some sunshine laps! The access road is dusty so please take care and increase your following distances. Main basin and Valley View lifts scheduled to open from 08:30am. Captains, T-bar, Willows and Soho to follow.",
+      "summary": ": Wednesday 22/7 We are open today with mild temps and light westerly winds. We are expecting a mostly cloudy morning with snow showers possible, clearing to a fine afternoon. We had a dusting of snow overnight and the grooming is looking great this morning. The parks team added a third jump in Antlers Alley and some new extra small jumps above McPark. Main basin and Valley View lifts scheduled to open from 08:30am. Captains, T-bar and Soho to follow.",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -701,7 +694,7 @@
       "lifts_total": 3,
       "base_lower": 54,
       "base_upper": 54,
-      "new_snow_7d": 2,
+      "new_snow_7d": 0,
       "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
@@ -786,7 +779,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Monday 20th July Home Basin, Open Saddle Basin, Open Matukituki Basin, Closed Summit Slopes, Open Motatapu Chutes, Closed Sundance, Closed Backcountry Access, Open Skinning Access, Open Good morning, and welcome to the new week! We're looking at a mostly fine day up the mountain — a great way to kick things off. Our grooming team has been out overnight, and Triple Treat and upper Main Street are groomed up and looking sharp for first tracks. And with cool temps, the Snowmakers have been working hard right through the night refreshing and building our main trails. Conditions are holding nicely across the mountain, albeit thin in spots. Get on up here and make the most of the fine weather while it lasts ~ there is a storm coming this week which holds the promise of more snow on the way! See you up here for a great day!",
+      "summary": ": Rāapa/Wednesday Mid Morning Update - The snow conditions are superb out there! The Saddlle is skiing and riding lovely and there is lots of fun to be had in the Home Basin. The sun is shining, the view is on point. Come on up! Skiing/riding should continue to be excellent up in the Saddle, with the best of the chalky goodness it in the gullies, humps and hollows. The grooming is in the Home Basin, with Triple Treat, Upper Main St and Beginner Platter all dressed up in fresh corduroy. Home Basin - Open Saddle Basin - Open Matukituki Basin - Closed Summit Slopes - Open Motatapu Chutes - Closed Sundance - Closed Backcountry Access - Open Skinning Access - Open",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
