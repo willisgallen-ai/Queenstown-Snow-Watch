@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-22T21:43:01.909961+00:00",
+  "updated": "2026-07-23T06:44:48.394409+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Monday’s flurries on Mt Ruapehu turned out to be a bit more than that. It was a welcoming surprise when webcams showed more than a dusting, and Turoa reported a tidy 10cm on Tuesday morning. You should also wake up to a fresh dusting of up to a couple of centimetres over the Southern Lakes this Wednesday morning from light overnight snowfall.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-22T21:45:00+00:00",
+  "next_scheduled_update": "2026-07-23T06:45:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -103,26 +103,26 @@
       "carparks": [
         {
           "name": "Car Park 1",
-          "status": "Open",
+          "status": "Closed",
           "note": "3+ per car"
         },
         {
           "name": "Car Park 2",
-          "status": "Open",
+          "status": "Closed",
           "note": "3+ per car"
         },
         {
           "name": "Car Park 4",
-          "status": "Open"
+          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": -0.4,
+        "temperature_c": -0.0,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 51,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-23T09:30",
+        "observed": "2026-07-23T18:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,293 +134,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 23 Jul 2026",
+        "issued": "11 am 23 Jul 2026",
         "days": [
           {
             "label": "Thu 23",
-            "cm": 7,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Fri 24",
-            "cm": 13,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sat 25",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sun 26",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Mon 27",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Tue 28",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          }
-        ]
-      },
-      "stale": true,
-      "park": null,
-      "hours_closed": true
-    },
-    "coronetpeak": {
-      "status": "Open",
-      "lifts_open": 8,
-      "lifts_total": 8,
-      "base_lower": 20,
-      "base_upper": 30,
-      "new_snow_7d": 0,
-      "new_snow_24h": null,
-      "season_cm": null,
-      "terrain": {},
-      "lifts": [
-        {
-          "name": "Coronet Express",
-          "status": "Open"
-        },
-        {
-          "name": "Greengates Express",
-          "status": "Open"
-        },
-        {
-          "name": "Meadows Learner Express",
-          "status": "Open"
-        },
-        {
-          "name": "Rocky Gully T-bar",
-          "status": "Open"
-        },
-        {
-          "name": "Magic Carpet Conveyor",
-          "status": "Open"
-        },
-        {
-          "name": "Beginner Carpet Conveyor",
-          "status": "Open"
-        },
-        {
-          "name": "Skiwiland Conveyor",
-          "status": "Open"
-        },
-        {
-          "name": "Kidszone carpet",
-          "status": "Open"
-        }
-      ],
-      "trails": [
-        {
-          "name": "Big Easy",
-          "status": "Open",
-          "difficulty": "green"
-        },
-        {
-          "name": "Beginner Area",
-          "status": "Open",
-          "difficulty": "green"
-        },
-        {
-          "name": "Little Easy",
-          "status": "Open",
-          "difficulty": "green"
-        },
-        {
-          "name": "Gentle Annie",
-          "status": "Closed for Racing",
-          "difficulty": "green"
-        },
-        {
-          "name": "Fun Zone",
-          "status": "Open",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "M1",
-          "status": "Open",
-          "difficulty": "blue"
-        },
-        {
-          "name": "Easy Rider",
-          "status": "Open",
-          "difficulty": "green"
-        },
-        {
-          "name": "Greengates",
-          "status": "Open",
-          "difficulty": "red"
-        },
-        {
-          "name": "Wall Street",
-          "status": "Open",
-          "difficulty": "red"
-        },
-        {
-          "name": "The Chimney",
-          "status": "Closed",
-          "difficulty": "black"
-        },
-        {
-          "name": "The Hurdle",
-          "status": "Ungroomed",
-          "difficulty": "red"
-        },
-        {
-          "name": "Exchange Drop",
-          "status": "Variable",
-          "difficulty": "black"
-        },
-        {
-          "name": "KidsZone carpet",
-          "status": "Open",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Dual Carpet slopes",
-          "status": "Open",
-          "difficulty": "green"
-        },
-        {
-          "name": "Shirt Front",
-          "status": "Ungroomed",
-          "difficulty": "blue"
-        },
-        {
-          "name": "Eighth Basin",
-          "status": "Closed",
-          "difficulty": "red"
-        },
-        {
-          "name": "Brough's Lane",
-          "status": "Open",
-          "difficulty": "blue"
-        },
-        {
-          "name": "Tuck",
-          "status": "Open",
-          "difficulty": "black"
-        },
-        {
-          "name": "Million Dollar",
-          "status": "Open",
-          "difficulty": "blue"
-        },
-        {
-          "name": "Upper Walkabout",
-          "status": "Closed",
-          "difficulty": "black"
-        },
-        {
-          "name": "Mid Gully",
-          "status": "Ungroomed",
-          "difficulty": "red"
-        },
-        {
-          "name": "Pro Am",
-          "status": "Open",
-          "difficulty": "blue"
-        },
-        {
-          "name": "Overrun",
-          "status": "Open",
-          "difficulty": "red"
-        },
-        {
-          "name": "Rocky Return",
-          "status": "Open",
-          "difficulty": "blue"
-        },
-        {
-          "name": "West Gates",
-          "status": "Ungroomed",
-          "difficulty": "red"
-        },
-        {
-          "name": "Race Arena",
-          "status": "Closed",
-          "difficulty": "black"
-        },
-        {
-          "name": "Powder Run",
-          "status": "Closed",
-          "difficulty": "double-black"
-        },
-        {
-          "name": "Sugar's Run",
-          "status": "Ungroomed",
-          "difficulty": "red"
-        },
-        {
-          "name": "Express Way",
-          "status": "Open",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Back Bowls",
-          "status": "Closed",
-          "difficulty": "double-black"
-        },
-        {
-          "name": "Walkabout Terrain Park",
-          "status": "Closed",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Tuck Rail garden",
-          "status": "Open",
-          "difficulty": "unclassified"
-        }
-      ],
-      "carparks": [
-        {
-          "name": "Lower Carpark 7",
-          "status": "Spaces available"
-        },
-        {
-          "name": "Car Park 1-3",
-          "status": "Spaces available"
-        },
-        {
-          "name": "Car Park 1",
-          "status": "Full"
-        }
-      ],
-      "weather": {
-        "temperature_c": 0.9,
-        "snowing": false,
-        "condition": "Not snowing",
-        "weather_code": 3,
-        "snowfall_cm": 0.0,
-        "observed": "2026-07-23T09:30",
-        "source": "Open-Meteo",
-        "source_url": "https://open-meteo.com/"
-      },
-      "summary": "The latest Queenstown & Coronet Peak Snow Report, Ski Conditions, Weather Forecast, Snow Forecast, Snowfall History & Webcams from SnowNZ",
-      "webcam": {
-        "page_url": "https://www.mountainwatch.com/new-zealand/coronet-peak/snow-cams",
-        "image_url": "https://www.mountainwatch.com/Resort/Coronet-Peak-ExpressCamera-Angle-1/LiveStill.jpg",
-        "embeddable": true,
-        "source": "Mountainwatch"
-      },
-      "forecast": {
-        "issued": "5 am 23 Jul 2026",
-        "days": [
-          {
-            "label": "Thu 23",
-            "cm": 10,
+            "cm": 8,
             "mm": 0,
             "rain": false
           },
@@ -456,203 +174,253 @@
           }
         ]
       },
-      "stale": false
+      "stale": true,
+      "park": null,
+      "hours_closed": true
     },
-    "cardrona": {
-      "status": "Open",
-      "lifts_open": 9,
-      "lifts_total": 10,
-      "base_lower": 40,
-      "base_upper": 40,
-      "new_snow_7d": 1,
+    "coronetpeak": {
+      "status": "Closed",
+      "lifts_open": 0,
+      "lifts_total": 8,
+      "base_lower": 20,
+      "base_upper": 30,
+      "new_snow_7d": 0,
       "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
       "lifts": [
         {
-          "name": "Learner Conveyors",
-          "status": "Unknown"
+          "name": "Coronet Express",
+          "status": "Closed"
         },
         {
-          "name": "McDougall's Chondola",
-          "status": "Unknown"
+          "name": "Greengates Express",
+          "status": "Closed"
         },
         {
-          "name": "Whitestar Express",
-          "status": "Unknown"
+          "name": "Meadows Learner Express",
+          "status": "Closed"
         },
         {
-          "name": "Captains Express",
-          "status": "Unknown"
+          "name": "Rocky Gully T-bar",
+          "status": "Closed"
         },
         {
-          "name": "Willow's Quad",
-          "status": "Unknown"
+          "name": "Magic Carpet Conveyor",
+          "status": "Closed"
         },
         {
-          "name": "Soho Express",
-          "status": "Unknown"
+          "name": "Beginner Carpet Conveyor",
+          "status": "Closed"
         },
         {
-          "name": "T-Bar",
-          "status": "Unknown"
+          "name": "Skiwiland Conveyor",
+          "status": "Closed"
         },
         {
-          "name": "Valley View",
-          "status": "Unknown"
-        },
-        {
-          "name": "Kindy Conveyor",
-          "status": "Unknown"
-        },
-        {
-          "name": "Wells Pipe Platter",
-          "status": "Unknown"
+          "name": "Kidszone carpet",
+          "status": "Closed"
         }
       ],
       "trails": [
         {
-          "name": "Learners Slope",
-          "status": "Unknown",
-          "difficulty": null
+          "name": "Big Easy",
+          "status": "Closed",
+          "difficulty": "green"
         },
         {
-          "name": "Main Basin",
-          "status": "Unknown",
-          "difficulty": null
+          "name": "Beginner Area",
+          "status": "Closed",
+          "difficulty": "green"
         },
         {
-          "name": "Captains",
-          "status": "Unknown",
-          "difficulty": null
+          "name": "Little Easy",
+          "status": "Closed",
+          "difficulty": "green"
         },
         {
-          "name": "Soho",
-          "status": "Unknown",
-          "difficulty": null
+          "name": "Gentle Annie",
+          "status": "Closed",
+          "difficulty": "green"
         },
         {
-          "name": "Little Willows",
-          "status": "Unknown",
-          "difficulty": null
+          "name": "Fun Zone",
+          "status": "Closed",
+          "difficulty": "unclassified"
         },
         {
-          "name": "Big Willows",
-          "status": "Unknown",
-          "difficulty": null
+          "name": "M1",
+          "status": "Closed",
+          "difficulty": "blue"
         },
         {
-          "name": "Backcountry Access",
-          "status": "Unknown",
-          "difficulty": null
+          "name": "Easy Rider",
+          "status": "Closed",
+          "difficulty": "green"
         },
         {
-          "name": "Mt Cardrona",
-          "status": "Unknown",
-          "difficulty": null
+          "name": "Greengates",
+          "status": "Closed",
+          "difficulty": "red"
         },
         {
-          "name": "Arcadia Chutes",
-          "status": "Unknown",
-          "difficulty": null
+          "name": "Wall Street",
+          "status": "Closed",
+          "difficulty": "red"
         },
         {
-          "name": "Summit",
-          "status": "Unknown",
-          "difficulty": null
-        }
-      ],
-      "park": [
-        {
-          "name": "Baby Bucks",
-          "status": "Unknown"
+          "name": "The Chimney",
+          "status": "Closed",
+          "difficulty": "black"
         },
         {
-          "name": "Little Bucks",
-          "status": "Unknown"
+          "name": "The Hurdle",
+          "status": "Closed",
+          "difficulty": "red"
         },
         {
-          "name": "Antlers Alley",
-          "status": "Unknown"
+          "name": "Exchange Drop",
+          "status": "Closed",
+          "difficulty": "black"
         },
         {
-          "name": "Stag Lane",
-          "status": "Unknown"
+          "name": "KidsZone carpet",
+          "status": "Closed",
+          "difficulty": "unclassified"
         },
         {
-          "name": "Big Bucks",
-          "status": "Unknown"
+          "name": "Dual Carpet slopes",
+          "status": "Closed",
+          "difficulty": "green"
         },
         {
-          "name": "Peoples Pipe",
-          "status": "Unknown"
+          "name": "Shirt Front",
+          "status": "Closed",
+          "difficulty": "blue"
         },
         {
-          "name": "Olympic Pipe",
-          "status": "Unknown"
+          "name": "Eighth Basin",
+          "status": "Closed",
+          "difficulty": "red"
         },
         {
-          "name": "Big Air",
-          "status": "Unknown"
+          "name": "Brough's Lane",
+          "status": "Closed",
+          "difficulty": "blue"
         },
         {
-          "name": "Mc Park",
-          "status": "Unknown"
+          "name": "Tuck",
+          "status": "Closed",
+          "difficulty": "black"
         },
         {
-          "name": "Gravity Cross",
-          "status": "Unknown"
+          "name": "Million Dollar",
+          "status": "Closed",
+          "difficulty": "blue"
+        },
+        {
+          "name": "Upper Walkabout",
+          "status": "Closed",
+          "difficulty": "black"
+        },
+        {
+          "name": "Mid Gully",
+          "status": "Closed",
+          "difficulty": "red"
+        },
+        {
+          "name": "Pro Am",
+          "status": "Closed",
+          "difficulty": "blue"
+        },
+        {
+          "name": "Overrun",
+          "status": "Closed",
+          "difficulty": "red"
+        },
+        {
+          "name": "Rocky Return",
+          "status": "Closed",
+          "difficulty": "blue"
+        },
+        {
+          "name": "West Gates",
+          "status": "Closed",
+          "difficulty": "red"
+        },
+        {
+          "name": "Race Arena",
+          "status": "Closed",
+          "difficulty": "black"
+        },
+        {
+          "name": "Powder Run",
+          "status": "Closed",
+          "difficulty": "double-black"
+        },
+        {
+          "name": "Sugar's Run",
+          "status": "Closed",
+          "difficulty": "red"
+        },
+        {
+          "name": "Express Way",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Back Bowls",
+          "status": "Closed",
+          "difficulty": "double-black"
+        },
+        {
+          "name": "Walkabout Terrain Park",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Tuck Rail garden",
+          "status": "Closed",
+          "difficulty": "unclassified"
         }
       ],
       "carparks": [
         {
-          "name": "Carpark A",
-          "status": "Available"
+          "name": "Lower Carpark 7",
+          "status": "Closed"
         },
         {
-          "name": "Carpark B",
-          "status": "Available"
+          "name": "Car Park 1-3",
+          "status": "Closed"
         },
         {
-          "name": "Carpark C",
-          "status": "Available"
-        },
-        {
-          "name": "The Yard",
-          "status": "Available"
-        },
-        {
-          "name": "Valley View",
-          "status": "Available"
-        },
-        {
-          "name": "The Pines",
-          "status": "Available"
+          "name": "Car Park 1",
+          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": -3.3,
+        "temperature_c": 0.5,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 51,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-22T20:00",
+        "observed": "2026-07-23T18:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Wednesday 22/7 We are open today with mild temps and light westerly winds. We are expecting a mostly cloudy morning with snow showers possible, clearing to a fine afternoon. We had a dusting of snow overnight and the grooming is looking great this morning. The parks team added a third jump in Antlers Alley and some new extra small jumps above McPark. Main basin and Valley View lifts scheduled to open from 08:30am. Captains, T-bar and Soho to follow.",
+      "summary": "The latest Queenstown & Coronet Peak Snow Report, Ski Conditions, Weather Forecast, Snow Forecast, Snowfall History & Webcams from SnowNZ",
       "webcam": {
-        "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
-        "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
+        "page_url": "https://www.mountainwatch.com/new-zealand/coronet-peak/snow-cams",
+        "image_url": "https://www.mountainwatch.com/Resort/Coronet-Peak-ExpressCamera-Angle-1/LiveStill.jpg",
         "embeddable": true,
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 23 Jul 2026",
+        "issued": "11 am 23 Jul 2026",
         "days": [
           {
             "label": "Thu 23",
-            "cm": 7,
+            "cm": 12,
             "mm": 0,
             "rain": false
           },
@@ -688,91 +456,183 @@
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "hours_closed": true
     },
-    "treblecone": {
-      "status": "Open",
-      "lifts_open": 3,
-      "lifts_total": 3,
-      "base_lower": 54,
-      "base_upper": 54,
-      "new_snow_7d": 0,
+    "cardrona": {
+      "status": "Closed",
+      "lifts_open": 0,
+      "lifts_total": 10,
+      "base_lower": 40,
+      "base_upper": 40,
+      "new_snow_7d": 1,
       "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
       "lifts": [
         {
-          "name": "Home Basin Express",
-          "status": "Open"
+          "name": "Learner Conveyors",
+          "status": "Closed"
         },
         {
-          "name": "Saddle Quad",
-          "status": "Open"
+          "name": "McDougall's Chondola",
+          "status": "Closed"
         },
         {
-          "name": "Beginner Platter",
-          "status": "Open"
+          "name": "Whitestar Express",
+          "status": "Closed"
+        },
+        {
+          "name": "Captains Express",
+          "status": "Closed"
+        },
+        {
+          "name": "Willow's Quad",
+          "status": "Closed"
+        },
+        {
+          "name": "Soho Express",
+          "status": "Closed"
+        },
+        {
+          "name": "T-Bar",
+          "status": "Closed"
+        },
+        {
+          "name": "Valley View",
+          "status": "Closed"
+        },
+        {
+          "name": "Kindy Conveyor",
+          "status": "Closed"
+        },
+        {
+          "name": "Wells Pipe Platter",
+          "status": "Closed"
         }
       ],
       "trails": [
         {
-          "name": "Home Basin",
-          "status": "Unknown",
+          "name": "Learners Slope",
+          "status": "Closed",
           "difficulty": null
         },
         {
-          "name": "Saddle Basin",
-          "status": "Unknown",
+          "name": "Main Basin",
+          "status": "Closed",
           "difficulty": null
         },
         {
-          "name": "Matukituki Basin",
-          "status": "Unknown",
+          "name": "Captains",
+          "status": "Closed",
           "difficulty": null
         },
         {
-          "name": "Summit Slopes",
-          "status": "Unknown",
+          "name": "Soho",
+          "status": "Closed",
           "difficulty": null
         },
         {
-          "name": "Motatapu Chutes",
-          "status": "Unknown",
+          "name": "Little Willows",
+          "status": "Closed",
           "difficulty": null
         },
         {
-          "name": "Sundance",
-          "status": "Unknown",
+          "name": "Big Willows",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
-          "name": "Morning Skinning",
-          "status": "Unknown",
+          "name": "Mt Cardrona",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Arcadia Chutes",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Summit",
+          "status": "Closed",
           "difficulty": null
         }
       ],
-      "park": [],
+      "park": [
+        {
+          "name": "Baby Bucks",
+          "status": "Closed"
+        },
+        {
+          "name": "Little Bucks",
+          "status": "Closed"
+        },
+        {
+          "name": "Antlers Alley",
+          "status": "Closed"
+        },
+        {
+          "name": "Stag Lane",
+          "status": "Closed"
+        },
+        {
+          "name": "Big Bucks",
+          "status": "Closed"
+        },
+        {
+          "name": "Peoples Pipe",
+          "status": "Closed"
+        },
+        {
+          "name": "Olympic Pipe",
+          "status": "Closed"
+        },
+        {
+          "name": "Big Air",
+          "status": "Closed"
+        },
+        {
+          "name": "Mc Park",
+          "status": "Closed"
+        },
+        {
+          "name": "Gravity Cross",
+          "status": "Closed"
+        }
+      ],
       "carparks": [
         {
-          "name": "Carpark 1",
-          "status": "Available"
+          "name": "Carpark A",
+          "status": "Closed"
         },
         {
-          "name": "Carpark 2",
-          "status": "Available"
+          "name": "Carpark B",
+          "status": "Closed"
         },
         {
-          "name": "Carpark 3",
-          "status": "Available"
+          "name": "Carpark C",
+          "status": "Closed"
+        },
+        {
+          "name": "The Yard",
+          "status": "Closed"
+        },
+        {
+          "name": "Valley View",
+          "status": "Closed"
+        },
+        {
+          "name": "The Pines",
+          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": 0.9,
+        "temperature_c": -3.3,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
@@ -781,25 +641,25 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Rāapa/Wednesday Mid Morning Update - The snow conditions are superb out there! The Saddlle is skiing and riding lovely and there is lots of fun to be had in the Home Basin. The sun is shining, the view is on point. Come on up! Skiing/riding should continue to be excellent up in the Saddle, with the best of the chalky goodness it in the gullies, humps and hollows. The grooming is in the Home Basin, with Triple Treat, Upper Main St and Beginner Platter all dressed up in fresh corduroy. Home Basin - Open Saddle Basin - Open Matukituki Basin - Closed Summit Slopes - Open Motatapu Chutes - Closed Sundance - Closed Backcountry Access - Open Skinning Access - Open",
+      "summary": ": Wednesday 22/7 We are open today with mild temps and light westerly winds. We are expecting a mostly cloudy morning with snow showers possible, clearing to a fine afternoon. We had a dusting of snow overnight and the grooming is looking great this morning. The parks team added a third jump in Antlers Alley and some new extra small jumps above McPark. Main basin and Valley View lifts scheduled to open from 08:30am. Captains, T-bar and Soho to follow.",
       "webcam": {
-        "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
-        "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
+        "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
+        "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
         "embeddable": true,
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 23 Jul 2026",
+        "issued": "11 am 23 Jul 2026",
         "days": [
           {
             "label": "Thu 23",
-            "cm": 19,
+            "cm": 7,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 24",
-            "cm": 22,
+            "cm": 8,
             "mm": 0,
             "rain": false
           },
@@ -829,7 +689,150 @@
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "hours_closed": true
+    },
+    "treblecone": {
+      "status": "Closed",
+      "lifts_open": 0,
+      "lifts_total": 3,
+      "base_lower": 54,
+      "base_upper": 54,
+      "new_snow_7d": 0,
+      "new_snow_24h": null,
+      "season_cm": null,
+      "terrain": {},
+      "lifts": [
+        {
+          "name": "Home Basin Express",
+          "status": "Closed"
+        },
+        {
+          "name": "Saddle Quad",
+          "status": "Closed"
+        },
+        {
+          "name": "Beginner Platter",
+          "status": "Closed"
+        }
+      ],
+      "trails": [
+        {
+          "name": "Home Basin",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Saddle Basin",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Matukituki Basin",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Summit Slopes",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Motatapu Chutes",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Sundance",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Backcountry Access",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Morning Skinning",
+          "status": "Closed",
+          "difficulty": null
+        }
+      ],
+      "park": [],
+      "carparks": [
+        {
+          "name": "Carpark 1",
+          "status": "Closed"
+        },
+        {
+          "name": "Carpark 2",
+          "status": "Closed"
+        },
+        {
+          "name": "Carpark 3",
+          "status": "Closed"
+        }
+      ],
+      "weather": {
+        "temperature_c": 1.2,
+        "snowing": true,
+        "condition": "Snow",
+        "weather_code": 73,
+        "snowfall_cm": 0.07,
+        "observed": "2026-07-23T18:30",
+        "source": "Open-Meteo",
+        "source_url": "https://open-meteo.com/"
+      },
+      "summary": ": Rāapa/Wednesday Mid Morning Update - The snow conditions are superb out there! The Saddlle is skiing and riding lovely and there is lots of fun to be had in the Home Basin. The sun is shining, the view is on point. Come on up! Skiing/riding should continue to be excellent up in the Saddle, with the best of the chalky goodness it in the gullies, humps and hollows. The grooming is in the Home Basin, with Triple Treat, Upper Main St and Beginner Platter all dressed up in fresh corduroy. Home Basin - Open Saddle Basin - Open Matukituki Basin - Closed Summit Slopes - Open Motatapu Chutes - Closed Sundance - Closed Backcountry Access - Open Skinning Access - Open",
+      "webcam": {
+        "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
+        "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
+        "embeddable": true,
+        "source": "Mountainwatch"
+      },
+      "forecast": {
+        "issued": "11 am 23 Jul 2026",
+        "days": [
+          {
+            "label": "Thu 23",
+            "cm": 22,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Fri 24",
+            "cm": 16,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 25",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sun 26",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Mon 27",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Tue 28",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          }
+        ]
+      },
+      "stale": false,
+      "hours_closed": true
     }
   }
 }
