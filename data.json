@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-25T14:50:56.607876+00:00",
+  "updated": "2026-07-25T18:07:58.940875+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Friday, 24 th July 2026 The weather gradually deteriorated on Thursday ahead of a strong front, which crossed over the Southern Lakes Thursday evening, and is about halfway up Canterbury at the time of writing in these wee hours of Friday. The front, bringing mostly heavy rain and strong northwest winds, will have cleared Canterbury by Friday breaky time before going on to ravage Mt Ruapehu in the afternoon. Fortunately, cold winds sweep in behind this initial front, including an icy southerly blast shooting up the country on Saturday, bringing high-quality powder to low levels. From this icy blast, the Southern Lakes will pick up 2-5cm of powder, while Canterbury should score 5-15cm, and Mt Ruapehu 15-30cm. The slopes will be in good nick and snow guns will continue firing as high pressure then builds on Sunday, bringing mostly fine, cold winter weather through Tuesday. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Friday 24 th July Another front crossing the South Island gives the Southern Lakes a dusting of snow during the morning. Skies brighten in the afternoon as northwest winds ease, but there could be a few more snow flurries, especially on Treble Cone. An icy cold southerly change at night will bring a wee 2-5cm shot of quality powder to low levels. The front moves up Canterbury through the day, bringing a period of rain and snow to upper and possibly mid slopes. For Mt Hutt and the Craigieburn Range ski fields, this will happen in the afternoon. The heaviest falls will be closer to the Main Divide, where snow levels will also be lowest. Strong northwest winds may continue to affect lift ops, but they’ll start to back off later in the afternoon. A stormy day for Mt Ruapehu as a front moves in. Showers build into heavy rain during the afternoon with snow falling on the upper slopes, while northwest winds rise to gale-force. Conditions back off a touch behind the front in the evening, and then rain gradually turns to snow overnight as colder westerlies arrive. Saturday 25 th July Any remaining snowfall over the Southern Lakes clears early for a mint, powder-filled day, while icy southerly winds die away. Strong, cold southerlies sweep up Canterbury before dawn, bringing snowfall to low levels. The snow gradually eases and then clears from the south throughout the day as the winds die away, leaving 5-15+ cm of quality powder. Snowfall on Mt Ruapehu eases during the morning, but picks up again in the afternoon as chilly westerly winds change southerly. The snow peters out at night as winds ease, leaving around 15-30cm of fresh powder, with more possible up high. Sunday 26 th July A gorgeous, clear, cold winter’s day for South Island ski fields as high pressure builds, with light winds and fresh snow to shred. The snow machines will get some good runtime. Cloud and possible snow flurries on Mt Ruapehu clear to fine in the afternoon as drier southerlies develop. Monday 27 th July Another fine day for South Island ski fields, apart from some cloud over the Southern Lakes during the morning. Chilly breezes from the west for the Southern Lakes and from the south for Canterbury. Brisk, chilly southerly winds on Mt Ruapehu will bring partly cloudy skies with a few snow showers possible. Tuesday 28 th July Fine again for the South Island, with a little cloud over the Southern Lakes with a westerly breeze. Light southerly breezes persist in Canterbury. Cloud eventually clears Mt Ruapehu as chilly southerly winds ease. Extended Forecast The storm window is likely to swing open again from Wednesday the 29 th of July. Models aren’t well aligned, but after an initial bout of strong northwest winds, rain, and high-level snow, there’s a good chance cold air will flood in from the south, with potentially solid snowfall or snowfalls through into early August. It’s still early days, and we’ve been tricked before, but keep those boots and poles crossed as we could be in for some deep totals if current forecasts hold. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great weekend, and I’ll see you back here on Monday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-25T14:55:00+00:00",
+  "next_scheduled_update": "2026-07-25T18:10:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -120,9 +120,9 @@
         "temperature_c": -8.1,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 0,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-26T02:45",
+        "observed": "2026-07-26T06:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -385,12 +385,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -13.0,
+        "temperature_c": -12.7,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 1,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-26T02:45",
+        "observed": "2026-07-26T06:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
