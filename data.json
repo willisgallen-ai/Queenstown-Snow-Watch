@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-27T12:01:37.309910+00:00",
+  "updated": "2026-07-27T18:01:25.441777+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Monday, 27 th July 2026 A cold snap gave the Southern Lakes a top-up of around 5-10cm Friday night before plastering Canterbury with 15-30cm, which was more than expected. Mt Ruapehu also scored 15-40cm to low levels during Saturday, taking 7-day totals to 50-70cm and turning the mighty volcano white and completely transforming the place. To make things even better, skies cleared up nicely across the country for an all-time Sunday session. The weather will remain fine and chilly Monday to Wednesday as a ridge of high pressure moves up the country. Conditions then deteriorate on Thursday as a strong northwest rain band moves up the country. Keep an eye on lift ops as I’d be surprised if some resorts don’t open, especially in Canterbury where severe gales are expected. The rain band will bring high-level snow, but it may reach the lower slopes of the Southern Lakes if we’re lucky. Totals are difficult as they’ll vary wildly between altitude and location, but they could be substantial up high. A cold change then scoots up the country from Thursday night through Friday, bringing another 5-10cm of fresh powder to South Island ski fields, while Mt Ruapehu scores a more solid 15-30+ cm dump. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Monday 27 th July A fine day for South Island ski fields, apart from some cloud over the Southern Lakes from late morning. Chilly breezes from the west for the Southern Lakes and from the south for Canterbury. Blue, sunny skies for Mt Ruapehu with cold southerly winds. Tuesday 28 th July Fine again for the South Island, with just a little cloud over the Southern Lakes where there’ll be a light westerly breeze. The light southerly in Canterbury dies away in the morning. A crystal clear day for Mt Ruapehu as chilly southerly winds ease while turning southeast. Wednesday 29 th July A mostly fine day for the South Island with some cloudy spells, especially the Southern Lakes, while northwest winds strengthen. An absolute stunner up on Mt Ruapehu with clear, sunny skies and little to no wind. Thursday 30 th July A very stormy day for the South Island as a strong front moves northwards up the country. The front likely crosses the Southern Lakes during the morning and Canterbury during the afternoon, bringing a period of heavy rain and high-altitude snow, which will reach mid slopes and possibly even the lower slopes of the Southern Lakes. Northwest winds will blow like mad, reaching severe gale in exposed areas, especially in Canterbury where we’ll be lucky to see any lifts running. Conditions back off behind the front, and snow levels creep down over the Southern Lakes with lighter snow showers falling to base levels. Then at night, an even colder southwest change arrives in the Southern Lakes, bringing more snow to low levels. Conditions will also gradually deteriorate on Mt Ruapehu as northwest winds strengthen and clouds increase. Light rain or drizzle kicks in from late afternoon, then becomes heavy at night as the front crosses over, with snow falling about the upper slopes. Friday 31 st July Icy, cold southwesterlies continue to bring snow showers to the Southern Lakes through much of the day, falling to very low levels and affecting some roads. The cold southwesterlies also whip through Canterbury early, likely before breaky time, bringing an initial shot of powder followed by lighter snow showers and flurries to low levels. On Mt Ruapehu, rain gradually turns to snow as westerly winds shift to a colder southwest. A southerly change hits at night, and then the snow will quickly peter out. Extended Forecast Models are less aligned than usual in the extended period, so nothing’s set in stone just yet. After the passage of the storm, there’s a good chance we’ll have mostly dry, clear conditions over the country this weekend, the 1 st and 2 nd August, although cold southwest winds may be quite strong for a fair chunk of it. Then from Monday the 3 rd to about Friday the 7 th of August, a couple more cold snaps could whip through, blasting Kiwi ski fields with more fresh powder and icy winds. Fingers crossed this forecast comes to fruition as it’ll take the season to new heights, allowing unrestrained shredding in off-piste areas. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great couple of days, and I’ll see you back here on Wednesday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-27T12:05:00+00:00",
+  "next_scheduled_update": "2026-07-27T18:05:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.6,
+        "temperature_c": -2.4,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-28T00:00",
+        "observed": "2026-07-28T06:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,14 +134,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 27 Jul 2026",
+        "issued": "11 pm 27 Jul 2026",
         "days": [
-          {
-            "label": "Mon 27",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Tue 28",
             "cm": 0,
@@ -156,19 +150,19 @@
           },
           {
             "label": "Thu 30",
-            "cm": 12,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 31",
-            "cm": 12,
+            "cm": 10,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 1",
-            "cm": 2,
+            "cm": 8,
             "mm": 0,
             "rain": false
           }
@@ -395,12 +389,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.2,
+        "temperature_c": -3.4,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 1,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-28T00:00",
+        "observed": "2026-07-28T06:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -412,14 +406,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 27 Jul 2026",
+        "issued": "11 pm 27 Jul 2026",
         "days": [
-          {
-            "label": "Mon 27",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Tue 28",
             "cm": 0,
@@ -434,19 +422,19 @@
           },
           {
             "label": "Thu 30",
-            "cm": 16,
+            "cm": 7,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 31",
-            "cm": 6,
+            "cm": 9,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 1",
-            "cm": 1,
+            "cm": 4,
             "mm": 0,
             "rain": false
           }
@@ -645,14 +633,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 27 Jul 2026",
+        "issued": "11 pm 27 Jul 2026",
         "days": [
-          {
-            "label": "Mon 27",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Tue 28",
             "cm": 0,
@@ -667,19 +649,19 @@
           },
           {
             "label": "Thu 30",
-            "cm": 13,
+            "cm": 6,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 31",
-            "cm": 3,
+            "cm": 6,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 1",
-            "cm": 0,
+            "cm": 3,
             "mm": 0,
             "rain": false
           }
@@ -787,14 +769,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 27 Jul 2026",
+        "issued": "11 pm 27 Jul 2026",
         "days": [
-          {
-            "label": "Mon 27",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Tue 28",
             "cm": 0,
@@ -803,25 +779,25 @@
           },
           {
             "label": "Wed 29",
-            "cm": 3,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 30",
-            "cm": 32,
+            "cm": 17,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 31",
-            "cm": 2,
+            "cm": 12,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 1",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           }
