@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-30T13:15:17.106712+00:00",
+  "updated": "2026-07-30T18:05:00.451602+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Snow levels will initially be on the high side, but colder air sweeping in behind the front will send snow down to very low levels on Friday, with some roads likely affected. The Southern Lakes should score around 5-15cm of quality powder, while Canterbury gets a smaller top-up as an icy southerly blasts through Friday afternoon. Mt Ruapehu looks to be the big winner, with a solid 10-35+cm dump possible.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-30T13:20:00+00:00",
+  "next_scheduled_update": "2026-07-30T18:10:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -4.8,
+        "temperature_c": -3.5,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 51,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-31T01:00",
+        "observed": "2026-07-31T06:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,23 +134,17 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 30 Jul 2026",
+        "issued": "11 pm 30 Jul 2026",
         "days": [
           {
-            "label": "Thu 30",
-            "cm": 7,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Fri 31",
-            "cm": 13,
+            "cm": 17,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 1",
-            "cm": 0,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
@@ -396,12 +390,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.4,
+        "temperature_c": -1.8,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 51,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-31T01:00",
+        "observed": "2026-07-31T06:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -413,23 +407,17 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 30 Jul 2026",
+        "issued": "11 pm 30 Jul 2026",
         "days": [
           {
-            "label": "Thu 30",
-            "cm": 11,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Fri 31",
-            "cm": 6,
+            "cm": 14,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 1",
-            "cm": 0,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
@@ -646,23 +634,17 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 30 Jul 2026",
+        "issued": "11 pm 30 Jul 2026",
         "days": [
           {
-            "label": "Thu 30",
-            "cm": 9,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Fri 31",
-            "cm": 5,
+            "cm": 11,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 1",
-            "cm": 0,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
@@ -674,7 +656,7 @@
           },
           {
             "label": "Mon 3",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -788,35 +770,29 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 30 Jul 2026",
+        "issued": "11 pm 30 Jul 2026",
         "days": [
           {
-            "label": "Thu 30",
-            "cm": 28,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Fri 31",
-            "cm": 3,
+            "cm": 18,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 1",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sun 2",
             "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
-            "label": "Mon 3",
+            "label": "Sun 2",
             "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Mon 3",
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
