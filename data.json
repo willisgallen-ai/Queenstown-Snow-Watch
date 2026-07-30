@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-30T18:05:00.451602+00:00",
+  "updated": "2026-07-30T21:54:08.512435+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
-    "summary": "Snow levels will initially be on the high side, but colder air sweeping in behind the front will send snow down to very low levels on Friday, with some roads likely affected. The Southern Lakes should score around 5-15cm of quality powder, while Canterbury gets a smaller top-up as an icy southerly blasts through Friday afternoon. Mt Ruapehu looks to be the big winner, with a solid 10-35+cm dump possible.",
+    "summary": "Winds really ramped up yesterday, Thursday, forcing early lift closures across the country, while most ski fields in Canterbury remained shut for the day. The culprit was a strong northwesterly frontal rainband that swept through the Southern Lakes during the afternoon before reaching Canterbury in the evening. As I write in the early hours of Friday morning, it’s still crossing Mt Ruapehu.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-30T18:10:00+00:00",
+  "next_scheduled_update": "2026-07-30T21:55:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.5,
-        "snowing": false,
-        "condition": "Not snowing",
-        "weather_code": 51,
-        "snowfall_cm": 0.0,
-        "observed": "2026-07-31T06:00",
+        "temperature_c": -3.1,
+        "snowing": true,
+        "condition": "Snow",
+        "weather_code": 85,
+        "snowfall_cm": 0.14,
+        "observed": "2026-07-31T09:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,23 +134,23 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 30 Jul 2026",
+        "issued": "5 am 31 Jul 2026",
         "days": [
           {
             "label": "Fri 31",
-            "cm": 17,
+            "cm": 14,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 1",
-            "cm": 4,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 2",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -165,6 +165,12 @@
             "cm": 0,
             "mm": 0,
             "rain": false
+          },
+          {
+            "label": "Wed 5",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
           }
         ]
       },
@@ -173,8 +179,8 @@
       "hours_closed": true
     },
     "coronetpeak": {
-      "status": "Closed",
-      "lifts_open": 0,
+      "status": "Open",
+      "lifts_open": 8,
       "lifts_total": 8,
       "base_lower": 20,
       "base_upper": 30,
@@ -185,166 +191,166 @@
       "lifts": [
         {
           "name": "Coronet Express",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Greengates Express",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Meadows Learner Express",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Rocky Gully T-bar",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Magic Carpet Conveyor",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Beginner Carpet Conveyor",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Skiwiland Conveyor",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Kidszone carpet",
-          "status": "Closed"
+          "status": "Open"
         }
       ],
       "trails": [
         {
           "name": "Big Easy",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "green"
         },
         {
           "name": "Beginner Area",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "green"
         },
         {
           "name": "Little Easy",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "green"
         },
         {
           "name": "Gentle Annie",
-          "status": "Closed",
+          "status": "Closed for Racing",
           "difficulty": "green"
         },
         {
           "name": "Fun Zone",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "unclassified"
         },
         {
           "name": "M1",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "blue"
         },
         {
           "name": "Easy Rider",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "green"
         },
         {
           "name": "Greengates",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "red"
         },
         {
           "name": "Wall Street",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "red"
         },
         {
           "name": "The Chimney",
-          "status": "Closed",
+          "status": "Variable",
           "difficulty": "black"
         },
         {
           "name": "The Hurdle Groomed",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": "unclassified"
         },
         {
           "name": "Exchange Drop",
-          "status": "Closed",
+          "status": "Variable",
           "difficulty": "black"
         },
         {
           "name": "KidsZone carpet",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "unclassified"
         },
         {
           "name": "Dual Carpet slopes",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "green"
         },
         {
           "name": "Shirt Front",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "blue"
         },
         {
           "name": "Eighth Basin",
-          "status": "Closed",
+          "status": "Ungroomed",
           "difficulty": "red"
         },
         {
           "name": "Brough's Lane",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "blue"
         },
         {
           "name": "Tuck",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "black"
         },
         {
           "name": "Million Dollar",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "blue"
         },
         {
           "name": "Upper Walkabout",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "black"
         },
         {
           "name": "Mid Gully",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "red"
         },
         {
           "name": "Pro Am",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "blue"
         },
         {
           "name": "Overrun",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "red"
         },
         {
           "name": "Rocky Return",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "blue"
         },
         {
           "name": "West Gates",
-          "status": "Closed",
+          "status": "Ungroomed",
           "difficulty": "red"
         },
         {
           "name": "Race Arena Groomed",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": "unclassified"
         },
         {
@@ -354,22 +360,22 @@
         },
         {
           "name": "Sugar's Run",
-          "status": "Closed",
+          "status": "Ungroomed",
           "difficulty": "red"
         },
         {
           "name": "Express Way",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "unclassified"
         },
         {
           "name": "Sarah Sue",
-          "status": "Closed",
+          "status": "Ungroomed",
           "difficulty": "unclassified"
         },
         {
           "name": "Back Bowls",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "double-black"
         },
         {
@@ -379,23 +385,35 @@
         },
         {
           "name": "Tuck Rail garden",
-          "status": "Closed",
+          "status": "On Hold",
           "difficulty": "unclassified"
         }
       ],
       "carparks": [
         {
           "name": "Lower Carpark 7",
-          "status": "Closed"
+          "status": "Spaces available"
+        },
+        {
+          "name": "Car Park 1",
+          "status": "Full"
+        },
+        {
+          "name": "Car Park 1-2",
+          "status": "Full"
+        },
+        {
+          "name": "Car Park 1-3",
+          "status": "Full"
         }
       ],
       "weather": {
-        "temperature_c": -1.8,
+        "temperature_c": -1.6,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-07-31T06:00",
+        "observed": "2026-07-31T09:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -407,23 +425,23 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 30 Jul 2026",
+        "issued": "5 am 31 Jul 2026",
         "days": [
           {
             "label": "Fri 31",
-            "cm": 14,
+            "cm": 7,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 1",
-            "cm": 2,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 2",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -438,20 +456,25 @@
             "cm": 0,
             "mm": 0,
             "rain": false
+          },
+          {
+            "label": "Wed 5",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
           }
         ]
       },
-      "stale": false,
-      "hours_closed": true
+      "stale": false
     },
     "cardrona": {
       "status": "Closed",
       "lifts_open": 0,
       "lifts_total": 10,
-      "base_lower": 40,
-      "base_upper": 40,
-      "new_snow_7d": 4,
-      "new_snow_24h": null,
+      "base_lower": 50,
+      "base_upper": 50,
+      "new_snow_7d": 18,
+      "new_snow_24h": 14,
       "season_cm": null,
       "terrain": {},
       "lifts": [
@@ -634,17 +657,17 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 30 Jul 2026",
+        "issued": "5 am 31 Jul 2026",
         "days": [
           {
             "label": "Fri 31",
-            "cm": 11,
+            "cm": 6,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 1",
-            "cm": 2,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -665,75 +688,80 @@
             "cm": 0,
             "mm": 0,
             "rain": false
+          },
+          {
+            "label": "Wed 5",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
           }
         ]
       },
-      "stale": false,
-      "hours_closed": true
+      "stale": false
     },
     "treblecone": {
-      "status": "Closed",
-      "lifts_open": 0,
+      "status": "Open",
+      "lifts_open": 3,
       "lifts_total": 3,
       "base_lower": 60,
       "base_upper": 60,
-      "new_snow_7d": 12,
-      "new_snow_24h": null,
+      "new_snow_7d": 42,
+      "new_snow_24h": 30,
       "season_cm": null,
       "terrain": {},
       "lifts": [
         {
           "name": "Home Basin Express",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Saddle Quad",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Beginner Platter",
-          "status": "Closed"
+          "status": "Open"
         }
       ],
       "trails": [
         {
           "name": "Home Basin",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Saddle Basin",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Matukituki Basin",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Summit Slopes",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Motatapu Chutes",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Sundance",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Morning Skinning",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         }
       ],
@@ -741,15 +769,15 @@
       "carparks": [
         {
           "name": "Carpark 1",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "Carpark 2",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "Carpark 3",
-          "status": "Closed"
+          "status": "Available"
         }
       ],
       "weather": {
@@ -770,29 +798,29 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 30 Jul 2026",
+        "issued": "5 am 31 Jul 2026",
         "days": [
           {
             "label": "Fri 31",
-            "cm": 18,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 1",
-            "cm": 1,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sun 2",
             "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
-            "label": "Mon 3",
+            "label": "Sun 2",
             "cm": 1,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Mon 3",
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -801,11 +829,16 @@
             "cm": 0,
             "mm": 0,
             "rain": false
+          },
+          {
+            "label": "Wed 5",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
           }
         ]
       },
-      "stale": false,
-      "hours_closed": true
+      "stale": false
     }
   }
 }
