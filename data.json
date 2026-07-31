@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-30T21:54:08.512435+00:00",
+  "updated": "2026-07-31T08:20:08.888351+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Winds really ramped up yesterday, Thursday, forcing early lift closures across the country, while most ski fields in Canterbury remained shut for the day. The culprit was a strong northwesterly frontal rainband that swept through the Southern Lakes during the afternoon before reaching Canterbury in the evening. As I write in the early hours of Friday morning, it’s still crossing Mt Ruapehu.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-30T21:55:00+00:00",
+  "next_scheduled_update": "2026-07-31T08:25:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.1,
+        "temperature_c": -5.4,
         "snowing": true,
         "condition": "Snow",
         "weather_code": 85,
-        "snowfall_cm": 0.14,
-        "observed": "2026-07-31T09:45",
+        "snowfall_cm": 0.07,
+        "observed": "2026-07-31T20:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,11 +134,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 31 Jul 2026",
+        "issued": "5 pm 31 Jul 2026",
         "days": [
           {
             "label": "Fri 31",
-            "cm": 14,
+            "cm": 11,
             "mm": 0,
             "rain": false
           },
@@ -150,13 +150,13 @@
           },
           {
             "label": "Sun 2",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 3",
-            "cm": 2,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -179,8 +179,8 @@
       "hours_closed": true
     },
     "coronetpeak": {
-      "status": "Open",
-      "lifts_open": 8,
+      "status": "Closed",
+      "lifts_open": 7,
       "lifts_total": 8,
       "base_lower": 20,
       "base_upper": 30,
@@ -195,7 +195,7 @@
         },
         {
           "name": "Greengates Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Meadows Learner Express",
@@ -375,7 +375,7 @@
         },
         {
           "name": "Back Bowls",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "double-black"
         },
         {
@@ -385,7 +385,7 @@
         },
         {
           "name": "Tuck Rail garden",
-          "status": "On Hold",
+          "status": "Closed",
           "difficulty": "unclassified"
         }
       ],
@@ -408,12 +408,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.6,
-        "snowing": false,
-        "condition": "Not snowing",
-        "weather_code": 2,
-        "snowfall_cm": 0.0,
-        "observed": "2026-07-31T09:45",
+        "temperature_c": -4.2,
+        "snowing": true,
+        "condition": "Snow",
+        "weather_code": 73,
+        "snowfall_cm": 0.07,
+        "observed": "2026-07-31T20:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -425,11 +425,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 31 Jul 2026",
+        "issued": "5 pm 31 Jul 2026",
         "days": [
           {
             "label": "Fri 31",
-            "cm": 7,
+            "cm": 6,
             "mm": 0,
             "rain": false
           },
@@ -441,13 +441,13 @@
           },
           {
             "label": "Sun 2",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 3",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -649,7 +649,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Wednesday 29/07 We are open today with another nice day ahead! Temperatures are mild with northerly winds and mostly cloudy skies. Another excellent night of grooming has the maunga looking great. Conditions on trail are superb. Snow conditions off-piste are variable with some great snow up high in shaded areas. Wednesday 29/07 We are open today with another nice day ahead! Temperatures are mild with northerly winds and mostly cloudy skies. Another excellent night of grooming has the maunga looking great. Conditions on trail are superb. Snow conditions off-piste are variable with some great snow up high in shaded areas. Main Basin and Valley lifts will be open from 8:30am Captains, T-Bar, Soho and Willows to follow. Willows is off-piste only so recommending advanced riders only. Main Basin and Valley lifts will be open from 8:30am Captains, T-Bar, Soho and Willows to follow. Willows is off-piste only so recommending advanced riders only.",
+      "summary": ": Friday 31//07 Resort is closed today . This is due to currently seeing winds on the currently on limit of lift operations with a deteriorating forecast and increasing wind, it's not going to work for us today sorry.",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -657,11 +657,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 31 Jul 2026",
+        "issued": "5 pm 31 Jul 2026",
         "days": [
           {
             "label": "Fri 31",
-            "cm": 6,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
@@ -679,7 +679,7 @@
           },
           {
             "label": "Mon 3",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -697,11 +697,12 @@
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "hours_closed": true
     },
     "treblecone": {
-      "status": "Open",
-      "lifts_open": 3,
+      "status": "Closed",
+      "lifts_open": 0,
       "lifts_total": 3,
       "base_lower": 60,
       "base_upper": 60,
@@ -712,56 +713,56 @@
       "lifts": [
         {
           "name": "Home Basin Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Saddle Quad",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Beginner Platter",
-          "status": "Open"
+          "status": "Closed"
         }
       ],
       "trails": [
         {
           "name": "Home Basin",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Saddle Basin",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Matukituki Basin",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Summit Slopes",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Motatapu Chutes",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Sundance",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Morning Skinning",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         }
       ],
@@ -769,15 +770,15 @@
       "carparks": [
         {
           "name": "Carpark 1",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Carpark 2",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Carpark 3",
-          "status": "Available"
+          "status": "Closed"
         }
       ],
       "weather": {
@@ -790,7 +791,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Main Street has come to the party! Now open and beautifully groomed from top to bottom, it's delivering an epic run all the way back to base. Recent snowmaking temperatures have allowed the team to build plenty of snow but do take care on those morning laps. Triple Treat is looking fantastic after an overnight groom, while the Beginner Platter offers a relaxed space for first-timers to build confidence and sharpen skills. Check in at Guest Services to find out about our Group and Private lessons. The Saddle and Summit has plenty of terrain to explore and the Motatapu Chutes open today, There is a NW breeze up top but the good news is there is more snow is in the forecast! Need a tasty lunch between laps? Our fresh Poke Bowls are waiting for you.",
+      "summary": ": Friday 31 July 2026 POWDER DAY. ❄️ Wake up and smell the powder — Treble Cone has been absolutely hammered with fresh snow overnight, with 40cm of new snow on the upper mountain in the past 24 hours. It's light and dry up top, with a slightly heavier, denser snowpack down at the base — but make no mistake, this is exactly the kind of morning you set the alarm early for. And it's not stopping. The forecast has snow continuing through the day, with the snow line possibly dropping as low as 400m. That means road conditions will be affected — please drive with care and carry chains, no exceptions today. Lift Status: Home Basin — aiming to open by 9am Saddle Basin — Unfortunately The Saddle Basin will remain CLOSED today. Winds - We are forecast to see strong winds building during the day which may interrupt operations on the Saddle Quad Grooming: With snowy overnight conditions we'll only have Triple Treat, Main Street and the Beginner Platter groomed today ~ powder turns everywhere else! Rug up, bring your powder skis, and get ready for a proper day on the mountain. See you out there!",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
@@ -798,11 +799,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 31 Jul 2026",
+        "issued": "5 pm 31 Jul 2026",
         "days": [
           {
             "label": "Fri 31",
-            "cm": 2,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
@@ -838,7 +839,8 @@
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "hours_closed": true
     }
   }
 }
