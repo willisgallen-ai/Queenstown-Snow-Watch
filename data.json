@@ -1,12 +1,12 @@
 {
-  "updated": "2026-07-31T15:52:28.622448+00:00",
+  "updated": "2026-07-31T20:50:27.537166+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Winds really ramped up yesterday, Thursday, forcing early lift closures across the country, while most ski fields in Canterbury remained shut for the day. The culprit was a strong northwesterly frontal rainband that swept through the Southern Lakes during the afternoon before reaching Canterbury in the evening. As I write in the early hours of Friday morning, it’s still crossing Mt Ruapehu.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-07-31T15:55:00+00:00",
+  "next_scheduled_update": "2026-07-31T20:55:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -122,7 +122,7 @@
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-01T03:45",
+        "observed": "2026-08-01T08:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,14 +134,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 31 Jul 2026",
+        "issued": "5 am 01 Aug 2026",
         "days": [
-          {
-            "label": "Fri 31",
-            "cm": 11,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Sat 1",
             "cm": 0,
@@ -168,6 +162,12 @@
           },
           {
             "label": "Wed 5",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Thu 6",
             "cm": 0,
             "mm": 0,
             "rain": false
@@ -393,15 +393,19 @@
         {
           "name": "Lower Carpark 7",
           "status": "Closed"
+        },
+        {
+          "name": "Car Park 1",
+          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": -5.3,
+        "temperature_c": -5.4,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-01T03:45",
+        "observed": "2026-08-01T08:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -413,14 +417,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 31 Jul 2026",
+        "issued": "5 am 01 Aug 2026",
         "days": [
-          {
-            "label": "Fri 31",
-            "cm": 6,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Sat 1",
             "cm": 0,
@@ -450,6 +448,12 @@
             "cm": 0,
             "mm": 0,
             "rain": false
+          },
+          {
+            "label": "Thu 6",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
           }
         ]
       },
@@ -457,175 +461,175 @@
       "hours_closed": true
     },
     "cardrona": {
-      "status": "Closed",
-      "lifts_open": 0,
+      "status": "Open",
+      "lifts_open": 8,
       "lifts_total": 10,
       "base_lower": 50,
       "base_upper": 50,
-      "new_snow_7d": 28,
-      "new_snow_24h": 14,
+      "new_snow_7d": 29,
+      "new_snow_24h": 15,
       "season_cm": null,
       "terrain": {},
       "lifts": [
         {
           "name": "Learner Conveyors",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "McDougall's Chondola",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Whitestar Express",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Captains Express",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Willow's Quad",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Soho Express",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "T-Bar",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Valley View",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Kindy Conveyor",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Wells Pipe Platter",
-          "status": "Closed"
+          "status": "Unknown"
         }
       ],
       "trails": [
         {
           "name": "Learners Slope",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Main Basin",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Captains",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Soho",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Little Willows",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Big Willows",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Mt Cardrona",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Arcadia Chutes",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Summit",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         }
       ],
       "park": [
         {
           "name": "Baby Bucks",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Little Bucks",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Antlers Alley",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Stag Lane",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Big Bucks",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Peoples Pipe",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Olympic Pipe",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Big Air",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Mc Park",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Gravity Cross",
-          "status": "Closed"
+          "status": "Unknown"
         }
       ],
       "carparks": [
         {
           "name": "Carpark A",
-          "status": "Closed"
+          "status": "Full"
         },
         {
           "name": "Carpark B",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "Carpark C",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "The Yard",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "Valley View",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "The Pines",
-          "status": "Closed"
+          "status": "Available"
         }
       ],
       "weather": {
@@ -646,14 +650,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 31 Jul 2026",
+        "issued": "5 am 01 Aug 2026",
         "days": [
-          {
-            "label": "Fri 31",
-            "cm": 4,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Sat 1",
             "cm": 0,
@@ -683,11 +681,16 @@
             "cm": 0,
             "mm": 0,
             "rain": false
+          },
+          {
+            "label": "Thu 6",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
           }
         ]
       },
-      "stale": false,
-      "hours_closed": true
+      "stale": false
     },
     "treblecone": {
       "status": "Closed",
@@ -695,8 +698,8 @@
       "lifts_total": 3,
       "base_lower": 60,
       "base_upper": 60,
-      "new_snow_7d": 60,
-      "new_snow_24h": 30,
+      "new_snow_7d": 30,
+      "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
       "lifts": [
@@ -788,14 +791,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 31 Jul 2026",
+        "issued": "5 am 01 Aug 2026",
         "days": [
-          {
-            "label": "Fri 31",
-            "cm": 3,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Sat 1",
             "cm": 0,
@@ -822,6 +819,12 @@
           },
           {
             "label": "Wed 5",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Thu 6",
             "cm": 0,
             "mm": 0,
             "rain": false
