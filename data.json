@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-01T15:42:15.084086+00:00",
+  "updated": "2026-08-01T20:03:28.631215+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Winds really ramped up yesterday, Thursday, forcing early lift closures across the country, while most ski fields in Canterbury remained shut for the day. The culprit was a strong northwesterly frontal rainband that swept through the Southern Lakes during the afternoon before reaching Canterbury in the evening. As I write in the early hours of Friday morning, it’s still crossing Mt Ruapehu.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-01T15:45:00+00:00",
+  "next_scheduled_update": "2026-08-01T20:05:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.2,
+        "temperature_c": -2.7,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-02T03:30",
+        "observed": "2026-08-02T08:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,7 +134,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 01 Aug 2026",
+        "issued": "5 am 02 Aug 2026",
         "days": [
           {
             "label": "Sun 2",
@@ -144,13 +144,13 @@
           },
           {
             "label": "Mon 3",
-            "cm": 2,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Tue 4",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -162,6 +162,12 @@
           },
           {
             "label": "Thu 6",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Fri 7",
             "cm": 0,
             "mm": 0,
             "rain": false
@@ -218,19 +224,19 @@
       ],
       "trails": [
         {
-          "name": "Big Easy",
+          "name": "Big Easy Groomed",
           "status": "Closed",
-          "difficulty": "green"
+          "difficulty": "unclassified"
         },
         {
-          "name": "Beginner Area",
+          "name": "Beginner Area Groomed",
           "status": "Closed",
-          "difficulty": "green"
+          "difficulty": "unclassified"
         },
         {
-          "name": "Little Easy",
+          "name": "Little Easy Groomed",
           "status": "Closed",
-          "difficulty": "green"
+          "difficulty": "unclassified"
         },
         {
           "name": "Gentle Annie",
@@ -243,24 +249,24 @@
           "difficulty": "unclassified"
         },
         {
-          "name": "M1",
+          "name": "M1 Groomed",
           "status": "Closed",
-          "difficulty": "blue"
+          "difficulty": "unclassified"
         },
         {
-          "name": "Easy Rider",
+          "name": "Easy Rider Groomed",
           "status": "Closed",
-          "difficulty": "green"
+          "difficulty": "unclassified"
         },
         {
-          "name": "Greengates",
+          "name": "Greengates Groomed",
           "status": "Closed",
-          "difficulty": "red"
+          "difficulty": "unclassified"
         },
         {
-          "name": "Wall Street",
+          "name": "Wall Street Groomed",
           "status": "Closed",
-          "difficulty": "red"
+          "difficulty": "unclassified"
         },
         {
           "name": "The Chimney",
@@ -278,39 +284,39 @@
           "difficulty": "black"
         },
         {
-          "name": "KidsZone carpet",
+          "name": "KidsZone carpet Groomed",
           "status": "Closed",
           "difficulty": "unclassified"
         },
         {
-          "name": "Dual Carpet slopes",
+          "name": "Dual Carpet slopes Groomed",
           "status": "Closed",
-          "difficulty": "green"
+          "difficulty": "unclassified"
         },
         {
-          "name": "Shirt Front",
+          "name": "Shirt Front Groomed",
           "status": "Closed",
-          "difficulty": "blue"
+          "difficulty": "unclassified"
         },
         {
-          "name": "Eighth Basin",
+          "name": "Eighth Basin Groomed",
           "status": "Closed",
-          "difficulty": "red"
+          "difficulty": "unclassified"
         },
         {
-          "name": "Brough's Lane",
+          "name": "Brough's Lane Groomed",
           "status": "Closed",
-          "difficulty": "blue"
+          "difficulty": "unclassified"
         },
         {
-          "name": "Tuck",
+          "name": "Tuck Groomed",
           "status": "Closed",
-          "difficulty": "black"
+          "difficulty": "unclassified"
         },
         {
-          "name": "Million Dollar",
+          "name": "Million Dollar Groomed",
           "status": "Closed",
-          "difficulty": "blue"
+          "difficulty": "unclassified"
         },
         {
           "name": "Upper Walkabout",
@@ -318,24 +324,24 @@
           "difficulty": "black"
         },
         {
-          "name": "Mid Gully",
+          "name": "Mid Gully Groomed",
           "status": "Closed",
-          "difficulty": "red"
+          "difficulty": "unclassified"
         },
         {
-          "name": "Pro Am",
+          "name": "Pro Am Groomed",
           "status": "Closed",
-          "difficulty": "blue"
+          "difficulty": "unclassified"
         },
         {
-          "name": "Overrun",
+          "name": "Overrun Groomed",
           "status": "Closed",
-          "difficulty": "red"
+          "difficulty": "unclassified"
         },
         {
-          "name": "Rocky Return",
+          "name": "Rocky Return Groomed",
           "status": "Closed",
-          "difficulty": "blue"
+          "difficulty": "unclassified"
         },
         {
           "name": "West Gates",
@@ -348,22 +354,52 @@
           "difficulty": "unclassified"
         },
         {
-          "name": "Powder Run",
+          "name": "Powder Run Groomed",
           "status": "Closed",
-          "difficulty": "double-black"
+          "difficulty": "unclassified"
         },
         {
-          "name": "Sugar's Run",
+          "name": "Sugar's Run Groomed",
           "status": "Closed",
-          "difficulty": "red"
+          "difficulty": "unclassified"
         },
         {
-          "name": "Express Way",
+          "name": "Express Way Groomed",
           "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Sarah Sue",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Arnolds Way",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Duncan's Dance",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Lunch Rocks",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Out Wide",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Ego Alley",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Dirty Four",
           "status": "Closed",
           "difficulty": "unclassified"
         },
@@ -378,7 +414,7 @@
           "difficulty": "unclassified"
         },
         {
-          "name": "Tuck Rail garden",
+          "name": "Tuck Rail garden Groomed",
           "status": "Closed",
           "difficulty": "unclassified"
         }
@@ -394,12 +430,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.6,
+        "temperature_c": -2.8,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-02T03:30",
+        "observed": "2026-08-02T08:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -411,7 +447,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 01 Aug 2026",
+        "issued": "5 am 02 Aug 2026",
         "days": [
           {
             "label": "Sun 2",
@@ -442,6 +478,12 @@
             "cm": 0,
             "mm": 0,
             "rain": false
+          },
+          {
+            "label": "Fri 7",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
           }
         ]
       },
@@ -454,8 +496,8 @@
       "lifts_total": 10,
       "base_lower": 50,
       "base_upper": 50,
-      "new_snow_7d": 44,
-      "new_snow_24h": 15,
+      "new_snow_7d": 29,
+      "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
       "lifts": [
@@ -638,7 +680,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 01 Aug 2026",
+        "issued": "5 am 02 Aug 2026",
         "days": [
           {
             "label": "Sun 2",
@@ -648,7 +690,7 @@
           },
           {
             "label": "Mon 3",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -666,6 +708,12 @@
           },
           {
             "label": "Thu 6",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Fri 7",
             "cm": 0,
             "mm": 0,
             "rain": false
@@ -774,7 +822,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 01 Aug 2026",
+        "issued": "5 am 02 Aug 2026",
         "days": [
           {
             "label": "Sun 2",
@@ -802,6 +850,12 @@
           },
           {
             "label": "Thu 6",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Fri 7",
             "cm": 0,
             "mm": 0,
             "rain": false
