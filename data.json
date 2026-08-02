@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-02T15:44:35.559416+00:00",
+  "updated": "2026-08-02T20:02:08.658381+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Winds really ramped up yesterday, Thursday, forcing early lift closures across the country, while most ski fields in Canterbury remained shut for the day. The culprit was a strong northwesterly frontal rainband that swept through the Southern Lakes during the afternoon before reaching Canterbury in the evening. As I write in the early hours of Friday morning, it’s still crossing Mt Ruapehu.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-02T15:45:00+00:00",
+  "next_scheduled_update": "2026-08-02T20:05:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.2,
+        "temperature_c": -2.3,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-03T03:30",
+        "observed": "2026-08-03T08:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,17 +134,17 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 02 Aug 2026",
+        "issued": "5 am 03 Aug 2026",
         "days": [
           {
             "label": "Mon 3",
-            "cm": 1,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Tue 4",
-            "cm": 2,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -162,6 +162,12 @@
           },
           {
             "label": "Fri 7",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 8",
             "cm": 0,
             "mm": 0,
             "rain": false
@@ -421,15 +427,19 @@
         {
           "name": "Car Park 6",
           "status": "Closed"
+        },
+        {
+          "name": "Car Park 4 - 6",
+          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": -0.8,
+        "temperature_c": -0.7,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-03T03:30",
+        "observed": "2026-08-03T08:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -441,7 +451,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 02 Aug 2026",
+        "issued": "5 am 03 Aug 2026",
         "days": [
           {
             "label": "Mon 3",
@@ -451,7 +461,7 @@
           },
           {
             "label": "Tue 4",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -469,6 +479,12 @@
           },
           {
             "label": "Fri 7",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 8",
             "cm": 0,
             "mm": 0,
             "rain": false
@@ -668,7 +684,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 02 Aug 2026",
+        "issued": "5 am 03 Aug 2026",
         "days": [
           {
             "label": "Mon 3",
@@ -696,6 +712,12 @@
           },
           {
             "label": "Fri 7",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 8",
             "cm": 0,
             "mm": 0,
             "rain": false
@@ -804,7 +826,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 02 Aug 2026",
+        "issued": "5 am 03 Aug 2026",
         "days": [
           {
             "label": "Mon 3",
@@ -832,7 +854,13 @@
           },
           {
             "label": "Fri 7",
-            "cm": 2,
+            "cm": 6,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 8",
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
