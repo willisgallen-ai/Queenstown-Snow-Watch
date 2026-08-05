@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-05T06:14:54.474683+00:00",
+  "updated": "2026-08-05T12:28:59.227340+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "From this icy blast, the Southern Lakes will pick up 2-5cm of powder, while Cant...",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-05T06:15:00+00:00",
+  "next_scheduled_update": "2026-08-05T12:30:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -6.1,
+        "temperature_c": -7.4,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-05T18:00",
+        "observed": "2026-08-06T00:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,7 +134,329 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 05 Aug 2026",
+        "issued": "5 pm 05 Aug 2026",
+        "days": [
+          {
+            "label": "Wed 5",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Thu 6",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Fri 7",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 8",
+            "cm": 4,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sun 9",
+            "cm": 1,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Mon 10",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          }
+        ]
+      },
+      "stale": true,
+      "park": null,
+      "hours_closed": true
+    },
+    "coronetpeak": {
+      "status": "Closed",
+      "lifts_open": 0,
+      "lifts_total": 8,
+      "base_lower": 30,
+      "base_upper": 40,
+      "new_snow_7d": 0,
+      "new_snow_24h": null,
+      "season_cm": null,
+      "terrain": {},
+      "lifts": [
+        {
+          "name": "Coronet Express",
+          "status": "Closed"
+        },
+        {
+          "name": "Greengates Express",
+          "status": "Closed"
+        },
+        {
+          "name": "Meadows Learner Express",
+          "status": "Closed"
+        },
+        {
+          "name": "Rocky Gully T-bar",
+          "status": "Closed"
+        },
+        {
+          "name": "Magic Carpet Conveyor",
+          "status": "Closed"
+        },
+        {
+          "name": "Beginner Carpet Conveyor",
+          "status": "Closed"
+        },
+        {
+          "name": "Skiwiland Conveyor",
+          "status": "Closed"
+        },
+        {
+          "name": "Kidszone carpet",
+          "status": "Closed"
+        }
+      ],
+      "trails": [
+        {
+          "name": "Big Easy Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Beginner Area Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Little Easy Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Gentle Annie",
+          "status": "Closed",
+          "difficulty": "green"
+        },
+        {
+          "name": "Fun Zone",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "M1 Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Easy Rider Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Greengates Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Wall Street Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "The Chimney",
+          "status": "Closed",
+          "difficulty": "black"
+        },
+        {
+          "name": "The Hurdle Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Exchange Drop",
+          "status": "Closed",
+          "difficulty": "black"
+        },
+        {
+          "name": "KidsZone carpet Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Dual Carpet slopes Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Shirt Front Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Eighth Basin Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Brough's Lane Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Tuck Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Million Dollar Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Upper Walkabout",
+          "status": "Closed",
+          "difficulty": "black"
+        },
+        {
+          "name": "Mid Gully Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Pro Am Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Overrun Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Rocky Return Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "West Gates",
+          "status": "Closed",
+          "difficulty": "red"
+        },
+        {
+          "name": "Race Arena Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Powder Run",
+          "status": "Closed",
+          "difficulty": "double-black"
+        },
+        {
+          "name": "Sugar's Run",
+          "status": "Closed",
+          "difficulty": "red"
+        },
+        {
+          "name": "Express Way Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Sarah Sue",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Arnolds Way",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Duncan's Dance",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Lunch Rocks",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Out Wide",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Ego Alley",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Dirty Four",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Way Out Wide",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Back Bowls",
+          "status": "Closed",
+          "difficulty": "double-black"
+        },
+        {
+          "name": "Walkabout Terrain Park",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        },
+        {
+          "name": "Tuck Rail garden Groomed",
+          "status": "Closed",
+          "difficulty": "unclassified"
+        }
+      ],
+      "carparks": [
+        {
+          "name": "Lower Carpark 7",
+          "status": "Closed"
+        },
+        {
+          "name": "Car Park 1",
+          "status": "Closed"
+        },
+        {
+          "name": "Car Park 2-6",
+          "status": "Closed"
+        }
+      ],
+      "weather": {
+        "temperature_c": -4.9,
+        "snowing": false,
+        "condition": "Not snowing",
+        "weather_code": 0,
+        "snowfall_cm": 0.0,
+        "observed": "2026-08-05T18:00",
+        "source": "Open-Meteo",
+        "source_url": "https://open-meteo.com/"
+      },
+      "summary": "The latest Queenstown & Coronet Peak Snow Report, Ski Conditions, Weather Forecast, Snow Forecast, Snowfall History & Webcams from SnowNZ",
+      "webcam": {
+        "page_url": "https://www.mountainwatch.com/new-zealand/coronet-peak/snow-cams",
+        "image_url": "https://www.mountainwatch.com/Resort/Coronet-Peak-ExpressCamera-Angle-1/LiveStill.jpg",
+        "embeddable": true,
+        "source": "Mountainwatch"
+      },
+      "forecast": {
+        "issued": "5 pm 05 Aug 2026",
         "days": [
           {
             "label": "Wed 5",
@@ -162,7 +484,7 @@
           },
           {
             "label": "Sun 9",
-            "cm": 2,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -174,337 +496,8 @@
           }
         ]
       },
-      "stale": true,
-      "park": null,
+      "stale": false,
       "hours_closed": true
-    },
-    "coronetpeak": {
-      "status": "Open",
-      "lifts_open": 8,
-      "lifts_total": 8,
-      "base_lower": 30,
-      "base_upper": 40,
-      "new_snow_7d": 0,
-      "new_snow_24h": null,
-      "season_cm": null,
-      "terrain": {},
-      "lifts": [
-        {
-          "name": "Coronet Express",
-          "status": "Open"
-        },
-        {
-          "name": "Greengates Express",
-          "status": "Open"
-        },
-        {
-          "name": "Meadows Learner Express",
-          "status": "Open"
-        },
-        {
-          "name": "Rocky Gully T-bar",
-          "status": "Open"
-        },
-        {
-          "name": "Magic Carpet Conveyor",
-          "status": "Open"
-        },
-        {
-          "name": "Beginner Carpet Conveyor",
-          "status": "Open"
-        },
-        {
-          "name": "Skiwiland Conveyor",
-          "status": "Open"
-        },
-        {
-          "name": "Kidszone carpet",
-          "status": "Open"
-        }
-      ],
-      "trails": [
-        {
-          "name": "Big Easy Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Beginner Area Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Little Easy Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Gentle Annie",
-          "status": "Closed for Racing",
-          "difficulty": "green"
-        },
-        {
-          "name": "Fun Zone",
-          "status": "Open",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "M1 Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Easy Rider Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Greengates Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Wall Street Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "The Chimney",
-          "status": "Variable",
-          "difficulty": "black"
-        },
-        {
-          "name": "The Hurdle Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Exchange Drop",
-          "status": "Variable",
-          "difficulty": "black"
-        },
-        {
-          "name": "KidsZone carpet Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Dual Carpet slopes Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Shirt Front Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Eighth Basin Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Brough's Lane Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Tuck Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Million Dollar Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Upper Walkabout",
-          "status": "Ungroomed",
-          "difficulty": "black"
-        },
-        {
-          "name": "Mid Gully Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Pro Am Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Overrun Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Rocky Return Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "West Gates",
-          "status": "Ungroomed",
-          "difficulty": "red"
-        },
-        {
-          "name": "Race Arena Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Powder Run",
-          "status": "Ungroomed",
-          "difficulty": "double-black"
-        },
-        {
-          "name": "Sugar's Run",
-          "status": "Ungroomed",
-          "difficulty": "red"
-        },
-        {
-          "name": "Express Way Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Sarah Sue",
-          "status": "Ungroomed",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Arnolds Way",
-          "status": "Open",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Duncan's Dance",
-          "status": "Ungroomed",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Lunch Rocks",
-          "status": "Ungroomed",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Out Wide",
-          "status": "Ungroomed",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Ego Alley",
-          "status": "Closed",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Dirty Four",
-          "status": "Open",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Way Out Wide",
-          "status": "Ungroomed",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Back Bowls",
-          "status": "Open",
-          "difficulty": "double-black"
-        },
-        {
-          "name": "Walkabout Terrain Park",
-          "status": "Closed",
-          "difficulty": "unclassified"
-        },
-        {
-          "name": "Tuck Rail garden Groomed",
-          "status": "Unknown",
-          "difficulty": "unclassified"
-        }
-      ],
-      "carparks": [
-        {
-          "name": "Lower Carpark 7",
-          "status": "Spaces available"
-        },
-        {
-          "name": "Car Park 3-6",
-          "status": "Spaces available"
-        },
-        {
-          "name": "Car Park 2-6",
-          "status": "Spaces available"
-        },
-        {
-          "name": "Car Park 4-6",
-          "status": "Spaces available"
-        },
-        {
-          "name": "Car Park 5-6",
-          "status": "Spaces available"
-        }
-      ],
-      "weather": {
-        "temperature_c": -4.9,
-        "snowing": false,
-        "condition": "Not snowing",
-        "weather_code": 0,
-        "snowfall_cm": 0.0,
-        "observed": "2026-08-05T18:00",
-        "source": "Open-Meteo",
-        "source_url": "https://open-meteo.com/"
-      },
-      "summary": "The latest Queenstown & Coronet Peak Snow Report, Ski Conditions, Weather Forecast, Snow Forecast, Snowfall History & Webcams from SnowNZ",
-      "webcam": {
-        "page_url": "https://www.mountainwatch.com/new-zealand/coronet-peak/snow-cams",
-        "image_url": "https://www.mountainwatch.com/Resort/Coronet-Peak-ExpressCamera-Angle-1/LiveStill.jpg",
-        "embeddable": true,
-        "source": "Mountainwatch"
-      },
-      "forecast": {
-        "issued": "11 am 05 Aug 2026",
-        "days": [
-          {
-            "label": "Wed 5",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Thu 6",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Fri 7",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sat 8",
-            "cm": 2,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sun 9",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Mon 10",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          }
-        ]
-      },
-      "stale": false
     },
     "cardrona": {
       "status": "Closed",
@@ -679,12 +672,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -8.3,
+        "temperature_c": -9.8,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-04T06:15",
+        "observed": "2026-08-06T00:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -696,7 +689,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 05 Aug 2026",
+        "issued": "5 pm 05 Aug 2026",
         "days": [
           {
             "label": "Wed 5",
@@ -718,7 +711,7 @@
           },
           {
             "label": "Sat 8",
-            "cm": 6,
+            "cm": 5,
             "mm": 0,
             "rain": false
           },
@@ -838,7 +831,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 05 Aug 2026",
+        "issued": "5 pm 05 Aug 2026",
         "days": [
           {
             "label": "Wed 5",
@@ -854,7 +847,7 @@
           },
           {
             "label": "Fri 7",
-            "cm": 1,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
@@ -866,7 +859,7 @@
           },
           {
             "label": "Sun 9",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
