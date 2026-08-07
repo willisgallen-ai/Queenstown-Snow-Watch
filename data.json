@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-07T01:45:06.126763+00:00",
+  "updated": "2026-08-07T06:02:09.806885+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Friday, 7 th August 2026 After the big freeze and a fresh dusting of powder earlier this week, conditions were excellent on Wednesday and Thursday with crisp, clear wintry weather. Snowmaking has also been at full capacity, fattening up the groomers nicely. The Kiwi season is in full swing, and it’s fair to say we’ve well and truly shrugged off the early season conditions that lasted for far too long. A slow-moving slug of a front pushing in from the west will send light snow showers spilling over the Main Divide onto some ski fields during Friday, before crossing Canterbury on Saturday and early Sunday, then Mt Ruapehu later on Sunday, bringing a mix of rain and snow, which should leave ski fields with at least a dusting on the lower slopes and a more solid top-up on the upper slopes. This is a significant change from previous forecasts, as models have been all over the shop trying to figure out this system. Conditions clear up for a nice day on Monday, but they’ll deteriorate again on Tuesday as the next front flies in from the Tasman, making landfall late in the day, bearing that same mix of rain and high-level snow Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Friday 7 th August A front pushing in from the west will push a fair amount of high cloud over South Island ski fields, with gusty northwesterlies blowing in some light spillover snow showers. Treble Cone and Temple Basin, being closest to the Main Divide, will make the most of the snowfall with a wee dusting expected, while only a flurry or two, if any, is expected elsewhere. Winds will be strong in Canterbury. Mt Ruapehu will be mostly sunny with a little afternoon cloud as northwest winds pick up. Saturday 7 th August The front in the west will continue pushing in over the upper South Island. The Southern Lakes will stay fine with high cloud, while a mix of rain and snow spreads down Canterbury, where snow levels gradually drop to around base levels at night. Light northeast breezes. Another fine day for Mt Ruapehu with high cloud and west-to-northwest breezes. Sunday 9 th August The front over the upper South Island slowly pulls away to the north as a cool southwesterly flow develops. Snowfall over Canterbury clears during the morning, leaving a top-up of fresh powder, especially on the upper slopes. Further south, there could be an early dusting of snow over the Southern Lakes before clouds gradually break up and clear for a sunny afternoon. Conditions rapidly deteriorate on Mt Ruapehu through the morning as the front moves in, with rain and high-level snow developing and northerly winds rising to gale force, likely restricting lift operations. The front crosses late afternoon, allowing conditions to gradually ease, with a brief dusting of snow to lower levels before clearing at night. Monday 10 th August A nice, sunny day across the South Island as southwest winds die away and northwest breezes develop. Mt Ruapehu will be mostly cloudy about mid and lower slopes, but the upper slopes should be clear. Tuesday 11 th August Northerly winds strengthen over the South Island as another storm system approaches from the west, bringing a solid deck of high cloud over ski fields. Rain and high-level snow spreads along the Main Divide through the latter half of the day, with showers spilling over the Southern Lakes from afternoon and Canterbury at night. Cloud and northerly winds gradually build over Mt Ruapehu throughout the day before rain sets in at night. Extended Forecast The storm window is likely to stay open throughout next week into early the following week. Weak storm systems flying in from the west will continue to bring a mix of rain and snow to the country on Wednesday and Thursday, the 12 th and 13 th of August, while snow levels gradually lower as cooler air masses arrive. Then, starting Friday or Saturday, the 14 th and 15 th , even colder air flowing in from the south will bring a round of snow, or several smaller rounds, which will keep the snowpack growing and in fine powdery form. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great weekend, and I’ll see you back here on Monday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-07T01:50:00+00:00",
+  "next_scheduled_update": "2026-08-07T06:05:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.4,
+        "temperature_c": -2.0,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-07T13:30",
+        "observed": "2026-08-07T18:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -455,12 +455,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.0,
+        "temperature_c": -0.5,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-07T13:30",
+        "observed": "2026-08-07T18:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -515,8 +515,8 @@
       "stale": false
     },
     "cardrona": {
-      "status": "Open",
-      "lifts_open": 9,
+      "status": "Closed",
+      "lifts_open": 0,
       "lifts_total": 10,
       "base_lower": 50,
       "base_upper": 50,
@@ -527,163 +527,163 @@
       "lifts": [
         {
           "name": "Learner Conveyors",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "McDougall's Chondola",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Whitestar Express",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Captains Express",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Willow's Quad",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Soho Express",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "T-Bar",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Valley View",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Kindy Conveyor",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Wells Pipe Platter",
-          "status": "Unknown"
+          "status": "Closed"
         }
       ],
       "trails": [
         {
           "name": "Learners Slope",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Main Basin",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Captains",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Soho",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Little Willows",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Big Willows",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Mt Cardrona",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Arcadia Chutes",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Summit",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         }
       ],
       "park": [
         {
           "name": "Baby Bucks",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Little Bucks",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Antlers Alley",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Stag Lane",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Big Bucks",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Peoples Pipe",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Olympic Pipe",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Big Air",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Mc Park",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Gravity Cross",
-          "status": "Unknown"
+          "status": "Closed"
         }
       ],
       "carparks": [
         {
           "name": "Carpark A",
-          "status": "Full"
+          "status": "Closed"
         },
         {
           "name": "Carpark B",
-          "status": "Full"
+          "status": "Closed"
         },
         {
           "name": "Carpark C",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "The Yard",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Valley View",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "The Pines",
-          "status": "Available"
+          "status": "Closed"
         }
       ],
       "weather": {
@@ -696,7 +696,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Thursday 06/08 We are open today with a mainly fine day ahead, low winds, and clear skies to start with. We may see some high cloud rolling later this afternoon. The grooming this morning is as good as it gets with wide trails thanks to the recent snow fall! Main Basin lifts will be running from 08:30am with Captains, Soho, T-Bar, and Willows will follow from 09:00am The road is chain free, please turn your head lights on. The road is dusty at the moment due to the extremely low humidity, please take care. Passes: Everyone with a season's pass will need a picture on their profile/pass this year. If you're unsure if you have one, pop into any Guest Services location and they will be able to sort you out.",
+      "summary": ": Friday 07/08 We have a fine day ahead with a little bit more high cloud today than the past few days. The snow and terrain team have been out laying down some fresh corduroy, and our snowmakers have had the guns on so conditions are in perfect shape! Main Basin lifts will be running from 08:30am with Captains, T-Bar, Soho and Willows to follow from 09:00am. The road is chain free, please turn your head lights on. The road is dusty at the moment due to the extremely low humidity lately, please take care. The road will start to get more moisture in it today with the humidity rising. Passes: Everyone with a season's pass will need a picture on their profile/pass this year. If you're unsure if you have one, pop into any Guest Services location and they will be able to sort you out.",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -744,11 +744,12 @@
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "hours_closed": true
     },
     "treblecone": {
-      "status": "Open",
-      "lifts_open": 3,
+      "status": "Closed",
+      "lifts_open": 0,
       "lifts_total": 3,
       "base_lower": 80,
       "base_upper": 80,
@@ -759,56 +760,56 @@
       "lifts": [
         {
           "name": "Home Basin Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Saddle Quad",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Beginner Platter",
-          "status": "Open"
+          "status": "Closed"
         }
       ],
       "trails": [
         {
           "name": "Home Basin",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Saddle Basin",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Matukituki Basin",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Summit Slopes",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Motatapu Chutes",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Sundance",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Morning Skinning",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         }
       ],
@@ -816,15 +817,15 @@
       "carparks": [
         {
           "name": "Carpark 1",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Carpark 2",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Carpark 3",
-          "status": "Available"
+          "status": "Closed"
         }
       ],
       "weather": {
@@ -837,7 +838,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Rāpare/Thursday The crisp, clear and fabulously sunny days just keep rolling in and they make for some lovely days on the maunga. The snowmaking team are on a run worthy of a Commonwealth Games medal, fattening up the trails and developing terrain. The groomers have had another great night - the cord will ski/ride beautifully this morning. Off trail still offers plenty of fun chalkiness in places, and with the summit and chutes open, there's plenty to offer advanced explorers. \"Give others room\" is a key message in the NZ Snow Code, and patrol will be out enforcing reponsible and respectful skiing/riding on Triple Treat. Please be considerate of others so we all have a great day. Start your day fueled up with one of the legendary breakfast burritos from the cafe, and hit the slopes. Big Skite opens mid morning after race training. -- Closed as of checking: Matukituki Basin, Sundance",
+      "summary": ": Friday, August 7 Another great day up the mountain! Skiing and riding continues to be awesome right across Treble Cone, with excellent snow coverage and plenty of overnight grooming setting up the slopes on and off piste. Weather: Keep an eye out for patchy snow showers possible down to 1300m today, with northerly breezes building through the day. Note: Skite will be closed this morning for ski race training, reopening at 11am once training wraps up. Plenty of other terrain open across the mountain in the meantime. Get up here and make the most of it! -- Home Basin Open Saddle Basin Open Matukituki Basin On-Hold Summit Slopes Open Motatapu Chutes Open Sundance Closed Backcountry Access Open Skinning Access Open Beginner Platter Open",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
@@ -885,7 +886,8 @@
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "hours_closed": true
     }
   }
 }
