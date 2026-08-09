@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-09T17:07:59.641650+00:00",
+  "updated": "2026-08-09T19:19:49.242738+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Friday, 7 th August 2026 After the big freeze and a fresh dusting of powder earlier this week, conditions were excellent on Wednesday and Thursday with crisp, clear wintry weather. Snowmaking has also been at full capacity, fattening up the groomers nicely. The Kiwi season is in full swing, and it’s fair to say we’ve well and truly shrugged off the early season conditions that lasted for far too long. A slow-moving slug of a front pushing in from the west will send light snow showers spilling over the Main Divide onto some ski fields during Friday, before crossing Canterbury on Saturday and early Sunday, then Mt Ruapehu later on Sunday, bringing a mix of rain and snow, which should leave ski fields with at least a dusting on the lower slopes and a more solid top-up on the upper slopes. This is a significant change from previous forecasts, as models have been all over the shop trying to figure out this system. Conditions clear up for a nice day on Monday, but they’ll deteriorate again on Tuesday as the next front flies in from the Tasman, making landfall late in the day, bearing that same mix of rain and high-level snow Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Friday 7 th August A front pushing in from the west will push a fair amount of high cloud over South Island ski fields, with gusty northwesterlies blowing in some light spillover snow showers. Treble Cone and Temple Basin, being closest to the Main Divide, will make the most of the snowfall with a wee dusting expected, while only a flurry or two, if any, is expected elsewhere. Winds will be strong in Canterbury. Mt Ruapehu will be mostly sunny with a little afternoon cloud as northwest winds pick up. Saturday 7 th August The front in the west will continue pushing in over the upper South Island. The Southern Lakes will stay fine with high cloud, while a mix of rain and snow spreads down Canterbury, where snow levels gradually drop to around base levels at night. Light northeast breezes. Another fine day for Mt Ruapehu with high cloud and west-to-northwest breezes. Sunday 9 th August The front over the upper South Island slowly pulls away to the north as a cool southwesterly flow develops. Snowfall over Canterbury clears during the morning, leaving a top-up of fresh powder, especially on the upper slopes. Further south, there could be an early dusting of snow over the Southern Lakes before clouds gradually break up and clear for a sunny afternoon. Conditions rapidly deteriorate on Mt Ruapehu through the morning as the front moves in, with rain and high-level snow developing and northerly winds rising to gale force, likely restricting lift operations. The front crosses late afternoon, allowing conditions to gradually ease, with a brief dusting of snow to lower levels before clearing at night. Monday 10 th August A nice, sunny day across the South Island as southwest winds die away and northwest breezes develop. Mt Ruapehu will be mostly cloudy about mid and lower slopes, but the upper slopes should be clear. Tuesday 11 th August Northerly winds strengthen over the South Island as another storm system approaches from the west, bringing a solid deck of high cloud over ski fields. Rain and high-level snow spreads along the Main Divide through the latter half of the day, with showers spilling over the Southern Lakes from afternoon and Canterbury at night. Cloud and northerly winds gradually build over Mt Ruapehu throughout the day before rain sets in at night. Extended Forecast The storm window is likely to stay open throughout next week into early the following week. Weak storm systems flying in from the west will continue to bring a mix of rain and snow to the country on Wednesday and Thursday, the 12 th and 13 th of August, while snow levels gradually lower as cooler air masses arrive. Then, starting Friday or Saturday, the 14 th and 15 th , even colder air flowing in from the south will bring a round of snow, or several smaller rounds, which will keep the snowpack growing and in fine powdery form. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great weekend, and I’ll see you back here on Monday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-09T17:10:00+00:00",
+  "next_scheduled_update": "2026-08-09T19:20:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.7,
+        "temperature_c": -1.6,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-10T05:00",
+        "observed": "2026-08-10T07:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -425,12 +425,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.6,
+        "temperature_c": -0.5,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-10T05:00",
+        "observed": "2026-08-10T07:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -485,8 +485,8 @@
       "lifts_total": 10,
       "base_lower": 50,
       "base_upper": 50,
-      "new_snow_7d": 24,
-      "new_snow_24h": 10,
+      "new_snow_7d": 15,
+      "new_snow_24h": 1,
       "season_cm": null,
       "terrain": {},
       "lifts": [
@@ -710,10 +710,10 @@
       "status": "Closed",
       "lifts_open": 0,
       "lifts_total": 3,
-      "base_lower": 90,
-      "base_upper": 90,
-      "new_snow_7d": 36,
-      "new_snow_24h": 18,
+      "base_lower": 98,
+      "base_upper": 98,
+      "new_snow_7d": 18,
+      "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
       "lifts": [
@@ -805,7 +805,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 09 Aug 2026",
+        "issued": "5 am 10 Aug 2026",
         "days": [
           {
             "label": "Mon 10",
@@ -821,19 +821,25 @@
           },
           {
             "label": "Wed 12",
-            "cm": 4,
+            "cm": 7,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 13",
-            "cm": 0,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 14",
             "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 15",
+            "cm": 6,
             "mm": 0,
             "rain": false
           }
