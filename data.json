@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-11T08:14:47.018906+00:00",
+  "updated": "2026-08-11T11:10:30.778457+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The weekend storm dipped a little further south than earlier forecasts expected, and it was the Southern Lakes ski fields who were the main beneficiaries, with Cardrona and Treble Cone receiving 10cm and 18cm respectively overnight Saturday, while Coronet Peak and The Remarkables also received a few centimetres. Canterbury also received a 2-5cm refresh, although Ohau, closer to the action in the south, scored 12cm, while light snow fell mostly on the upper slopes of Mt Ruapehu on Sunday.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-11T08:15:00+00:00",
+  "next_scheduled_update": "2026-08-11T11:15:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.3,
+        "temperature_c": -3.0,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-11T20:00",
+        "observed": "2026-08-11T23:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -431,12 +431,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.3,
+        "temperature_c": -1.7,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-11T20:00",
+        "observed": "2026-08-11T23:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
