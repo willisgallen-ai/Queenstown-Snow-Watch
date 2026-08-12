@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-12T12:04:08.125262+00:00",
+  "updated": "2026-08-12T15:31:52.937587+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Winter then bites back over the weekend as icy southerlies sweep up the country, bringing a couple of light rounds of fresh powder to ski fields from the Southern Lakes up to Mt Ruapehu. Although accumulations will only range from a dusting to a small top-up, the snow guns will get a good long run to give the groomers an extra boost.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-12T12:05:00+00:00",
+  "next_scheduled_update": "2026-08-12T15:35:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.7,
+        "temperature_c": -1.2,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 1,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-13T00:00",
+        "observed": "2026-08-13T03:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,14 +134,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 12 Aug 2026",
+        "issued": "11 pm 12 Aug 2026",
         "days": [
-          {
-            "label": "Wed 12",
-            "cm": 1,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Thu 13",
             "cm": 0,
@@ -162,7 +156,7 @@
           },
           {
             "label": "Sun 16",
-            "cm": 0,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
@@ -431,12 +425,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 0.9,
+        "temperature_c": 0.6,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-12T21:30",
+        "observed": "2026-08-13T03:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -448,19 +442,13 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 12 Aug 2026",
+        "issued": "11 pm 12 Aug 2026",
         "days": [
-          {
-            "label": "Wed 12",
-            "cm": 2,
-            "mm": 1,
-            "rain": false
-          },
           {
             "label": "Thu 13",
             "cm": 0,
-            "mm": 0,
-            "rain": false
+            "mm": 5,
+            "rain": true
           },
           {
             "label": "Fri 14",
@@ -470,13 +458,13 @@
           },
           {
             "label": "Sat 15",
-            "cm": 3,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 16",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -681,18 +669,12 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 12 Aug 2026",
+        "issued": "11 pm 12 Aug 2026",
         "days": [
           {
-            "label": "Wed 12",
-            "cm": 2,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Thu 13",
-            "cm": 0,
-            "mm": 0,
+            "cm": 1,
+            "mm": 1,
             "rain": false
           },
           {
@@ -709,7 +691,7 @@
           },
           {
             "label": "Sun 16",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -823,18 +805,12 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 12 Aug 2026",
+        "issued": "11 pm 12 Aug 2026",
         "days": [
           {
-            "label": "Wed 12",
-            "cm": 5,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Thu 13",
-            "cm": 1,
-            "mm": 0,
+            "cm": 2,
+            "mm": 1,
             "rain": false
           },
           {
@@ -851,7 +827,7 @@
           },
           {
             "label": "Sun 16",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
