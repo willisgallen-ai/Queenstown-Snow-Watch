@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-13T18:30:40.647488+00:00",
+  "updated": "2026-08-13T19:36:39.965865+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Winter then bites back over the weekend as icy southerlies sweep up the country, bringing a couple of light rounds of fresh powder to ski fields from the Southern Lakes up to Mt Ruapehu. Although accumulations will only range from a dusting to a small top-up, the snow guns will get a good long run to give the groomers an extra boost.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-13T18:35:00+00:00",
+  "next_scheduled_update": "2026-08-13T19:40:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.2,
+        "temperature_c": -3.4,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-14T06:15",
+        "observed": "2026-08-14T07:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,7 +134,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 13 Aug 2026",
+        "issued": "5 am 14 Aug 2026",
         "days": [
           {
             "label": "Fri 14",
@@ -144,13 +144,13 @@
           },
           {
             "label": "Sat 15",
-            "cm": 2,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 16",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -162,6 +162,12 @@
           },
           {
             "label": "Tue 18",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Wed 19",
             "cm": 0,
             "mm": 0,
             "rain": false
@@ -425,12 +431,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -4.3,
+        "temperature_c": -5.0,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-14T06:15",
+        "observed": "2026-08-14T07:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -442,7 +448,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 13 Aug 2026",
+        "issued": "5 am 14 Aug 2026",
         "days": [
           {
             "label": "Fri 14",
@@ -452,7 +458,7 @@
           },
           {
             "label": "Sat 15",
-            "cm": 1,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
@@ -470,6 +476,12 @@
           },
           {
             "label": "Tue 18",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Wed 19",
             "cm": 0,
             "mm": 0,
             "rain": false
@@ -669,7 +681,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 13 Aug 2026",
+        "issued": "5 am 14 Aug 2026",
         "days": [
           {
             "label": "Fri 14",
@@ -679,13 +691,13 @@
           },
           {
             "label": "Sat 15",
-            "cm": 2,
+            "cm": 5,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 16",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -697,6 +709,12 @@
           },
           {
             "label": "Tue 18",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Wed 19",
             "cm": 0,
             "mm": 0,
             "rain": false
@@ -805,7 +823,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 13 Aug 2026",
+        "issued": "5 am 14 Aug 2026",
         "days": [
           {
             "label": "Fri 14",
@@ -815,13 +833,13 @@
           },
           {
             "label": "Sat 15",
-            "cm": 2,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 16",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -833,6 +851,12 @@
           },
           {
             "label": "Tue 18",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Wed 19",
             "cm": 0,
             "mm": 0,
             "rain": false
