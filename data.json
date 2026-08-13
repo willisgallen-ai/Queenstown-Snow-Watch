@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-13T09:23:33.768934+00:00",
+  "updated": "2026-08-13T10:33:52.306593+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Winter then bites back over the weekend as icy southerlies sweep up the country, bringing a couple of light rounds of fresh powder to ski fields from the Southern Lakes up to Mt Ruapehu. Although accumulations will only range from a dusting to a small top-up, the snow guns will get a good long run to give the groomers an extra boost.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-13T09:25:00+00:00",
+  "next_scheduled_update": "2026-08-13T10:35:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.4,
+        "temperature_c": -1.1,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-13T21:15",
+        "observed": "2026-08-13T22:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -431,12 +431,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.9,
+        "temperature_c": -2.4,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-13T21:15",
+        "observed": "2026-08-13T22:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
