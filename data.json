@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-13T19:36:39.965865+00:00",
+  "updated": "2026-08-13T20:09:08.151230+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Winter then bites back over the weekend as icy southerlies sweep up the country, bringing a couple of light rounds of fresh powder to ski fields from the Southern Lakes up to Mt Ruapehu. Although accumulations will only range from a dusting to a small top-up, the snow guns will get a good long run to give the groomers an extra boost.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-13T19:40:00+00:00",
+  "next_scheduled_update": "2026-08-13T20:10:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -122,7 +122,7 @@
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-14T07:30",
+        "observed": "2026-08-14T08:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -428,6 +428,10 @@
         {
           "name": "Lower Carpark 7",
           "status": "Closed"
+        },
+        {
+          "name": "Car Park 1",
+          "status": "Closed"
         }
       ],
       "weather": {
@@ -436,7 +440,7 @@
         "condition": "Not snowing",
         "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-14T07:30",
+        "observed": "2026-08-14T08:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -806,12 +810,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -6.6,
+        "temperature_c": -9.1,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-14T06:30",
+        "observed": "2026-08-14T08:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
