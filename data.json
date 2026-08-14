@@ -1,19 +1,17 @@
 {
-  "updated": "2026-08-14T03:53:22.538698+00:00",
+  "updated": "2026-08-14T05:22:29.444650+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Friday, 14 th August 2026 A stunning Friday gives way to a wintry weekend as icy southerlies sweep up the country, bringing high-quality powder to low levels. The Southern Lakes will receive around 2-8cm, while Canterbury receives 5-25+cm, and Mt Ruapehu a solid 15-30+cm amid blizzard conditions on Sunday. Light snow continues into early next week, with Northern Canterbury and Ruapehu receiving another wee top-up, although strong southerlies will continue to affect lift ops there. The Southern Lakes and Central-Southern Canterbury, meanwhile, will receive just a dusting or a skiff at most, but the snow guns will get a good long run and add a heap more to the groomers. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Friday 14 th August A weak ridge of high pressure brings a gorgeous, sunny day to South Island ski fields, with light northwest breezes developing in the afternoon. Saturday 15 th August An icy-cold southerly whips up the South Island during the morning, bringing high-quality powder to low levels. Snowfall will mostly be light over the Southern Lakes, with around 2-8cm of high-quality powder accumulating by the time it clears in the afternoon or evening. Snowfall in Canterbury, kicking off late morning to early afternoon, will be a little heavier and persist through the night with a nice top-up in store. After rain and strengthening southeast winds during the day, the cold air finally reaches Mt Ruapehu overnight, bringing snow down to base level. Sunday 16 th August High pressure builds over the South Island from the south, clearing any remaining cloud from the Southern Lakes early for an excellent, wintry day with a light southerly breeze and freshies to be had. It’ll also be a great powder day in Canterbury, with light snowfall providing freshies before it gradually clears from the south, clearing Mt Hutt around late afternoon. Weekend storm totals are likely to range between 5 and 25cm, with Mt Hutt likely near the top of the range, while Mt Lyford and Hanmer in the north could see a little more. It’ll be more of a stormy powder day for Mt Ruapehu with strong cold southerlies bringing blizzard conditions, likely affecting lift ops. Snowfall may be heavy at times but will back off in the evening. Monday 17 th August Cold southerly winds strengthen over the country, with light snowfall possible over the Southern Lakes in the morning and again at night, and over Canterbury from afternoon onwards. The southerlies will blow a gale on Mt Ruapehu, and light snowfall will become heavier for a time, with blizzard conditions likely affecting lift ops again. Tuesday 18 th August Strong cold southerly winds persist over the country, bringing partly sunny, partly cloudy skies to the South Island, with a few early leftover snow flurries possible, which will likely persist throughout the day in North Canterbury. Southerlies will be particularly strong on Mt Ruapehu, with gales expected to disrupt lift ops again. Leftover snow showers and flurries will clear in the morning or afternoon, and then skies brighten as clouds start to break up. Extended Forecast There may be some more light snowfall in Canterbury and on Mt Ruapehu on Wednesday, the 19 th of August, before high pressure moves in during Thursday and Friday, the 20 th and 21 st , putting an end to the cold southerlies and bringing sunny skies. The storm window is likely to open up again next weekend, with the leading front likely to make landfall on the South Island on Sunday, the 23 rd of August. We’re likely to start with a mix of rain and high-level of snow, before colder temps arrive the following week with increasing chances of snow. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great weekend, and I’ll see you back here on Monday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-14T03:55:00+00:00",
+  "next_scheduled_update": "2026-08-14T05:25:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
     "total_resorts": 4,
-    "stale_resorts": [
-      "coronetpeak"
-    ]
+    "stale_resorts": []
   },
   "resorts": {
     "remarkables": {
@@ -119,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 2.6,
+        "temperature_c": 1.5,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-14T15:45",
+        "observed": "2026-08-14T17:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -437,12 +435,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 4.9,
+        "temperature_c": 3.3,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 1,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-14T13:45",
+        "observed": "2026-08-14T17:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -494,11 +492,11 @@
           }
         ]
       },
-      "stale": true
+      "stale": false
     },
     "cardrona": {
-      "status": "Open",
-      "lifts_open": 9,
+      "status": "Closed",
+      "lifts_open": 0,
       "lifts_total": 10,
       "base_lower": 50,
       "base_upper": 50,
@@ -509,163 +507,163 @@
       "lifts": [
         {
           "name": "Learner Conveyors",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "McDougall's Chondola",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Whitestar Express",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Captains Express",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Willow's Quad",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Soho Express",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "T-Bar",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Valley View",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Kindy Conveyor",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Wells Pipe Platter",
-          "status": "Unknown"
+          "status": "Closed"
         }
       ],
       "trails": [
         {
           "name": "Learners Slope",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Main Basin",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Captains",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Soho",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Little Willows",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Big Willows",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Mt Cardrona",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Arcadia Chutes",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Summit",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         }
       ],
       "park": [
         {
           "name": "Baby Bucks",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Little Bucks",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Antlers Alley",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Stag Lane",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Big Bucks",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Peoples Pipe",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Olympic Pipe",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Big Air",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Mc Park",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Gravity Cross",
-          "status": "Unknown"
+          "status": "Closed"
         }
       ],
       "carparks": [
         {
           "name": "Carpark A",
-          "status": "Full"
+          "status": "Closed"
         },
         {
           "name": "Carpark B",
-          "status": "Full"
+          "status": "Closed"
         },
         {
           "name": "Carpark C",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "The Yard",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Valley View",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "The Pines",
-          "status": "Available"
+          "status": "Closed"
         }
       ],
       "weather": {
@@ -726,11 +724,12 @@
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "hours_closed": true
     },
     "treblecone": {
-      "status": "Open",
-      "lifts_open": 3,
+      "status": "Closed",
+      "lifts_open": 0,
       "lifts_total": 3,
       "base_lower": 98,
       "base_upper": 98,
@@ -741,56 +740,56 @@
       "lifts": [
         {
           "name": "Home Basin Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Saddle Quad",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Beginner Platter",
-          "status": "Open"
+          "status": "Closed"
         }
       ],
       "trails": [
         {
           "name": "Home Basin",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Saddle Basin",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Matukituki Basin",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Summit Slopes",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Motatapu Chutes",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Sundance",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Morning Skinning",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         }
       ],
@@ -798,15 +797,15 @@
       "carparks": [
         {
           "name": "Carpark 1",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Carpark 2",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Carpark 3",
-          "status": "Available"
+          "status": "Closed"
         }
       ],
       "weather": {
@@ -867,7 +866,8 @@
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "hours_closed": true
     }
   }
 }
