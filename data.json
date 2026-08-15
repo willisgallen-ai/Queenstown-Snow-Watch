@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-15T04:35:01.988012+00:00",
+  "updated": "2026-08-15T05:00:56.638019+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Friday, 14 th August 2026 A stunning Friday gives way to a wintry weekend as icy southerlies sweep up the country, bringing high-quality powder to low levels. The Southern Lakes will receive around 2-8cm, while Canterbury receives 5-25+cm, and Mt Ruapehu a solid 15-30+cm amid blizzard conditions on Sunday. Light snow continues into early next week, with Northern Canterbury and Ruapehu receiving another wee top-up, although strong southerlies will continue to affect lift ops there. The Southern Lakes and Central-Southern Canterbury, meanwhile, will receive just a dusting or a skiff at most, but the snow guns will get a good long run and add a heap more to the groomers. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Friday 14 th August A weak ridge of high pressure brings a gorgeous, sunny day to South Island ski fields, with light northwest breezes developing in the afternoon. Saturday 15 th August An icy-cold southerly whips up the South Island during the morning, bringing high-quality powder to low levels. Snowfall will mostly be light over the Southern Lakes, with around 2-8cm of high-quality powder accumulating by the time it clears in the afternoon or evening. Snowfall in Canterbury, kicking off late morning to early afternoon, will be a little heavier and persist through the night with a nice top-up in store. After rain and strengthening southeast winds during the day, the cold air finally reaches Mt Ruapehu overnight, bringing snow down to base level. Sunday 16 th August High pressure builds over the South Island from the south, clearing any remaining cloud from the Southern Lakes early for an excellent, wintry day with a light southerly breeze and freshies to be had. It’ll also be a great powder day in Canterbury, with light snowfall providing freshies before it gradually clears from the south, clearing Mt Hutt around late afternoon. Weekend storm totals are likely to range between 5 and 25cm, with Mt Hutt likely near the top of the range, while Mt Lyford and Hanmer in the north could see a little more. It’ll be more of a stormy powder day for Mt Ruapehu with strong cold southerlies bringing blizzard conditions, likely affecting lift ops. Snowfall may be heavy at times but will back off in the evening. Monday 17 th August Cold southerly winds strengthen over the country, with light snowfall possible over the Southern Lakes in the morning and again at night, and over Canterbury from afternoon onwards. The southerlies will blow a gale on Mt Ruapehu, and light snowfall will become heavier for a time, with blizzard conditions likely affecting lift ops again. Tuesday 18 th August Strong cold southerly winds persist over the country, bringing partly sunny, partly cloudy skies to the South Island, with a few early leftover snow flurries possible, which will likely persist throughout the day in North Canterbury. Southerlies will be particularly strong on Mt Ruapehu, with gales expected to disrupt lift ops again. Leftover snow showers and flurries will clear in the morning or afternoon, and then skies brighten as clouds start to break up. Extended Forecast There may be some more light snowfall in Canterbury and on Mt Ruapehu on Wednesday, the 19 th of August, before high pressure moves in during Thursday and Friday, the 20 th and 21 st , putting an end to the cold southerlies and bringing sunny skies. The storm window is likely to open up again next weekend, with the leading front likely to make landfall on the South Island on Sunday, the 23 rd of August. We’re likely to start with a mix of rain and high-level of snow, before colder temps arrive the following week with increasing chances of snow. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great weekend, and I’ll see you back here on Monday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-15T04:40:00+00:00",
+  "next_scheduled_update": "2026-08-15T05:05:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -122,7 +122,7 @@
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-15T16:30",
+        "observed": "2026-08-15T16:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -435,12 +435,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.1,
+        "temperature_c": -2.2,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-15T16:30",
+        "observed": "2026-08-15T16:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
