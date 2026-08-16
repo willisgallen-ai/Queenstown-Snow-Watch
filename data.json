@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-16T20:26:34.702781+00:00",
+  "updated": "2026-08-16T20:46:47.369597+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
-    "summary": "Published early Friday, 14 th August 2026 A stunning Friday gives way to a wintry weekend as icy southerlies sweep up the country, bringing high-quality powder to low levels. The Southern Lakes will receive around 2-8cm, while Canterbury receives 5-25+cm, and Mt Ruapehu a solid 15-30+cm amid blizzard conditions on Sunday. Light snow continues into early next week, with Northern Canterbury and Ruapehu receiving another wee top-up, although strong southerlies will continue to affect lift ops there. The Southern Lakes and Central-Southern Canterbury, meanwhile, will receive just a dusting or a skiff at most, but the snow guns will get a good long run and add a heap more to the groomers. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Friday 14 th August A weak ridge of high pressure brings a gorgeous, sunny day to South Island ski fields, with light northwest breezes developing in the afternoon. Saturday 15 th August An icy-cold southerly whips up the South Island during the morning, bringing high-quality powder to low levels. Snowfall will mostly be light over the Southern Lakes, with around 2-8cm of high-quality powder accumulating by the time it clears in the afternoon or evening. Snowfall in Canterbury, kicking off late morning to early afternoon, will be a little heavier and persist through the night with a nice top-up in store. After rain and strengthening southeast winds during the day, the cold air finally reaches Mt Ruapehu overnight, bringing snow down to base level. Sunday 16 th August High pressure builds over the South Island from the south, clearing any remaining cloud from the Southern Lakes early for an excellent, wintry day with a light southerly breeze and freshies to be had. It’ll also be a great powder day in Canterbury, with light snowfall providing freshies before it gradually clears from the south, clearing Mt Hutt around late afternoon. Weekend storm totals are likely to range between 5 and 25cm, with Mt Hutt likely near the top of the range, while Mt Lyford and Hanmer in the north could see a little more. It’ll be more of a stormy powder day for Mt Ruapehu with strong cold southerlies bringing blizzard conditions, likely affecting lift ops. Snowfall may be heavy at times but will back off in the evening. Monday 17 th August Cold southerly winds strengthen over the country, with light snowfall possible over the Southern Lakes in the morning and again at night, and over Canterbury from afternoon onwards. The southerlies will blow a gale on Mt Ruapehu, and light snowfall will become heavier for a time, with blizzard conditions likely affecting lift ops again. Tuesday 18 th August Strong cold southerly winds persist over the country, bringing partly sunny, partly cloudy skies to the South Island, with a few early leftover snow flurries possible, which will likely persist throughout the day in North Canterbury. Southerlies will be particularly strong on Mt Ruapehu, with gales expected to disrupt lift ops again. Leftover snow showers and flurries will clear in the morning or afternoon, and then skies brighten as clouds start to break up. Extended Forecast There may be some more light snowfall in Canterbury and on Mt Ruapehu on Wednesday, the 19 th of August, before high pressure moves in during Thursday and Friday, the 20 th and 21 st , putting an end to the cold southerlies and bringing sunny skies. The storm window is likely to open up again next weekend, with the leading front likely to make landfall on the South Island on Sunday, the 23 rd of August. We’re likely to start with a mix of rain and high-level of snow, before colder temps arrive the following week with increasing chances of snow. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great weekend, and I’ll see you back here on Monday. Grasshopper",
+    "summary": "The Kiwi season continues to go from strength to strength as another wintry southerly blasted up the country over the weekend, delivering another round of fresh powder. The Southern Lakes picked up a wee 2-4cm dusting on Saturday, while Canterbury had already scored around 5-15cm by Sunday morning, with snow continuing through the day and final totals likely to reach 15-30+cm. Snow also kicked off on Mt Ruapehu on Sunday, and we’re expecting a decent haul to show up in Monday morning’s reports.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-16T20:30:00+00:00",
+  "next_scheduled_update": "2026-08-16T20:50:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -119,12 +119,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -5.4,
+        "temperature_c": -5.0,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 0,
+        "weather_code": 1,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-17T08:15",
+        "observed": "2026-08-17T08:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -493,8 +493,8 @@
       "hours_closed": true
     },
     "cardrona": {
-      "status": "Closed",
-      "lifts_open": 0,
+      "status": "Open",
+      "lifts_open": 8,
       "lifts_total": 10,
       "base_lower": null,
       "base_upper": null,
@@ -505,137 +505,137 @@
       "lifts": [
         {
           "name": "Learner Conveyors",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "McDougall's Chondola",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Whitestar Express",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Captains Express",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Willow's Quad",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Soho Express",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "T-Bar",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Valley View",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Kindy Conveyor",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Wells Pipe Platter",
-          "status": "Closed"
+          "status": "Unknown"
         }
       ],
       "trails": [
         {
           "name": "Learners Slope",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Main Basin",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Captains",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Soho",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Little Willows",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Big Willows",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Mt Cardrona",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Arcadia Chutes",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Summit",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         }
       ],
       "park": [
         {
           "name": "Baby Bucks",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Little Bucks",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Antlers Alley",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Stag Lane",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Big Bucks",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Peoples Pipe",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Olympic Pipe",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Big Air",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Mc Park",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Gravity Cross",
-          "status": "Closed"
+          "status": "Unknown"
         }
       ],
       "carparks": [],
@@ -697,8 +697,7 @@
           }
         ]
       },
-      "stale": false,
-      "hours_closed": true
+      "stale": false
     },
     "treblecone": {
       "status": "Closed",
@@ -769,12 +768,12 @@
       "park": [],
       "carparks": [],
       "weather": {
-        "temperature_c": -12.1,
+        "temperature_c": -10.2,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-17T08:00",
+        "observed": "2026-08-17T08:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
