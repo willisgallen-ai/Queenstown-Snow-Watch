@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-17T13:15:01.854983+00:00",
+  "updated": "2026-08-17T13:54:48.494096+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The Kiwi season continues to go from strength to strength as another wintry southerly blasted up the country over the weekend, delivering another round of fresh powder. The Southern Lakes picked up a wee 2-4cm dusting on Saturday, while Canterbury had already scored around 5-15cm by Sunday morning, with snow continuing through the day and final totals likely to reach 15-30+cm. Snow also kicked off on Mt Ruapehu on Sunday, and we’re expecting a decent haul to show up in Monday morning’s reports.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-17T13:20:00+00:00",
+  "next_scheduled_update": "2026-08-17T13:55:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -119,12 +119,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.3,
+        "temperature_c": -2.2,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-18T01:00",
+        "observed": "2026-08-18T01:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -136,17 +136,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 17 Aug 2026",
+        "issued": "11 pm 17 Aug 2026",
         "days": [
           {
-            "label": "Mon 17",
-            "cm": 1,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Tue 18",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -164,13 +158,13 @@
           },
           {
             "label": "Fri 21",
-            "cm": 2,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 22",
-            "cm": 17,
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
@@ -663,14 +657,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 17 Aug 2026",
+        "issued": "11 pm 17 Aug 2026",
         "days": [
-          {
-            "label": "Mon 17",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Tue 18",
             "cm": 0,
@@ -691,13 +679,13 @@
           },
           {
             "label": "Fri 21",
-            "cm": 2,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 22",
-            "cm": 14,
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
@@ -780,7 +768,7 @@
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-18T01:00",
+        "observed": "2026-08-18T01:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -792,14 +780,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 17 Aug 2026",
+        "issued": "11 pm 17 Aug 2026",
         "days": [
-          {
-            "label": "Mon 17",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Tue 18",
             "cm": 0,
@@ -820,13 +802,13 @@
           },
           {
             "label": "Fri 21",
-            "cm": 7,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 22",
-            "cm": 23,
+            "cm": 7,
             "mm": 0,
             "rain": false
           }
