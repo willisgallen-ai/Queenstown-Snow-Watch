@@ -1,19 +1,17 @@
 {
-  "updated": "2026-08-17T07:13:53.691551+00:00",
+  "updated": "2026-08-17T08:01:28.848325+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The Kiwi season continues to go from strength to strength as another wintry southerly blasted up the country over the weekend, delivering another round of fresh powder. The Southern Lakes picked up a wee 2-4cm dusting on Saturday, while Canterbury had already scored around 5-15cm by Sunday morning, with snow continuing through the day and final totals likely to reach 15-30+cm. Snow also kicked off on Mt Ruapehu on Sunday, and we’re expecting a decent haul to show up in Monday morning’s reports.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-17T07:15:00+00:00",
+  "next_scheduled_update": "2026-08-17T08:05:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
     "total_resorts": 4,
-    "stale_resorts": [
-      "coronetpeak"
-    ]
+    "stale_resorts": []
   },
   "resorts": {
     "remarkables": {
@@ -119,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.0,
-        "snowing": true,
-        "condition": "Snow",
-        "weather_code": 85,
-        "snowfall_cm": 0.07,
-        "observed": "2026-08-17T19:00",
+        "temperature_c": -2.7,
+        "snowing": false,
+        "condition": "Not snowing",
+        "weather_code": 51,
+        "snowfall_cm": 0.0,
+        "observed": "2026-08-17T20:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -136,7 +134,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 17 Aug 2026",
+        "issued": "5 pm 17 Aug 2026",
         "days": [
           {
             "label": "Mon 17",
@@ -164,13 +162,13 @@
           },
           {
             "label": "Fri 21",
-            "cm": 3,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 22",
-            "cm": 25,
+            "cm": 17,
             "mm": 0,
             "rain": false
           }
@@ -438,12 +436,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.1,
+        "temperature_c": -0.9,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-17T18:00",
+        "observed": "2026-08-17T20:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -455,7 +453,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 17 Aug 2026",
+        "issued": "5 pm 17 Aug 2026",
         "days": [
           {
             "label": "Mon 17",
@@ -483,28 +481,28 @@
           },
           {
             "label": "Fri 21",
-            "cm": 5,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 22",
-            "cm": 24,
+            "cm": 17,
             "mm": 0,
             "rain": false
           }
         ]
       },
-      "stale": true,
+      "stale": false,
       "hours_closed": true
     },
     "cardrona": {
       "status": "Closed",
       "lifts_open": 0,
       "lifts_total": 10,
-      "base_lower": null,
-      "base_upper": null,
-      "new_snow_7d": null,
+      "base_lower": 50,
+      "base_upper": 50,
+      "new_snow_7d": 0,
       "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
@@ -644,7 +642,32 @@
           "status": "Closed"
         }
       ],
-      "carparks": [],
+      "carparks": [
+        {
+          "name": "Carpark A",
+          "status": "Closed"
+        },
+        {
+          "name": "Carpark B",
+          "status": "Closed"
+        },
+        {
+          "name": "Carpark C",
+          "status": "Closed"
+        },
+        {
+          "name": "The Yard",
+          "status": "Closed"
+        },
+        {
+          "name": "Valley View",
+          "status": "Closed"
+        },
+        {
+          "name": "The Pines",
+          "status": "Closed"
+        }
+      ],
       "weather": {
         "temperature_c": -2.5,
         "snowing": false,
@@ -663,7 +686,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 17 Aug 2026",
+        "issued": "5 pm 17 Aug 2026",
         "days": [
           {
             "label": "Mon 17",
@@ -691,13 +714,13 @@
           },
           {
             "label": "Fri 21",
-            "cm": 3,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 22",
-            "cm": 20,
+            "cm": 14,
             "mm": 0,
             "rain": false
           }
@@ -805,7 +828,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 17 Aug 2026",
+        "issued": "5 pm 17 Aug 2026",
         "days": [
           {
             "label": "Mon 17",
@@ -833,13 +856,13 @@
           },
           {
             "label": "Fri 21",
-            "cm": 11,
+            "cm": 7,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 22",
-            "cm": 32,
+            "cm": 23,
             "mm": 0,
             "rain": false
           }
