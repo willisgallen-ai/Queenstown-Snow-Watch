@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-17T18:15:02.862307+00:00",
+  "updated": "2026-08-17T18:58:50.611304+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The Kiwi season continues to go from strength to strength as another wintry southerly blasted up the country over the weekend, delivering another round of fresh powder. The Southern Lakes picked up a wee 2-4cm dusting on Saturday, while Canterbury had already scored around 5-15cm by Sunday morning, with snow continuing through the day and final totals likely to reach 15-30+cm. Snow also kicked off on Mt Ruapehu on Sunday, and we’re expecting a decent haul to show up in Monday morning’s reports.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-17T18:20:00+00:00",
+  "next_scheduled_update": "2026-08-17T19:00:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.9,
+        "temperature_c": -2.8,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-18T06:00",
+        "observed": "2026-08-18T06:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -176,8 +176,8 @@
       "status": "Closed",
       "lifts_open": 0,
       "lifts_total": 8,
-      "base_lower": 40,
-      "base_upper": 50,
+      "base_lower": 60,
+      "base_upper": 70,
       "new_snow_7d": 0,
       "new_snow_24h": null,
       "season_cm": null,
@@ -430,12 +430,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.2,
+        "temperature_c": -2.7,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-18T06:00",
+        "observed": "2026-08-18T06:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -490,8 +490,8 @@
       "lifts_total": 10,
       "base_lower": 50,
       "base_upper": 50,
-      "new_snow_7d": 0,
-      "new_snow_24h": null,
+      "new_snow_7d": 3,
+      "new_snow_24h": 3,
       "season_cm": null,
       "terrain": {},
       "lifts": [
@@ -657,12 +657,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.5,
+        "temperature_c": -4.5,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-18T04:15",
+        "observed": "2026-08-18T06:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
