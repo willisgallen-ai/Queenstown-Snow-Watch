@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-18T13:53:08.449428+00:00",
+  "updated": "2026-08-18T14:20:34.976129+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The Kiwi season continues to go from strength to strength as another wintry southerly blasted up the country over the weekend, delivering another round of fresh powder. The Southern Lakes picked up a wee 2-4cm dusting on Saturday, while Canterbury had already scored around 5-15cm by Sunday morning, with snow continuing through the day and final totals likely to reach 15-30+cm. Snow also kicked off on Mt Ruapehu on Sunday, and we’re expecting a decent haul to show up in Monday morning’s reports.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-18T13:55:00+00:00",
+  "next_scheduled_update": "2026-08-18T14:25:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -124,7 +124,7 @@
         "condition": "Not snowing",
         "weather_code": 51,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-19T01:45",
+        "observed": "2026-08-19T02:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -767,12 +767,12 @@
       "park": [],
       "carparks": [],
       "weather": {
-        "temperature_c": -1.9,
+        "temperature_c": -1.7,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-19T01:45",
+        "observed": "2026-08-19T02:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
