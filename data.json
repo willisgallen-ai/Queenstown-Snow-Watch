@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-18T10:58:13.431096+00:00",
+  "updated": "2026-08-18T11:24:52.446931+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The Kiwi season continues to go from strength to strength as another wintry southerly blasted up the country over the weekend, delivering another round of fresh powder. The Southern Lakes picked up a wee 2-4cm dusting on Saturday, while Canterbury had already scored around 5-15cm by Sunday morning, with snow continuing through the day and final totals likely to reach 15-30+cm. Snow also kicked off on Mt Ruapehu on Sunday, and we’re expecting a decent haul to show up in Monday morning’s reports.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-18T11:00:00+00:00",
+  "next_scheduled_update": "2026-08-18T11:25:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -122,7 +122,7 @@
         "condition": "Not snowing",
         "weather_code": 51,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-18T22:45",
+        "observed": "2026-08-18T23:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -452,12 +452,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.6,
+        "temperature_c": -0.8,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-18T22:15",
+        "observed": "2026-08-18T23:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -516,10 +516,10 @@
       "status": "Closed",
       "lifts_open": 0,
       "lifts_total": 10,
-      "base_lower": 50,
-      "base_upper": 50,
-      "new_snow_7d": 3,
-      "new_snow_24h": 3,
+      "base_lower": null,
+      "base_upper": null,
+      "new_snow_7d": null,
+      "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
       "lifts": [
@@ -658,32 +658,7 @@
           "status": "Closed"
         }
       ],
-      "carparks": [
-        {
-          "name": "Carpark A",
-          "status": "Closed"
-        },
-        {
-          "name": "Carpark B",
-          "status": "Closed"
-        },
-        {
-          "name": "Carpark C",
-          "status": "Closed"
-        },
-        {
-          "name": "The Yard",
-          "status": "Closed"
-        },
-        {
-          "name": "Valley View",
-          "status": "Closed"
-        },
-        {
-          "name": "The Pines",
-          "status": "Closed"
-        }
-      ],
+      "carparks": [],
       "weather": {
         "temperature_c": -3.8,
         "snowing": false,
@@ -749,9 +724,9 @@
       "status": "Closed",
       "lifts_open": 0,
       "lifts_total": 3,
-      "base_lower": 92,
-      "base_upper": 92,
-      "new_snow_7d": 4,
+      "base_lower": null,
+      "base_upper": null,
+      "new_snow_7d": null,
       "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
@@ -812,27 +787,14 @@
         }
       ],
       "park": [],
-      "carparks": [
-        {
-          "name": "Carpark 1",
-          "status": "Closed"
-        },
-        {
-          "name": "Carpark 2",
-          "status": "Closed"
-        },
-        {
-          "name": "Carpark 3",
-          "status": "Closed"
-        }
-      ],
+      "carparks": [],
       "weather": {
-        "temperature_c": -1.6,
+        "temperature_c": -1.2,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-18T22:30",
+        "observed": "2026-08-18T23:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
