@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-18T00:02:00.189252+00:00",
+  "updated": "2026-08-18T01:44:28.114721+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The Kiwi season continues to go from strength to strength as another wintry southerly blasted up the country over the weekend, delivering another round of fresh powder. The Southern Lakes picked up a wee 2-4cm dusting on Saturday, while Canterbury had already scored around 5-15cm by Sunday morning, with snow continuing through the day and final totals likely to reach 15-30+cm. Snow also kicked off on Mt Ruapehu on Sunday, and we’re expecting a decent haul to show up in Monday morning’s reports.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-18T00:05:00+00:00",
+  "next_scheduled_update": "2026-08-18T01:45:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.7,
+        "temperature_c": -1.2,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-18T12:00",
+        "observed": "2026-08-18T13:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,7 +134,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 18 Aug 2026",
+        "issued": "11 am 18 Aug 2026",
         "days": [
           {
             "label": "Tue 18",
@@ -156,19 +156,19 @@
           },
           {
             "label": "Fri 21",
-            "cm": 3,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 22",
-            "cm": 33,
+            "cm": 17,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 23",
-            "cm": 18,
+            "cm": 8,
             "mm": 0,
             "rain": false
           }
@@ -452,12 +452,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.4,
+        "temperature_c": 1.8,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-18T12:00",
+        "observed": "2026-08-18T13:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -469,7 +469,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 18 Aug 2026",
+        "issued": "11 am 18 Aug 2026",
         "days": [
           {
             "label": "Tue 18",
@@ -491,19 +491,19 @@
           },
           {
             "label": "Fri 21",
-            "cm": 4,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 22",
-            "cm": 30,
+            "cm": 18,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 23",
-            "cm": 17,
+            "cm": 6,
             "mm": 0,
             "rain": false
           }
@@ -701,7 +701,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 18 Aug 2026",
+        "issued": "11 am 18 Aug 2026",
         "days": [
           {
             "label": "Tue 18",
@@ -723,19 +723,19 @@
           },
           {
             "label": "Fri 21",
-            "cm": 2,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 22",
-            "cm": 29,
+            "cm": 16,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 23",
-            "cm": 13,
+            "cm": 5,
             "mm": 0,
             "rain": false
           }
@@ -842,7 +842,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 18 Aug 2026",
+        "issued": "11 am 18 Aug 2026",
         "days": [
           {
             "label": "Tue 18",
@@ -864,19 +864,19 @@
           },
           {
             "label": "Fri 21",
-            "cm": 6,
+            "cm": 10,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 22",
-            "cm": 39,
+            "cm": 30,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 23",
-            "cm": 26,
+            "cm": 9,
             "mm": 0,
             "rain": false
           }
