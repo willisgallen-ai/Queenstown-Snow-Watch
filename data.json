@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-18T02:42:59.376364+00:00",
+  "updated": "2026-08-18T03:28:30.099201+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The Kiwi season continues to go from strength to strength as another wintry southerly blasted up the country over the weekend, delivering another round of fresh powder. The Southern Lakes picked up a wee 2-4cm dusting on Saturday, while Canterbury had already scored around 5-15cm by Sunday morning, with snow continuing through the day and final totals likely to reach 15-30+cm. Snow also kicked off on Mt Ruapehu on Sunday, and we’re expecting a decent haul to show up in Monday morning’s reports.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-18T02:45:00+00:00",
+  "next_scheduled_update": "2026-08-18T03:30:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -122,7 +122,7 @@
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-18T14:30",
+        "observed": "2026-08-18T15:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -452,12 +452,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.9,
+        "temperature_c": 1.8,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-18T14:30",
+        "observed": "2026-08-18T15:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -693,7 +693,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Today at Cardrona 17 August 2026 — Cardrona is open for a fine, frosty winter day, with cold, dry snow in excellent mid-winter condition. The Kindy Conveyor, Learner Conveyors, McDougall’s Chondola, Whitestar Express, Valley View, Captains Express, T-Bar, Soho Express, Willow’s Quad and Wells Pipe Platter are open. The Olympic Half Pipe is also opening from 8:30am. Learners Slope, Main Basin, Captains, Soho, Little Willows, Big Willows, Ski Touring Access, Mt Cardrona, Arcadia Chutes and Summit are open. Baby Bucks, Little Bucks, Antlers Alley, Stag Lane, Big Bucks and Olympic Pipe are open, while Peoples Pipe, Big Air and Gravity Cross are closed. Temperatures are around -3°C with 16 km/h winds and gusts to 31 km/h. The day should remain fine but cold, with isolated showers developing this afternoon. The access road is currently chain-free, but chains must be carried, and an active road hazard advisory is in place.",
+      "summary": ": Today at Cardrona 18 August 2026 — Cardrona is open today with a fresh top-up of snow overnight, and conditions are looking superb after the snowmaking and grooming teams made the most of the cold weather through the night. It's a cold one today with strong southwest winds, so grab an extra layer — there's a cloud cap sitting over the mountain at the moment, with fingers crossed for a clearance. It's currently -2 degrees, with wind around 23km/h and gusts to 40. Main Basin lifts get going from 8:30am, with Captains, T-Bar, Soho and Willows following from 9am. Kindy Conveyor, Learner Conveyors, McDougall's Chondola, Whitestar Express and Valley View round out the rest of the open lifts. The Wells Pipe Platter is closed, and up top, Mt Cardrona, Arcadia Chutes and the Summit terrain remain on hold, along with Big Bucks in the park. Chains must always be carried, and there's an active road hazard advisory on the Cardrona and Treble Cone access roads worth checking before heading up. Carpark A is full, but B, C, The Yard, Valley View and The Pines all still have space. If you're after lunch, locals avoid the 1pm rush — grab a snack outside peak times, or book a table at The Mezz. Anyone with a season's pass will need a photo on their profile this year; pop into Guest Services if you're not sure whether yours is sorted.",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -834,7 +834,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Today at Treble Cone 17 August 2026 — Treble Cone is open for a crisp winter day, with Home Basin opening at 8:30am and Saddle Basin at 9am. The Home Basin Express, Saddle Quad and Beginner Platter are open. Fresh corduroy has been laid across the mountain after a cold, calm night, while snowmaking crews worked overnight on the main Home Basin trails. Home Basin, Saddle Basin, Matukituki Basin, Summit Slopes, Motatapu Chutes, Backcountry Access, Skinning Access and Powder Bowl are open, while Sundance is closed. The groomed terrain includes Triple Treat, Beginner Platter, Main Street, Big Skite, Rafill's Run, Pete's Treat, High Street, Bullet, Saddle Track, Saddleback and South Ridge. Temperatures are around -2°C with 13 km/h winds and gusts to 24 km/h. The day should remain mostly fine, with cloud building through the afternoon and a chance of snow showers later. Access roads are currently chain-free, but all vehicles must carry chains because conditions may change. An active road hazard advisory is in place, and the free road shuttle is available.",
+      "summary": ": Today at Treble Cone 18 August 2026 — Mid-season goodness continues at Treble Cone — the groomers have done their thing, so it's your turn now. It's a clear winter morning, with another cold night leaving crisp conditions and a fresh groomed surface to start the day. There's a cool southerly up top, so dress warm for the wind chill, especially out in The Saddle. It's currently -1 degree, with wind around 18km/h and gusts to 32. Home Basin opens at 8:30am and Saddle Basin at 9am, with the Home Basin Express, Saddle Quad and Beginner Platter running. Triple Treat, Main Street, Big Skite, Rafill's Run, Pete's Treat, High Street and Saddle Track are all groomed and open. The Summit and Motatapu Chutes are open, and Matukituki is open too, with a high traverse out recommended. If you're new to the mountain, the Ski School team can help you find your feet on the Beginner Platter. All vehicles must carry chains, and there's an active road hazard advisory on the Cardrona and Treble Cone access roads worth checking before heading up — carpooling or the free road shuttle are good options. It's a big week on the mountain, with the Freeride World Tour 2-Star Qualifier kicking off tomorrow, the Treble Cone Interfields Ski Race this Saturday, and Atomic Rise & Shine Round 3 on Sunday.",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
