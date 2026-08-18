@@ -1,19 +1,17 @@
 {
-  "updated": "2026-08-18T14:58:10.139290+00:00",
+  "updated": "2026-08-18T15:28:19.568336+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The Kiwi season continues to go from strength to strength as another wintry southerly blasted up the country over the weekend, delivering another round of fresh powder. The Southern Lakes picked up a wee 2-4cm dusting on Saturday, while Canterbury had already scored around 5-15cm by Sunday morning, with snow continuing through the day and final totals likely to reach 15-30+cm. Snow also kicked off on Mt Ruapehu on Sunday, and we’re expecting a decent haul to show up in Monday morning’s reports.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-18T15:00:00+00:00",
+  "next_scheduled_update": "2026-08-18T15:30:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
     "total_resorts": 4,
-    "stale_resorts": [
-      "coronetpeak"
-    ]
+    "stale_resorts": []
   },
   "resorts": {
     "remarkables": {
@@ -122,9 +120,9 @@
         "temperature_c": -2.0,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 51,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-19T02:45",
+        "observed": "2026-08-19T03:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -436,12 +434,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.7,
+        "temperature_c": -1.0,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-19T00:00",
+        "observed": "2026-08-19T03:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -453,14 +451,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 18 Aug 2026",
+        "issued": "11 pm 18 Aug 2026",
         "days": [
-          {
-            "label": "Tue 18",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Wed 19",
             "cm": 0,
@@ -481,29 +473,29 @@
           },
           {
             "label": "Sat 22",
-            "cm": 21,
+            "cm": 5,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 23",
-            "cm": 9,
+            "cm": 18,
             "mm": 0,
             "rain": false
           }
         ]
       },
-      "stale": true,
+      "stale": false,
       "hours_closed": true
     },
     "cardrona": {
       "status": "Closed",
       "lifts_open": 0,
       "lifts_total": 10,
-      "base_lower": null,
-      "base_upper": null,
-      "new_snow_7d": null,
-      "new_snow_24h": null,
+      "base_lower": 50,
+      "base_upper": 50,
+      "new_snow_7d": 6,
+      "new_snow_24h": 3,
       "season_cm": null,
       "terrain": {},
       "lifts": [
@@ -642,7 +634,32 @@
           "status": "Closed"
         }
       ],
-      "carparks": [],
+      "carparks": [
+        {
+          "name": "Carpark A",
+          "status": "Closed"
+        },
+        {
+          "name": "Carpark B",
+          "status": "Closed"
+        },
+        {
+          "name": "Carpark C",
+          "status": "Closed"
+        },
+        {
+          "name": "The Yard",
+          "status": "Closed"
+        },
+        {
+          "name": "Valley View",
+          "status": "Closed"
+        },
+        {
+          "name": "The Pines",
+          "status": "Closed"
+        }
+      ],
       "weather": {
         "temperature_c": -3.9,
         "snowing": false,
@@ -702,9 +719,9 @@
       "status": "Closed",
       "lifts_open": 0,
       "lifts_total": 3,
-      "base_lower": null,
-      "base_upper": null,
-      "new_snow_7d": null,
+      "base_lower": 92,
+      "base_upper": 92,
+      "new_snow_7d": 4,
       "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
@@ -765,7 +782,20 @@
         }
       ],
       "park": [],
-      "carparks": [],
+      "carparks": [
+        {
+          "name": "Carpark 1",
+          "status": "Closed"
+        },
+        {
+          "name": "Carpark 2",
+          "status": "Closed"
+        },
+        {
+          "name": "Carpark 3",
+          "status": "Closed"
+        }
+      ],
       "weather": {
         "temperature_c": -1.4,
         "snowing": false,
