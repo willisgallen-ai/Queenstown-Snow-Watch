@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-18T23:50:31.318338+00:00",
+  "updated": "2026-08-19T00:03:11.191313+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Ski fields in the Southern Lakes and central-southern Canterbury received little more than a skiff or dusting of a few centimetres between long bouts of sunshine, while cold temps kept the snow guns firing and bulked up the groomers even further.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-18T23:55:00+00:00",
+  "next_scheduled_update": "2026-08-19T00:05:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.0,
+        "temperature_c": 0.2,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-19T11:45",
+        "observed": "2026-08-19T12:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -452,12 +452,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 3.9,
+        "temperature_c": 4.1,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 1,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-19T11:45",
+        "observed": "2026-08-19T12:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -513,7 +513,7 @@
     },
     "cardrona": {
       "status": "Open",
-      "lifts_open": 10,
+      "lifts_open": 9,
       "lifts_total": 10,
       "base_lower": 50,
       "base_upper": 50,
@@ -524,137 +524,137 @@
       "lifts": [
         {
           "name": "Learner Conveyors",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "McDougall's Chondola",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Whitestar Express",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Captains Express",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Willow's Quad",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Soho Express",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "T-Bar",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Valley View",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Kindy Conveyor",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Wells Pipe Platter",
-          "status": "Open"
+          "status": "Unknown"
         }
       ],
       "trails": [
         {
           "name": "Learners Slope",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Main Basin",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Captains",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Soho",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Little Willows",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Big Willows",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Mt Cardrona",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Arcadia Chutes",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Summit",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         }
       ],
       "park": [
         {
           "name": "Baby Bucks",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Little Bucks",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Antlers Alley",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Stag Lane",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Big Bucks",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Peoples Pipe",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Olympic Pipe",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Big Air",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Mc Park",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Gravity Cross",
-          "status": "Open"
+          "status": "Unknown"
         }
       ],
       "carparks": [
