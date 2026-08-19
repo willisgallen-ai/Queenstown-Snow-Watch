@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-19T17:55:00.312219+00:00",
+  "updated": "2026-08-19T18:20:40.853839+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Ski fields in the Southern Lakes and central-southern Canterbury received little more than a skiff or dusting of a few centimetres between long bouts of sunshine, while cold temps kept the snow guns firing and bulked up the groomers even further.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-19T18:00:00+00:00",
+  "next_scheduled_update": "2026-08-19T18:25:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -4.0,
+        "temperature_c": -4.2,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 1,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-20T05:45",
+        "observed": "2026-08-20T06:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -338,9 +338,9 @@
           "difficulty": "unclassified"
         },
         {
-          "name": "West Gates Groomed",
+          "name": "West Gates",
           "status": "Closed",
-          "difficulty": "unclassified"
+          "difficulty": "red"
         },
         {
           "name": "Race Arena Morning race training",
@@ -348,14 +348,14 @@
           "difficulty": "unclassified"
         },
         {
-          "name": "Powder Run",
+          "name": "Powder Run Groomed",
           "status": "Closed",
-          "difficulty": "double-black"
+          "difficulty": "unclassified"
         },
         {
-          "name": "Sugar's Run",
+          "name": "Sugar's Run Groomed",
           "status": "Closed",
-          "difficulty": "red"
+          "difficulty": "unclassified"
         },
         {
           "name": "Express Way Groomed",
@@ -363,7 +363,7 @@
           "difficulty": "unclassified"
         },
         {
-          "name": "Sarah Sue",
+          "name": "Sarah Sue Groomed",
           "status": "Closed",
           "difficulty": "unclassified"
         },
@@ -383,7 +383,7 @@
           "difficulty": "unclassified"
         },
         {
-          "name": "Out Wide",
+          "name": "Out Wide Groomed",
           "status": "Closed",
           "difficulty": "unclassified"
         },
@@ -434,12 +434,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.8,
+        "temperature_c": -3.9,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 1,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-20T05:45",
+        "observed": "2026-08-20T06:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
