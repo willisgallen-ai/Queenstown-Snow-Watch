@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-19T12:16:56.950261+00:00",
+  "updated": "2026-08-19T13:12:07.464428+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Ski fields in the Southern Lakes and central-southern Canterbury received little more than a skiff or dusting of a few centimetres between long bouts of sunshine, while cold temps kept the snow guns firing and bulked up the groomers even further.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-19T12:20:00+00:00",
+  "next_scheduled_update": "2026-08-19T13:15:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.8,
+        "temperature_c": -2.9,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-20T00:15",
+        "observed": "2026-08-20T01:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,14 +134,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 19 Aug 2026",
+        "issued": "11 pm 19 Aug 2026",
         "days": [
-          {
-            "label": "Wed 19",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Thu 20",
             "cm": 0,
@@ -150,25 +144,25 @@
           },
           {
             "label": "Fri 21",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 22",
-            "cm": 18,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 23",
-            "cm": 2,
+            "cm": 25,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 24",
-            "cm": 4,
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
@@ -440,12 +434,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.1,
+        "temperature_c": -2.3,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-20T00:15",
+        "observed": "2026-08-20T01:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -457,14 +451,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 19 Aug 2026",
+        "issued": "11 pm 19 Aug 2026",
         "days": [
-          {
-            "label": "Wed 19",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Thu 20",
             "cm": 0,
@@ -473,25 +461,25 @@
           },
           {
             "label": "Fri 21",
-            "cm": 2,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 22",
-            "cm": 16,
-            "mm": 0,
+            "cm": 7,
+            "mm": 1,
             "rain": false
           },
           {
             "label": "Sun 23",
-            "cm": 2,
+            "cm": 21,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 24",
-            "cm": 5,
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
@@ -673,12 +661,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 2.3,
+        "temperature_c": -2.0,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-19T16:00",
+        "observed": "2026-08-20T01:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -690,14 +678,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 19 Aug 2026",
+        "issued": "11 pm 19 Aug 2026",
         "days": [
-          {
-            "label": "Wed 19",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Thu 20",
             "cm": 0,
@@ -706,25 +688,25 @@
           },
           {
             "label": "Fri 21",
-            "cm": 2,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sat 22",
-            "cm": 13,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sun 23",
             "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
+            "label": "Sat 22",
+            "cm": 5,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sun 23",
+            "cm": 21,
+            "mm": 0,
+            "rain": false
+          },
+          {
             "label": "Mon 24",
-            "cm": 3,
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
@@ -815,12 +797,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.0,
+        "temperature_c": -5.3,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-19T11:30",
+        "observed": "2026-08-20T01:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -832,14 +814,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 19 Aug 2026",
+        "issued": "11 pm 19 Aug 2026",
         "days": [
-          {
-            "label": "Wed 19",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Thu 20",
             "cm": 0,
@@ -848,25 +824,25 @@
           },
           {
             "label": "Fri 21",
-            "cm": 9,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 22",
-            "cm": 24,
+            "cm": 15,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 23",
-            "cm": 3,
+            "cm": 29,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 24",
-            "cm": 6,
+            "cm": 2,
             "mm": 0,
             "rain": false
           }
