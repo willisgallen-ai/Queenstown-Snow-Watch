@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-19T22:11:24.289121+00:00",
+  "updated": "2026-08-19T22:39:42.201732+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Ski fields in the Southern Lakes and central-southern Canterbury received little more than a skiff or dusting of a few centimetres between long bouts of sunshine, while cold temps kept the snow guns firing and bulked up the groomers even further.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-19T22:15:00+00:00",
+  "next_scheduled_update": "2026-08-19T22:40:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.9,
+        "temperature_c": -1.4,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-20T10:00",
+        "observed": "2026-08-20T10:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -660,7 +660,7 @@
         },
         {
           "name": "Carpark C",
-          "status": "Available"
+          "status": "Full"
         },
         {
           "name": "The Yard",
@@ -676,12 +676,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.3,
+        "temperature_c": -0.5,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-20T09:45",
+        "observed": "2026-08-20T10:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -817,12 +817,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -6.7,
+        "temperature_c": 1.1,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-20T05:45",
+        "observed": "2026-08-20T10:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
