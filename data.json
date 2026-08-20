@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-20T07:12:22.473967+00:00",
+  "updated": "2026-08-20T07:56:56.762457+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Ski fields in the Southern Lakes and central-southern Canterbury received little more than a skiff or dusting of a few centimetres between long bouts of sunshine, while cold temps kept the snow guns firing and bulked up the groomers even further.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-20T07:15:00+00:00",
+  "next_scheduled_update": "2026-08-20T08:00:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.2,
+        "temperature_c": -0.8,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-20T19:00",
+        "observed": "2026-08-20T19:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,7 +134,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 20 Aug 2026",
+        "issued": "5 pm 20 Aug 2026",
         "days": [
           {
             "label": "Thu 20",
@@ -144,19 +144,19 @@
           },
           {
             "label": "Fri 21",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 22",
-            "cm": 29,
+            "cm": 31,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 23",
-            "cm": 12,
+            "cm": 13,
             "mm": 0,
             "rain": false
           },
@@ -168,7 +168,7 @@
           },
           {
             "label": "Tue 25",
-            "cm": 13,
+            "cm": 6,
             "mm": 0,
             "rain": false
           }
@@ -448,12 +448,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 0.2,
+        "temperature_c": -0.9,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-20T19:00",
+        "observed": "2026-08-20T19:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -465,7 +465,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 20 Aug 2026",
+        "issued": "5 pm 20 Aug 2026",
         "days": [
           {
             "label": "Thu 20",
@@ -481,8 +481,8 @@
           },
           {
             "label": "Sat 22",
-            "cm": 29,
-            "mm": 4,
+            "cm": 28,
+            "mm": 3,
             "rain": false
           },
           {
@@ -493,14 +493,14 @@
           },
           {
             "label": "Mon 24",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Tue 25",
-            "cm": 16,
-            "mm": 5,
+            "cm": 7,
+            "mm": 8,
             "rain": false
           }
         ]
@@ -698,7 +698,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 20 Aug 2026",
+        "issued": "5 pm 20 Aug 2026",
         "days": [
           {
             "label": "Thu 20",
@@ -708,19 +708,19 @@
           },
           {
             "label": "Fri 21",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 22",
-            "cm": 28,
-            "mm": 1,
+            "cm": 24,
+            "mm": 2,
             "rain": false
           },
           {
             "label": "Sun 23",
-            "cm": 10,
+            "cm": 9,
             "mm": 0,
             "rain": false
           },
@@ -732,7 +732,7 @@
           },
           {
             "label": "Tue 25",
-            "cm": 12,
+            "cm": 6,
             "mm": 0,
             "rain": false
           }
@@ -840,7 +840,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 20 Aug 2026",
+        "issued": "5 pm 20 Aug 2026",
         "days": [
           {
             "label": "Thu 20",
@@ -850,14 +850,14 @@
           },
           {
             "label": "Fri 21",
-            "cm": 2,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 22",
-            "cm": 43,
-            "mm": 0,
+            "cm": 37,
+            "mm": 6,
             "rain": false
           },
           {
@@ -874,7 +874,7 @@
           },
           {
             "label": "Tue 25",
-            "cm": 32,
+            "cm": 17,
             "mm": 0,
             "rain": false
           }
