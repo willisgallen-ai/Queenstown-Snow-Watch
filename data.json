@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-20T05:18:57.905227+00:00",
+  "updated": "2026-08-20T05:50:49.057834+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Ski fields in the Southern Lakes and central-southern Canterbury received little more than a skiff or dusting of a few centimetres between long bouts of sunshine, while cold temps kept the snow guns firing and bulked up the groomers even further.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-20T05:20:00+00:00",
+  "next_scheduled_update": "2026-08-20T05:55:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 2.6,
+        "temperature_c": 1.3,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 1,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-20T17:15",
+        "observed": "2026-08-20T17:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -681,12 +681,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 0.6,
+        "temperature_c": -0.7,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 1,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-20T17:15",
+        "observed": "2026-08-20T17:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -823,12 +823,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.1,
+        "temperature_c": 1.5,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 0,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-20T10:30",
+        "observed": "2026-08-20T17:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
