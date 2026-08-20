@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-20T00:00:24.050549+00:00",
+  "updated": "2026-08-20T01:26:55.729541+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Ski fields in the Southern Lakes and central-southern Canterbury received little more than a skiff or dusting of a few centimetres between long bouts of sunshine, while cold temps kept the snow guns firing and bulked up the groomers even further.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-20T00:05:00+00:00",
+  "next_scheduled_update": "2026-08-20T01:30:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.1,
+        "temperature_c": 2.0,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-20T11:45",
+        "observed": "2026-08-20T13:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,7 +134,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 20 Aug 2026",
+        "issued": "11 am 20 Aug 2026",
         "days": [
           {
             "label": "Thu 20",
@@ -150,25 +150,25 @@
           },
           {
             "label": "Sat 22",
-            "cm": 23,
+            "cm": 29,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 23",
-            "cm": 6,
+            "cm": 12,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 24",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Tue 25",
-            "cm": 9,
+            "cm": 13,
             "mm": 0,
             "rain": false
           }
@@ -448,12 +448,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 3.0,
+        "temperature_c": 4.8,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 1,
+        "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-20T11:45",
+        "observed": "2026-08-20T13:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -465,7 +465,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 20 Aug 2026",
+        "issued": "11 am 20 Aug 2026",
         "days": [
           {
             "label": "Thu 20",
@@ -481,26 +481,26 @@
           },
           {
             "label": "Sat 22",
-            "cm": 26,
-            "mm": 0,
+            "cm": 29,
+            "mm": 4,
             "rain": false
           },
           {
             "label": "Sun 23",
-            "cm": 4,
+            "cm": 11,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 24",
-            "cm": 3,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Tue 25",
-            "cm": 12,
-            "mm": 0,
+            "cm": 16,
+            "mm": 5,
             "rain": false
           }
         ]
@@ -509,7 +509,7 @@
     },
     "cardrona": {
       "status": "Open",
-      "lifts_open": 10,
+      "lifts_open": 9,
       "lifts_total": 10,
       "base_lower": 50,
       "base_upper": 50,
@@ -520,137 +520,137 @@
       "lifts": [
         {
           "name": "Learner Conveyors",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "McDougall's Chondola",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Whitestar Express",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Captains Express",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Willow's Quad",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Soho Express",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "T-Bar",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Valley View",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Kindy Conveyor",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Wells Pipe Platter",
-          "status": "Open"
+          "status": "Unknown"
         }
       ],
       "trails": [
         {
           "name": "Learners Slope",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Main Basin",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Captains",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Soho",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Little Willows",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Big Willows",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Mt Cardrona",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Arcadia Chutes",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Summit",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         }
       ],
       "park": [
         {
           "name": "Baby Bucks",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Little Bucks",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Antlers Alley",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Stag Lane",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Big Bucks",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Peoples Pipe",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Olympic Pipe",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Big Air",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Mc Park",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Gravity Cross",
-          "status": "Open"
+          "status": "Unknown"
         }
       ],
       "carparks": [
@@ -697,7 +697,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 20 Aug 2026",
+        "issued": "11 am 20 Aug 2026",
         "days": [
           {
             "label": "Thu 20",
@@ -713,25 +713,25 @@
           },
           {
             "label": "Sat 22",
-            "cm": 24,
-            "mm": 0,
+            "cm": 28,
+            "mm": 1,
             "rain": false
           },
           {
             "label": "Sun 23",
-            "cm": 3,
+            "cm": 10,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 24",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Tue 25",
-            "cm": 10,
+            "cm": 12,
             "mm": 0,
             "rain": false
           }
@@ -838,7 +838,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 20 Aug 2026",
+        "issued": "11 am 20 Aug 2026",
         "days": [
           {
             "label": "Thu 20",
@@ -854,25 +854,25 @@
           },
           {
             "label": "Sat 22",
-            "cm": 44,
+            "cm": 43,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 23",
-            "cm": 5,
+            "cm": 14,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 24",
-            "cm": 4,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Tue 25",
-            "cm": 19,
+            "cm": 32,
             "mm": 0,
             "rain": false
           }
