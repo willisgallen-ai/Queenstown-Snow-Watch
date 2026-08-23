@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-23T22:50:51.140001+00:00",
+  "updated": "2026-08-23T23:03:52.632075+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The weather really let rip over the weekend, with severe gales keeping most ski fields closed and limiting lift operations at the few that managed to open. However, a cold change swept through on Sunday, delivering 5-20cm of wind-blown powder to the Southern Lakes and a 2-5cm dusting to Canterbury, with more falling through the day. Mt Ruapehu also scored some fresh snow, mainly on the upper slopes.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-23T22:55:00+00:00",
+  "next_scheduled_update": "2026-08-23T23:05:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.4,
+        "temperature_c": -2.3,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-24T10:45",
+        "observed": "2026-08-24T11:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -440,12 +440,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.0,
+        "temperature_c": 1.3,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-24T10:45",
+        "observed": "2026-08-24T11:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -735,8 +735,8 @@
       "status": "Open",
       "lifts_open": 3,
       "lifts_total": 3,
-      "base_lower": 92,
-      "base_upper": 92,
+      "base_lower": 100,
+      "base_upper": 100,
       "new_snow_7d": 15,
       "new_snow_24h": null,
       "season_cm": null,
