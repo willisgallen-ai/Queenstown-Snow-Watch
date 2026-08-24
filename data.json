@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-24T00:01:54.502392+00:00",
+  "updated": "2026-08-24T01:50:08.762044+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The weather really let rip over the weekend, with severe gales keeping most ski fields closed and limiting lift operations at the few that managed to open. However, a cold change swept through on Sunday, delivering 5-20cm of wind-blown powder to the Southern Lakes and a 2-5cm dusting to Canterbury, with more falling through the day. Mt Ruapehu also scored some fresh snow, mainly on the upper slopes.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-24T00:05:00+00:00",
+  "next_scheduled_update": "2026-08-24T01:55:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.7,
+        "temperature_c": -0.2,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-24T12:00",
+        "observed": "2026-08-24T13:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,41 +134,41 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 24 Aug 2026",
+        "issued": "11 am 24 Aug 2026",
         "days": [
           {
             "label": "Mon 24",
-            "cm": 3,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Tue 25",
-            "cm": 5,
+            "cm": 6,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Wed 26",
-            "cm": 35,
+            "cm": 25,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 27",
-            "cm": 10,
+            "cm": 12,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 28",
-            "cm": 7,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 29",
-            "cm": 6,
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
@@ -390,7 +390,7 @@
         },
         {
           "name": "Out Wide",
-          "status": "On Hold",
+          "status": "Open",
           "difficulty": "unclassified"
         },
         {
@@ -440,12 +440,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 2.5,
+        "temperature_c": 2.9,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-24T12:00",
+        "observed": "2026-08-24T13:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -457,7 +457,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 24 Aug 2026",
+        "issued": "11 am 24 Aug 2026",
         "days": [
           {
             "label": "Mon 24",
@@ -467,31 +467,31 @@
           },
           {
             "label": "Tue 25",
-            "cm": 5,
+            "cm": 4,
             "mm": 6,
             "rain": false
           },
           {
             "label": "Wed 26",
-            "cm": 37,
+            "cm": 24,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 27",
-            "cm": 12,
-            "mm": 3,
-            "rain": false
-          },
-          {
-            "label": "Fri 28",
-            "cm": 3,
+            "cm": 13,
             "mm": 4,
             "rain": false
           },
           {
+            "label": "Fri 28",
+            "cm": 0,
+            "mm": 1,
+            "rain": true
+          },
+          {
             "label": "Sat 29",
-            "cm": 5,
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
@@ -501,7 +501,7 @@
     },
     "cardrona": {
       "status": "Open",
-      "lifts_open": 9,
+      "lifts_open": 8,
       "lifts_total": 10,
       "base_lower": 75,
       "base_upper": 75,
@@ -672,16 +672,16 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.0,
+        "temperature_c": -0.3,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-24T09:00",
+        "observed": "2026-08-24T13:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Today at Cardrona 23 Aug 2026 – Cardrona picked up 10-15 cm of fresh snow overnight, but with gale-force winds gusting to 137 km/h and a deteriorating forecast, the mountain is closed for the day. It's a cold -5°C up at the 1800m weather station, where the natural base now sits at 60 cm. All ten lifts are closed, including the Whitestar Express, Captains Express and McDougall's Chondola, along with every terrain park and marked run on the mountain. Ride Tribe, Mini and Academy programs have all been cancelled for today. Access roads are open but chains are required across the board — 2WD vehicles need to chain up from Heli Corner, and 4WD from Valley View, with an active road hazard advisory in place. The team will try again tomorrow; anyone needing to adjust a booking can reach out to the Cardrona team directly.",
+      "summary": ": Today at Cardrona 24 Aug 2026 – It's a powder day at Cardrona after 26cm of wind-affected snow landed over the last 48 hours. The morning is clear with moderate westerly winds, temperatures sitting around 0°C, and the team is still working through some overnight wind damage — expect possible delays as crews dig out the base area and get terrain opening. Wind holds are possible through the day, so keep an eye on lift status if you're heading up top. Kindy Conveyor, Learner Conveyors, McDougall's Chondola, Whitestar Express, Valley View, Captains Express and the T-Bar are running, giving access to Learners Slope, Main Basin, Captains, Ski Touring Access and Summit. Soho Express and Willow's Quad remain on wind hold, so Soho, Little Willows and Big Willows are unavailable for now, with staff aiming to bring them online through the morning. Wells Pipe Platter is closed for the day, and Mt Cardrona is also closed. In the park, Baby Bucks, Little Bucks, Antlers Alley and Stag Lane are open, while Big Bucks sits on hold and the Half-Pipe is closed today. The access road is chain-free but chains must still be carried, and there's an active hazard advisory worth checking before you drive up — Carparks A and B are already full, with space still available at C, the Yard, Valley View and the Pines.",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -689,7 +689,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 24 Aug 2026",
+        "issued": "11 am 24 Aug 2026",
         "days": [
           {
             "label": "Mon 24",
@@ -705,25 +705,25 @@
           },
           {
             "label": "Wed 26",
-            "cm": 40,
+            "cm": 27,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 27",
-            "cm": 17,
-            "mm": 3,
+            "cm": 13,
+            "mm": 5,
             "rain": false
           },
           {
             "label": "Fri 28",
-            "cm": 5,
-            "mm": 3,
+            "cm": 0,
+            "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 29",
-            "cm": 5,
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
@@ -813,16 +813,16 @@
         }
       ],
       "weather": {
-        "temperature_c": 0.7,
+        "temperature_c": 2.4,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-24T09:30",
+        "observed": "2026-08-24T13:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Today at Treble Cone 23 Aug 2026 – Storm riders, this one's for you — Treble Cone has picked up 15cm-plus of fresh snow overnight at the top of the six-seater, and it's still falling. A brief clearance gave way to the storm rolling back in, so visibility has dropped, but the skiing underfoot is excellent with fresh snow filling in yesterday's tracks. It's -4°C with wind gusting to 103 km/h. The Home Basin Express and Beginner Platter are running, opening up Home Basin, Matukituki Basin and Powder Bowl, all skiing well despite the reduced visibility. The Saddle Quad and Saddle Basin are closed for the day — it's simply too wild up there. Grooming is limited given the conditions, though Triple Treat and Main Street have both been groomed. Touring and skinning access is closed today, and Ride Tribe has been postponed. All vehicles need to carry chains on the way up, or better yet, carpool or catch the free road shuttle — the road is very wet and muddy, with an active hazard advisory in place. Rug up, keep an eye on the wind holds, and get amongst it.",
+      "summary": ": Today at Treble Cone 24 Aug 2026 – The wind has eased right off and it's a cracker up here, with sunshine, calm conditions and plenty of wind-loaded stashes scattered across the mountain. Sitting around 1°C with light westerlies for now, today's shaping up as one of the better days of the week — an afternoon session is well worth it if you can't make it up early. All three lifts are spinning — Home Basin Express, Saddle Quad and the Beginner Platter — with every groomed run open today, including Triple Treat, Main Street, High Street, Bullet, Saddle Track, Pete's Treat, Raffils Run and Upper Skite. Home Basin, Saddle Basin and Matukituki Basin are all open and skiing well, along with Powder Bowl and Summit Slopes. Motatapu Chutes and Hollywood Bowl are closed today due to poor conditions — riders are reminded that ducking those closures means losing your pass, so respect the signage. The upper car parks are already full, with overflow parking down the road at Pub Corner — carpool or grab the free shuttle if you can. Chains must be carried by all vehicles, and there's an active hazard advisory on the access road worth checking before you head up. The View is open at the base serving pizzas, hot chips and drinks for a well-earned refuel.",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
@@ -830,11 +830,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 24 Aug 2026",
+        "issued": "11 am 24 Aug 2026",
         "days": [
           {
             "label": "Mon 24",
-            "cm": 7,
+            "cm": 8,
             "mm": 0,
             "rain": false
           },
@@ -846,25 +846,25 @@
           },
           {
             "label": "Wed 26",
-            "cm": 64,
+            "cm": 43,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 27",
-            "cm": 30,
-            "mm": 4,
+            "cm": 20,
+            "mm": 6,
             "rain": false
           },
           {
             "label": "Fri 28",
             "cm": 2,
-            "mm": 2,
+            "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 29",
-            "cm": 7,
+            "cm": 1,
             "mm": 0,
             "rain": false
           }
