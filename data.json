@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-24T11:13:39.423125+00:00",
+  "updated": "2026-08-24T11:44:34.088066+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The weather really let rip over the weekend, with severe gales keeping most ski fields closed and limiting lift operations at the few that managed to open. However, a cold change swept through on Sunday, delivering 5-20cm of wind-blown powder to the Southern Lakes and a 2-5cm dusting to Canterbury, with more falling through the day. Mt Ruapehu also scored some fresh snow, mainly on the upper slopes.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-24T11:15:00+00:00",
+  "next_scheduled_update": "2026-08-24T11:45:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.4,
+        "temperature_c": -0.5,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 51,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-24T23:00",
+        "observed": "2026-08-24T23:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -445,7 +445,7 @@
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-24T23:00",
+        "observed": "2026-08-24T23:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -673,12 +673,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.4,
+        "temperature_c": -0.3,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-24T23:00",
+        "observed": "2026-08-24T23:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -815,12 +815,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 2.6,
+        "temperature_c": 2.8,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 51,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-24T23:00",
+        "observed": "2026-08-24T23:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
