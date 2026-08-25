@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-25T20:12:24.501819+00:00",
+  "updated": "2026-08-25T20:45:59.560183+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
-    "summary": "The weather really let rip over the weekend, with severe gales keeping most ski fields closed and limiting lift operations at the few that managed to open. However, a cold change swept through on Sunday, delivering 5-20cm of wind-blown powder to the Southern Lakes and a 2-5cm dusting to Canterbury, with more falling through the day. Mt Ruapehu also scored some fresh snow, mainly on the upper slopes.",
+    "summary": "Published early Wednesday, 26 th August 2026 Weather conditions have been a little better since a wild and woolly weekend, but it’s still been fairly windy, affecting lift operations at some ski fields, particularly in Canterbury. A northwest front moving up the South Island brought some wet, dense snow to the Southern Lakes early Tuesday, with Cardrona and Treble Cone logging 2–5cm and 9cm respectively. Things ramp up again as a major storm is about to hammer the South Island. Cold air sneaks in from the south on Wednesday, setting up a classic “overrunning” scenario as warm, moisture-laden air rides up and over the colder air, producing heavy snowfall to low levels. The snow continues piling up into Thursday before milder air muscles back in during the afternoon, turning much of it to heavy rain as winds ramp up again. Accumulations could be huge over the Southern Lakes and Mackenzie Basin, with 40–70+cm on the cards, which would make this the biggest powder dump of the season. Central Canterbury could score a more modest 15–30+cm with a smaller top-up for North Canterbury. The heavy rain shifts to Mt Ruapehu on Friday as the storm moves north, while strong winds and showers linger over the South Island. Another colder westerly blast then arrives over the weekend with a fresh shot of powder. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Wednesday 26 th August A major storm from the west moves onto the South Island, spreading snow over the Southern Lakes early morning, although it may be wet and sleety about the lower slopes, then rain and high-level snow over Canterbury later in the morning, along with strong northwest winds that will continue to blow a gale or possibly severe-gale in Canterbury. Colder air then sneaks up from the south, reaching the Southern Lakes around midday before moving up Canterbury during the afternoon and early evening, bringing heavy snowfall to low levels while winds change to a light southerly before turning easterly. Strong westerlies on Mt Ruapehu will see rain showers build during the afternoon. Thursday 27 th August The storm continues to impact the South Island with heavy snowfall dumping to low levels and strong northeast winds. However, it’ll gradually turn to heavy rain during the afternoon as milder, stronger north-to-northwest winds return, reaching gale to severe gale exposed areas, although snow may continue to fall about the upper slopes at some ski fields. A partly cloudy, partly sunny day for Mt Ruapehu with a few light drizzly showers possible as westerly winds turn northerly. Friday 28 th August Heavy rain and upper-level snow over the South Island eases from the south during the early morning hours as the storm front moves away to the north. However, strong northwest winds, still blowing a gale or severe-gale in Canterbury, will continue to send some showers of rain and upper snow over the Main Divide. A cooler westerly change passes through the Southern Lakes overnight, bringing an extra dusting of snow to base levels. Strong to gale force north-to-northwest winds on Mt Ruapehu will push in cloud and drizzly showers throughout the day. Heavier rain then sets in during the evening as the storm front moves in. Saturday 29 th August A fine morning with brisk westerly winds for the South Island. Clouds then build from the south during the afternoon while northwest winds strengthen, before even stronger, colder westerlies sweep in, bringing a shot of powder overnight, benefiting Treble Cone, Ohau and Temple Basin with the highest totals. Rain clears Mt Ruapehu early as the storm front moves north, and the day will gradually brighten as clouds dissipate and northwest winds ease. Sunday 30 th August Strong west to northwest winds continue to blow over the South Island. The Southern Lakes will continue to see snow showers, most of which will likely come early morning and after dark. Canterbury will have mostly clear skies through the day, then snow will also fall close to the Main Divide after dark. Mt Ruapehu will see a little light snowfall sometime during the day as gale westerlies change to a colder southwest. Extended Forecast The weather stays fairly active through much of next week. First, Kiwi ski fields should receive a little more powder on Monday, 31 August, as strong, cold southwesterlies sweep up the country. Things barely settle down before northwest winds strengthen again on Tuesday, the 1 st of September, before a front likely crosses on Wednesday, the 2 nd , bringing a mix of rain and snow. Another couple of storms are likely through the back half of the week. Although models differ on the details, by the end of the week we can expect another cold change to sweep through, bringing fresh powder to at least some ski fields. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great couple of days, and I’ll see you back here on Friday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-25T20:15:00+00:00",
+  "next_scheduled_update": "2026-08-25T20:50:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.8,
+        "temperature_c": -1.7,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 61,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-26T08:00",
+        "observed": "2026-08-26T08:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -436,12 +436,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 0.7,
+        "temperature_c": 0.8,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 55,
+        "weather_code": 61,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-26T08:00",
+        "observed": "2026-08-26T08:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -497,8 +497,8 @@
       "hours_closed": true
     },
     "cardrona": {
-      "status": "Closed",
-      "lifts_open": 0,
+      "status": "Open",
+      "lifts_open": 9,
       "lifts_total": 10,
       "base_lower": 66,
       "base_upper": 66,
@@ -509,163 +509,163 @@
       "lifts": [
         {
           "name": "Learner Conveyors",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "McDougall's Chondola",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Whitestar Express",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Captains Express",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Willow's Quad",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Soho Express",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "T-Bar",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Valley View",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Kindy Conveyor",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Wells Pipe Platter",
-          "status": "Closed"
+          "status": "Unknown"
         }
       ],
       "trails": [
         {
           "name": "Learners Slope",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Main Basin",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Captains",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Soho",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Little Willows",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Big Willows",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Mt Cardrona",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Arcadia Chutes",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Summit",
-          "status": "Closed",
+          "status": "Unknown",
           "difficulty": null
         }
       ],
       "park": [
         {
           "name": "Baby Bucks",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Little Bucks",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Antlers Alley",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Stag Lane",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Big Bucks",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Peoples Pipe",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Olympic Pipe",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Big Air",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Mc Park",
-          "status": "Closed"
+          "status": "Unknown"
         },
         {
           "name": "Gravity Cross",
-          "status": "Closed"
+          "status": "Unknown"
         }
       ],
       "carparks": [
         {
           "name": "Carpark A",
-          "status": "Closed"
+          "status": "Full"
         },
         {
           "name": "Carpark B",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "Carpark C",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "The Yard",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "Valley View",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "The Pines",
-          "status": "Closed"
+          "status": "Available"
         }
       ],
       "weather": {
@@ -726,8 +726,7 @@
           }
         ]
       },
-      "stale": false,
-      "hours_closed": true
+      "stale": false
     },
     "treblecone": {
       "status": "Closed",
