@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-25T00:41:21.623839+00:00",
+  "updated": "2026-08-25T02:08:59.210729+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The weather really let rip over the weekend, with severe gales keeping most ski fields closed and limiting lift operations at the few that managed to open. However, a cold change swept through on Sunday, delivering 5-20cm of wind-blown powder to the Southern Lakes and a 2-5cm dusting to Canterbury, with more falling through the day. Mt Ruapehu also scored some fresh snow, mainly on the upper slopes.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-25T00:45:00+00:00",
+  "next_scheduled_update": "2026-08-25T02:10:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.8,
+        "temperature_c": 1.9,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-25T12:30",
+        "observed": "2026-08-25T14:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,41 +134,41 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 25 Aug 2026",
+        "issued": "11 am 25 Aug 2026",
         "days": [
           {
             "label": "Tue 25",
-            "cm": 1,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Wed 26",
-            "cm": 22,
+            "cm": 19,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 27",
-            "cm": 16,
+            "cm": 12,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 28",
-            "cm": 1,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 29",
-            "cm": 6,
+            "cm": 7,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 30",
-            "cm": 2,
+            "cm": 8,
             "mm": 0,
             "rain": false
           }
@@ -180,7 +180,7 @@
     },
     "coronetpeak": {
       "status": "Open",
-      "lifts_open": 7,
+      "lifts_open": 6,
       "lifts_total": 8,
       "base_lower": 60,
       "base_upper": 70,
@@ -191,7 +191,7 @@
       "lifts": [
         {
           "name": "Coronet Express",
-          "status": "Open"
+          "status": "Wind Hold"
         },
         {
           "name": "Greengates Express",
@@ -440,12 +440,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 6.3,
+        "temperature_c": 5.9,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-25T12:30",
+        "observed": "2026-08-25T14:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -457,41 +457,41 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 25 Aug 2026",
+        "issued": "11 am 25 Aug 2026",
         "days": [
           {
             "label": "Tue 25",
-            "cm": 1,
+            "cm": 2,
             "mm": 3,
             "rain": false
           },
           {
             "label": "Wed 26",
-            "cm": 19,
+            "cm": 17,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 27",
-            "cm": 25,
-            "mm": 4,
+            "cm": 20,
+            "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 28",
-            "cm": 2,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 29",
-            "cm": 5,
+            "cm": 8,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 30",
-            "cm": 2,
+            "cm": 5,
             "mm": 0,
             "rain": false
           }
@@ -681,7 +681,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Today at Cardrona 24 Aug 2026 – It's a powder day at Cardrona after 26cm of wind-affected snow landed over the last 48 hours. The morning is clear with moderate westerly winds, temperatures sitting around 0°C, and the team is still working through some overnight wind damage — expect possible delays as crews dig out the base area and get terrain opening. Wind holds are possible through the day, so keep an eye on lift status if you're heading up top. Kindy Conveyor, Learner Conveyors, McDougall's Chondola, Whitestar Express, Valley View, Captains Express and the T-Bar are running, giving access to Learners Slope, Main Basin, Captains, Ski Touring Access and Summit. Soho Express and Willow's Quad remain on wind hold, so Soho, Little Willows and Big Willows are unavailable for now, with staff aiming to bring them online through the morning. Wells Pipe Platter is closed for the day, and Mt Cardrona is also closed. In the park, Baby Bucks, Little Bucks, Antlers Alley and Stag Lane are open, while Big Bucks sits on hold and the Half-Pipe is closed today. The access road is chain-free but chains must still be carried, and there's an active hazard advisory worth checking before you drive up — Carparks A and B are already full, with space still available at C, the Yard, Valley View and the Pines.",
+      "summary": ": Today at Cardrona Alpine Resort 25 Aug 2026 – Cardrona is open after 2–5cm of heavy wet snow this morning, with very strong westerly winds easing but still affecting lift operations. Conditions are currently 2°C with winds around 37km/h and gusts to 69km/h. Fresh cord has been laid on the groomed trails, while the upper mountain has drier snow and lower areas remain very soft and wet. Snow showers are possible this afternoon. Kindy Conveyor, Learner Conveyors, Valley View, Captains Express and T-Bar are open. McDougall’s Chondola, Whitestar Express and Soho Express are on wind hold, with Whitestar added to the hold at 1:50pm; Willow’s Quad and Wells Pipe Platter are closed. McDougall’s is operating chairs only today, with no gondola or sightseeing service. Current terrain includes Learners Slope, Main Basin, Captains, Ski Touring Access, Arcadia Chutes and Summit, while Soho and Mt Cardrona are on hold and Little Willows and Big Willows are closed. The access roads are chain-free but chains must be carried, with an active road-hazard advisory. Four of six carparks are open, with Carparks A and B full and C, The Yard, Valley View and The Pines available. Five of nine listed park areas are open. The Cardrona National Junior Champs GS race has been cancelled today, and there will be no sightseeing.",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -689,41 +689,41 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 25 Aug 2026",
+        "issued": "11 am 25 Aug 2026",
         "days": [
           {
             "label": "Tue 25",
-            "cm": 1,
+            "cm": 2,
             "mm": 2,
             "rain": false
           },
           {
             "label": "Wed 26",
-            "cm": 23,
+            "cm": 20,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 27",
-            "cm": 29,
+            "cm": 18,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 28",
-            "cm": 2,
+            "cm": 5,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 29",
-            "cm": 3,
+            "cm": 6,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 30",
-            "cm": 0,
+            "cm": 4,
             "mm": 0,
             "rain": false
           }
@@ -830,41 +830,41 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 25 Aug 2026",
+        "issued": "11 am 25 Aug 2026",
         "days": [
           {
             "label": "Tue 25",
             "cm": 4,
-            "mm": 2,
+            "mm": 8,
             "rain": false
           },
           {
             "label": "Wed 26",
-            "cm": 31,
+            "cm": 27,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 27",
-            "cm": 63,
+            "cm": 40,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 28",
-            "cm": 5,
+            "cm": 8,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 29",
-            "cm": 6,
+            "cm": 13,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 30",
-            "cm": 0,
+            "cm": 3,
             "mm": 0,
             "rain": false
           }
