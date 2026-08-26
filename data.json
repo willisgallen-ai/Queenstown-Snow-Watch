@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-26T14:04:08.445677+00:00",
+  "updated": "2026-08-26T14:55:46.088188+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Weather conditions have been a little better since a wild and woolly weekend, but it’s still been fairly windy, affecting lift operations at some ski fields, particularly in Canterbury. A northwest front moving up the South Island brought some wet, dense snow to the Southern Lakes early Tuesday, with Cardrona and Treble Cone logging 2–5cm and 9cm respectively.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-26T14:05:00+00:00",
+  "next_scheduled_update": "2026-08-26T15:00:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -122,7 +122,7 @@
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-27T02:00",
+        "observed": "2026-08-27T02:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -434,12 +434,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.2,
+        "temperature_c": -1.3,
         "snowing": true,
         "condition": "Snow",
         "weather_code": 73,
         "snowfall_cm": 0.07,
-        "observed": "2026-08-27T02:00",
+        "observed": "2026-08-27T02:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
