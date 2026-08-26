@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-26T08:33:31.447910+00:00",
+  "updated": "2026-08-26T09:22:51.053416+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Weather conditions have been a little better since a wild and woolly weekend, but it’s still been fairly windy, affecting lift operations at some ski fields, particularly in Canterbury. A northwest front moving up the South Island brought some wet, dense snow to the Southern Lakes early Tuesday, with Cardrona and Treble Cone logging 2–5cm and 9cm respectively.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-26T08:35:00+00:00",
+  "next_scheduled_update": "2026-08-26T09:25:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -122,7 +122,7 @@
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-26T20:30",
+        "observed": "2026-08-26T21:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -179,8 +179,8 @@
       "hours_closed": true
     },
     "coronetpeak": {
-      "status": "Open",
-      "lifts_open": 6,
+      "status": "Closed",
+      "lifts_open": 0,
       "lifts_total": 8,
       "base_lower": 60,
       "base_upper": 70,
@@ -191,7 +191,7 @@
       "lifts": [
         {
           "name": "Coronet Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Greengates Express",
@@ -199,19 +199,19 @@
         },
         {
           "name": "Meadows Learner Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Rocky Gully T-bar",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Magic Carpet Conveyor",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Beginner Carpet Conveyor",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Skiwiland Conveyor",
@@ -219,178 +219,178 @@
         },
         {
           "name": "Kidszone carpet",
-          "status": "Open"
+          "status": "Closed"
         }
       ],
       "trails": [
         {
           "name": "Big Easy Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Beginner Area Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Little Easy Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Gentle Annie Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Fun Zone",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "M1 Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Easy Rider Morning race training",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Greengates Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Wall Street Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "The Chimney",
-          "status": "Variable",
+          "status": "Closed",
           "difficulty": "black"
         },
         {
           "name": "The Hurdle Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Exchange Drop",
-          "status": "Variable",
+          "status": "Closed",
           "difficulty": "black"
         },
         {
           "name": "KidsZone carpet Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Dual Carpet slopes",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "green"
         },
         {
           "name": "Shirt Front Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Eighth Basin Morning Race training",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Brough's Lane Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Tuck Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Million Dollar Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Upper Walkabout",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "black"
         },
         {
           "name": "Mid Gully Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Pro Am Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Overrun Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Rocky Return Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "West Gates",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Race Arena Morning race training",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Powder Run Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Sugar's Run Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Express Way Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Sarah Sue Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Arnolds Way Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Duncan's Dance",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Lunch Rocks",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Out Wide",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
@@ -400,22 +400,22 @@
         },
         {
           "name": "Dirty Four",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Way Out Wide",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Donkey Serenade",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Back Bowls",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "double-black"
         },
         {
@@ -425,23 +425,23 @@
         },
         {
           "name": "Tuck Rail garden",
-          "status": "On Hold",
+          "status": "Closed",
           "difficulty": "unclassified"
         }
       ],
       "carparks": [
         {
           "name": "Lower Carpark 7",
-          "status": "Spaces available"
+          "status": "Closed"
         }
       ],
       "weather": {
         "temperature_c": -1.2,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 51,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-26T20:30",
+        "observed": "2026-08-26T21:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -493,7 +493,8 @@
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "hours_closed": true
     },
     "cardrona": {
       "status": "Closed",
