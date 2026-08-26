@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-26T16:58:39.445261+00:00",
+  "updated": "2026-08-26T19:05:36.926793+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Weather conditions have been a little better since a wild and woolly weekend, but it’s still been fairly windy, affecting lift operations at some ski fields, particularly in Canterbury. A northwest front moving up the South Island brought some wet, dense snow to the Southern Lakes early Tuesday, with Cardrona and Treble Cone logging 2–5cm and 9cm respectively.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-26T17:00:00+00:00",
+  "next_scheduled_update": "2026-08-26T19:10:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.7,
+        "temperature_c": -3.9,
         "snowing": true,
         "condition": "Snow",
         "weather_code": 73,
-        "snowfall_cm": 0.07,
-        "observed": "2026-08-27T04:45",
+        "snowfall_cm": 0.14,
+        "observed": "2026-08-27T07:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -434,12 +434,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.3,
+        "temperature_c": -1.4,
         "snowing": true,
         "condition": "Snow",
-        "weather_code": 73,
-        "snowfall_cm": 0.14,
-        "observed": "2026-08-27T04:45",
+        "weather_code": 75,
+        "snowfall_cm": 0.21,
+        "observed": "2026-08-27T07:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -494,8 +494,8 @@
       "lifts_total": 10,
       "base_lower": 66,
       "base_upper": 66,
-      "new_snow_7d": 18,
-      "new_snow_24h": null,
+      "new_snow_7d": 25,
+      "new_snow_24h": 7,
       "season_cm": null,
       "terrain": {},
       "lifts": [
@@ -721,8 +721,8 @@
       "lifts_total": 3,
       "base_lower": 106,
       "base_upper": 106,
-      "new_snow_7d": 42,
-      "new_snow_24h": 9,
+      "new_snow_7d": 58,
+      "new_snow_24h": 25,
       "season_cm": null,
       "terrain": {},
       "lifts": [
