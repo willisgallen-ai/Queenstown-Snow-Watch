@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-26T21:48:16.275409+00:00",
+  "updated": "2026-08-27T02:14:28.981988+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Weather conditions have been a little better since a wild and woolly weekend, but it’s still been fairly windy, affecting lift operations at some ski fields, particularly in Canterbury. A northwest front moving up the South Island brought some wet, dense snow to the Southern Lakes early Tuesday, with Cardrona and Treble Cone logging 2–5cm and 9cm respectively.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-26T21:50:00+00:00",
+  "next_scheduled_update": "2026-08-27T02:15:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -4.2,
+        "temperature_c": -4.5,
         "snowing": true,
         "condition": "Snow",
         "weather_code": 75,
-        "snowfall_cm": 0.35,
-        "observed": "2026-08-27T09:45",
+        "snowfall_cm": 0.49,
+        "observed": "2026-08-27T14:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,35 +134,35 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 27 Aug 2026",
+        "issued": "11 am 27 Aug 2026",
         "days": [
           {
             "label": "Thu 27",
-            "cm": 16,
+            "cm": 14,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 28",
-            "cm": 5,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 29",
-            "cm": 2,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 30",
-            "cm": 15,
+            "cm": 11,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 31",
-            "cm": 7,
+            "cm": 8,
             "mm": 0,
             "rain": false
           },
@@ -183,7 +183,7 @@
       "lifts_open": 8,
       "lifts_total": 8,
       "base_lower": 60,
-      "base_upper": 70,
+      "base_upper": 90,
       "new_snow_7d": 0,
       "new_snow_24h": null,
       "season_cm": null,
@@ -448,12 +448,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.3,
+        "temperature_c": -1.8,
         "snowing": true,
         "condition": "Snow",
         "weather_code": 75,
-        "snowfall_cm": 0.49,
-        "observed": "2026-08-27T09:45",
+        "snowfall_cm": 0.77,
+        "observed": "2026-08-27T14:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -465,29 +465,29 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 27 Aug 2026",
+        "issued": "11 am 27 Aug 2026",
         "days": [
           {
             "label": "Thu 27",
-            "cm": 29,
+            "cm": 26,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 28",
-            "cm": 7,
-            "mm": 1,
+            "cm": 4,
+            "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 29",
-            "cm": 2,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 30",
-            "cm": 10,
+            "cm": 8,
             "mm": 0,
             "rain": false
           },
@@ -680,16 +680,16 @@
         }
       ],
       "weather": {
-        "temperature_c": -4.3,
+        "temperature_c": -4.5,
         "snowing": true,
         "condition": "Snow",
-        "weather_code": 73,
-        "snowfall_cm": 0.14,
-        "observed": "2026-08-27T04:45",
+        "weather_code": 75,
+        "snowfall_cm": 0.63,
+        "observed": "2026-08-27T14:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Today at Cardrona Alpine Resort 26 Aug 2026 – Cardrona is open today and the winds have finally eased, though it won't stay calm for long — heavy snow is due to move in later this morning, with temperatures starting out mild before dropping through the day. It's shaping up as a proper stormy one, so expect visibility to drop and plenty of fresh snow to pile up on top of an overnight grooming effort. Main Basin and Valley View lead things off at 8:30am, with Captains, T-Bar and Soho following shortly after; Willows will have a delayed start. Kindy Conveyor, the Learner Conveyors, McDougall's Chondola, Whitestar Express, Captains Express, T-Bar, Soho Express and Willow's Quad are all turning, with only the Wells Pipe Platter closed. On the terrain side, Learners Slope, Main Basin, Captains, Soho, Little Willows, Big Willows and the Arcadia Chutes are open, while Mt Cardrona and the Summit are on hold as the storm rolls through — some further terrain closures are possible as the day develops, so keep an eye on signage. In the parks, Baby Bucks, Little Bucks, Antlers Alley, Stag Lane and Gravity Cross are open, with Big Bucks, Peoples Pipe, Olympic Pipe and Big Air currently closed. The Cardrona National Junior Champs GS race is running on Upper Goldrush today, so expect some closures around that. Chains are required on all vehicles from Valley View up, and there's an active hazard advisory on the access road worth checking before you head up.",
+      "summary": ": Today at Cardrona Alpine Resort 27 Aug 2026 – \"We are going to be closed for the day. We are currently seeing winds well above our operational thresholds, with conditions forecast to deteriorate throughout the day and heavy snow is expected to continue. We will have another go tomorrow. Wanaka Primary School skiing has been cancelled for today.\"",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -697,35 +697,35 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 27 Aug 2026",
+        "issued": "11 am 27 Aug 2026",
         "days": [
           {
             "label": "Thu 27",
-            "cm": 29,
+            "cm": 25,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 28",
-            "cm": 4,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 29",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 30",
-            "cm": 7,
+            "cm": 6,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 31",
-            "cm": 3,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
@@ -830,7 +830,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Today at Treble Cone 26 Aug 2026 – Treble Cone is closed today as a major storm rolls through, bringing strong winds and a lot of moisture with it. It's starting on the warm side, with rain reaching all the way up to the high elevations rather than snow, sitting around 1°C with gusts up to 23km/h. The good news is the freezing level is expected to drop this evening, which should set the mountain up for some fresh turns as winter makes a comeback. All three lifts — Home Basin Express, Saddle Quad and the Beginner Platter — are closed, along with every named run and basin on the mountain. The team is battening down the hatches and riding the storm out; keep an eye on the report for updates as conditions evolve. The road shuttle buses aren't running today since the resort is closed, and there's an active hazard advisory on the access roads worth checking before making any plans. No word yet on when things will reopen — best to check back tomorrow once the storm has passed through.",
+      "summary": ": Today at Treble Cone 27 Aug 2026 – \"Treble Cone will be CLOSED today The storm is still on us having brought rain, wind, snow, more rain, more snow and everything in between. And it is not done yet with another strong pulse coming through today and the freezing level going up, down and around and around. All in all it is making it impossible to safely operate today which is always gutting. Rest up TC crew, there is still more snow to come and fun turns await in the future. Wānaka primary skiing is postponed TC Snowboard Banked Slalom pre-qualifiers have been cancelled for tomorrow however all racers will advance to the main event on Saturday. Sunday is a weather day.\"",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
@@ -838,23 +838,23 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 27 Aug 2026",
+        "issued": "11 am 27 Aug 2026",
         "days": [
           {
             "label": "Thu 27",
-            "cm": 46,
-            "mm": 28,
+            "cm": 56,
+            "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 28",
-            "cm": 12,
+            "cm": 10,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 29",
-            "cm": 2,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -866,13 +866,13 @@
           },
           {
             "label": "Mon 31",
-            "cm": 3,
+            "cm": 5,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Tue 1",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           }
