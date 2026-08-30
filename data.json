@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-30T15:01:41.728001+00:00",
+  "updated": "2026-08-30T18:34:22.030241+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Friday, 28 th August 2026 A major storm has brought deep powder to the South Island in what could be the largest dump of the season for some ski fields. Snow fell to low levels across inland areas during Wednesday and Thursday, piling up on the high roads, while strong winds and blizzard conditions caused widespread ski field closures. Storm totals haven’t come in yet, but Treble Cone reported 60cm had fallen by late Thursday, and those in Canterbury that managed to take a snow reading reported between 25 and 35cm. Milder air muscled its way back in late in the day, turning the snow to rain and bringing significant avalanche risks that will likely affect operations today, Friday, as ski fields deal with the threat. The heavy rain shifts to Mt Ruapehu on Friday as the storm moves north, while strong winds and showers linger over the South Island. Another colder westerly blast then arrives over the weekend, bringing more strong winds and snow showers through Monday before things briefly settle on Tuesday. The Southern Lakes will capitalise on this new snowfall with around 10-20cm expected, while Canterbury and Mt Ruapehu will get a dusting or small top-up. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Friday 28 th August Heavy rain and upper-level snow over the South Island eases from the south during the morning hours as the storm front moves away to the north, and skies brighten. However, strong northwest winds will keep showers of rain and upper snow spilling over from the Main Divide, especially in Canterbury where winds will remain at gale to severe-gale. Strong to gale force north-to-northwest winds on Mt Ruapehu will push in cloud and drizzly showers throughout the day. Heavier rain then sets in during the evening as the storm front moves in. Saturday 29 th August A partly sunny, partly cloudy morning across the South Island with strong west-to-northwest winds. Clouds build in the afternoon, especially over the Southern Lakes where snow showers arrive around evening as a front scoots through. Rain on Mt Ruapehu eases to showers early as the storm front moves north. Conditions gradually improve as the showers clear in the afternoon and northwest winds ease. Sunday 30 th August Strong west to northwest winds continue to blow over the South Island, reaching gale-force in exposed areas. The Southern Lakes will continue to see snow showers, most of which will come early morning and evening, with some sunshine sneaking in during the day. Canterbury will also have showers of rain and snow falling near the Divide, mostly reaching Ohau and Temple Basin in the morning and evening, with partly cloudy skies further east. Gale southwesterlies on Mt Ruapehu will bring showers of rain and high-level snow. Monday 31 st August Strong southwest winds over the Southern Lakes will keep pushing in snow showers and flurries until late in the day. Canterbury will see plenty of sunshine and blue sky, but west-to-northwest winds turn southwest for a time through the latter half of the day, giving ski fields a skiff or dusting of fresh powder. It’ll be another rough day for Mt Ruapehu with gale southwesterlies persisting, but snow showers about the upper slopes will gradually lower to base levels. Tuesday 1 st September Partly cloudy skies across the South Island become sunnier and bluer throughout the day as strong westerlies gradually back off while turning northwest. Strong southwesterlies persist on Mt Ruapehu with light snow showers and flurries. Extended Forecast The Roaring Forties remain active over NZ through the rest of next week, with a strong westerly flow firing numerous fast-moving fronts at the country, bringing severe gales and bouts of rain and snow interspersed with sunshine. It’s that classic changeable springtime pattern that can deliver four seasons in a day. The pattern may become particularly active and colder next weekend, the 5th and 6th of September, and into the following week, with models hinting at some big storms and solid snowfall. It’d be a rough ride, but if things play out as currently forecast, we could come out the other side with a deep snowpack for a cracking spring. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great weekend, and I’ll see you back here on Monday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-30T15:05:00+00:00",
+  "next_scheduled_update": "2026-08-30T18:35:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -121,8 +121,8 @@
         "snowing": true,
         "condition": "Snow",
         "weather_code": 85,
-        "snowfall_cm": 0.14,
-        "observed": "2026-08-31T03:00",
+        "snowfall_cm": 0.07,
+        "observed": "2026-08-31T06:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -188,7 +188,7 @@
           "status": "Closed"
         },
         {
-          "name": "Greengates Express",
+          "name": "Greengates Express Strong Wind",
           "status": "Closed"
         },
         {
@@ -430,12 +430,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.6,
+        "temperature_c": -3.1,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 1,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-31T03:00",
+        "observed": "2026-08-31T06:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -717,8 +717,8 @@
       "lifts_total": 3,
       "base_lower": 140,
       "base_upper": 140,
-      "new_snow_7d": 22,
-      "new_snow_24h": 2,
+      "new_snow_7d": 21,
+      "new_snow_24h": 1,
       "season_cm": null,
       "terrain": {},
       "lifts": [
