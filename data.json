@@ -1,12 +1,12 @@
 {
-  "updated": "2026-08-29T22:27:58.425455+00:00",
+  "updated": "2026-08-30T00:33:27.928864+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Friday, 28 th August 2026 A major storm has brought deep powder to the South Island in what could be the largest dump of the season for some ski fields. Snow fell to low levels across inland areas during Wednesday and Thursday, piling up on the high roads, while strong winds and blizzard conditions caused widespread ski field closures. Storm totals haven’t come in yet, but Treble Cone reported 60cm had fallen by late Thursday, and those in Canterbury that managed to take a snow reading reported between 25 and 35cm. Milder air muscled its way back in late in the day, turning the snow to rain and bringing significant avalanche risks that will likely affect operations today, Friday, as ski fields deal with the threat. The heavy rain shifts to Mt Ruapehu on Friday as the storm moves north, while strong winds and showers linger over the South Island. Another colder westerly blast then arrives over the weekend, bringing more strong winds and snow showers through Monday before things briefly settle on Tuesday. The Southern Lakes will capitalise on this new snowfall with around 10-20cm expected, while Canterbury and Mt Ruapehu will get a dusting or small top-up. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Friday 28 th August Heavy rain and upper-level snow over the South Island eases from the south during the morning hours as the storm front moves away to the north, and skies brighten. However, strong northwest winds will keep showers of rain and upper snow spilling over from the Main Divide, especially in Canterbury where winds will remain at gale to severe-gale. Strong to gale force north-to-northwest winds on Mt Ruapehu will push in cloud and drizzly showers throughout the day. Heavier rain then sets in during the evening as the storm front moves in. Saturday 29 th August A partly sunny, partly cloudy morning across the South Island with strong west-to-northwest winds. Clouds build in the afternoon, especially over the Southern Lakes where snow showers arrive around evening as a front scoots through. Rain on Mt Ruapehu eases to showers early as the storm front moves north. Conditions gradually improve as the showers clear in the afternoon and northwest winds ease. Sunday 30 th August Strong west to northwest winds continue to blow over the South Island, reaching gale-force in exposed areas. The Southern Lakes will continue to see snow showers, most of which will come early morning and evening, with some sunshine sneaking in during the day. Canterbury will also have showers of rain and snow falling near the Divide, mostly reaching Ohau and Temple Basin in the morning and evening, with partly cloudy skies further east. Gale southwesterlies on Mt Ruapehu will bring showers of rain and high-level snow. Monday 31 st August Strong southwest winds over the Southern Lakes will keep pushing in snow showers and flurries until late in the day. Canterbury will see plenty of sunshine and blue sky, but west-to-northwest winds turn southwest for a time through the latter half of the day, giving ski fields a skiff or dusting of fresh powder. It’ll be another rough day for Mt Ruapehu with gale southwesterlies persisting, but snow showers about the upper slopes will gradually lower to base levels. Tuesday 1 st September Partly cloudy skies across the South Island become sunnier and bluer throughout the day as strong westerlies gradually back off while turning northwest. Strong southwesterlies persist on Mt Ruapehu with light snow showers and flurries. Extended Forecast The Roaring Forties remain active over NZ through the rest of next week, with a strong westerly flow firing numerous fast-moving fronts at the country, bringing severe gales and bouts of rain and snow interspersed with sunshine. It’s that classic changeable springtime pattern that can deliver four seasons in a day. The pattern may become particularly active and colder next weekend, the 5th and 6th of September, and into the following week, with models hinting at some big storms and solid snowfall. It’d be a rough ride, but if things play out as currently forecast, we could come out the other side with a deep snowpack for a cracking spring. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great weekend, and I’ll see you back here on Monday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-08-29T22:30:00+00:00",
+  "next_scheduled_update": "2026-08-30T00:35:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.5,
+        "temperature_c": -1.6,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 51,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-30T10:15",
+        "observed": "2026-08-30T12:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -444,12 +444,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.4,
+        "temperature_c": 0.9,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 51,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-08-30T10:15",
+        "observed": "2026-08-30T12:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -685,7 +685,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Today at CARDRONA ALPINE RESORT TODAY: 29 Aug 2026 – Cardrona is open today. However, the snowpack has dried out and a clear overnight freeze has left firm conditions across the mountain. The current temperature is -2°C with winds around 32 km/h and gusts to 56 km/h. Off-piste is particularly firm and variable, so the groomed runs are the better choice early. Kindy Conveyor, Learner Conveyors, McDougall’s Chondola, Whitestar Express, Valley View, Captains Express, T-Bar, Soho Express and Willow’s Quad are open, while Wells Pipe Platter is closed. Main Basin, Captains, Soho, Little Willows and Arcadia Chutes are open; Big Willows is on hold, while Mt Cardrona and Summit are delayed. Six of nine terrain parks are open, including Baby Bucks, Little Bucks, Antlers Alley, Stag Lane, Big Bucks and Gravity Cross. The road is now open after the midday traffic hold, but an active road hazard remains and the resort is operating with one car park available while the others are full. The Half Pipe closes at noon, and the resort is advising guests to take care after the overnight freeze and follow terrain signage.",
+      "summary": ": Today at CARDRONA ALPINE RESORT 30 Aug 2026 – \"10:00am Update: Due to no decrease in winds across the mountain, all lifts will now be closed for the day. The Learners Slope Conveyors will remain open until 1pm. We will be open today but we currently have strong westerly winds that may impact our chairlift operations throughout the day - It's a day for the enthusiasts! The forecast is for snow showers down to 900m throughout the day, and strong Westerly winds. The snowpack has dried out more but we still have firm conditions across the mountain. This will create some variable conditions, particularly off-piste, so we ask everyone to take care when venturing off the groomed trails. The Main Basin is scheduled to open at 08:30am, Captains and T-Bar will follow from 09:00am wind allowing. Soho and Willows are currently On-Hold until wind and snow pack assessments have been completed. Road Status: The Road is Chainfree but we are expecting a Chain call this morning so Chains must be carried. Ride Tribe / Academy / Mini will be cancelled today.\"",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -739,8 +739,8 @@
       "status": "Open",
       "lifts_open": 3,
       "lifts_total": 3,
-      "base_lower": 0,
-      "base_upper": 0,
+      "base_lower": 140,
+      "base_upper": 140,
       "new_snow_7d": 20,
       "new_snow_24h": 2,
       "season_cm": null,
@@ -805,28 +805,28 @@
       "carparks": [
         {
           "name": "Carpark 1",
-          "status": "Available"
+          "status": "Full"
         },
         {
           "name": "Carpark 2",
-          "status": "Available"
+          "status": "Full"
         },
         {
           "name": "Carpark 3",
-          "status": "Available"
+          "status": "Full"
         }
       ],
       "weather": {
-        "temperature_c": 1.4,
-        "snowing": false,
-        "condition": "Not snowing",
-        "weather_code": 3,
-        "snowfall_cm": 0.0,
-        "observed": "2026-08-30T07:45",
+        "temperature_c": 1.9,
+        "snowing": true,
+        "condition": "Snow",
+        "weather_code": 85,
+        "snowfall_cm": 0.07,
+        "observed": "2026-08-30T12:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": ": Today at TREBLE CONE TODAY: 29 Aug 2026 – Treble Cone will remain closed today. The resort's road contractors worked through the night to restore access for staff, allowing teams to begin preparing the mountain today. The current mountain temperature is -1°C, with winds around 26 km/h and gusts to 47 km/h. Home Basin Express, Saddle Quad and Beginner Platter are closed, and all listed grooming and terrain areas remain closed today. The access road is also closed to the public while contractors complete further work following the recent weather. The resort is working toward opening tomorrow, with substantial preparation still required both on and off the snow. The TC Snowboard Banked Slalom has been cancelled this weekend.",
+      "summary": ": Today at TREBLE CONE 30 Aug 2026 – \"Open! - We're stoked to be back at it and welcoming all of you back to the mountain! After some wild weather and a fair bit of work to tidy up in its wake we're back on track. Although we did pick up a descent hit of snow (70cm) it then rained on top of that which made for some spicy conditions across the mountain. A few days of letting that moisture drain out has left us with good coverage of snow that is skiing well with a bit of a crust on top, that coupled with plenty of grooming should make for some great skiing and riding across the mountain. We've worked hard over the last few days to get the mountain tidied up after the storm, but please be aware that we haven't been open for a few days and there may be some unmarked hazards out there - spend a bit of time exploring and find where the good stuff is before sending it too hard! Weather - The forecast today is for some snow showers and strong winds with a lowering freezing level; we've just seen those winds picking up; The Saddle Basin is ON HOLD Ride Tribe is on today, we're pumped to see ya'll up here! Access road - although our teams have worked hard clearing debris and damage from the road there are a few random piles of debris and large rocks in few locations on the side of the road, there's also some water damage to some edges of the road. As a result, a few sections are slightly narrower now so take care. If you're the type to get antsy behind a slow vehicle, today might be the day to just chill out and just follow the car in front of you; you'll all arrive in the same place at roughly the same time anyway. Just be safe!\"",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
