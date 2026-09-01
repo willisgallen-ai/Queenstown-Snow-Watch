@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-01T17:59:57.594018+00:00",
+  "updated": "2026-09-01T20:44:51.335089+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Monday, 31 st August 2026 Boy, have we copped it over the past week. It’s been one heck of a stormy, windy spell, allowing only limited action on the ski slopes as rough conditions have forced closures and hampered lift operations. After that big dump last Wednesday and Thursday, most ski fields have since picked up a little more fresh snow over the weekend. The weather stays wild and woolly this week as the Roaring Forties remain fired up, keeping the winds howling and bringing a lively mix of rain, snow and sunshine. The Southern Lakes pick up more freshies on Monday as icy-cold air sweeps north, also delivering a dusting to Canterbury and a top-up to Mt Ruapehu later in the day and into Tuesday. Conditions turn increasingly rough from Wednesday, with severe gales and spillover showers likely to cause more headaches across the ski fields. A strong front will give the South Island ski fields a soaking Thursday night before hitting Mt Ruapehu on Friday morning. Thankfully, colder air sweeping in behind it will deliver a little more fresh snow, with the Southern Lakes taking the cake with 5–10+cm expected on Friday. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Monday 31 st August Fresh refills for the Southern Lakes as strong, icy-cold west-to-southwest winds keep pushing in snow showers and flurries until late in the day, with another 2-8cm expected from dawn. Canterbury will see plenty of sunshine and blue sky, but strong west-to-northwest winds will swing southwest for a time later in the day, giving most ski fields a skiff or dusting of fresh powder. It’ll be a rough day for Mt Ruapehu, with gale southwesterlies likely affecting lift operations. Snow showers around the upper slopes will gradually lower to base level. Tuesday 1 st September Any lingering flurries over the Southern Lakes clear early, although strong westerlies will keep skies fairly cloudy. Canterbury starts out fine with strong southwest winds. Snow showers develop along the Main Divide during the early afternoon, reaching Temple Basin as winds swing west-to-northwest, while some high cloud blows further east. Strong southwesterlies persist on Mt Ruapehu, pushing in light snow showers and flurries throughout the day. Wednesday 2 nd September A front moving up the west side of the South Island will bring rain to the Main Divide, with showers spilling east to the ski fields from morning. Strong northwesterlies ramp up further, reaching severe gale in Canterbury where lift operations will likely be affected. Strong westerlies will keep Mt Ruapehu clagged in with cloud, drizzle and the odd snow flurry. Thursday 3 rd September Another rough day for the South Island, with gale-to-severe-gale winds likely hampering operations again. Rain along the Main Divide will spill east to the ski fields at times before a strong front crosses at night, bringing widespread heavy rain. It’ll be a grey, wet day for Mt Ruapehu as showers turn to rain during the morning and strong westerlies swing northwest. Friday 4 th September Heavy rain over the South Island turns to snow showers in the wee hours before dawn as colder west-to-northwest winds sweep in behind the front. Winds remain strong, especially in Canterbury where they could reach severe gale again. Snow showers continue across the Southern Lakes throughout the day, with around 5-10+ cm expected, while in Canterbury they retreat to the Main Divide during the morning. That’ll favour Ohau and Temple Basin, while Mt Hutt and nearby ski fields stay mostly dry beneath some high cloud. It’ll be an awful morning for Mt Ruapehu as the front crosses from the south, bringing severe-gale northwesterlies and a burst of heavy rain. Conditions improve somewhat behind it as the rain clears, although strong westerlies will stick around. Extended Forecast The Roaring Forties remain fired up over NZ through the weekend and next week, with a strong westerly flow sending a constant barrage of storm systems our way. Expect severe gales at times, along with bouts of rain and snow broken up by spells of sunshine. It’s that classic, changeable spring pattern that can deliver four seasons in a day. It’ll be a rough ride, but the Southern Lakes should come out the other side with a deeper snowpack, and perhaps Mt Ruapehu too, while Canterbury will likely be worse off. Things could get particularly wild this Sunday the 6th and Monday the 7th of September as a strong storm system crosses the country. Severe-gale northwesterlies and heavy rain are likely ahead of a cold southerly change, which should deliver a much-needed top-up of snow after all the wind and rain. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great couple of days, and I’ll see you back here on Wednesday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-01T18:00:00+00:00",
+  "next_scheduled_update": "2026-09-01T20:45:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.6,
+        "temperature_c": -2.4,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-02T05:45",
+        "observed": "2026-09-02T08:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,35 +134,41 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 01 Sep 2026",
+        "issued": "5 am 02 Sep 2026",
         "days": [
           {
             "label": "Wed 2",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 3",
-            "cm": 0,
-            "mm": 1,
-            "rain": true
+            "cm": 12,
+            "mm": 2,
+            "rain": false
           },
           {
             "label": "Fri 4",
-            "cm": 22,
+            "cm": 9,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 5",
-            "cm": 2,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 6",
-            "cm": 1,
+            "cm": 16,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Mon 7",
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
@@ -338,9 +344,9 @@
           "difficulty": "blue"
         },
         {
-          "name": "West Gates",
+          "name": "West Gates Groomed",
           "status": "Closed",
-          "difficulty": "red"
+          "difficulty": "unclassified"
         },
         {
           "name": "Race Arena Groomed",
@@ -353,9 +359,9 @@
           "difficulty": "unclassified"
         },
         {
-          "name": "Sugar's Run",
+          "name": "Sugar's Run Groomed",
           "status": "Closed",
-          "difficulty": "red"
+          "difficulty": "unclassified"
         },
         {
           "name": "Express Way Groomed",
@@ -403,7 +409,7 @@
           "difficulty": "unclassified"
         },
         {
-          "name": "Donkey Serenade",
+          "name": "Donkey Serenade Groomed",
           "status": "Closed",
           "difficulty": "unclassified"
         },
@@ -431,15 +437,27 @@
         {
           "name": "Car Park 6",
           "status": "Closed"
+        },
+        {
+          "name": "Car Park 2-6",
+          "status": "Closed"
+        },
+        {
+          "name": "Car Park 3-6",
+          "status": "Closed"
+        },
+        {
+          "name": "Car Park 4-6",
+          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": -1.5,
+        "temperature_c": 0.1,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-02T05:45",
+        "observed": "2026-09-02T08:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -451,24 +469,24 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 01 Sep 2026",
+        "issued": "5 am 02 Sep 2026",
         "days": [
           {
             "label": "Wed 2",
-            "cm": 2,
-            "mm": 1,
+            "cm": 1,
+            "mm": 6,
             "rain": false
           },
           {
             "label": "Thu 3",
-            "cm": 0,
-            "mm": 11,
-            "rain": true
+            "cm": 14,
+            "mm": 10,
+            "rain": false
           },
           {
             "label": "Fri 4",
-            "cm": 22,
-            "mm": 4,
+            "cm": 9,
+            "mm": 0,
             "rain": false
           },
           {
@@ -479,7 +497,13 @@
           },
           {
             "label": "Sun 6",
-            "cm": 3,
+            "cm": 13,
+            "mm": 6,
+            "rain": false
+          },
+          {
+            "label": "Mon 7",
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
@@ -489,175 +513,175 @@
       "hours_closed": true
     },
     "cardrona": {
-      "status": "Closed",
-      "lifts_open": 0,
+      "status": "Open",
+      "lifts_open": 10,
       "lifts_total": 10,
       "base_lower": 108,
       "base_upper": 108,
-      "new_snow_7d": 37,
-      "new_snow_24h": 4,
+      "new_snow_7d": 33,
+      "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
       "lifts": [
         {
           "name": "Learner Conveyors",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "McDougall's Chondola",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Whitestar Express",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Captains Express",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Willow's Quad",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Soho Express",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "T-Bar",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Valley View",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Kindy Conveyor",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Wells Pipe Platter",
-          "status": "Closed"
+          "status": "Open"
         }
       ],
       "trails": [
         {
           "name": "Learners Slope",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Main Basin",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Captains",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Soho",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Little Willows",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Big Willows",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Mt Cardrona",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Arcadia Chutes",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Summit",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         }
       ],
       "park": [
         {
           "name": "Baby Bucks",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Little Bucks",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Antlers Alley",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Stag Lane",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Big Bucks",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Peoples Pipe",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Olympic Pipe",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Big Air",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Mc Park",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Gravity Cross",
-          "status": "Closed"
+          "status": "Open"
         }
       ],
       "carparks": [
         {
           "name": "Carpark A",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "Carpark B",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "Carpark C",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "The Yard",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "Valley View",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "The Pines",
-          "status": "Closed"
+          "status": "Available"
         }
       ],
       "weather": {
@@ -678,24 +702,24 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 01 Sep 2026",
+        "issued": "5 am 02 Sep 2026",
         "days": [
           {
             "label": "Wed 2",
-            "cm": 1,
-            "mm": 1,
-            "rain": false
-          },
-          {
-            "label": "Thu 3",
             "cm": 0,
-            "mm": 8,
+            "mm": 2,
             "rain": true
           },
           {
+            "label": "Thu 3",
+            "cm": 12,
+            "mm": 8,
+            "rain": false
+          },
+          {
             "label": "Fri 4",
-            "cm": 19,
-            "mm": 2,
+            "cm": 6,
+            "mm": 0,
             "rain": false
           },
           {
@@ -706,14 +730,19 @@
           },
           {
             "label": "Sun 6",
-            "cm": 1,
+            "cm": 15,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Mon 7",
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
         ]
       },
-      "stale": false,
-      "hours_closed": true
+      "stale": false
     },
     "treblecone": {
       "status": "Closed",
@@ -797,12 +826,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 0.3,
+        "temperature_c": 1.1,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 53,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-01T12:00",
+        "observed": "2026-09-02T08:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -814,35 +843,41 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 01 Sep 2026",
+        "issued": "5 am 02 Sep 2026",
         "days": [
           {
             "label": "Wed 2",
             "cm": 3,
-            "mm": 2,
+            "mm": 3,
             "rain": false
           },
           {
             "label": "Thu 3",
-            "cm": 2,
-            "mm": 13,
+            "cm": 17,
+            "mm": 16,
             "rain": false
           },
           {
             "label": "Fri 4",
-            "cm": 29,
-            "mm": 5,
+            "cm": 12,
+            "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 5",
-            "cm": 4,
+            "cm": 8,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 6",
-            "cm": 7,
+            "cm": 21,
+            "mm": 8,
+            "rain": false
+          },
+          {
+            "label": "Mon 7",
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
