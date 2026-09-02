@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-02T17:25:59.267192+00:00",
+  "updated": "2026-09-02T19:57:27.116871+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Cold, wintry weather kicked off the week with fresh powder across the country. Mt Ruapehu took the cream with a very welcome 10-15+cm, while the Southern Lakes picked up to 10cm and Canterbury a dusting of up to 5cm.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-02T17:30:00+00:00",
+  "next_scheduled_update": "2026-09-02T20:00:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.1,
+        "temperature_c": -1.4,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 51,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-03T05:15",
+        "observed": "2026-09-03T07:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,35 +134,41 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 02 Sep 2026",
+        "issued": "5 am 03 Sep 2026",
         "days": [
           {
             "label": "Thu 3",
-            "cm": 2,
+            "cm": 9,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 4",
-            "cm": 15,
+            "cm": 10,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 5",
-            "cm": 2,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 6",
-            "cm": 12,
+            "cm": 15,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 7",
-            "cm": 2,
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Tue 8",
+            "cm": 3,
             "mm": 0,
             "rain": false
           }
@@ -176,8 +182,8 @@
       "status": "Closed",
       "lifts_open": 0,
       "lifts_total": 8,
-      "base_lower": 60,
-      "base_upper": 90,
+      "base_lower": 50,
+      "base_upper": 80,
       "new_snow_7d": 0,
       "new_snow_24h": null,
       "season_cm": null,
@@ -253,9 +259,9 @@
           "difficulty": "unclassified"
         },
         {
-          "name": "Greengates Advanced Skiiers Only",
+          "name": "Greengates",
           "status": "Closed",
-          "difficulty": "unclassified"
+          "difficulty": "red"
         },
         {
           "name": "Wall Street Groomed",
@@ -434,12 +440,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.4,
+        "temperature_c": 1.3,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 51,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-03T01:45",
+        "observed": "2026-09-03T07:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -451,35 +457,41 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 02 Sep 2026",
+        "issued": "5 am 03 Sep 2026",
         "days": [
           {
             "label": "Thu 3",
-            "cm": 0,
-            "mm": 10,
-            "rain": true
+            "cm": 10,
+            "mm": 8,
+            "rain": false
           },
           {
             "label": "Fri 4",
-            "cm": 17,
-            "mm": 1,
+            "cm": 10,
+            "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 5",
-            "cm": 2,
+            "cm": 5,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 6",
-            "cm": 20,
+            "cm": 18,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 7",
-            "cm": 1,
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Tue 8",
+            "cm": 2,
             "mm": 0,
             "rain": false
           }
@@ -678,35 +690,41 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 02 Sep 2026",
+        "issued": "5 am 03 Sep 2026",
         "days": [
           {
             "label": "Thu 3",
-            "cm": 0,
-            "mm": 5,
-            "rain": true
+            "cm": 8,
+            "mm": 7,
+            "rain": false
           },
           {
             "label": "Fri 4",
-            "cm": 10,
-            "mm": 1,
+            "cm": 7,
+            "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 5",
-            "cm": 1,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 6",
-            "cm": 19,
+            "cm": 17,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 7",
-            "cm": 1,
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Tue 8",
+            "cm": 2,
             "mm": 0,
             "rain": false
           }
@@ -814,35 +832,41 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 02 Sep 2026",
+        "issued": "5 am 03 Sep 2026",
         "days": [
           {
             "label": "Thu 3",
-            "cm": 0,
-            "mm": 15,
-            "rain": true
+            "cm": 14,
+            "mm": 14,
+            "rain": false
           },
           {
             "label": "Fri 4",
-            "cm": 21,
-            "mm": 1,
+            "cm": 11,
+            "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 5",
-            "cm": 5,
+            "cm": 13,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 6",
-            "cm": 45,
+            "cm": 32,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 7",
-            "cm": 1,
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Tue 8",
+            "cm": 2,
             "mm": 0,
             "rain": false
           }
