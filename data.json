@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-02T22:20:11.956822+00:00",
+  "updated": "2026-09-03T00:22:05.388341+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Cold, wintry weather kicked off the week with fresh powder across the country. Mt Ruapehu took the cream with a very welcome 10-15+cm, while the Southern Lakes picked up to 10cm and Canterbury a dusting of up to 5cm.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-02T22:25:00+00:00",
+  "next_scheduled_update": "2026-09-03T00:25:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -415,7 +415,7 @@
         },
         {
           "name": "Back Bowls",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "double-black"
         },
         {
@@ -660,7 +660,7 @@
       "carparks": [
         {
           "name": "Carpark A",
-          "status": "Full"
+          "status": "Available"
         },
         {
           "name": "Carpark B",
@@ -668,7 +668,7 @@
         },
         {
           "name": "Carpark C",
-          "status": "Available"
+          "status": "Full"
         },
         {
           "name": "The Yard",
