@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-05T04:39:28.400525+00:00",
+  "updated": "2026-09-05T08:35:20.384399+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Friday, 4 th September 2026 The stormy start to spring continues with more strong winds, rain and snow in the mix. The South Island gets the best of the snow initially, with a cold change delivering around 2–8cm to most ski fields on Friday, followed by another similar top-up on Saturday. Unfortunately, strong to severe-gale winds will continue causing headaches for lift operations, especially in Canterbury, while Mt Ruapehu cops a wet and very windy Friday followed by some pretty average weather over the weekend. The main event arrives Sunday as a stronger, slow-moving storm rolls in. After an initially wet and windy start, colder air sneaking in from the south and east will turn rain to snow across the South Island, with around 5–10cm expected in the Southern Lakes and a much juicier 10–30cm dump possible across Canterbury through into Monday. Mt Ruapehu won’t fare so well, with rain and strong winds giving the snowpack another hammering Sunday night. Tuesday will be the nicest, calmest day of the bunch, but there’s a lot more cold and snowy weather on the cards later next week. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Friday 4 th September A front crosses the South Island during the wee hours before opening time, bringing a burst of heavy rain. Colder air sweeps in behind it during the morning, turning the rain to lighter snow showers spilling east from the Main Divide before retreating west again in the evening. Most ski fields should pick up around 2–8cm of fresh snow, although Mt Hutt will be lucky to receive a skiff, if anything, with the bulk of the snow falling closer to the Main Divide in Canterbury. Westerlies remain strong and may continue to affect lift operations, particularly in Canterbury where severe gales are expected in exposed areas. It’ll be an awful day for Mt Ruapehu as the front from the south crosses around midday, bringing severe-gale northwesterlies and rain. Conditions improve somewhat behind it as the rain clears, although strong westerlies will stick around. Saturday 5 th September Another surge of strong northwest winds will see spillover snow showers return to the Southern Lakes around dawn, then spread up Canterbury during the morning, bringing another 2–8cm before retreating west again in the afternoon. In Canterbury, however, rising snow levels will turn things wet on the mid and lower slopes, while Mt Hutt stays dry beneath high cloud. Gale-to-severe-gale winds will also cause more trouble for lift operations. Brisk westerlies on Mt Ruapehu will keep skies mostly cloudy, with some drizzly afternoon showers that’ll fall as snow on the upper slopes. Sunday 6 th September A stronger, slow-moving storm system moves onto the South Island early, initially bringing a mix of rain and high-level snow before snow levels rise. Canterbury will bear the brunt of the storm, with heavy precipitation and severe-gale northwesterlies yet again. As the storm drifts north, light, cold south-to-southeasterlies sneak into the Southern Lakes during the afternoon and spread up Canterbury in the evening, turning rain to snow. Around 5–10cm should fall across the Southern Lakes, while Canterbury could score a much bigger 10–30cm dump through into Monday. Drizzly showers continue throughout the day on Mt Ruapehu as northwest winds pick up. A front crosses overnight, bringing a bout of heavier rain and strong winds that will hit the snowpack. Monday 7 th September Light easterlies may have the Southern Lakes clagged in with cloud during the morning, with a few snow flurries possible. Skies brighten in the afternoon as winds swing northwest, lifting the cloud base. Heavy snowfall in Canterbury gradually eases and then clears from the south as southerlies die away, with skies brightening in the afternoon as clouds break up. Rain on Mt Ruapehu eases early as northwest winds ease, but picks up again in the afternoon as southerlies develop. Tuesday 8 th September A grey, cloudy morning for South Island ski fields before skies clear to a sunny afternoon with light winds. A much nicer day for Mt Ruapehu with some afternoon cloud while southerlies die out. Extended Forecast The weather stays cold and stormy through to the end of next week, with plenty more snow on the cards. First, a strong, cold southwest flow spreads up the South Island on Wednesday the 9th and the North Island on Thursday the 10th, bringing a few days of snow showers. Then, over the weekend of the 12th and 13th, an even colder surge straight out of Antarctica looks set to blast up the country, bringing another load of high-quality powder down to low levels. It’s a cracking outlook for snow, but it’ll be a bumpy ride. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great weekend, and I’ll see you back here on Monday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-05T04:40:00+00:00",
+  "next_scheduled_update": "2026-09-05T08:40:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.1,
+        "temperature_c": -2.2,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-05T16:30",
+        "observed": "2026-09-05T20:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,7 +134,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 05 Sep 2026",
+        "issued": "5 pm 05 Sep 2026",
         "days": [
           {
             "label": "Sat 5",
@@ -162,13 +162,13 @@
           },
           {
             "label": "Wed 9",
-            "cm": 11,
+            "cm": 12,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 10",
-            "cm": 6,
+            "cm": 7,
             "mm": 0,
             "rain": false
           }
@@ -440,12 +440,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.8,
+        "temperature_c": -3.0,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 1,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-05T16:30",
+        "observed": "2026-09-05T20:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -457,11 +457,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 05 Sep 2026",
+        "issued": "5 pm 05 Sep 2026",
         "days": [
           {
             "label": "Sat 5",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -485,13 +485,13 @@
           },
           {
             "label": "Wed 9",
-            "cm": 10,
+            "cm": 13,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 10",
-            "cm": 5,
+            "cm": 6,
             "mm": 0,
             "rain": false
           }
@@ -690,7 +690,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 05 Sep 2026",
+        "issued": "5 pm 05 Sep 2026",
         "days": [
           {
             "label": "Sat 5",
@@ -700,7 +700,7 @@
           },
           {
             "label": "Sun 6",
-            "cm": 2,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
@@ -718,7 +718,7 @@
           },
           {
             "label": "Wed 9",
-            "cm": 9,
+            "cm": 11,
             "mm": 0,
             "rain": false
           },
@@ -832,11 +832,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 05 Sep 2026",
+        "issued": "5 pm 05 Sep 2026",
         "days": [
           {
             "label": "Sat 5",
-            "cm": 5,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
@@ -860,13 +860,13 @@
           },
           {
             "label": "Wed 9",
-            "cm": 16,
+            "cm": 19,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 10",
-            "cm": 7,
+            "cm": 6,
             "mm": 0,
             "rain": false
           }
