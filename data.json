@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-06T21:39:29.102298+00:00",
+  "updated": "2026-09-06T23:09:26.486885+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Monday, 7 th September 2026 Another stormy, windy weekend across the country caused more headaches for operations crews. However, amongst it all, the Southern Lakes scored a few shots of powder, with The Remarkables reporting 35cm over the last three days, while Cardrona and Treble Cone picked up 17cm and 20cm respectively within 48 hours, before more fell on Sunday. In Canterbury, Sunday’s rain also turned to snow, and webcams at the time of writing show some nice powder pillows building up. Recent strong winds and rain have nailed the snowpack at smaller club fields, forcing Craigieburn and Cheeseman to close for the season, while others remain on hold until conditions improve. Hopefully this latest snowfall will be enough to get some of them back online. The South Island now gets a bit of a breather to start the week. Lingering snow clears through Monday, apart from northern Canterbury where it’ll hang around a little longer, before Tuesday dishes up a mostly fine day. Mt Ruapehu won’t be so lucky, with heavy rain giving the snowpack another soaking before things improve on Tuesday. The stormy spring pattern cranks back up from Wednesday night as a cold front sweeps north over the country, followed by a chilly south-to-southwest flow. Most ski fields should score around 5–15cm of fresh powder through Thursday, while Mt Ruapehu gets its own 5–10cm top-up. There’ll be more where that came from on Friday and into the weekend as cold west-to-southwest winds keep the snow showers coming. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Monday 7 th September Light northeasterlies may have some slopes in the Southern Lakes clagged in with low cloud during the morning, but that’ll clear up nicely for a fine afternoon with a little high cloud as the breeze swings northwest. Any leftover snow flurries in central and southern Canterbury clear during the morning as southeasterlies die away, with skies then brightening as the cloud gradually breaks up. Heavier snowfall farther north, around Mt Lyford and Hanmer, won’t ease until the afternoon before finally clearing around evening. A nasty, wet one for Mt Ruapehu, with heavy rain through the day before easing in the evening and turning to snow about the mid and upper slopes as northwesterlies give way to a colder southeast flow. Tuesday 8 th September Light southerly breezes develop over the South Island, and it’ll be a nice, sunny one for the Southern Lakes once a little early cloud clears, while Canterbury sees more of a mix of sun and cloud throughout the day. A much nicer day for Mt Ruapehu, although skies will remain mostly cloudy as southerlies gradually die away. Wednesday 9 th September A clear morning for the South Island ski fields, but cloud builds from the south during the afternoon as northwest winds strengthen. A cold front sweeps north over the Southern Lakes in the evening and Canterbury overnight, bringing a shot of snow followed by a cold south-to-southwest wind change. A nice, clear and calm start for Mt Ruapehu, but westerly breezes develop late morning, bringing cloud and a little drizzle. Thursday 10 th September Cold south-to-southwest winds across the South Island continue to bring lingering light snow showers to the Southern Lakes and Mackenzie area until the afternoon, while slightly heavier, more persistent snowfall continues across central and northern Canterbury into the late afternoon and evening. Most ski fields should score around 5-15cm of powder from this system. Mt Ruapehu will score a 5-10cm shot of powder as the cold front crosses during the morning, although there’ll initially be some rain mixed in about the lower slopes. Northwesterlies then swing to a colder southwest, dropping snow levels nice ’n low with snow flurries lingering through the afternoon. Friday 11 th September West-to-southwest winds really ramp up across the country, reaching gale force in exposed areas and likely hampering lift operations. The Southern Lakes will see more light snow showers throughout the day, while Canterbury could see a few during the afternoon and evening after a fine morning, although there’s still plenty of uncertainty around that. Mid- and upper-level snow showers develop on Mt Ruapehu during the morning, bringing another 5-10cm before lowering to base level in the evening. Extended Forecast Kiwi ski fields will pick up a little more snow over the weekend of the 12th and 13th of September as strong, cold west-to-southwest winds continue to blow across the country, although there’ll be some sunshine in the mix too. The weather then settles down a little on Monday the 14th before active fronts return on Tuesday the 15th, kicking off another spell of strong, stormy spring westerlies through to the end of the week. The snowpack will continue to swell, especially down in the Southern Lakes where temps will be coldest, but the strong winds will create more headaches for lift operations. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great couple of days, and I’ll see you back here on Wednesday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-06T21:40:00+00:00",
+  "next_scheduled_update": "2026-09-06T23:10:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -4.1,
+        "temperature_c": -2.8,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-07T09:30",
+        "observed": "2026-09-07T11:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -440,12 +440,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.5,
+        "temperature_c": 0.2,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-07T09:30",
+        "observed": "2026-09-07T11:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
