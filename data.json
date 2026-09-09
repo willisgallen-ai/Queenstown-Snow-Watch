@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-09T09:46:38.714183+00:00",
+  "updated": "2026-09-09T13:58:10.196088+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "It was an absolute corker of a day yesterday, with sunny skies overhead and fresh powder underboot. A stormy weekend saw the Southern Lakes ski fields score up to 15–35cm, while a storm whipping up the country Sunday and Monday delivered around 15–25cm across Canterbury and 5–10cm to Mt Ruapehu.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-09T09:50:00+00:00",
+  "next_scheduled_update": "2026-09-09T14:00:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.2,
+        "temperature_c": -3.8,
         "snowing": true,
         "condition": "Snow",
-        "weather_code": 75,
-        "snowfall_cm": 0.42,
-        "observed": "2026-09-09T21:45",
+        "weather_code": 73,
+        "snowfall_cm": 0.14,
+        "observed": "2026-09-10T01:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,17 +134,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 09 Sep 2026",
+        "issued": "11 pm 09 Sep 2026",
         "days": [
           {
-            "label": "Wed 9",
-            "cm": 13,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Thu 10",
-            "cm": 0,
+            "cm": 13,
             "mm": 0,
             "rain": false
           },
@@ -156,13 +150,13 @@
           },
           {
             "label": "Sat 12",
-            "cm": 2,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 13",
-            "cm": 0,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
@@ -434,19 +428,14 @@
           "difficulty": "unclassified"
         }
       ],
-      "carparks": [
-        {
-          "name": "Lower Carpark 7",
-          "status": "Closed"
-        }
-      ],
+      "carparks": [],
       "weather": {
-        "temperature_c": -0.6,
+        "temperature_c": -2.0,
         "snowing": true,
         "condition": "Snow",
-        "weather_code": 75,
-        "snowfall_cm": 0.42,
-        "observed": "2026-09-09T21:45",
+        "weather_code": 86,
+        "snowfall_cm": 0.21,
+        "observed": "2026-09-10T01:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -458,17 +447,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 09 Sep 2026",
+        "issued": "11 pm 09 Sep 2026",
         "days": [
           {
-            "label": "Wed 9",
-            "cm": 12,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Thu 10",
-            "cm": 0,
+            "cm": 11,
             "mm": 0,
             "rain": false
           },
@@ -480,13 +463,13 @@
           },
           {
             "label": "Sat 12",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 13",
-            "cm": 0,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
@@ -691,17 +674,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 09 Sep 2026",
+        "issued": "11 pm 09 Sep 2026",
         "days": [
           {
-            "label": "Wed 9",
-            "cm": 11,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Thu 10",
-            "cm": 0,
+            "cm": 11,
             "mm": 0,
             "rain": false
           },
@@ -713,13 +690,13 @@
           },
           {
             "label": "Sat 12",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 13",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -833,17 +810,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 09 Sep 2026",
+        "issued": "11 pm 09 Sep 2026",
         "days": [
           {
-            "label": "Wed 9",
-            "cm": 18,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Thu 10",
-            "cm": 2,
+            "cm": 21,
             "mm": 0,
             "rain": false
           },
@@ -861,7 +832,7 @@
           },
           {
             "label": "Sun 13",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
