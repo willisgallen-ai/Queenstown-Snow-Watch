@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-08T22:44:24.231575+00:00",
+  "updated": "2026-09-09T00:38:44.551390+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Wednesday, 9 th September 2026 It was an absolute corker of a day yesterday, with sunny skies overhead and fresh powder underboot. A stormy weekend saw the Southern Lakes ski fields score up to 15–35cm, while a storm whipping up the country Sunday and Monday delivered around 15–25cm across Canterbury and 5–10cm to Mt Ruapehu. Another round of fresh powder is on the way as our stormy spring pattern keeps ticking along. After a mostly fine Wednesday, a cold front sweeps north Wednesday night, delivering around 5–15cm to South Island ski fields before clearing through Thursday. Mt Ruapehu gets in on the action too as the front crosses on Thursday, with 10–20cm expected up high before snow lowers to base level that evening, leaving a dusting down low. From Friday, strong westerlies become the main headache, potentially hampering lift operations at times through the weekend. Snow flurries and showers will remain in the mix for the Southern Lakes and Mt Ruapehu, while Canterbury gets the better end of the deal with plenty of sunshine. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Wednesday 9 th September A nice, clear morning for the South Island ski fields, but cloud builds from the south during the afternoon as northwest winds strengthen. A front then sweeps north over the Southern Lakes in the evening and Canterbury overnight, bringing a shot of snow with a cold south-to-southwest wind change. Mt Ruapehu will also start out nice and clear and calm, but a developing light northwesterly breeze will kick up a little cloud in the afternoon. Thursday 10 th September The snowfall eases over the Southern Lakes before dawn with a new 5-15cm of fresh powder, making for a great day on the slopes with partly sunny, partly cloudy skies and cold southwest winds. There may be a few lingering snow flurries about the Queenstown ski fields in the morning. Snowfall in Canterbury gradually clears from the south throughout the day as the cold southerly winds ease, starting with the Mackenzie area in the morning, and then further north around evening. Ski fields here should also score around 5-15cm of powder, keeping the slopes topped up, although visibility will be limited. Showers develop on Mt Ruapehu early, falling as snow to mid-levels, then building to rain and high-level snow in the afternoon before the cold front from the south crosses in the evening, bringing a cooler southerly change and a dusting of snow to base levels. The upper slopes should score totals between 10-20cm. Friday 11 th September Westerly winds really ramp up across the country, reaching gale force in exposed areas and likely hampering lift operations. The Southern Lakes will have partly sunny, partly cloudy skies again with a few snow flurries possible about the Queenstown ski fields, while Canterbury will be mostly sunny. A mostly fine morning for Mt Ruapehu before light mid- and upper-level snow showers develop in the afternoon as westerly winds pick up, giving the upper slopes a dusting. Saturday 12 th September Cold west-to-southwest winds persist over the country and will be strong over the Southern Lakes, where there’ll continue to be cloud and the odd snow flurry, especially about the Queenstown ski fields, interspersed with sunny spells. Canterbury meanwhile will stay fine with a little high cloud and Mt Ruapehu remains fairly cloudy with a few light snow showers. Sunday 13 th September Strong southwesterlies over the country gradually back off and turn westerly. The Southern Lakes will continue to have fine and cloudy spells with a few flurries still possible, while Canterbury stays mostly fine again. Mt Ruapehu will see more snow showers, but they’ll turn wet about the lower slopes in the morning as snow levels rise. Extended Forecast NZ remains firmly ensconced in an active spring westerly pattern next week, with a series of fronts zipping across the country, bringing periods of strong winds and brief bouts of rain and snow interspersed with fine spells. Models aren’t yet in good agreement on the timing or flavour of these fronts, so it’s still too early to make any big calls on when the best powder days might be. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great couple of days, and I’ll see you back here on Friday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-08T22:45:00+00:00",
+  "next_scheduled_update": "2026-09-09T00:40:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.5,
+        "temperature_c": 2.3,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 0,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-09T10:30",
+        "observed": "2026-09-09T12:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -419,6 +419,11 @@
           "difficulty": "double-black"
         },
         {
+          "name": "Touring Route Change",
+          "status": "Unknown",
+          "difficulty": "unclassified"
+        },
+        {
           "name": "Walkabout Terrain Park",
           "status": "Open",
           "difficulty": "unclassified"
@@ -436,12 +441,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.9,
+        "temperature_c": 5.7,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 0,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-09T08:00",
+        "observed": "2026-09-09T12:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -677,7 +682,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Cardrona Alpine Resort is reported as open today, with superb snow conditions and coverage following recent fresh snow and a cold, calm, clear night. The mountain is offering exceptional cord, while off-piste skiing is also in good shape after recent top operations. Current conditions are 1°C with 5 km/h winds and 8 km/h gusts, with much colder temperatures arriving Thursday and stronger winds developing toward the weekend. Main Basin and Valley View are scheduled to open at 8:30 am, followed by Captains, Willows, Soho and T-Bar at 9:00 am. The mountain's live status panel is currently showing the lifts and terrain as closed, conflicting with the more recent Mountain Manager update stating that the resort is open and identifying today's scheduled openings. (Issued: 12:30 pm, 8 Sep) The JWI Big Air event is scheduled for 10:00 am, with viewing and access from Skyline. The Olympic Pipe is scheduled to close at 1:30 pm, while the Platter will continue operating for the JWI Big Air event. Access roads are chain free, although chains must always be carried, and an active road-hazard advisory remains in place. Lifts & terrain Lifts Open 10 / 10 Runs Open 0 / 38 Percent open 0 %",
+      "summary": "Cardrona is open for lift-served skiing today, 9 September. The resort describes conditions and coverage as excellent, with 0 cm overnight and in the last 24 hours but 22 cm over the last 7 days and a 115 cm natural snow base at 1800 m. Overnight grooming has produced some of the winter's best cord, while off-piste skiing remains good after recent top-ups. Sunny lower mountain faces will start firm before softening with the sun. Current conditions are 1°C with 19 km/h winds and 34 km/h gusts, with a sunny start and snow showers expected in the evening. (Issued: --, 9 Sep) 10/10 lifts are open, including McDougall’s Chondola, Whitestar Express, Valley View, Captains Express, T-Bar, Soho Express, Willow’s Quad and Wells Pipe Platter. 10/10 terrain areas are open, including Main Basin, Captains, Soho, Little Willows, Ski Touring Access, Mt Cardrona, Arcadia Chutes and Summit. Main Basin and Valley View were scheduled to open from 8:30 am, with Captains, Willows, Soho and T-Bar to follow from 9:00 am. All listed learner and major terrain areas are operating. JWI returns to the big-air feature today, with the world's top freeskiers and snowboarders competing from 10:00 am, with the best viewing and access from Skyline. The access road is chain free, but chains must always be carried, and an active road hazard advisory remains in place. Five of six car parks are open, with Car Park A full and Car Parks B, C, The Yard, Valley View and The Pines available. Lifts & terrain Lifts Open 10 / 10 Runs Open 0 / 38 Percent open 0 %",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -818,7 +823,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Treble Cone is open today and offering excellent skiing, with a fine, sunny day, extensive freshly groomed cord and fresh powder still available on the summit slopes. Patrol has assessed the chutes and they are open, while current conditions are 1°C with 5 km/h winds and 8 km/h gusts. The forecast turns colder from Thursday, with temperatures reaching -4°C, followed by a windy weekend, helping preserve the existing snowpack. All 3 lifts are open, including Home Basin Express, Saddle Quad and Beginner Platter. Groomed terrain open includes Main Street, Upper & Lower Camel, Roller Coaster, Upper & Lower Midwave, Raffil's Run, Side Saddle, Bullet, Saddleback, South Ridge, Pete's Treat & High Street, while Home Basin, Powder Bowl, Matukituki Basin, Saddle Basin, Summit Slopes, Motatapu Chutes, Backcountry Access and Skinning Access are open. (Issued: 12:30 pm, 8 Sep) The access road is chain free, although the road is narrow in places and all vehicles must carry chains. A free shuttle operates from the bottom of the access road, and an active road-hazard advisory remains in place. The resort and car parks are open, with Carparks 1, 2, 3, The Neck and The Road available. Lifts & terrain Lifts Open 3 / 3 Runs Open 0 / 59 Percent open 0 %",
+      "summary": "Treble Cone is open for lift-served skiing today, 9 September. The latest resort report describes superb snow conditions, with 0 cm overnight and in the last 24 hours, 7 cm over the last 7 days and a 140 cm natural snow base at the top of Home Basin. The grooming team has prepared an outstanding selection of freshly groomed trails for morning turns, while powder pockets remain higher on the mountain and the Saddle offers playful gullies. Current conditions are 1°C with 19 km/h winds and 34 km/h gusts, with a sunny start, increasing cloud later and snow forecast tonight. 3/3 lifts are open, with Home Basin Express, Saddle Quad and Beginner Platter operating. Home Basin, Powder Bowl, Matukituki Basin, Saddle Basin, Summit Slopes, Motatapu Chutes, Backcountry Access and Skinning Access are all open. Groomed terrain includes Main Street, Roller Coaster, Upper & Lower Midwave, Raffil's Run, Side Saddle, Bullet, Saddleback, South Ridge & Wide Glide, and Pete's Treat & High Street. Home Basin is scheduled to open at 8:30 am, with Saddle Basin scheduled for 9:00 am. Today is a good day to hike the Summit Slopes, with Motatapu Chutes open. Visitors must enter terrain only through open gates and obey all closures. The access road is chain free, but all vehicles must carry chains, with a free shuttle operating from the bottom of the access road. An active road hazard advisory remains in place. The resort is also preparing for an action-packed weekend, including The Green Steam x POW Day x The Funk Royale on Saturday and the TC Interfields Ski Race on Sunday. Lifts & terrain Lifts Open 3 / 3 Runs Open 0 / 59 Percent open 0 %",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
