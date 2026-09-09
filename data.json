@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-09T05:13:35.319656+00:00",
+  "updated": "2026-09-09T09:46:38.714183+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
-    "summary": "Published early Wednesday, 9 th September 2026 It was an absolute corker of a day yesterday, with sunny skies overhead and fresh powder underboot. A stormy weekend saw the Southern Lakes ski fields score up to 15–35cm, while a storm whipping up the country Sunday and Monday delivered around 15–25cm across Canterbury and 5–10cm to Mt Ruapehu. Another round of fresh powder is on the way as our stormy spring pattern keeps ticking along. After a mostly fine Wednesday, a cold front sweeps north Wednesday night, delivering around 5–15cm to South Island ski fields before clearing through Thursday. Mt Ruapehu gets in on the action too as the front crosses on Thursday, with 10–20cm expected up high before snow lowers to base level that evening, leaving a dusting down low. From Friday, strong westerlies become the main headache, potentially hampering lift operations at times through the weekend. Snow flurries and showers will remain in the mix for the Southern Lakes and Mt Ruapehu, while Canterbury gets the better end of the deal with plenty of sunshine. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Wednesday 9 th September A nice, clear morning for the South Island ski fields, but cloud builds from the south during the afternoon as northwest winds strengthen. A front then sweeps north over the Southern Lakes in the evening and Canterbury overnight, bringing a shot of snow with a cold south-to-southwest wind change. Mt Ruapehu will also start out nice and clear and calm, but a developing light northwesterly breeze will kick up a little cloud in the afternoon. Thursday 10 th September The snowfall eases over the Southern Lakes before dawn with a new 5-15cm of fresh powder, making for a great day on the slopes with partly sunny, partly cloudy skies and cold southwest winds. There may be a few lingering snow flurries about the Queenstown ski fields in the morning. Snowfall in Canterbury gradually clears from the south throughout the day as the cold southerly winds ease, starting with the Mackenzie area in the morning, and then further north around evening. Ski fields here should also score around 5-15cm of powder, keeping the slopes topped up, although visibility will be limited. Showers develop on Mt Ruapehu early, falling as snow to mid-levels, then building to rain and high-level snow in the afternoon before the cold front from the south crosses in the evening, bringing a cooler southerly change and a dusting of snow to base levels. The upper slopes should score totals between 10-20cm. Friday 11 th September Westerly winds really ramp up across the country, reaching gale force in exposed areas and likely hampering lift operations. The Southern Lakes will have partly sunny, partly cloudy skies again with a few snow flurries possible about the Queenstown ski fields, while Canterbury will be mostly sunny. A mostly fine morning for Mt Ruapehu before light mid- and upper-level snow showers develop in the afternoon as westerly winds pick up, giving the upper slopes a dusting. Saturday 12 th September Cold west-to-southwest winds persist over the country and will be strong over the Southern Lakes, where there’ll continue to be cloud and the odd snow flurry, especially about the Queenstown ski fields, interspersed with sunny spells. Canterbury meanwhile will stay fine with a little high cloud and Mt Ruapehu remains fairly cloudy with a few light snow showers. Sunday 13 th September Strong southwesterlies over the country gradually back off and turn westerly. The Southern Lakes will continue to have fine and cloudy spells with a few flurries still possible, while Canterbury stays mostly fine again. Mt Ruapehu will see more snow showers, but they’ll turn wet about the lower slopes in the morning as snow levels rise. Extended Forecast NZ remains firmly ensconced in an active spring westerly pattern next week, with a series of fronts zipping across the country, bringing periods of strong winds and brief bouts of rain and snow interspersed with fine spells. Models aren’t yet in good agreement on the timing or flavour of these fronts, so it’s still too early to make any big calls on when the best powder days might be. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great couple of days, and I’ll see you back here on Friday. Grasshopper",
+    "summary": "It was an absolute corker of a day yesterday, with sunny skies overhead and fresh powder underboot. A stormy weekend saw the Southern Lakes ski fields score up to 15–35cm, while a storm whipping up the country Sunday and Monday delivered around 15–25cm across Canterbury and 5–10cm to Mt Ruapehu.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-09T05:15:00+00:00",
+  "next_scheduled_update": "2026-09-09T09:50:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.4,
-        "snowing": false,
-        "condition": "Not snowing",
-        "weather_code": 3,
-        "snowfall_cm": 0.0,
-        "observed": "2026-09-09T17:00",
+        "temperature_c": -3.2,
+        "snowing": true,
+        "condition": "Snow",
+        "weather_code": 75,
+        "snowfall_cm": 0.42,
+        "observed": "2026-09-09T21:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,11 +134,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 09 Sep 2026",
+        "issued": "5 pm 09 Sep 2026",
         "days": [
           {
             "label": "Wed 9",
-            "cm": 9,
+            "cm": 13,
             "mm": 0,
             "rain": false
           },
@@ -150,7 +150,7 @@
           },
           {
             "label": "Fri 11",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -168,7 +168,7 @@
           },
           {
             "label": "Mon 14",
-            "cm": 2,
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
@@ -180,7 +180,7 @@
     },
     "coronetpeak": {
       "status": "Closed",
-      "lifts_open": 7,
+      "lifts_open": 0,
       "lifts_total": 8,
       "base_lower": 50,
       "base_upper": 80,
@@ -191,31 +191,31 @@
       "lifts": [
         {
           "name": "Coronet Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Greengates Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Meadows Learner Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Rocky Gully T-bar",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Magic Carpet Conveyor",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Beginner Carpet Conveyor",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Skiwiland Conveyor",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Kidszone carpet",
@@ -225,62 +225,62 @@
       "trails": [
         {
           "name": "Big Easy Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Beginner Area Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Little Easy Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Gentle Annie Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Fun Zone",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "M1 Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Easy Rider Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Greengates",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Wall Street Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "The Chimney",
-          "status": "Variable",
+          "status": "Closed",
           "difficulty": "black"
         },
         {
           "name": "The Hurdle",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Exchange Drop",
-          "status": "Variable",
+          "status": "Closed",
           "difficulty": "black"
         },
         {
@@ -290,107 +290,107 @@
         },
         {
           "name": "Dual Carpet slopes",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "green"
         },
         {
           "name": "Shirt Front Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Eighth Basin",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Brough's Lane Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Tuck Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Million Dollar Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Upper Walkabout",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "black"
         },
         {
           "name": "Mid Gully",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Pro Am",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "blue"
         },
         {
           "name": "Overrun Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Rocky Return",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "blue"
         },
         {
           "name": "West Gates Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Race Arena Race Training",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Powder Run Race Training",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Sugar's Run",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Express Way Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Sarah Sue",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Arnolds Way Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Duncan's Dance",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Lunch Rocks",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Out Wide Race Training",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
@@ -400,53 +400,53 @@
         },
         {
           "name": "Dirty Four",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Way Out Wide",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Donkey Serenade Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Back Bowls",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "double-black"
         },
         {
           "name": "Touring Route Change",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Walkabout Terrain Park",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Tuck Rail garden",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         }
       ],
       "carparks": [
         {
           "name": "Lower Carpark 7",
-          "status": "Spaces available"
+          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": 3.3,
-        "snowing": false,
-        "condition": "Not snowing",
-        "weather_code": 51,
-        "snowfall_cm": 0.0,
-        "observed": "2026-09-09T17:00",
+        "temperature_c": -0.6,
+        "snowing": true,
+        "condition": "Snow",
+        "weather_code": 75,
+        "snowfall_cm": 0.42,
+        "observed": "2026-09-09T21:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -458,11 +458,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 09 Sep 2026",
+        "issued": "5 pm 09 Sep 2026",
         "days": [
           {
             "label": "Wed 9",
-            "cm": 8,
+            "cm": 12,
             "mm": 0,
             "rain": false
           },
@@ -480,7 +480,7 @@
           },
           {
             "label": "Sat 12",
-            "cm": 2,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -493,12 +493,13 @@
           {
             "label": "Mon 14",
             "cm": 0,
-            "mm": 8,
-            "rain": true
+            "mm": 0,
+            "rain": false
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "hours_closed": true
     },
     "cardrona": {
       "status": "Closed",
@@ -690,11 +691,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 09 Sep 2026",
+        "issued": "5 pm 09 Sep 2026",
         "days": [
           {
             "label": "Wed 9",
-            "cm": 8,
+            "cm": 11,
             "mm": 0,
             "rain": false
           },
@@ -724,7 +725,7 @@
           },
           {
             "label": "Mon 14",
-            "cm": 2,
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
@@ -832,17 +833,17 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 09 Sep 2026",
+        "issued": "5 pm 09 Sep 2026",
         "days": [
           {
             "label": "Wed 9",
-            "cm": 13,
+            "cm": 18,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 10",
-            "cm": 1,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
@@ -854,7 +855,7 @@
           },
           {
             "label": "Sat 12",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
@@ -866,7 +867,7 @@
           },
           {
             "label": "Mon 14",
-            "cm": 7,
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
