@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-09T13:58:10.196088+00:00",
+  "updated": "2026-09-09T17:36:30.804442+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "It was an absolute corker of a day yesterday, with sunny skies overhead and fresh powder underboot. A stormy weekend saw the Southern Lakes ski fields score up to 15–35cm, while a storm whipping up the country Sunday and Monday delivered around 15–25cm across Canterbury and 5–10cm to Mt Ruapehu.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-09T14:00:00+00:00",
+  "next_scheduled_update": "2026-09-09T17:40:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.8,
-        "snowing": true,
-        "condition": "Snow",
-        "weather_code": 73,
-        "snowfall_cm": 0.14,
-        "observed": "2026-09-10T01:45",
+        "temperature_c": -6.6,
+        "snowing": false,
+        "condition": "Not snowing",
+        "weather_code": 0,
+        "snowfall_cm": 0.0,
+        "observed": "2026-09-10T05:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -442,8 +442,8 @@
       "summary": "The latest Queenstown & Coronet Peak Snow Report, Ski Conditions, Weather Forecast, Snow Forecast, Snowfall History & Webcams from SnowNZ",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/coronet-peak/snow-cams",
-        "image_url": "https://www.mountainwatch.com/Resort/Coronet-Peak-ExpressCamera-Angle-1/LiveStill.jpg",
-        "embeddable": true,
+        "image_url": null,
+        "embeddable": false,
         "source": "Mountainwatch"
       },
       "forecast": {
@@ -657,20 +657,20 @@
         }
       ],
       "weather": {
-        "temperature_c": 0.2,
+        "temperature_c": -7.8,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 0,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-09T10:30",
+        "observed": "2026-09-10T05:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
       "summary": "Cardrona is open for lift-served skiing today, 9 September. The resort describes conditions and coverage as excellent, with 0 cm overnight and in the last 24 hours but 22 cm over the last 7 days and a 115 cm natural snow base at 1800 m. Overnight grooming has produced some of the winter's best cord, while off-piste skiing remains good after recent top-ups. Sunny lower mountain faces will start firm before softening with the sun. Current conditions are 1°C with 19 km/h winds and 34 km/h gusts, with a sunny start and snow showers expected in the evening. (Issued: --, 9 Sep) 10/10 lifts are open, including McDougall’s Chondola, Whitestar Express, Valley View, Captains Express, T-Bar, Soho Express, Willow’s Quad and Wells Pipe Platter. 10/10 terrain areas are open, including Main Basin, Captains, Soho, Little Willows, Ski Touring Access, Mt Cardrona, Arcadia Chutes and Summit. Main Basin and Valley View were scheduled to open from 8:30 am, with Captains, Willows, Soho and T-Bar to follow from 9:00 am. All listed learner and major terrain areas are operating. JWI returns to the big-air feature today, with the world's top freeskiers and snowboarders competing from 10:00 am, with the best viewing and access from Skyline. The access road is chain free, but chains must always be carried, and an active road hazard advisory remains in place. Five of six car parks are open, with Car Park A full and Car Parks B, C, The Yard, Valley View and The Pines available. Lifts & terrain Lifts Open 10 / 10 Runs Open 0 / 38 Percent open 0 %",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
-        "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
-        "embeddable": true,
+        "image_url": null,
+        "embeddable": false,
         "source": "Mountainwatch"
       },
       "forecast": {
@@ -793,12 +793,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.3,
+        "temperature_c": -2.5,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-08T12:30",
+        "observed": "2026-09-10T05:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
