@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-09T22:23:02.157441+00:00",
+  "updated": "2026-09-10T00:21:02.183655+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "It was an absolute corker of a day yesterday, with sunny skies overhead and fresh powder underboot. A stormy weekend saw the Southern Lakes ski fields score up to 15–35cm, while a storm whipping up the country Sunday and Monday delivered around 15–25cm across Canterbury and 5–10cm to Mt Ruapehu.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-09T22:25:00+00:00",
+  "next_scheduled_update": "2026-09-10T00:25:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -4.5,
+        "temperature_c": -3.6,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 1,
+        "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-10T10:15",
+        "observed": "2026-09-10T12:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -425,12 +425,12 @@
         },
         {
           "name": "Walkabout Terrain Park",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Tuck Rail garden",
-          "status": "Open",
+          "status": "On Hold",
           "difficulty": "unclassified"
         }
       ],
@@ -449,12 +449,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -4.4,
+        "temperature_c": -1.6,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-10T10:15",
+        "observed": "2026-09-10T12:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -690,7 +690,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Cardrona is open for lift-served skiing today, 9 September. The resort describes conditions and coverage as excellent, with 0 cm overnight and in the last 24 hours but 22 cm over the last 7 days and a 115 cm natural snow base at 1800 m. Overnight grooming has produced some of the winter's best cord, while off-piste skiing remains good after recent top-ups. Sunny lower mountain faces will start firm before softening with the sun. Current conditions are 1°C with 19 km/h winds and 34 km/h gusts, with a sunny start and snow showers expected in the evening. (Issued: --, 9 Sep) 10/10 lifts are open, including McDougall’s Chondola, Whitestar Express, Valley View, Captains Express, T-Bar, Soho Express, Willow’s Quad and Wells Pipe Platter. 10/10 terrain areas are open, including Main Basin, Captains, Soho, Little Willows, Ski Touring Access, Mt Cardrona, Arcadia Chutes and Summit. Main Basin and Valley View were scheduled to open from 8:30 am, with Captains, Willows, Soho and T-Bar to follow from 9:00 am. All listed learner and major terrain areas are operating. JWI returns to the big-air feature today, with the world's top freeskiers and snowboarders competing from 10:00 am, with the best viewing and access from Skyline. The access road is chain free, but chains must always be carried, and an active road hazard advisory remains in place. Five of six car parks are open, with Car Park A full and Car Parks B, C, The Yard, Valley View and The Pines available. Lifts & terrain Lifts Open 10 / 10 Runs Open 0 / 38 Percent open 0 %",
+      "summary": "Skiing is possible today, with Cardrona open and a fresh 10 cm of overnight snow producing soft new snow over a firmer base. The resort is reporting fresh snow affected by some wind, with dust-on-crust concerns in places, while groomed areas have been prepared with softer, more forgiving cord. At -6°C with 18 km/h winds and gusts to 32 km/h, conditions are firmly wintry; the forecast calls for a fine day as any morning cloud clears. McDougall’s Chondola, Whitestar Express, Valley View, Captains Express, T-Bar, Soho Express and Willow’s Quad are open, along with Kindy Conveyor and Learner Conveyors. Wells Pipe Platter is closed. Main Basin and Valley View were scheduled from 8:30am, with Captains, Willows, Soho and T-Bar following from 9:00am; Soho opened at 11:00am and Willows at 11:07am. Learners Slopes, Main Basin, Captains, Soho, Little Willows, Big Willows, Ski Touring Access, Mt Cardrona, Arcadia Chutes and Summit are open. (Issued: 11:07am, 10 Sep) Baby Bucks, Little Bucks, Antlers Alley, Stag Lane, Big Bucks, Peoples Pipe and Gravity Cross are open, while Olympic Pipe and Big Air are closed. Access roads are chain free, but chains must be carried, with an active road hazard advisory. Carpark A is full, while Carparks B and C, The Yard, Valley View and The Pines are available. The resort expects another busy day and is asking guests to carpool where possible. Lifts & terrain Lifts Open 9 / 10 Runs Open 0 / 38 Percent open 0 %",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -810,15 +810,15 @@
       "carparks": [
         {
           "name": "Carpark 1",
-          "status": "Full"
+          "status": "Available"
         },
         {
           "name": "Carpark 2",
-          "status": "Full"
+          "status": "Available"
         },
         {
           "name": "Carpark 3",
-          "status": "Full"
+          "status": "Available"
         }
       ],
       "weather": {
@@ -831,7 +831,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Treble Cone is open for lift-served skiing today, 9 September. The latest resort report describes superb snow conditions, with 0 cm overnight and in the last 24 hours, 7 cm over the last 7 days and a 140 cm natural snow base at the top of Home Basin. The grooming team has prepared an outstanding selection of freshly groomed trails for morning turns, while powder pockets remain higher on the mountain and the Saddle offers playful gullies. Current conditions are 1°C with 19 km/h winds and 34 km/h gusts, with a sunny start, increasing cloud later and snow forecast tonight. 3/3 lifts are open, with Home Basin Express, Saddle Quad and Beginner Platter operating. Home Basin, Powder Bowl, Matukituki Basin, Saddle Basin, Summit Slopes, Motatapu Chutes, Backcountry Access and Skinning Access are all open. Groomed terrain includes Main Street, Roller Coaster, Upper & Lower Midwave, Raffil's Run, Side Saddle, Bullet, Saddleback, South Ridge & Wide Glide, and Pete's Treat & High Street. Home Basin is scheduled to open at 8:30 am, with Saddle Basin scheduled for 9:00 am. Today is a good day to hike the Summit Slopes, with Motatapu Chutes open. Visitors must enter terrain only through open gates and obey all closures. The access road is chain free, but all vehicles must carry chains, with a free shuttle operating from the bottom of the access road. An active road hazard advisory remains in place. The resort is also preparing for an action-packed weekend, including The Green Steam x POW Day x The Funk Royale on Saturday and the TC Interfields Ski Race on Sunday. Lifts & terrain Lifts Open 3 / 3 Runs Open 0 / 59 Percent open 0 %",
+      "summary": "Skiing is possible today, with Treble Cone open and 10 cm of dry overnight snow providing fresh terrain across Home Basin, Saddle Basin and the Summit Slopes. The resort reports some drifts off trail, stripped areas and dust-on-crust, while groomed cord should be soft and forgiving. It is currently -4°C with 14 km/h winds and 24 km/h gusts, with a fine day forecast. Home Basin Express, Saddle Quad and Beginner Platter are open. Triple Treat, Main Street, Roller Coaster, Beginner Platter, Raffil's Run, Bullet, Pete's Treat and High Street are open. Home Basin, Powder Bowl, Matukituki Basin, Saddle Basin, Summit Slopes, Backcountry Access and Skinning Access are open; Motatapu Chutes is on hold. (Issued: 10:00am, 10 Sep) The access road is chain free, but all vehicles must carry chains; the road is narrow in places and a free shuttle operates from the bottom of the access road. Home Basin and Saddle Basin are open. Treble Cone’s carparks are all available, and the resort reports a fine forecast with the mountain offering fresh snow in the sun. Lifts & terrain Lifts Open 3 / 3 Runs Open 0 / 59 Percent open 0 %",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
