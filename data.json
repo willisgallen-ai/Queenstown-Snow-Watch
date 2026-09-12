@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-11T23:17:42.455925+00:00",
+  "updated": "2026-09-12T01:08:28.459667+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Unsettled spring westerlies continue to rule the roost for the foreseeable future, with a windy Friday likely to cause a few headaches for lift operations, especially in the Southern Lakes. The weekend looks fairly decent overall, with a mix of sunshine, cloud and a few flurries down south, while Canterbury gets the better end of the deal with plenty of sunshine.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-11T23:20:00+00:00",
+  "next_scheduled_update": "2026-09-12T01:10:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.9,
+        "temperature_c": -1.4,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-12T11:00",
+        "observed": "2026-09-12T13:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -441,12 +441,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.3,
+        "temperature_c": 1.2,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 1,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-12T09:00",
+        "observed": "2026-09-12T13:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -502,7 +502,7 @@
     },
     "cardrona": {
       "status": "Open",
-      "lifts_open": 10,
+      "lifts_open": 9,
       "lifts_total": 10,
       "base_lower": 115,
       "base_upper": 115,
@@ -513,137 +513,137 @@
       "lifts": [
         {
           "name": "Learner Conveyors",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "McDougall's Chondola",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Whitestar Express",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Captains Express",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Willow's Quad",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Soho Express",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "T-Bar",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Valley View",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Kindy Conveyor",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Wells Pipe Platter",
-          "status": "Open"
+          "status": "Unknown"
         }
       ],
       "trails": [
         {
           "name": "Learners Slope",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Main Basin",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Captains",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Soho",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Little Willows",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Big Willows",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Mt Cardrona",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Arcadia Chutes",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Summit",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         }
       ],
       "park": [
         {
           "name": "Baby Bucks",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Little Bucks",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Antlers Alley",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Stag Lane",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Big Bucks",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Peoples Pipe",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Olympic Pipe",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Big Air",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Mc Park",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Gravity Cross",
-          "status": "Open"
+          "status": "Unknown"
         }
       ],
       "carparks": [
@@ -682,7 +682,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Cardrona Alpine Resort is open today, although increasing winds have now closed all chairlifts for the day. The Learners Slopes remain open until 1:00 pm. The resort reports that yesterday's fresh snowfall combined with cold conditions has produced great snow, with extensive overnight grooming. Current conditions are -1°C, with winds at 45 km/h and gusts to 80 km/h. The day started clear, with high cloud expected to build and strengthening southwest winds bringing cooler air. 2/10 lifts are open: Kindy Conveyor and Learner Conveyors are operating, while all chairlifts are closed following the 10:45 am wind update. 2/10 terrain areas are open, with Learners Slopes and Ski Touring Access available; Main Basin and the remaining listed terrain are closed. The resort's scheduled opening times were Main Basin and Valley View from 8:30 am, followed by Captains, Willows, Soho and T-Bar from 9:00 am, but wind conditions have since forced the chairlifts to close. (Issued: 10:45 am, 11 Sep) The access road is chain-free, although chains must be carried, and an active road hazard advisory remains in place. Lifts & terrain Lifts Open 2 / 10 Runs Open 0 / 38 Percent open 0 %",
+      "summary": "Cardrona is open for skiing today, with cold conditions and fresh snow creating great skiing and riding across the mountain. The current report shows -3°C, 31 km/h winds with 53 km/h gusts, and 115 cm natural snow depth at 1,800m. Winds are easing, with clear skies expected to improve through the morning. The resort says snow coverage is at an all-time high for the season, with good conditions across the mountain. All 10/10 lifts are open, including McDougall’s Chondola, Whitestar Express, Valley View, Captains Express, T-Bar, Soho Express, Willow’s Quad, Wells Pipe Platter, Kindy Conveyor and Learner Conveyors. The report shows 9/10 terrain areas open, with Main Basin, Captains, Soho, Little Willows, Big Willows, Mt Cardrona, Arcadia Chutes, Learners Slopes and Ski Touring Access open. Summit is closed. The T-Bar is open, with Main Basin and Valley View scheduled from 8:30am, Captains from 9am, and Soho and Willows from 9:45am. The resort notes filming on Valleyview from 12–1pm, which may cause intermittent stops. The access road is chain free, although chains must be carried, and an active road hazard advisory remains in place. Carparks C, The Yard, Valley View and The Pines have availability, while A and B are full. The mountain is also hosting Green Steam x POW Day and live music today, with a POW Scavenger Hunt from 10am–1pm. Lifts & terrain Lifts Open 10 / 10 Runs Open 0 / 38 Percent open 0 %",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -802,15 +802,15 @@
       "carparks": [
         {
           "name": "Carpark 1",
-          "status": "Available"
+          "status": "Full"
         },
         {
           "name": "Carpark 2",
-          "status": "Available"
+          "status": "Full"
         },
         {
           "name": "Carpark 3",
-          "status": "Available"
+          "status": "Full"
         }
       ],
       "weather": {
@@ -823,7 +823,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Treble Cone is open today, with the Beginner Platter operating while strong winds have restricted the remainder of the ski area. A cold, clear night has kept the recent fresh snow in great shape, with crisp conditions expected before the sun softens the snow. Current conditions are 0°C, with winds of 29 km/h and gusts to 51 km/h. The latest update reports that severe gale-force winds have forced Saddle Basin to close for the day, while Home Basin's six-seater remains on hold. 1/3 lifts is open: the Beginner Platter is operating, Home Basin Express is on hold and Saddle Quad is closed. 3/9 terrain areas are open, consisting of the Beginner Platter, Backcountry Access and Skinning Access; Home Basin, Powder Bowl and Matukituki Basin are on hold, while Saddle Basin, Summit Slopes and Motatapu Chutes are closed. (Issued: 12:30 pm, 11 Sep) The access road is chain-free, but all vehicles must carry chains. The road is narrow in places, and a free shuttle operates from the bottom of the access road. Lifts & terrain Lifts Open 1 / 3 Runs Open 0 / 59 Percent open 0 %",
+      "summary": "Treble Cone is open for skiing today, with clear, sunny conditions and lovely overnight grooming setting up a strong day on the mountain. The latest report shows -2°C, 16 km/h winds with 31 km/h gusts, and 143 cm natural snow depth at the Home Basin weather plot. The resort reports fantastic coverage, with good groomed pistes and wind-loaded pockets available. Conditions in the Saddle are windswept in places. All 3/3 lifts are open: Home Basin Express, Saddle Quad and Beginner Platter. 11/11 listed groomed trails are open, including Main Street, Roller Coaster, Raffil's Run, Bullet, Pete's Treat, High Street, Side Saddle, Saddle Back and South Ridge. Current terrain status shows Home Basin, Powder Bowl, Saddle Basin, Summit Slopes, Backcountry Access, Skinning Access and Beginner Platter open, while Matukituki Basin and Motatapu Chutes are on hold. The report also confirms all lifts are open. The access road is chain free, but all vehicles must carry chains, with a free shuttle from the bottom of the access road. A road-hazard advisory remains active, and bikers are cautioned that the road is narrow in places. Today is Green Steam x POW Day, with live music and a POW Scavenger Hunt from 10am–1pm. Tomorrow brings Atomic Rise & Shine, the TC Interfields Ski Race and Out in The Alps Retro Dress Up Day. Lifts & terrain Lifts Open 3 / 3 Runs Open 0 / 59 Percent open 0 %",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
