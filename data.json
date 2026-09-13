@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-13T21:35:57.265802+00:00",
+  "updated": "2026-09-13T23:28:14.196325+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "First up, Monday and Tuesday will be mostly fine, giving us a couple of decent days on the slopes before things turn wild and woolly. A slow-moving front rolls onto the lower South Island early Wednesday, with rain and high-level snow gradually turning to widespread snowfall as cold southerlies creep north. By Thursday, the Southern Lakes should wake to 20-40+cm of freshies and clearing skies, with Canterbury following suit later in the day. Wax the powder skis, it’s going to be epic!",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-13T21:40:00+00:00",
+  "next_scheduled_update": "2026-09-13T23:30:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.9,
+        "temperature_c": 1.6,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 1,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-14T09:30",
+        "observed": "2026-09-14T11:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -441,12 +441,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.3,
+        "temperature_c": 5.7,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 1,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-14T09:30",
+        "observed": "2026-09-14T11:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
