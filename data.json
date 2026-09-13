@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-13T17:15:03.025391+00:00",
+  "updated": "2026-09-13T19:29:37.236786+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Unsettled spring westerlies continue to rule the roost for the foreseeable future, with a windy Friday likely to cause a few headaches for lift operations, especially in the Southern Lakes. The weekend looks fairly decent overall, with a mix of sunshine, cloud and a few flurries down south, while Canterbury gets the better end of the deal with plenty of sunshine.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-13T17:20:00+00:00",
+  "next_scheduled_update": "2026-09-13T19:30:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.8,
+        "temperature_c": -3.6,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-14T05:00",
+        "observed": "2026-09-14T07:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,7 +134,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 13 Sep 2026",
+        "issued": "5 am 14 Sep 2026",
         "days": [
           {
             "label": "Mon 14",
@@ -150,18 +150,24 @@
           },
           {
             "label": "Wed 16",
-            "cm": 26,
+            "cm": 46,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 17",
-            "cm": 12,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 18",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 19",
             "cm": 0,
             "mm": 0,
             "rain": false
@@ -430,12 +436,12 @@
       ],
       "carparks": [],
       "weather": {
-        "temperature_c": -3.5,
+        "temperature_c": -4.0,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-14T05:00",
+        "observed": "2026-09-14T07:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -447,7 +453,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 13 Sep 2026",
+        "issued": "5 am 14 Sep 2026",
         "days": [
           {
             "label": "Mon 14",
@@ -457,19 +463,19 @@
           },
           {
             "label": "Tue 15",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Wed 16",
-            "cm": 25,
+            "cm": 45,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 17",
-            "cm": 11,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -477,6 +483,12 @@
             "label": "Fri 18",
             "cm": 0,
             "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 19",
+            "cm": 1,
+            "mm": 1,
             "rain": false
           }
         ]
@@ -490,8 +502,8 @@
       "lifts_total": 10,
       "base_lower": 115,
       "base_upper": 115,
-      "new_snow_7d": 12,
-      "new_snow_24h": 1,
+      "new_snow_7d": 11,
+      "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
       "lifts": [
@@ -674,7 +686,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 13 Sep 2026",
+        "issued": "5 am 14 Sep 2026",
         "days": [
           {
             "label": "Mon 14",
@@ -690,18 +702,24 @@
           },
           {
             "label": "Wed 16",
-            "cm": 25,
+            "cm": 45,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 17",
-            "cm": 14,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 18",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 19",
             "cm": 0,
             "mm": 0,
             "rain": false
@@ -810,7 +828,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 13 Sep 2026",
+        "issued": "5 am 14 Sep 2026",
         "days": [
           {
             "label": "Mon 14",
@@ -820,24 +838,30 @@
           },
           {
             "label": "Tue 15",
-            "cm": 0,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Wed 16",
-            "cm": 33,
+            "cm": 56,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 17",
-            "cm": 20,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 18",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 19",
             "cm": 0,
             "mm": 0,
             "rain": false
