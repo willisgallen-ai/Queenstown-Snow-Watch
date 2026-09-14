@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-13T23:28:14.196325+00:00",
+  "updated": "2026-09-14T01:22:48.222713+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "First up, Monday and Tuesday will be mostly fine, giving us a couple of decent days on the slopes before things turn wild and woolly. A slow-moving front rolls onto the lower South Island early Wednesday, with rain and high-level snow gradually turning to widespread snowfall as cold southerlies creep north. By Thursday, the Southern Lakes should wake to 20-40+cm of freshies and clearing skies, with Canterbury following suit later in the day. Wax the powder skis, it’s going to be epic!",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-13T23:30:00+00:00",
+  "next_scheduled_update": "2026-09-14T01:25:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.6,
+        "temperature_c": 4.5,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 1,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-14T11:15",
+        "observed": "2026-09-14T13:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,7 +134,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 14 Sep 2026",
+        "issued": "11 am 14 Sep 2026",
         "days": [
           {
             "label": "Mon 14",
@@ -150,25 +150,25 @@
           },
           {
             "label": "Wed 16",
-            "cm": 46,
+            "cm": 41,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 17",
-            "cm": 2,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 18",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 19",
-            "cm": 0,
+            "cm": 8,
             "mm": 0,
             "rain": false
           }
@@ -425,7 +425,7 @@
         },
         {
           "name": "Walkabout Terrain Park",
-          "status": "On Hold",
+          "status": "Open",
           "difficulty": "unclassified"
         },
         {
@@ -441,12 +441,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 5.7,
+        "temperature_c": 8.8,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 1,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-14T11:15",
+        "observed": "2026-09-14T13:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -458,7 +458,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 14 Sep 2026",
+        "issued": "11 am 14 Sep 2026",
         "days": [
           {
             "label": "Mon 14",
@@ -474,13 +474,13 @@
           },
           {
             "label": "Wed 16",
-            "cm": 45,
+            "cm": 39,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 17",
-            "cm": 1,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
@@ -492,8 +492,8 @@
           },
           {
             "label": "Sat 19",
-            "cm": 1,
-            "mm": 1,
+            "cm": 7,
+            "mm": 0,
             "rain": false
           }
         ]
@@ -502,7 +502,7 @@
     },
     "cardrona": {
       "status": "Open",
-      "lifts_open": 10,
+      "lifts_open": 9,
       "lifts_total": 10,
       "base_lower": 115,
       "base_upper": 115,
@@ -513,137 +513,137 @@
       "lifts": [
         {
           "name": "Learner Conveyors",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "McDougall's Chondola",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Whitestar Express",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Captains Express",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Willow's Quad",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Soho Express",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "T-Bar",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Valley View",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Kindy Conveyor",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Wells Pipe Platter",
-          "status": "Open"
+          "status": "Unknown"
         }
       ],
       "trails": [
         {
           "name": "Learners Slope",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Main Basin",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Captains",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Soho",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Little Willows",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Big Willows",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Mt Cardrona",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Arcadia Chutes",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Summit",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         }
       ],
       "park": [
         {
           "name": "Baby Bucks",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Little Bucks",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Antlers Alley",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Stag Lane",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Big Bucks",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Peoples Pipe",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Olympic Pipe",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Big Air",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Mc Park",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Gravity Cross",
-          "status": "Open"
+          "status": "Unknown"
         }
       ],
       "carparks": [
@@ -690,7 +690,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 14 Sep 2026",
+        "issued": "11 am 14 Sep 2026",
         "days": [
           {
             "label": "Mon 14",
@@ -706,7 +706,7 @@
           },
           {
             "label": "Wed 16",
-            "cm": 45,
+            "cm": 44,
             "mm": 0,
             "rain": false
           },
@@ -724,7 +724,7 @@
           },
           {
             "label": "Sat 19",
-            "cm": 0,
+            "cm": 4,
             "mm": 0,
             "rain": false
           }
@@ -831,7 +831,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 14 Sep 2026",
+        "issued": "11 am 14 Sep 2026",
         "days": [
           {
             "label": "Mon 14",
@@ -847,7 +847,7 @@
           },
           {
             "label": "Wed 16",
-            "cm": 56,
+            "cm": 54,
             "mm": 0,
             "rain": false
           },
@@ -865,7 +865,7 @@
           },
           {
             "label": "Sat 19",
-            "cm": 0,
+            "cm": 5,
             "mm": 0,
             "rain": false
           }
