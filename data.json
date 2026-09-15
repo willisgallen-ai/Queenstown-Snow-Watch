@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-15T14:53:59.597170+00:00",
+  "updated": "2026-09-15T18:32:50.014845+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "First up, Monday and Tuesday will be mostly fine, giving us a couple of decent days on the slopes before things turn wild and woolly. A slow-moving front rolls onto the lower South Island early Wednesday, with rain and high-level snow gradually turning to widespread snowfall as cold southerlies creep north. By Thursday, the Southern Lakes should wake to 20-40+cm of freshies and clearing skies, with Canterbury following suit later in the day. Wax the powder skis, it’s going to be epic!",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-15T14:55:00+00:00",
+  "next_scheduled_update": "2026-09-15T18:35:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 0.8,
+        "temperature_c": 0.5,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 51,
+        "weather_code": 53,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-16T02:45",
+        "observed": "2026-09-16T06:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -430,12 +430,12 @@
       ],
       "carparks": [],
       "weather": {
-        "temperature_c": 2.7,
+        "temperature_c": 1.8,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 53,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-16T02:45",
+        "observed": "2026-09-16T06:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -793,12 +793,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 2.0,
-        "snowing": false,
-        "condition": "Not snowing",
-        "weather_code": 51,
-        "snowfall_cm": 0.0,
-        "observed": "2026-09-15T17:00",
+        "temperature_c": 1.0,
+        "snowing": true,
+        "condition": "Snow",
+        "weather_code": 73,
+        "snowfall_cm": 0.14,
+        "observed": "2026-09-16T06:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
