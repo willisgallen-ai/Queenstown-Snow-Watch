@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-15T21:43:11.186391+00:00",
+  "updated": "2026-09-15T23:43:31.935469+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Things stay lively into the weekend. Friday will be quieter before another front barrels through early Saturday, followed by a cold southwest change after dark that’ll give the Southern Lakes a wee 2-5cm top-up overnight. Sunday then shapes up mint as skies clear across the South Island. Mt Ruapehu finally gets in on the powder action too, with the cold change whipping across the North Island and delivering 5-15cm before skies clear later in the day.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-15T21:45:00+00:00",
+  "next_scheduled_update": "2026-09-15T23:45:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.2,
+        "temperature_c": 1.4,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 53,
+        "weather_code": 80,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-16T09:30",
+        "observed": "2026-09-16T11:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -180,7 +180,7 @@
     },
     "coronetpeak": {
       "status": "Open",
-      "lifts_open": 6,
+      "lifts_open": 5,
       "lifts_total": 8,
       "base_lower": 55,
       "base_upper": 90,
@@ -194,8 +194,8 @@
           "status": "Open"
         },
         {
-          "name": "Greengates Express",
-          "status": "Open"
+          "name": "Greengates Express Maintenance Hold",
+          "status": "Unknown"
         },
         {
           "name": "Meadows Learner Express",
@@ -439,9 +439,9 @@
         "temperature_c": 2.8,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 55,
+        "weather_code": 80,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-16T09:30",
+        "observed": "2026-09-16T11:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -809,12 +809,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.0,
+        "temperature_c": 1.3,
         "snowing": true,
         "condition": "Snow",
-        "weather_code": 73,
-        "snowfall_cm": 0.14,
-        "observed": "2026-09-16T06:30",
+        "weather_code": 75,
+        "snowfall_cm": 0.28,
+        "observed": "2026-09-16T11:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
