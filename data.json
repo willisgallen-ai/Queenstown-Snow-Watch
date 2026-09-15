@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-15T10:04:51.200323+00:00",
+  "updated": "2026-09-15T14:53:59.597170+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "First up, Monday and Tuesday will be mostly fine, giving us a couple of decent days on the slopes before things turn wild and woolly. A slow-moving front rolls onto the lower South Island early Wednesday, with rain and high-level snow gradually turning to widespread snowfall as cold southerlies creep north. By Thursday, the Southern Lakes should wake to 20-40+cm of freshies and clearing skies, with Canterbury following suit later in the day. Wax the powder skis, it’s going to be epic!",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-15T10:05:00+00:00",
+  "next_scheduled_update": "2026-09-15T14:55:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.1,
+        "temperature_c": 0.8,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 51,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-15T22:00",
+        "observed": "2026-09-16T02:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,43 +134,37 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 15 Sep 2026",
+        "issued": "11 pm 15 Sep 2026",
         "days": [
           {
-            "label": "Tue 15",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Wed 16",
-            "cm": 32,
+            "cm": 18,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 17",
-            "cm": 4,
+            "cm": 17,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 18",
-            "cm": 3,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 19",
-            "cm": 5,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 20",
-            "cm": 0,
-            "mm": 1,
-            "rain": true
+            "cm": 7,
+            "mm": 0,
+            "rain": false
           }
         ]
       },
@@ -436,12 +430,12 @@
       ],
       "carparks": [],
       "weather": {
-        "temperature_c": 2.0,
+        "temperature_c": 2.7,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 53,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-15T22:00",
+        "observed": "2026-09-16T02:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -453,43 +447,37 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 15 Sep 2026",
+        "issued": "11 pm 15 Sep 2026",
         "days": [
           {
-            "label": "Tue 15",
-            "cm": 1,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Wed 16",
-            "cm": 34,
+            "cm": 18,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 17",
-            "cm": 3,
+            "cm": 18,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 18",
-            "cm": 2,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 19",
-            "cm": 4,
-            "mm": 0,
+            "cm": 2,
+            "mm": 1,
             "rain": false
           },
           {
             "label": "Sun 20",
-            "cm": 0,
-            "mm": 1,
-            "rain": true
+            "cm": 5,
+            "mm": 0,
+            "rain": false
           }
         ]
       },
@@ -686,43 +674,37 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 15 Sep 2026",
+        "issued": "11 pm 15 Sep 2026",
         "days": [
           {
-            "label": "Tue 15",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Wed 16",
-            "cm": 36,
+            "cm": 14,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 17",
-            "cm": 2,
+            "cm": 24,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 18",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 19",
-            "cm": 2,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 20",
-            "cm": 0,
-            "mm": 1,
-            "rain": true
+            "cm": 2,
+            "mm": 0,
+            "rain": false
           }
         ]
       },
@@ -823,48 +805,42 @@
       "summary": "Treble Cone is open for skiing today, with 0 cm of new snow overnight, in the last 24 hours and over the last 7 days. The mountain is starting firm in the morning before softening in the sun, with excellent coverage and strong spring skiing across the hill. Current conditions are 2°C with 19 km/h winds and gusts to 35 km/h, with clear skies early and high cloud building this afternoon. Warm temperatures are weakening the snowpack, and Saddle Track may need to close later due to overhead avalanche hazard. Home Basin Express, Saddle Quad and Beginner Platter are open. Home Basin, Powder Bowl, Matukituki Basin, Saddle Basin, Summit Slopes, Backcountry Access, Skinning Access and Terrain Park are open, while Motatapu Chutes is closed. Home Basin is scheduled from 8:30am–4:00pm, with Saddle Basin from 9:00am–3:30pm. (Issued: 6:25 am, 15 Sep) The access road is chain-free, with a free shuttle from the bottom of the access road. The road remains under an active hazard advisory. Saddle Track may close later today because of overhead avalanche hazard; riders should follow lift-station messaging. Lifts & terrain Lifts Open 3 / 3 Runs Open 0 / 59 Percent open 0 %",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
-        "image_url": null,
-        "embeddable": false,
+        "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
+        "embeddable": true,
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 15 Sep 2026",
+        "issued": "11 pm 15 Sep 2026",
         "days": [
           {
-            "label": "Tue 15",
-            "cm": 3,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Wed 16",
-            "cm": 47,
+            "cm": 20,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 17",
-            "cm": 4,
+            "cm": 34,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 18",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 19",
-            "cm": 4,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 20",
-            "cm": 0,
-            "mm": 1,
-            "rain": true
+            "cm": 3,
+            "mm": 0,
+            "rain": false
           }
         ]
       },
