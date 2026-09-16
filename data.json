@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-16T12:10:34.140629+00:00",
+  "updated": "2026-09-16T16:50:47.713097+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Things stay lively into the weekend. Friday will be quieter before another front barrels through early Saturday, followed by a cold southwest change after dark that’ll give the Southern Lakes a wee 2-5cm top-up overnight. Sunday then shapes up mint as skies clear across the South Island. Mt Ruapehu finally gets in on the powder action too, with the cold change whipping across the North Island and delivering 5-15cm before skies clear later in the day.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-16T12:15:00+00:00",
+  "next_scheduled_update": "2026-09-16T16:55:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -4.8,
-        "snowing": true,
-        "condition": "Snow",
-        "weather_code": 73,
-        "snowfall_cm": 0.07,
-        "observed": "2026-09-17T00:00",
+        "temperature_c": -5.8,
+        "snowing": false,
+        "condition": "Not snowing",
+        "weather_code": 3,
+        "snowfall_cm": 0.0,
+        "observed": "2026-09-17T04:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,17 +134,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 16 Sep 2026",
+        "issued": "11 pm 16 Sep 2026",
         "days": [
           {
-            "label": "Wed 16",
-            "cm": 29,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Thu 17",
-            "cm": 0,
+            "cm": 11,
             "mm": 0,
             "rain": false
           },
@@ -156,19 +150,19 @@
           },
           {
             "label": "Sat 19",
-            "cm": 6,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 20",
-            "cm": 0,
+            "cm": 8,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 21",
-            "cm": 9,
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
@@ -436,12 +430,12 @@
       ],
       "carparks": [],
       "weather": {
-        "temperature_c": -3.2,
-        "snowing": true,
-        "condition": "Snow",
-        "weather_code": 73,
-        "snowfall_cm": 0.07,
-        "observed": "2026-09-17T00:00",
+        "temperature_c": -3.3,
+        "snowing": false,
+        "condition": "Not snowing",
+        "weather_code": 3,
+        "snowfall_cm": 0.0,
+        "observed": "2026-09-17T04:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -453,43 +447,37 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 16 Sep 2026",
+        "issued": "11 pm 16 Sep 2026",
         "days": [
           {
-            "label": "Wed 16",
-            "cm": 28,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Thu 17",
-            "cm": 0,
+            "cm": 11,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 18",
-            "cm": 1,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sat 19",
-            "cm": 7,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sun 20",
             "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
-            "label": "Mon 21",
-            "cm": 5,
-            "mm": 8,
+            "label": "Sat 19",
+            "cm": 4,
+            "mm": 0,
             "rain": false
+          },
+          {
+            "label": "Sun 20",
+            "cm": 5,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Mon 21",
+            "cm": 0,
+            "mm": 1,
+            "rain": true
           }
         ]
       },
@@ -669,16 +657,16 @@
         }
       ],
       "weather": {
-        "temperature_c": -6.1,
-        "snowing": true,
-        "condition": "Snow",
-        "weather_code": 73,
-        "snowfall_cm": 0.07,
-        "observed": "2026-09-17T00:00",
+        "temperature_c": -7.3,
+        "snowing": false,
+        "condition": "Not snowing",
+        "weather_code": 3,
+        "snowfall_cm": 0.0,
+        "observed": "2026-09-17T04:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Cardrona Alpine Resort is open for skiing today, with no new snow recorded overnight or in the last 24 hours and snow forecast to develop through the day. The mountain is currently 0°C, with winds of 16 km/h and gusts to 27 km/h. The resort says coverage remains superb, with groomers active overnight; groomed terrain will start firm and fast, while pockets of cold dry snow remain at higher, shaded elevations. Kindy Conveyor, Learner Conveyors, McDougall’s Chondola, Whitestar Express, Valley View, Captains Express, T-Bar, Soho Express, Willow’s Quad and Wells Pipe Platter are open. Learners Slopes, Main Basin, Captains, Soho, Little Willows, Big Willows, Ski Touring Access and Arcadia Chutes are open, while Mt Cardrona and Summit are on hold. Big Air is closed and Gravity Cross is an event area. (Issued: 11:03 am, 16 Sep) The access road has an active road hazard advisory and all vehicles must carry chains. The Schools Alpine Race is taking place in the cross course today, while the Platter and Olympic Pipe close at 11:45 am. Lifts & terrain Lifts Open 10 / 10 Runs Open 0 / 38 Percent open 0 %",
+      "summary": null,
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -686,41 +674,35 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 16 Sep 2026",
+        "issued": "11 pm 16 Sep 2026",
         "days": [
           {
-            "label": "Wed 16",
-            "cm": 29,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Thu 17",
-            "cm": 0,
+            "cm": 12,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 18",
-            "cm": 1,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sat 19",
-            "cm": 5,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sun 20",
             "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
+            "label": "Sat 19",
+            "cm": 1,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sun 20",
+            "cm": 3,
+            "mm": 0,
+            "rain": false
+          },
+          {
             "label": "Mon 21",
-            "cm": 8,
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
@@ -820,7 +802,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Treble Cone is open for skiing today, with no new snow recorded overnight, in the last 24 hours or over the last 7 days. The mountain is currently 1°C, with winds of 16 km/h and gusts to 31 km/h. The resort expects snow through the day as the freezing level falls, with the lower Home Basin offering spring conditions and better skiing higher up. Home Basin Express and Beginner Platter are open, while Saddle Quad is closed. Open terrain includes Home Basin, Lower Powder Bowl, Matukituki Basin and Terrain Park; Saddle Basin, Summit Slopes, Motatapu Chutes, Backcountry Access and Skinning Access are closed. Open groomers include Triple Treat, Beginner Platter, Big Skite and Main Street. (Issued: 10:14 am, 16 Sep) The access road is subject to an active road hazard advisory, and all vehicles must carry chains because of the incoming snow. The resort is focusing operations on Home Basin, while Saddle Basin remains closed because of the incoming storm and avalanche concerns on Saddle Track. Lifts & terrain Lifts Open 2 / 3 Runs Open 0 / 59 Percent open 0 %",
+      "summary": null,
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
@@ -828,17 +810,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 16 Sep 2026",
+        "issued": "11 pm 16 Sep 2026",
         "days": [
           {
-            "label": "Wed 16",
-            "cm": 36,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Thu 17",
-            "cm": 0,
+            "cm": 16,
             "mm": 0,
             "rain": false
           },
@@ -850,19 +826,19 @@
           },
           {
             "label": "Sat 19",
-            "cm": 10,
+            "cm": 6,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 20",
-            "cm": 0,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 21",
-            "cm": 9,
+            "cm": 1,
             "mm": 0,
             "rain": false
           }
