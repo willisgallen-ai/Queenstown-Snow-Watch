@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-17T21:50:18.863264+00:00",
+  "updated": "2026-09-17T23:45:04.360072+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
-    "summary": "Things stay lively into the weekend. Friday will be quieter before another front barrels through early Saturday, followed by a cold southwest change after dark that’ll give the Southern Lakes a wee 2-5cm top-up overnight. Sunday then shapes up mint as skies clear across the South Island. Mt Ruapehu finally gets in on the powder action too, with the cold change whipping across the North Island and delivering 5-15cm before skies clear later in the day.",
+    "summary": "South Island ski fields have scored yet another spring freshen-up, with Wednesday and Thursday’s storm laying down a solid new layer of powder. The storm cleared out of the Southern Lakes early yesterday, revealing 15-20cm of freshies and setting the stage for an epic powder day. Treble Cone came out on top, reporting 7cm at the base up to a juicy 25cm up around the top of the Saddle.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-17T21:55:00+00:00",
+  "next_scheduled_update": "2026-09-17T23:50:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.7,
+        "temperature_c": -0.3,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-18T09:45",
+        "observed": "2026-09-18T11:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -453,12 +453,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 0.7,
+        "temperature_c": 2.3,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-18T09:45",
+        "observed": "2026-09-18T11:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -665,7 +665,7 @@
         },
         {
           "name": "Carpark B",
-          "status": "Available"
+          "status": "Full"
         },
         {
           "name": "Carpark C",
@@ -685,12 +685,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.5,
+        "temperature_c": -0.7,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-17T17:15",
+        "observed": "2026-09-18T11:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
