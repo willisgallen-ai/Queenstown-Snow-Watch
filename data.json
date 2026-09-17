@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-17T15:00:27.547922+00:00",
+  "updated": "2026-09-17T18:54:02.175502+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Things stay lively into the weekend. Friday will be quieter before another front barrels through early Saturday, followed by a cold southwest change after dark that’ll give the Southern Lakes a wee 2-5cm top-up overnight. Sunday then shapes up mint as skies clear across the South Island. Mt Ruapehu finally gets in on the powder action too, with the cold change whipping across the North Island and delivering 5-15cm before skies clear later in the day.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-17T15:05:00+00:00",
+  "next_scheduled_update": "2026-09-17T18:55:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -4.2,
+        "temperature_c": -3.2,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-18T02:45",
+        "observed": "2026-09-18T06:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -435,12 +435,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -5.3,
+        "temperature_c": -2.4,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-18T02:45",
+        "observed": "2026-09-18T06:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -495,8 +495,8 @@
       "lifts_total": 10,
       "base_lower": 112,
       "base_upper": 112,
-      "new_snow_7d": 29,
-      "new_snow_24h": 14,
+      "new_snow_7d": 15,
+      "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
       "lifts": [
@@ -722,8 +722,8 @@
       "lifts_total": 3,
       "base_lower": 150,
       "base_upper": 150,
-      "new_snow_7d": 34,
-      "new_snow_24h": 17,
+      "new_snow_7d": 17,
+      "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
       "lifts": [
