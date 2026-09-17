@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-17T05:25:01.591410+00:00",
+  "updated": "2026-09-17T10:11:44.634966+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Things stay lively into the weekend. Friday will be quieter before another front barrels through early Saturday, followed by a cold southwest change after dark that’ll give the Southern Lakes a wee 2-5cm top-up overnight. Sunday then shapes up mint as skies clear across the South Island. Mt Ruapehu finally gets in on the powder action too, with the cold change whipping across the North Island and delivering 5-15cm before skies clear later in the day.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-17T05:30:00+00:00",
+  "next_scheduled_update": "2026-09-17T10:15:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.1,
+        "temperature_c": -3.7,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 1,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-17T17:15",
+        "observed": "2026-09-17T22:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,7 +134,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 17 Sep 2026",
+        "issued": "5 pm 17 Sep 2026",
         "days": [
           {
             "label": "Thu 17",
@@ -156,19 +156,19 @@
           },
           {
             "label": "Sun 20",
-            "cm": 2,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 21",
             "cm": 8,
-            "mm": 2,
+            "mm": 0,
             "rain": false
           },
           {
             "label": "Tue 22",
-            "cm": 11,
+            "cm": 5,
             "mm": 0,
             "rain": false
           }
@@ -441,12 +441,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 0.6,
+        "temperature_c": -5.9,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-17T17:15",
+        "observed": "2026-09-17T22:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -458,7 +458,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 17 Sep 2026",
+        "issued": "5 pm 17 Sep 2026",
         "days": [
           {
             "label": "Thu 17",
@@ -468,13 +468,13 @@
           },
           {
             "label": "Fri 18",
-            "cm": 1,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 19",
-            "cm": 10,
+            "cm": 11,
             "mm": 0,
             "rain": false
           },
@@ -486,13 +486,13 @@
           },
           {
             "label": "Mon 21",
-            "cm": 7,
-            "mm": 3,
+            "cm": 5,
+            "mm": 8,
             "rain": false
           },
           {
             "label": "Tue 22",
-            "cm": 8,
+            "cm": 4,
             "mm": 0,
             "rain": false
           }
@@ -691,7 +691,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 17 Sep 2026",
+        "issued": "5 pm 17 Sep 2026",
         "days": [
           {
             "label": "Thu 17",
@@ -701,13 +701,13 @@
           },
           {
             "label": "Fri 18",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 19",
-            "cm": 5,
+            "cm": 7,
             "mm": 0,
             "rain": false
           },
@@ -719,13 +719,13 @@
           },
           {
             "label": "Mon 21",
-            "cm": 6,
-            "mm": 2,
+            "cm": 5,
+            "mm": 3,
             "rain": false
           },
           {
             "label": "Tue 22",
-            "cm": 7,
+            "cm": 4,
             "mm": 0,
             "rain": false
           }
@@ -833,7 +833,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 17 Sep 2026",
+        "issued": "5 pm 17 Sep 2026",
         "days": [
           {
             "label": "Thu 17",
@@ -849,7 +849,7 @@
           },
           {
             "label": "Sat 19",
-            "cm": 8,
+            "cm": 11,
             "mm": 0,
             "rain": false
           },
@@ -861,13 +861,13 @@
           },
           {
             "label": "Mon 21",
-            "cm": 13,
+            "cm": 11,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Tue 22",
-            "cm": 7,
+            "cm": 5,
             "mm": 0,
             "rain": false
           }
