@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-18T21:07:53.066312+00:00",
+  "updated": "2026-09-18T23:15:14.298864+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "South Island ski fields have scored yet another spring freshen-up, with Wednesday and Thursday’s storm laying down a solid new layer of powder. The storm cleared out of the Southern Lakes early yesterday, revealing 15-20cm of freshies and setting the stage for an epic powder day. Treble Cone came out on top, reporting 7cm at the base up to a juicy 25cm up around the top of the Saddle.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-18T21:10:00+00:00",
+  "next_scheduled_update": "2026-09-18T23:20:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 0.5,
+        "temperature_c": 1.5,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 51,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-19T09:00",
+        "observed": "2026-09-19T11:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -442,15 +442,19 @@
         {
           "name": "Car Park 1",
           "status": "Full"
+        },
+        {
+          "name": "Car Park 5",
+          "status": "Spaces available"
         }
       ],
       "weather": {
-        "temperature_c": 2.5,
+        "temperature_c": 4.1,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-19T09:00",
+        "observed": "2026-09-19T11:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -677,12 +681,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.7,
+        "temperature_c": 2.3,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-18T11:30",
+        "observed": "2026-09-19T11:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -818,12 +822,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.1,
-        "snowing": true,
-        "condition": "Snow",
-        "weather_code": 86,
-        "snowfall_cm": 0.35,
-        "observed": "2026-09-16T18:45",
+        "temperature_c": 2.2,
+        "snowing": false,
+        "condition": "Not snowing",
+        "weather_code": 51,
+        "snowfall_cm": 0.0,
+        "observed": "2026-09-19T11:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
