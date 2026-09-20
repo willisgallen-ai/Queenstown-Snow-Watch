@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-19T23:13:23.116196+00:00",
+  "updated": "2026-09-20T01:09:13.876715+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "South Island ski fields have scored yet another spring freshen-up, with Wednesday and Thursday’s storm laying down a solid new layer of powder. The storm cleared out of the Southern Lakes early yesterday, revealing 15-20cm of freshies and setting the stage for an epic powder day. Treble Cone came out on top, reporting 7cm at the base up to a juicy 25cm up around the top of the Saddle.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-19T23:15:00+00:00",
+  "next_scheduled_update": "2026-09-20T01:10:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.9,
+        "temperature_c": -1.1,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-20T11:00",
+        "observed": "2026-09-20T13:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -180,7 +180,7 @@
     },
     "coronetpeak": {
       "status": "Open",
-      "lifts_open": 5,
+      "lifts_open": 7,
       "lifts_total": 8,
       "base_lower": 55,
       "base_upper": 90,
@@ -195,15 +195,15 @@
         },
         {
           "name": "Greengates Express",
-          "status": "Wind Hold"
+          "status": "Open"
         },
         {
           "name": "Meadows Learner Express",
           "status": "Open"
         },
         {
-          "name": "Rocky Gully T-bar Maintenance Hold",
-          "status": "Unknown"
+          "name": "Rocky Gully T-bar",
+          "status": "Open"
         },
         {
           "name": "Magic Carpet Conveyor",
@@ -349,14 +349,14 @@
           "difficulty": "unclassified"
         },
         {
-          "name": "Race Arena Partially",
-          "status": "Closed for Racing",
-          "difficulty": "unclassified"
+          "name": "Race Arena",
+          "status": "Closed",
+          "difficulty": "black"
         },
         {
-          "name": "Powder Run Partially",
-          "status": "Closed for Racing",
-          "difficulty": "unclassified"
+          "name": "Powder Run",
+          "status": "Closed",
+          "difficulty": "double-black"
         },
         {
           "name": "Sugar's Run",
@@ -441,12 +441,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.3,
+        "temperature_c": 2.8,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-20T11:00",
+        "observed": "2026-09-20T13:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -673,12 +673,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 2.3,
+        "temperature_c": -1.6,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-19T11:15",
+        "observed": "2026-09-20T13:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
