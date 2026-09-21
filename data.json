@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-20T23:38:16.965966+00:00",
+  "updated": "2026-09-21T01:38:41.788398+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "A strong, cold southerly came roaring up the country over the weekend, dishing out yet another round of spring freshies. The Southern Lakes picked up another dusting of a few centimetres Saturday night for what feels like the umpteenth time this spring, while Canterbury received just a skiff of its own.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-20T23:40:00+00:00",
+  "next_scheduled_update": "2026-09-21T01:40:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 2.8,
+        "temperature_c": 4.4,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-21T11:30",
+        "observed": "2026-09-21T13:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,12 +134,12 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 21 Sep 2026",
+        "issued": "11 am 21 Sep 2026",
         "days": [
           {
             "label": "Mon 21",
-            "cm": 14,
-            "mm": 0,
+            "cm": 13,
+            "mm": 2,
             "rain": false
           },
           {
@@ -156,20 +156,20 @@
           },
           {
             "label": "Thu 24",
-            "cm": 3,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 25",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 26",
-            "cm": 16,
-            "mm": 3,
+            "cm": 11,
+            "mm": 2,
             "rain": false
           }
         ]
@@ -203,7 +203,7 @@
         },
         {
           "name": "Rocky Gully T-bar",
-          "status": "Wind Hold"
+          "status": "Closed"
         },
         {
           "name": "Magic Carpet Conveyor",
@@ -441,12 +441,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 5.5,
+        "temperature_c": 6.7,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-21T11:30",
+        "observed": "2026-09-21T13:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -458,17 +458,17 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 21 Sep 2026",
+        "issued": "11 am 21 Sep 2026",
         "days": [
           {
             "label": "Mon 21",
             "cm": 11,
-            "mm": 3,
+            "mm": 2,
             "rain": false
           },
           {
             "label": "Tue 22",
-            "cm": 3,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
@@ -480,20 +480,20 @@
           },
           {
             "label": "Thu 24",
-            "cm": 1,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 25",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 26",
-            "cm": 6,
-            "mm": 28,
+            "cm": 2,
+            "mm": 29,
             "rain": false
           }
         ]
@@ -502,7 +502,7 @@
     },
     "cardrona": {
       "status": "Open",
-      "lifts_open": 9,
+      "lifts_open": 8,
       "lifts_total": 10,
       "base_lower": 112,
       "base_upper": 112,
@@ -682,7 +682,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Cardrona Alpine Resort is temporarily closed for skiing today, with increasing southwesterly winds forcing the mountain to shut down for the day. There's been 3 cm of new snow in the past 24 hours, holding the natural base at 112 cm; it's currently -1°C with winds around 29 km/h gusting to 50 km/h, easing slightly tomorrow before building again through the week. No lifts and runs are open today. The resort plans to try again tomorrow; the access road is chain-free but chains must be carried, with an active road hazard advisory in place. Lifts & terrain Lifts Open 0 / 10 Runs Open 0 / 38 Percent open 0 %",
+      "summary": "Cardrona Alpine Resort is open for skiing today, with yesterday's high winds having eased, leaving clear skies and light winds to start the day. There's been no new snowfall in the past 24 hours, holding the natural base at 112 cm; it's currently 2°C with winds around 43 km/h gusting to 74 km/h, with a mainly fine morning expected before cloud and increasing wind bring snow showers early this evening. Spring conditions prevail across the mountain, with some fresh wind-blown pockets remaining from yesterday. Kindy Conveyor, Learner Conveyors, McDougall's Chondola, Whitestar Express, Valley View, Captains Express, T-Bar and Willow's Quad are all open, with only Soho Express on hold and Wells Pipe Platter closed; 8 of 10 lifts and 9 of 10 terrain zones are running. Main Basin and Valley View open from 8:30am, with Captains and the T-Bar from 9am, and Willows and Soho to follow. (Issued: 11:59am, 21 Sep) The access road is chain-free but chains must always be carried, with an active road hazard advisory in place; the morning is expected to be the best window today, with winds likely to affect chairlift operations into the afternoon. Lifts & terrain Lifts Open 8 / 10 Runs Open 0 / 38 Percent open 0 %",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -690,12 +690,12 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 21 Sep 2026",
+        "issued": "11 am 21 Sep 2026",
         "days": [
           {
             "label": "Mon 21",
             "cm": 11,
-            "mm": 1,
+            "mm": 0,
             "rain": false
           },
           {
@@ -712,20 +712,20 @@
           },
           {
             "label": "Thu 24",
-            "cm": 1,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 25",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 26",
-            "cm": 16,
-            "mm": 3,
+            "cm": 2,
+            "mm": 22,
             "rain": false
           }
         ]
@@ -823,7 +823,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Treble Cone is open for skiing today, running a classic blustery spring day with a real mixed bag of conditions. There's been 3 cm of new snow in the past 24 hours, with the natural base holding at 150 cm at the top of Home Basin; it's currently 1°C with strong southwesterlies swinging northwest and easing through the afternoon, gusting to 32 km/h. A firm start after an overnight freeze is expected to soften quickly as the freezing level rises, with a few scattered snow showers down to 500m clearing this morning. Home Basin Express, Saddle Quad and the Beginner Platter are all running, all 3 of 3 lifts open, with 8 of 9 terrain zones open including Home Basin, Powder Bowl, Matukituki Basin, Saddle Basin, Summit Slopes and the terrain park; only Motatapu Chutes is on hold. Wind may interrupt lift operations at times through the day. (Issued: 1:37pm, 20 Sep) Backcountry and skinning access are both open; increased hazard is possible around Saddle access later as the freezing level rises, and the final Ride Tribe event of the season is on today. The access road is chain-free but chains must always be carried, with an active road hazard advisory and a free shuttle running from the bottom of the access road. Lifts & terrain Lifts Open 3 / 3 Runs Open 0 / 59 Percent open 0 %",
+      "summary": "Treble Cone is open for skiing today, officially into the final week of the season, with mainly fine conditions expected as most developing showers get caught on the divide. There's been no new snowfall in the past 24 hours, with the natural base holding at 150 cm at the top of Home Basin; it's currently 2°C with winds around 35 km/h gusting to 63 km/h. A high overnight freezing level meant little overnight freeze, so firm conditions are expected to soften early into classic spring skiing, with a forecast of severe gale northwesterlies that could interrupt lift operations later. Home Basin Express, Saddle Quad and the Beginner Platter are all running, all 3 of 3 lifts open, with 8 of 9 terrain zones open including Home Basin, Powder Bowl, Matukituki Basin, Saddle Basin and Summit Slopes; only Motatapu Chutes is on hold. Saddle Track has just closed, with a chance the whole Saddle area closes later this afternoon as winds build. (Issued: 11:38am, 21 Sep) Backcountry and skinning access are both open; the access road is chain-free but chains must always be carried, with an active road hazard advisory and a free shuttle running from the bottom of the access road. Lifts & terrain Lifts Open 3 / 3 Runs Open 0 / 59 Percent open 0 %",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
@@ -831,11 +831,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 21 Sep 2026",
+        "issued": "11 am 21 Sep 2026",
         "days": [
           {
             "label": "Mon 21",
-            "cm": 15,
+            "cm": 13,
             "mm": 0,
             "rain": false
           },
@@ -853,20 +853,20 @@
           },
           {
             "label": "Thu 24",
-            "cm": 0,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 25",
-            "cm": 1,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 26",
-            "cm": 20,
-            "mm": 8,
+            "cm": 9,
+            "mm": 26,
             "rain": false
           }
         ]
