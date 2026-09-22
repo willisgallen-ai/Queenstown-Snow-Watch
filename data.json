@@ -1,17 +1,19 @@
 {
-  "updated": "2026-09-21T22:37:59.995806+00:00",
+  "updated": "2026-09-22T01:09:08.702137+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "A strong, cold southerly came roaring up the country over the weekend, dishing out yet another round of spring freshies. The Southern Lakes picked up another dusting of a few centimetres Saturday night for what feels like the umpteenth time this spring, while Canterbury received just a skiff of its own.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-21T22:40:00+00:00",
+  "next_scheduled_update": "2026-09-22T01:10:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
     "total_resorts": 4,
-    "stale_resorts": []
+    "stale_resorts": [
+      "coronetpeak"
+    ]
   },
   "resorts": {
     "remarkables": {
@@ -117,12 +119,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.5,
+        "temperature_c": -1.8,
         "snowing": true,
         "condition": "Snow",
         "weather_code": 85,
-        "snowfall_cm": 0.07,
-        "observed": "2026-09-22T10:30",
+        "snowfall_cm": 0.14,
+        "observed": "2026-09-22T13:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -498,7 +500,7 @@
           }
         ]
       },
-      "stale": false
+      "stale": true
     },
     "cardrona": {
       "status": "Open",
@@ -730,7 +732,7 @@
           }
         ]
       },
-      "stale": false
+      "stale": true
     },
     "treblecone": {
       "status": "Open",
@@ -814,12 +816,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.7,
-        "snowing": false,
-        "condition": "Not snowing",
-        "weather_code": 0,
-        "snowfall_cm": 0.0,
-        "observed": "2026-09-22T02:00",
+        "temperature_c": 0.1,
+        "snowing": true,
+        "condition": "Snow",
+        "weather_code": 85,
+        "snowfall_cm": 0.14,
+        "observed": "2026-09-22T13:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -871,7 +873,7 @@
           }
         ]
       },
-      "stale": false
+      "stale": true
     }
   }
 }
