@@ -1,19 +1,17 @@
 {
-  "updated": "2026-09-22T15:39:03.698809+00:00",
+  "updated": "2026-09-22T19:07:36.094575+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "A strong, cold southerly came roaring up the country over the weekend, dishing out yet another round of spring freshies. The Southern Lakes picked up another dusting of a few centimetres Saturday night for what feels like the umpteenth time this spring, while Canterbury received just a skiff of its own.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-22T15:40:00+00:00",
+  "next_scheduled_update": "2026-09-22T19:10:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
     "total_resorts": 4,
-    "stale_resorts": [
-      "coronetpeak"
-    ]
+    "stale_resorts": []
   },
   "resorts": {
     "remarkables": {
@@ -119,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -7.6,
+        "temperature_c": -7.9,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 1,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-23T03:30",
+        "observed": "2026-09-23T07:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -136,35 +134,41 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 pm 22 Sep 2026",
+        "issued": "5 am 23 Sep 2026",
         "days": [
           {
             "label": "Wed 23",
-            "cm": 2,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Thu 24",
-            "cm": 0,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 25",
-            "cm": 1,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sat 26",
             "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
+            "label": "Sat 26",
+            "cm": 10,
+            "mm": 0,
+            "rain": false
+          },
+          {
             "label": "Sun 27",
-            "cm": 22,
+            "cm": 3,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Mon 28",
+            "cm": 0,
             "mm": 0,
             "rain": false
           }
@@ -178,7 +182,7 @@
       "status": "Closed",
       "lifts_open": 0,
       "lifts_total": 8,
-      "base_lower": 55,
+      "base_lower": 40,
       "base_upper": 90,
       "new_snow_7d": 0,
       "new_snow_24h": null,
@@ -190,7 +194,7 @@
           "status": "Closed"
         },
         {
-          "name": "Greengates Express",
+          "name": "Greengates Express Via Million Dollar",
           "status": "Closed"
         },
         {
@@ -255,9 +259,9 @@
           "difficulty": "unclassified"
         },
         {
-          "name": "Greengates",
+          "name": "Greengates Groomed",
           "status": "Closed",
-          "difficulty": "red"
+          "difficulty": "unclassified"
         },
         {
           "name": "Wall Street Groomed",
@@ -345,9 +349,9 @@
           "difficulty": "unclassified"
         },
         {
-          "name": "Race Arena",
+          "name": "Race Arena Race training",
           "status": "Closed",
-          "difficulty": "black"
+          "difficulty": "unclassified"
         },
         {
           "name": "Powder Run Partially",
@@ -405,14 +409,14 @@
           "difficulty": "unclassified"
         },
         {
-          "name": "Donkey Serenade Groomed",
+          "name": "Donkey Serenade",
           "status": "Closed",
           "difficulty": "unclassified"
         },
         {
-          "name": "Back Bowls",
+          "name": "Back Bowls Patrol Check",
           "status": "Closed",
-          "difficulty": "double-black"
+          "difficulty": "unclassified"
         },
         {
           "name": "Touring Route Change",
@@ -437,12 +441,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.1,
+        "temperature_c": -8.8,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 1,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-22T10:30",
+        "observed": "2026-09-23T07:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -454,17 +458,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 22 Sep 2026",
+        "issued": "11 pm 22 Sep 2026",
         "days": [
           {
-            "label": "Tue 22",
-            "cm": 4,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Wed 23",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -482,19 +480,19 @@
           },
           {
             "label": "Sat 26",
-            "cm": 14,
-            "mm": 2,
-            "rain": false
+            "cm": 0,
+            "mm": 1,
+            "rain": true
           },
           {
             "label": "Sun 27",
-            "cm": 2,
-            "mm": 0,
+            "cm": 14,
+            "mm": 6,
             "rain": false
           }
         ]
       },
-      "stale": true,
+      "stale": false,
       "hours_closed": true
     },
     "cardrona": {
@@ -504,7 +502,7 @@
       "base_lower": 112,
       "base_upper": 112,
       "new_snow_7d": 21,
-      "new_snow_24h": 4,
+      "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
       "lifts": [
@@ -670,16 +668,16 @@
         }
       ],
       "weather": {
-        "temperature_c": -7.8,
+        "temperature_c": -8.4,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 0,
+        "weather_code": 1,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-22T23:30",
+        "observed": "2026-09-23T07:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Cardrona Alpine Resort is open for skiing today, with 4 cm of fresh snow overnight setting up a nice clear start before snow flurries and strong northwest winds build through the day, holding the natural base at 112 cm; it's currently -3°C with winds around 32 km/h gusting to 60 km/h. Grooming has laid down fresh cord over the new snow, with variable off-piste conditions, pockets of wind-drifted snow and some wind-stripped patches. Kindy Conveyor, Learner Conveyors, Captains Express, T-Bar and Wells Pipe Platter are all open, with McDougall's Chondola, Whitestar Express and Valley View on wind hold, and Soho Express and Willow's Quad closed for the day due to increasing winds; 5 of 10 lifts are currently running. Patrol is conducting avalanche mitigation work this morning, with slight delays possible in Willows and Soho; the Olympic Pipe closes at 11:45am. (Issued: 12:08pm, 22 Sep) The access road is chain-free but chains must be carried, with an active road hazard advisory in place; the morning was the best window today, with the Upper Clutha Primary Schools Race running in Captains this morning. Lifts & terrain Lifts Open 5 / 10 Runs Open 0 / 38 Percent open 0 %",
+      "summary": null,
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -721,7 +719,7 @@
           }
         ]
       },
-      "stale": true,
+      "stale": false,
       "hours_closed": true
     },
     "treblecone": {
@@ -815,7 +813,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Treble Cone is open for skiing today, with spring funkiness continuing and timing being everything. Overnight precipitation, a mix of rain and snow, left things firm this morning, with overnight wind blowing away much of the new snow, though the sun has since softened things up into another fun, springy day; the natural base holds at 150 cm at the top of Home Basin. It's currently -2°C with winds around 26 km/h gusting to 43 km/h, with more weather and snow showers forecast to move in later. Home Basin Express, Saddle Quad and the Beginner Platter are all open, all 3 of 3 lifts running, with 6 of 9 terrain zones open including Home Basin, Saddle Basin, Summit Slopes and the terrain park; Powder Bowl and Matukituki Basin are delayed, and Motatapu Chutes is closed. Skiers are advised to get to Saddle Basin early, as Saddle Track access is likely to close late morning, though the Saddle lift will keep running for those already out there. Backcountry and skinning access are both open; the access road is chain-free but chains must always be carried, with an active road hazard advisory and a free shuttle running from the bottom of the access road. Lifts & terrain Lifts Open 3 / 3 Runs Open 0 / 59 Percent open 0 %",
+      "summary": null,
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
@@ -857,7 +855,7 @@
           }
         ]
       },
-      "stale": true,
+      "stale": false,
       "hours_closed": true
     }
   }
