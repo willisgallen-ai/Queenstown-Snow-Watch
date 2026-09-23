@@ -1,17 +1,19 @@
 {
-  "updated": "2026-09-23T04:54:00.030163+00:00",
+  "updated": "2026-09-23T09:38:10.724232+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
-    "summary": "Published early Wednesday, 23 rd September 2026 Another spring cold change whipped over the South Island Monday night, sprinkling a fresh 3-4cm across the Southern Lakes before strengthening winds spoiled Tuesday’s fun, shutting lifts early as another surge of cold air brought more light snowfall. Mt Hutt also received a 2cm dusting before enjoying a cracking Tuesday, with another little overnight top-up already visible on the webcams in these early hours of writing. Mt Ruapehu didn’t escape the wild weather either, with deteriorating conditions on Tuesday forcing an early closure as the snowflakes started falling. The spring powder taps keep flowing today, Wednesday, with a few more South Island flurries and a tidy 5-10cm for Mt Ruapehu. After a quieter Thursday, another weak system could deliver a dusting to the Southern Lakes Thursday night and 2-6cm to Canterbury on Friday. The juicier stuff arrives this weekend as a strong, icy southerly charges north Saturday night into Sunday. Around 10-20cm could fall across the Southern Lakes and 10-30cm for Canterbury and Mt Ruapehu, although severe gales could make Sunday a pretty feral one on Ruapehu. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Wednesday 23 rd September A mix of sunshine and cloud across the South Island, with snow flurries hanging around Canterbury into the afternoon and a few cheeky flakes also possible around the Queenstown ski fields. Icy south-to-southwest winds will gradually lose their bite as the day rolls on. Mt Ruapehu gets its turn at the powder trough, picking up a tidy 5-10cm through the day as winds swing to an even colder southerly during the morning. Thursday 24 th September Chilly westerlies will bring a little cloud to the Southern Lakes, while Canterbury basks beneath beautiful, clear spring skies. A weak system then sneaks in overnight, giving the Southern Lakes a fresh dusting of up to a few centimetres before spreading snow northwards into Canterbury during the wee hours of Friday morning. Mt Ruapehu gets a nice, clear start as those cold southerlies ease, before a few snow flurries turn up during the afternoon as a southwest breeze develops. Friday 25 th September Cloud over the Southern Lakes breaks apart during the morning, opening the door to a cracking sunny day with light westerly breezes. Canterbury stays in the firing line for snow showers and flurries as the weak system slowly drifts northwards, potentially laying down another handy 2-6cm by the time it clears during the evening. Mt Ruapehu starts out fine once again, but light snow showers redevelop later in the morning as westerly breezes pick up, giving the ski fields another dusting of up to a few centimetres. Saturday 26 th September A weak front brushes across the South Island early, bringing little more than a spot of rain before leaving behind partly cloudy skies and a strengthening northwester. But the real action arrives after dark, when a strong, icy southerly charges north and dumps heavy snowfall down to low levels. Mt Ruapehu won’t have the nicest of days, with a grey, blustery morning followed by rain and high-level snow during the afternoon as the weak front passes overhead. Precipitation turns to rain at all levels during the evening as strong southwesterlies swing around to the northwest. Sunday 27 th September The South Island wakes to fresh powder, with snowfall easing back to lighter showers during the morning before eventually clearing in the afternoon. Strong, icy southerlies will also gradually back off and swing southwest. Mt Ruapehu gets hammered as Saturday’s rain flips to heavy snow during the morning with the arrival of the cold southwest change. It’ll be a gnarly, stormy day with severe gales likely keeping the ski fields closed. Things start settling down later as the snowfall and winds ease. All up, this system could lay down around 10-20cm for the Southern Lakes and 10-30cm for Canterbury and Mt Ruapehu, delivering a timely late-season boost. Extended Forecast After the weekend powder dump, the snow taps won’t shut off completely just yet. The Southern Lakes and Mt Ruapehu should pick up a few more light snow showers around Monday the 28 th and Tuesday the 29 th of September before the strong, icy southwesterly flow runs out of puff. From Thursday the 1 st of October onwards, another weak storm or two will likely wander through and dish up a few more freshies. There are also hints of something beefier turning up towards the end of the week, with the potential for a more substantial powder top-up. Plenty of details to iron out yet, but it’s certainly one to keep an eye on. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great couple of days, and I’ll see you back here on Friday. Grasshopper",
+    "summary": "Another spring cold change whipped over the South Island Monday night, sprinkling a fresh 3-4cm across the Southern Lakes before strengthening winds spoiled Tuesday’s fun, shutting lifts early as another surge of cold air brought more light snowfall. Mt Hutt also received a 2cm dusting before enjoying a cracking Tuesday, with another little overnight top-up already visible on the webcams in these early hours of writing. Mt Ruapehu didn’t escape the wild weather either, with deteriorating conditions on Tuesday forcing an early closure as the snowflakes started falling.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-23T04:55:00+00:00",
+  "next_scheduled_update": "2026-09-23T09:40:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
     "total_resorts": 4,
-    "stale_resorts": []
+    "stale_resorts": [
+      "coronetpeak"
+    ]
   },
   "resorts": {
     "remarkables": {
@@ -117,12 +119,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.1,
+        "temperature_c": -4.5,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-23T16:45",
+        "observed": "2026-09-23T21:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,7 +136,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 23 Sep 2026",
+        "issued": "5 pm 23 Sep 2026",
         "days": [
           {
             "label": "Wed 23",
@@ -144,7 +146,7 @@
           },
           {
             "label": "Thu 24",
-            "cm": 0,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
@@ -156,13 +158,13 @@
           },
           {
             "label": "Sat 26",
-            "cm": 18,
+            "cm": 24,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 27",
-            "cm": 4,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
@@ -498,7 +500,7 @@
           }
         ]
       },
-      "stale": false
+      "stale": true
     },
     "cardrona": {
       "status": "Closed",
@@ -673,12 +675,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.4,
+        "temperature_c": -5.6,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-23T16:45",
+        "observed": "2026-09-23T21:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -690,7 +692,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 23 Sep 2026",
+        "issued": "5 pm 23 Sep 2026",
         "days": [
           {
             "label": "Wed 23",
@@ -700,25 +702,25 @@
           },
           {
             "label": "Thu 24",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 25",
-            "cm": 0,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 26",
-            "cm": 14,
+            "cm": 21,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 27",
-            "cm": 4,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -730,7 +732,7 @@
           }
         ]
       },
-      "stale": false,
+      "stale": true,
       "hours_closed": true
     },
     "treblecone": {
@@ -832,7 +834,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 23 Sep 2026",
+        "issued": "5 pm 23 Sep 2026",
         "days": [
           {
             "label": "Wed 23",
@@ -842,25 +844,25 @@
           },
           {
             "label": "Thu 24",
-            "cm": 1,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 25",
-            "cm": 2,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 26",
-            "cm": 18,
+            "cm": 24,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 27",
-            "cm": 6,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
