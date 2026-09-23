@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-22T22:03:19.316864+00:00",
+  "updated": "2026-09-23T00:19:20.617755+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Wednesday, 23 rd September 2026 Another spring cold change whipped over the South Island Monday night, sprinkling a fresh 3-4cm across the Southern Lakes before strengthening winds spoiled Tuesday’s fun, shutting lifts early as another surge of cold air brought more light snowfall. Mt Hutt also received a 2cm dusting before enjoying a cracking Tuesday, with another little overnight top-up already visible on the webcams in these early hours of writing. Mt Ruapehu didn’t escape the wild weather either, with deteriorating conditions on Tuesday forcing an early closure as the snowflakes started falling. The spring powder taps keep flowing today, Wednesday, with a few more South Island flurries and a tidy 5-10cm for Mt Ruapehu. After a quieter Thursday, another weak system could deliver a dusting to the Southern Lakes Thursday night and 2-6cm to Canterbury on Friday. The juicier stuff arrives this weekend as a strong, icy southerly charges north Saturday night into Sunday. Around 10-20cm could fall across the Southern Lakes and 10-30cm for Canterbury and Mt Ruapehu, although severe gales could make Sunday a pretty feral one on Ruapehu. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Wednesday 23 rd September A mix of sunshine and cloud across the South Island, with snow flurries hanging around Canterbury into the afternoon and a few cheeky flakes also possible around the Queenstown ski fields. Icy south-to-southwest winds will gradually lose their bite as the day rolls on. Mt Ruapehu gets its turn at the powder trough, picking up a tidy 5-10cm through the day as winds swing to an even colder southerly during the morning. Thursday 24 th September Chilly westerlies will bring a little cloud to the Southern Lakes, while Canterbury basks beneath beautiful, clear spring skies. A weak system then sneaks in overnight, giving the Southern Lakes a fresh dusting of up to a few centimetres before spreading snow northwards into Canterbury during the wee hours of Friday morning. Mt Ruapehu gets a nice, clear start as those cold southerlies ease, before a few snow flurries turn up during the afternoon as a southwest breeze develops. Friday 25 th September Cloud over the Southern Lakes breaks apart during the morning, opening the door to a cracking sunny day with light westerly breezes. Canterbury stays in the firing line for snow showers and flurries as the weak system slowly drifts northwards, potentially laying down another handy 2-6cm by the time it clears during the evening. Mt Ruapehu starts out fine once again, but light snow showers redevelop later in the morning as westerly breezes pick up, giving the ski fields another dusting of up to a few centimetres. Saturday 26 th September A weak front brushes across the South Island early, bringing little more than a spot of rain before leaving behind partly cloudy skies and a strengthening northwester. But the real action arrives after dark, when a strong, icy southerly charges north and dumps heavy snowfall down to low levels. Mt Ruapehu won’t have the nicest of days, with a grey, blustery morning followed by rain and high-level snow during the afternoon as the weak front passes overhead. Precipitation turns to rain at all levels during the evening as strong southwesterlies swing around to the northwest. Sunday 27 th September The South Island wakes to fresh powder, with snowfall easing back to lighter showers during the morning before eventually clearing in the afternoon. Strong, icy southerlies will also gradually back off and swing southwest. Mt Ruapehu gets hammered as Saturday’s rain flips to heavy snow during the morning with the arrival of the cold southwest change. It’ll be a gnarly, stormy day with severe gales likely keeping the ski fields closed. Things start settling down later as the snowfall and winds ease. All up, this system could lay down around 10-20cm for the Southern Lakes and 10-30cm for Canterbury and Mt Ruapehu, delivering a timely late-season boost. Extended Forecast After the weekend powder dump, the snow taps won’t shut off completely just yet. The Southern Lakes and Mt Ruapehu should pick up a few more light snow showers around Monday the 28 th and Tuesday the 29 th of September before the strong, icy southwesterly flow runs out of puff. From Thursday the 1 st of October onwards, another weak storm or two will likely wander through and dish up a few more freshies. There are also hints of something beefier turning up towards the end of the week, with the potential for a more substantial powder top-up. Plenty of details to iron out yet, but it’s certainly one to keep an eye on. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great couple of days, and I’ll see you back here on Friday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-22T22:05:00+00:00",
+  "next_scheduled_update": "2026-09-23T00:20:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -4.9,
+        "temperature_c": -3.6,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-23T10:00",
+        "observed": "2026-09-23T12:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -441,12 +441,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.7,
+        "temperature_c": 0.0,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 1,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-23T10:00",
+        "observed": "2026-09-23T12:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -653,7 +653,7 @@
         },
         {
           "name": "Carpark B",
-          "status": "Available"
+          "status": "Full"
         },
         {
           "name": "Carpark C",
@@ -682,7 +682,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Cardrona Alpine Resort is open for skiing today, with 4 cm of fresh snow overnight setting up a nice clear start before snow flurries and strong northwest winds build through the day, holding the natural base at 112 cm; it's currently -3°C with winds around 32 km/h gusting to 60 km/h. Grooming has laid down fresh cord over the new snow, with variable off-piste conditions, pockets of wind-drifted snow and some wind-stripped patches. Kindy Conveyor, Learner Conveyors, Captains Express, T-Bar and Wells Pipe Platter are all open, with McDougall's Chondola, Whitestar Express and Valley View on wind hold, and Soho Express and Willow's Quad closed for the day due to increasing winds; 5 of 10 lifts are currently running. Patrol is conducting avalanche mitigation work this morning, with slight delays possible in Willows and Soho; the Olympic Pipe closes at 11:45am. (Issued: 12:08pm, 22 Sep) The access road is chain-free but chains must be carried, with an active road hazard advisory in place; the morning was the best window today, with the Upper Clutha Primary Schools Race running in Captains this morning. Lifts & terrain Lifts Open 5 / 10 Runs Open 0 / 38 Percent open 0 %",
+      "summary": "Cardrona Alpine Resort is open for skiing today, with a cold winter's day on offer and some low cloud around (\"Cloudrona\") expected to clear. Grooming has laid down crisp winter cord, though there are areas of firm, frozen spring snow, and off-piste is very firm with some wind-polished patches; there's been 1 cm of new snow in the past 24 hours, holding the natural base at 112 cm. It's currently -7°C with moderate southwest winds around 18 km/h gusting to 29 km/h, forecast to reach a high of -6°C and a low of -9°C tonight. Kindy Conveyor, Learner Conveyors, McDougall's Chondola, Whitestar Express, Valley View, Captains Express, T-Bar, Soho Express, Willow's Quad and Wells Pipe Platter are all open, all 10 of 10 lifts running; 8 of 10 terrain zones are open, with Arcadia Chutes and Summit on hold. Main Basin and Valley View open from 8:30am, with Captains, Willows and the T-Bar from 9am, and Soho to follow; McPark is closed today ahead of the She'll Be Right event. (Issued: 10:29am, 23 Sep) The access road is chain-free but chains must be carried, with an active road hazard advisory in place. Lifts & terrain Lifts Open 10 / 10 Runs Open 0 / 38 Percent open 0 %",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Cardrona-Captains/LiveStill.jpg",
@@ -823,7 +823,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Treble Cone is open for skiing today, with spring funkiness continuing and timing being everything. Overnight precipitation, a mix of rain and snow, left things firm this morning, with overnight wind blowing away much of the new snow, though the sun has since softened things up into another fun, springy day; the natural base holds at 150 cm at the top of Home Basin. It's currently -2°C with winds around 26 km/h gusting to 43 km/h, with more weather and snow showers forecast to move in later. Home Basin Express, Saddle Quad and the Beginner Platter are all open, all 3 of 3 lifts running, with 6 of 9 terrain zones open including Home Basin, Saddle Basin, Summit Slopes and the terrain park; Powder Bowl and Matukituki Basin are delayed, and Motatapu Chutes is closed. Skiers are advised to get to Saddle Basin early, as Saddle Track access is likely to close late morning, though the Saddle lift will keep running for those already out there. Backcountry and skinning access are both open; the access road is chain-free but chains must always be carried, with an active road hazard advisory and a free shuttle running from the bottom of the access road. Lifts & terrain Lifts Open 3 / 3 Runs Open 0 / 59 Percent open 0 %",
+      "summary": "Treble Cone is open for skiing today, with a lovely spring day ahead, blue skies and light wind after groomers laid down a full spread of cord for excellent on-trail turns. Cold overnight temperatures mean off-trail will be firm at first, softening with the sunshine; the natural base holds at 150 cm at the top of Home Basin, with no new snowfall in the past 24 hours. It's currently -6°C with light winds around 13 km/h gusting to 23 km/h. Home Basin Express, Saddle Quad and the Beginner Platter are all open, all 3 of 3 lifts running; 7 of 9 terrain zones are open including Home Basin, Powder Bowl, Saddle Basin and Summit Slopes, with Matukituki Basin delayed and Motatapu Chutes closed. Backcountry and skinning access are both open; the access road is chain-free but chains must always be carried, with an active road hazard advisory and a free shuttle running from the bottom of the access road. Five days remain in the season. Lifts & terrain Lifts Open 3 / 3 Runs Open 0 / 59 Percent open 0 %",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
