@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-23T09:38:10.724232+00:00",
+  "updated": "2026-09-23T14:25:32.292693+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Another spring cold change whipped over the South Island Monday night, sprinkling a fresh 3-4cm across the Southern Lakes before strengthening winds spoiled Tuesday’s fun, shutting lifts early as another surge of cold air brought more light snowfall. Mt Hutt also received a 2cm dusting before enjoying a cracking Tuesday, with another little overnight top-up already visible on the webcams in these early hours of writing. Mt Ruapehu didn’t escape the wild weather either, with deteriorating conditions on Tuesday forcing an early closure as the snowflakes started falling.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-23T09:40:00+00:00",
+  "next_scheduled_update": "2026-09-23T14:30:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -119,12 +119,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -4.5,
+        "temperature_c": -5.7,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-23T21:30",
+        "observed": "2026-09-24T02:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -136,35 +136,29 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 23 Sep 2026",
+        "issued": "11 pm 23 Sep 2026",
         "days": [
           {
-            "label": "Wed 23",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Thu 24",
-            "cm": 2,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 25",
-            "cm": 0,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 26",
-            "cm": 24,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 27",
-            "cm": 2,
+            "cm": 24,
             "mm": 0,
             "rain": false
           },
@@ -508,7 +502,7 @@
       "lifts_total": 10,
       "base_lower": 112,
       "base_upper": 112,
-      "new_snow_7d": 21,
+      "new_snow_7d": 7,
       "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
@@ -692,35 +686,29 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 23 Sep 2026",
+        "issued": "11 pm 23 Sep 2026",
         "days": [
           {
-            "label": "Wed 23",
+            "label": "Thu 24",
             "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
-            "label": "Thu 24",
-            "cm": 1,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Fri 25",
-            "cm": 2,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 26",
-            "cm": 21,
+            "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 27",
-            "cm": 1,
+            "cm": 19,
             "mm": 0,
             "rain": false
           },
@@ -732,7 +720,7 @@
           }
         ]
       },
-      "stale": true,
+      "stale": false,
       "hours_closed": true
     },
     "treblecone": {
@@ -817,12 +805,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -9.9,
+        "temperature_c": -10.6,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 1,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-23T03:30",
+        "observed": "2026-09-24T02:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -834,35 +822,29 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 23 Sep 2026",
+        "issued": "11 pm 23 Sep 2026",
         "days": [
           {
-            "label": "Wed 23",
+            "label": "Thu 24",
             "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
-            "label": "Thu 24",
-            "cm": 3,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Fri 25",
-            "cm": 4,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 26",
-            "cm": 24,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 27",
-            "cm": 2,
+            "cm": 20,
             "mm": 0,
             "rain": false
           },
@@ -874,7 +856,7 @@
           }
         ]
       },
-      "stale": false,
+      "stale": true,
       "hours_closed": true
     }
   }
