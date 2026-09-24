@@ -1,17 +1,19 @@
 {
-  "updated": "2026-09-24T03:23:32.794298+00:00",
+  "updated": "2026-09-24T08:36:41.100066+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Another spring cold change whipped over the South Island Monday night, sprinkling a fresh 3-4cm across the Southern Lakes before strengthening winds spoiled Tuesday’s fun, shutting lifts early as another surge of cold air brought more light snowfall. Mt Hutt also received a 2cm dusting before enjoying a cracking Tuesday, with another little overnight top-up already visible on the webcams in these early hours of writing. Mt Ruapehu didn’t escape the wild weather either, with deteriorating conditions on Tuesday forcing an early closure as the snowflakes started falling.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-24T03:25:00+00:00",
+  "next_scheduled_update": "2026-09-24T08:40:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
     "total_resorts": 4,
-    "stale_resorts": []
+    "stale_resorts": [
+      "coronetpeak"
+    ]
   },
   "resorts": {
     "remarkables": {
@@ -117,12 +119,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.1,
+        "temperature_c": -2.0,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 51,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-24T15:15",
+        "observed": "2026-09-24T20:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,11 +136,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 24 Sep 2026",
+        "issued": "5 pm 24 Sep 2026",
         "days": [
           {
             "label": "Thu 24",
-            "cm": 6,
+            "cm": 5,
             "mm": 0,
             "rain": false
           },
@@ -151,12 +153,12 @@
           {
             "label": "Sat 26",
             "cm": 10,
-            "mm": 1,
+            "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 27",
-            "cm": 5,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
@@ -502,11 +504,11 @@
           }
         ]
       },
-      "stale": false
+      "stale": true
     },
     "cardrona": {
-      "status": "Open",
-      "lifts_open": 7,
+      "status": "Closed",
+      "lifts_open": 0,
       "lifts_total": 10,
       "base_lower": 112,
       "base_upper": 112,
@@ -517,172 +519,172 @@
       "lifts": [
         {
           "name": "Learner Conveyors",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "McDougall's Chondola",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Whitestar Express",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Captains Express",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Willow's Quad",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Soho Express",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "T-Bar",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Valley View",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Kindy Conveyor",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Wells Pipe Platter",
-          "status": "Unknown"
+          "status": "Closed"
         }
       ],
       "trails": [
         {
           "name": "Learners Slope",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Main Basin",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Captains",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Soho",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Little Willows",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Big Willows",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Mt Cardrona",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Arcadia Chutes",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         },
         {
           "name": "Summit",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": null
         }
       ],
       "park": [
         {
           "name": "Baby Bucks",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Little Bucks",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Antlers Alley",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Stag Lane",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Big Bucks",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Peoples Pipe",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Olympic Pipe",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Big Air",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Mc Park",
-          "status": "Unknown"
+          "status": "Closed"
         },
         {
           "name": "Gravity Cross",
-          "status": "Unknown"
+          "status": "Closed"
         }
       ],
       "carparks": [
         {
           "name": "Carpark A",
-          "status": "Full"
+          "status": "Closed"
         },
         {
           "name": "Carpark B",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Carpark C",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "The Yard",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Valley View",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "The Pines",
-          "status": "Available"
+          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": 0.8,
+        "temperature_c": -2.6,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-24T15:15",
+        "observed": "2026-09-24T20:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -694,7 +696,149 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "11 am 24 Sep 2026",
+        "issued": "5 pm 24 Sep 2026",
+        "days": [
+          {
+            "label": "Thu 24",
+            "cm": 2,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Fri 25",
+            "cm": 1,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 26",
+            "cm": 7,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sun 27",
+            "cm": 4,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Mon 28",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Tue 29",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          }
+        ]
+      },
+      "stale": false,
+      "hours_closed": true
+    },
+    "treblecone": {
+      "status": "Closed",
+      "lifts_open": 0,
+      "lifts_total": 3,
+      "base_lower": 150,
+      "base_upper": 150,
+      "new_snow_7d": 3,
+      "new_snow_24h": null,
+      "season_cm": null,
+      "terrain": {},
+      "lifts": [
+        {
+          "name": "Home Basin Express",
+          "status": "Closed"
+        },
+        {
+          "name": "Saddle Quad",
+          "status": "Closed"
+        },
+        {
+          "name": "Beginner Platter",
+          "status": "Closed"
+        }
+      ],
+      "trails": [
+        {
+          "name": "Home Basin",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Saddle Basin",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Matukituki Basin",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Summit Slopes",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Motatapu Chutes",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Sundance",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Backcountry Access",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Morning Skinning",
+          "status": "Closed",
+          "difficulty": null
+        }
+      ],
+      "park": [],
+      "carparks": [
+        {
+          "name": "Carpark 1",
+          "status": "Closed"
+        },
+        {
+          "name": "Carpark 2",
+          "status": "Closed"
+        },
+        {
+          "name": "Carpark 3",
+          "status": "Closed"
+        }
+      ],
+      "weather": {
+        "temperature_c": 2.0,
+        "snowing": false,
+        "condition": "Not snowing",
+        "weather_code": 2,
+        "snowfall_cm": 0.0,
+        "observed": "2026-09-24T15:15",
+        "source": "Open-Meteo",
+        "source_url": "https://open-meteo.com/"
+      },
+      "summary": "Treble Cone is open for skiing today, truly into spring mode with firmer cold snow conditions first thing giving way to fantastic riding once the sun softens things up. Grooming has laid down plenty of freshly cut cord overnight; the natural base holds at 150 cm at the top of Home Basin, with no new snowfall in the past 24 hours. It's currently -2°C with light winds around 16 km/h gusting to 27 km/h, under clear blue skies, forecast to reach a high of -1°C and a low of -6°C tonight. Home Basin Express, Saddle Quad and the Beginner Platter are all open, all 3 of 3 lifts running; 7 of 9 terrain zones are open including Home Basin, Powder Bowl, Saddle Basin and Summit Slopes, with Matukituki Basin delayed and Motatapu Chutes closed. Backcountry and skinning access are both open; the access road is chain-free but chains must always be carried, with an active road hazard advisory and a free shuttle running from the bottom of the access road. Plant a Seed, a native tree-planting event supported by Mons Royale, runs from 1pm at the bottom of the access road. Four days remain in the season. Lifts & terrain Lifts Open 3 / 3 Runs Open 0 / 59 Percent open 0 %",
+      "webcam": {
+        "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
+        "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
+        "embeddable": true,
+        "source": "Mountainwatch"
+      },
+      "forecast": {
+        "issued": "5 pm 24 Sep 2026",
         "days": [
           {
             "label": "Thu 24",
@@ -710,8 +854,8 @@
           },
           {
             "label": "Sat 26",
-            "cm": 8,
-            "mm": 2,
+            "cm": 9,
+            "mm": 0,
             "rain": false
           },
           {
@@ -734,148 +878,8 @@
           }
         ]
       },
-      "stale": false
-    },
-    "treblecone": {
-      "status": "Open",
-      "lifts_open": 3,
-      "lifts_total": 3,
-      "base_lower": 150,
-      "base_upper": 150,
-      "new_snow_7d": 3,
-      "new_snow_24h": null,
-      "season_cm": null,
-      "terrain": {},
-      "lifts": [
-        {
-          "name": "Home Basin Express",
-          "status": "Open"
-        },
-        {
-          "name": "Saddle Quad",
-          "status": "Open"
-        },
-        {
-          "name": "Beginner Platter",
-          "status": "Open"
-        }
-      ],
-      "trails": [
-        {
-          "name": "Home Basin",
-          "status": "Unknown",
-          "difficulty": null
-        },
-        {
-          "name": "Saddle Basin",
-          "status": "Unknown",
-          "difficulty": null
-        },
-        {
-          "name": "Matukituki Basin",
-          "status": "Unknown",
-          "difficulty": null
-        },
-        {
-          "name": "Summit Slopes",
-          "status": "Unknown",
-          "difficulty": null
-        },
-        {
-          "name": "Motatapu Chutes",
-          "status": "Unknown",
-          "difficulty": null
-        },
-        {
-          "name": "Sundance",
-          "status": "Unknown",
-          "difficulty": null
-        },
-        {
-          "name": "Backcountry Access",
-          "status": "Unknown",
-          "difficulty": null
-        },
-        {
-          "name": "Morning Skinning",
-          "status": "Unknown",
-          "difficulty": null
-        }
-      ],
-      "park": [],
-      "carparks": [
-        {
-          "name": "Carpark 1",
-          "status": "Available"
-        },
-        {
-          "name": "Carpark 2",
-          "status": "Available"
-        },
-        {
-          "name": "Carpark 3",
-          "status": "Available"
-        }
-      ],
-      "weather": {
-        "temperature_c": 2.0,
-        "snowing": false,
-        "condition": "Not snowing",
-        "weather_code": 2,
-        "snowfall_cm": 0.0,
-        "observed": "2026-09-24T15:15",
-        "source": "Open-Meteo",
-        "source_url": "https://open-meteo.com/"
-      },
-      "summary": "Treble Cone is open for skiing today, truly into spring mode with firmer cold snow conditions first thing giving way to fantastic riding once the sun softens things up. Grooming has laid down plenty of freshly cut cord overnight; the natural base holds at 150 cm at the top of Home Basin, with no new snowfall in the past 24 hours. It's currently -2°C with light winds around 16 km/h gusting to 27 km/h, under clear blue skies, forecast to reach a high of -1°C and a low of -6°C tonight. Home Basin Express, Saddle Quad and the Beginner Platter are all open, all 3 of 3 lifts running; 7 of 9 terrain zones are open including Home Basin, Powder Bowl, Saddle Basin and Summit Slopes, with Matukituki Basin delayed and Motatapu Chutes closed. Backcountry and skinning access are both open; the access road is chain-free but chains must always be carried, with an active road hazard advisory and a free shuttle running from the bottom of the access road. Plant a Seed, a native tree-planting event supported by Mons Royale, runs from 1pm at the bottom of the access road. Four days remain in the season. Lifts & terrain Lifts Open 3 / 3 Runs Open 0 / 59 Percent open 0 %",
-      "webcam": {
-        "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
-        "image_url": "https://www.mountainwatch.com/Resort/Treble-Cone-Home-Basin/LiveStill.jpg",
-        "embeddable": true,
-        "source": "Mountainwatch"
-      },
-      "forecast": {
-        "issued": "11 am 24 Sep 2026",
-        "days": [
-          {
-            "label": "Thu 24",
-            "cm": 3,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Fri 25",
-            "cm": 3,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sat 26",
-            "cm": 9,
-            "mm": 1,
-            "rain": false
-          },
-          {
-            "label": "Sun 27",
-            "cm": 8,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Mon 28",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Tue 29",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          }
-        ]
-      },
-      "stale": false
+      "stale": true,
+      "hours_closed": true
     }
   }
 }
