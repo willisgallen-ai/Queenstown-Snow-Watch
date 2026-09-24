@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-24T21:19:53.460733+00:00",
+  "updated": "2026-09-24T23:55:18.603940+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The real action arrives this weekend. Saturday brings a brief lull before an icy southerly blasts up the South Island early Sunday, potentially dumping 5-15+cm across the Southern Lakes and 10-30cm in Canterbury. Mt Ruapehu gets its share later Sunday, although severe gales and heavy rain beforehand will make for a pretty atrocious day.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-24T21:20:00+00:00",
+  "next_scheduled_update": "2026-09-25T00:00:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.5,
+        "temperature_c": -1.2,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-25T09:15",
+        "observed": "2026-09-25T11:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -438,6 +438,10 @@
         {
           "name": "Car Park 1-2",
           "status": "Spaces available"
+        },
+        {
+          "name": "Car Park 1",
+          "status": "Full"
         }
       ],
       "weather": {
@@ -673,16 +677,16 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.5,
-        "snowing": true,
-        "condition": "Snow",
-        "weather_code": 85,
-        "snowfall_cm": 0.07,
-        "observed": "2026-09-25T01:45",
+        "temperature_c": -0.7,
+        "snowing": false,
+        "condition": "Not snowing",
+        "weather_code": 2,
+        "snowfall_cm": 0.0,
+        "observed": "2026-09-25T11:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Cardrona Alpine Resort is open for skiing today, with clear morning skies giving way to a mixed bag of weather, light snow flurries and sunny spells before cloud increases in the afternoon. There's been 7 cm of new snow in the past 24 hours, holding the natural base at 112 cm; it's currently -2°C with winds around 23 km/h gusting to 42 km/h, forecast to reach a high of -2°C and a low of -6°C tonight. Conditions are firm and fast early on, gradually softening as temperatures warm through the day, with variable off-piste, firm in the shaded areas. Kindy Conveyor, Learner Conveyors, McDougall's Chondola, Whitestar Express, Valley View, Captains Express, T-Bar, Soho Express, Willow's Quad and Wells Pipe Platter are all open, all 10 of 10 lifts running after Soho came back online this morning as wind eased; 9 of 10 terrain zones are open, with Arcadia Chutes on hold. Main Basin and Valley View open from 8:30am, with Captains and the T-Bar from 9am. The National Alpine Points races are on today at Upper Gold Rush, closed to the public until the race wraps up mid-morning. The access road is chain-free but chains must be carried given snow expected this afternoon, with an active road hazard advisory in place. Lifts & terrain Lifts Open 10 / 10 Runs Open 0 / 38 Percent open 0 %",
+      "summary": "Cardrona Alpine Resort is open for skiing today, with 5 cm of fresh overnight snow and snow showers expected to dissipate this morning, leaving a cloudy day ahead. There's been 5 cm of new snow in the past 24 hours, holding the natural base at 112 cm; it's currently -2°C with light winds around 6 km/h gusting to 11 km/h. Expect a little dust-on-crust in places this morning, with fresh snow sitting on variable conditions underneath, but still great turns to be had across the mountain. All 10 of 10 lifts are open, with 7 of 9 park features and all 10 of 10 terrain zones open. Main Basin and Valley View open from 8:30am, with Captains, Willows, Soho and the T-Bar following from 9am. She'll Be Right Community Day is on today, with McPark closed for the event; the National Alpine Points races run from 10am in Arcadia Valley into Powder Keg, closed to the public until racing wraps up mid-morning. Olympic Pipe closes at 12pm today. The access road is chain-free but chains must be carried, with an active road hazard advisory in place. Lifts & terrain Lifts Open 10 / 10 Runs Open 0 / 38 Percent open 0 %",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/wp-content/uploads/2026/09/LiveStill-2-300x169.jpg",
@@ -814,16 +818,16 @@
         }
       ],
       "weather": {
-        "temperature_c": 2.0,
+        "temperature_c": 1.5,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-24T15:15",
+        "observed": "2026-09-25T11:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Treble Cone is open for skiing today, truly into spring mode with firmer cold snow conditions first thing giving way to fantastic riding once the sun softens things up. Grooming has laid down plenty of freshly cut cord overnight; the natural base holds at 150 cm at the top of Home Basin, with no new snowfall in the past 24 hours. It's currently -2°C with light winds around 16 km/h gusting to 27 km/h, under clear blue skies, forecast to reach a high of -1°C and a low of -6°C tonight. Home Basin Express, Saddle Quad and the Beginner Platter are all open, all 3 of 3 lifts running; 7 of 9 terrain zones are open including Home Basin, Powder Bowl, Saddle Basin and Summit Slopes, with Matukituki Basin delayed and Motatapu Chutes closed. Backcountry and skinning access are both open; the access road is chain-free but chains must always be carried, with an active road hazard advisory and a free shuttle running from the bottom of the access road. Plant a Seed, a native tree-planting event supported by Mons Royale, runs from 1pm at the bottom of the access road. Four days remain in the season. Lifts & terrain Lifts Open 3 / 3 Runs Open 0 / 59 Percent open 0 %",
+      "summary": "Treble Cone is open for skiing today, with just three days left in the season and 5 cm of fresh snow overnight above the top of the Six Seater, tapering to a dusting at the base. Grooming has put the finishing touches on the on-piste terrain, which is skiing beautifully, though off-piste stays firm and dusty until things soften up; the natural base holds at 150 cm at the top of Home Basin. It's currently -1°C with light winds around 5 km/h gusting to 8 km/h, with cloudy periods and a chance of a morning shower, clearing to fine in the afternoon and winds turning northwesterly in the evening. All 3 of 3 lifts and all 11 of 11 groomed trails are open, with 7 of 9 terrain zones open. Home Basin runs 8:30am–4pm and Saddle Basin 9am–3:30pm today. The access road is chain-free but chains must always be carried, with an active road hazard advisory and a free shuttle running from the bottom of the access road. Tomorrow (Saturday) brings Kiri the Kea's birthday celebration on the mountain, with family fun, dress-ups and cake at noon for the final weekend of the season. Lifts & terrain Lifts Open 3 / 3 Runs Open 0 / 59 Percent open 0 %",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/wp-content/uploads/2026/09/LiveStill-2-300x169.jpg",
