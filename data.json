@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-23T23:58:45.802871+00:00",
+  "updated": "2026-09-24T03:23:32.794298+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Another spring cold change whipped over the South Island Monday night, sprinkling a fresh 3-4cm across the Southern Lakes before strengthening winds spoiled Tuesday’s fun, shutting lifts early as another surge of cold air brought more light snowfall. Mt Hutt also received a 2cm dusting before enjoying a cracking Tuesday, with another little overnight top-up already visible on the webcams in these early hours of writing. Mt Ruapehu didn’t escape the wild weather either, with deteriorating conditions on Tuesday forcing an early closure as the snowflakes started falling.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-24T00:00:00+00:00",
+  "next_scheduled_update": "2026-09-24T03:25:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.2,
+        "temperature_c": -0.1,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-24T11:45",
+        "observed": "2026-09-24T15:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,35 +134,35 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 24 Sep 2026",
+        "issued": "11 am 24 Sep 2026",
         "days": [
           {
             "label": "Thu 24",
-            "cm": 4,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Fri 25",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sat 26",
-            "cm": 11,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sun 27",
             "cm": 6,
             "mm": 0,
             "rain": false
           },
           {
+            "label": "Fri 25",
+            "cm": 1,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 26",
+            "cm": 10,
+            "mm": 1,
+            "rain": false
+          },
+          {
+            "label": "Sun 27",
+            "cm": 5,
+            "mm": 0,
+            "rain": false
+          },
+          {
             "label": "Mon 28",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -462,24 +462,24 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 24 Sep 2026",
+        "issued": "11 am 24 Sep 2026",
         "days": [
           {
             "label": "Thu 24",
-            "cm": 2,
+            "cm": 4,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 25",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 26",
-            "cm": 9,
-            "mm": 2,
+            "cm": 8,
+            "mm": 4,
             "rain": false
           },
           {
@@ -490,7 +490,7 @@
           },
           {
             "label": "Mon 28",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -506,7 +506,7 @@
     },
     "cardrona": {
       "status": "Open",
-      "lifts_open": 10,
+      "lifts_open": 7,
       "lifts_total": 10,
       "base_lower": 112,
       "base_upper": 112,
@@ -517,137 +517,137 @@
       "lifts": [
         {
           "name": "Learner Conveyors",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "McDougall's Chondola",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Whitestar Express",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Captains Express",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Willow's Quad",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Soho Express",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "T-Bar",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Valley View",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Kindy Conveyor",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Wells Pipe Platter",
-          "status": "Open"
+          "status": "Unknown"
         }
       ],
       "trails": [
         {
           "name": "Learners Slope",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Main Basin",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Captains",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Soho",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Little Willows",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Big Willows",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Mt Cardrona",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Arcadia Chutes",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         },
         {
           "name": "Summit",
-          "status": "Open",
+          "status": "Unknown",
           "difficulty": null
         }
       ],
       "park": [
         {
           "name": "Baby Bucks",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Little Bucks",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Antlers Alley",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Stag Lane",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Big Bucks",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Peoples Pipe",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Olympic Pipe",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Big Air",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Mc Park",
-          "status": "Open"
+          "status": "Unknown"
         },
         {
           "name": "Gravity Cross",
-          "status": "Open"
+          "status": "Unknown"
         }
       ],
       "carparks": [
@@ -677,12 +677,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -6.1,
+        "temperature_c": 0.8,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 0,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-24T06:15",
+        "observed": "2026-09-24T15:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -694,29 +694,29 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 24 Sep 2026",
+        "issued": "11 am 24 Sep 2026",
         "days": [
           {
             "label": "Thu 24",
-            "cm": 1,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 25",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 26",
             "cm": 8,
-            "mm": 0,
+            "mm": 2,
             "rain": false
           },
           {
             "label": "Sun 27",
-            "cm": 5,
+            "cm": 6,
             "mm": 0,
             "rain": false
           },
@@ -818,12 +818,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -13.1,
+        "temperature_c": 2.0,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-24T06:15",
+        "observed": "2026-09-24T15:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -835,29 +835,29 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 am 24 Sep 2026",
+        "issued": "11 am 24 Sep 2026",
         "days": [
           {
             "label": "Thu 24",
-            "cm": 2,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Fri 25",
-            "cm": 2,
+            "cm": 3,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sat 26",
-            "cm": 10,
-            "mm": 0,
+            "cm": 9,
+            "mm": 1,
             "rain": false
           },
           {
             "label": "Sun 27",
-            "cm": 7,
+            "cm": 8,
             "mm": 0,
             "rain": false
           },
