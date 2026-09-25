@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-25T08:11:37.975723+00:00",
+  "updated": "2026-09-25T13:44:10.431037+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The real action arrives this weekend. Saturday brings a brief lull before an icy southerly blasts up the South Island early Sunday, potentially dumping 5-15+cm across the Southern Lakes and 10-30cm in Canterbury. Mt Ruapehu gets its share later Sunday, although severe gales and heavy rain beforehand will make for a pretty atrocious day.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-25T08:15:00+00:00",
+  "next_scheduled_update": "2026-09-25T13:45:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -119,12 +119,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.6,
+        "temperature_c": -2.3,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-25T20:00",
+        "observed": "2026-09-26T01:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -136,29 +136,23 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 25 Sep 2026",
+        "issued": "11 pm 25 Sep 2026",
         "days": [
           {
-            "label": "Fri 25",
+            "label": "Sat 26",
             "cm": 0,
             "mm": 0,
             "rain": false
           },
           {
-            "label": "Sat 26",
-            "cm": 16,
-            "mm": 1,
-            "rain": false
-          },
-          {
             "label": "Sun 27",
-            "cm": 4,
+            "cm": 21,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Mon 28",
-            "cm": 0,
+            "cm": 1,
             "mm": 0,
             "rain": false
           },
@@ -512,7 +506,7 @@
       "lifts_total": 10,
       "base_lower": 112,
       "base_upper": 112,
-      "new_snow_7d": 12,
+      "new_snow_7d": 17,
       "new_snow_24h": 5,
       "season_cm": null,
       "terrain": {},
@@ -696,23 +690,17 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 25 Sep 2026",
+        "issued": "11 pm 25 Sep 2026",
         "days": [
           {
-            "label": "Fri 25",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Sat 26",
-            "cm": 13,
+            "cm": 0,
             "mm": 1,
-            "rain": false
+            "rain": true
           },
           {
             "label": "Sun 27",
-            "cm": 3,
+            "cm": 18,
             "mm": 0,
             "rain": false
           },
@@ -736,7 +724,7 @@
           }
         ]
       },
-      "stale": true,
+      "stale": false,
       "hours_closed": true
     },
     "treblecone": {
@@ -745,7 +733,7 @@
       "lifts_total": 3,
       "base_lower": 150,
       "base_upper": 150,
-      "new_snow_7d": 8,
+      "new_snow_7d": 13,
       "new_snow_24h": 5,
       "season_cm": null,
       "terrain": {},
@@ -821,12 +809,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.0,
+        "temperature_c": -0.6,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-25T20:00",
+        "observed": "2026-09-26T01:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -838,23 +826,17 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 25 Sep 2026",
+        "issued": "11 pm 25 Sep 2026",
         "days": [
           {
-            "label": "Fri 25",
-            "cm": 1,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Sat 26",
-            "cm": 16,
+            "cm": 2,
             "mm": 0,
             "rain": false
           },
           {
             "label": "Sun 27",
-            "cm": 5,
+            "cm": 19,
             "mm": 0,
             "rain": false
           },
@@ -878,7 +860,7 @@
           }
         ]
       },
-      "stale": true,
+      "stale": false,
       "hours_closed": true
     }
   }
