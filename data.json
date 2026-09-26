@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-26T09:35:19.092673+00:00",
+  "updated": "2026-09-26T13:52:21.229313+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The real action arrives this weekend. Saturday brings a brief lull before an icy southerly blasts up the South Island early Sunday, potentially dumping 5-15+cm across the Southern Lakes and 10-30cm in Canterbury. Mt Ruapehu gets its share later Sunday, although severe gales and heavy rain beforehand will make for a pretty atrocious day.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-26T09:40:00+00:00",
+  "next_scheduled_update": "2026-09-26T13:55:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 1.6,
+        "temperature_c": -0.6,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 61,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-26T21:30",
+        "observed": "2026-09-27T01:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,17 +134,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 26 Sep 2026",
+        "issued": "11 pm 26 Sep 2026",
         "days": [
           {
-            "label": "Sat 26",
-            "cm": 16,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Sun 27",
-            "cm": 7,
+            "cm": 22,
             "mm": 0,
             "rain": false
           },
@@ -434,12 +428,7 @@
           "difficulty": "unclassified"
         }
       ],
-      "carparks": [
-        {
-          "name": "Car Park 1",
-          "status": "Closed"
-        }
-      ],
+      "carparks": [],
       "weather": {
         "temperature_c": 3.3,
         "snowing": false,
@@ -458,17 +447,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 26 Sep 2026",
+        "issued": "11 pm 26 Sep 2026",
         "days": [
           {
-            "label": "Sat 26",
-            "cm": 14,
-            "mm": 1,
-            "rain": false
-          },
-          {
             "label": "Sun 27",
-            "cm": 5,
+            "cm": 21,
             "mm": 0,
             "rain": false
           },
@@ -507,7 +490,7 @@
       "lifts_total": 10,
       "base_lower": 112,
       "base_upper": 112,
-      "new_snow_7d": 12,
+      "new_snow_7d": 9,
       "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
@@ -674,12 +657,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -0.7,
-        "snowing": false,
-        "condition": "Not snowing",
-        "weather_code": 2,
-        "snowfall_cm": 0.0,
-        "observed": "2026-09-25T11:45",
+        "temperature_c": -0.9,
+        "snowing": true,
+        "condition": "Snow",
+        "weather_code": 73,
+        "snowfall_cm": 0.07,
+        "observed": "2026-09-27T01:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -691,17 +674,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 26 Sep 2026",
+        "issued": "11 pm 26 Sep 2026",
         "days": [
           {
-            "label": "Sat 26",
-            "cm": 13,
-            "mm": 1,
-            "rain": false
-          },
-          {
             "label": "Sun 27",
-            "cm": 6,
+            "cm": 20,
             "mm": 0,
             "rain": false
           },
@@ -740,7 +717,7 @@
       "lifts_total": 3,
       "base_lower": 150,
       "base_upper": 150,
-      "new_snow_7d": 8,
+      "new_snow_7d": 5,
       "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
@@ -833,17 +810,11 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "5 pm 26 Sep 2026",
+        "issued": "11 pm 26 Sep 2026",
         "days": [
           {
-            "label": "Sat 26",
-            "cm": 14,
-            "mm": 0,
-            "rain": false
-          },
-          {
             "label": "Sun 27",
-            "cm": 9,
+            "cm": 24,
             "mm": 0,
             "rain": false
           },
