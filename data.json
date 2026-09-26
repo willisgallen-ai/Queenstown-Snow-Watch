@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-26T20:02:22.711547+00:00",
+  "updated": "2026-09-26T22:40:13.404232+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The real action arrives this weekend. Saturday brings a brief lull before an icy southerly blasts up the South Island early Sunday, potentially dumping 5-15+cm across the Southern Lakes and 10-30cm in Canterbury. Mt Ruapehu gets its share later Sunday, although severe gales and heavy rain beforehand will make for a pretty atrocious day.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-26T20:05:00+00:00",
+  "next_scheduled_update": "2026-09-26T22:45:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -5.4,
+        "temperature_c": -4.6,
         "snowing": true,
         "condition": "Snow",
         "weather_code": 85,
         "snowfall_cm": 0.07,
-        "observed": "2026-09-27T09:00",
+        "observed": "2026-09-27T11:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -180,7 +180,7 @@
     },
     "coronetpeak": {
       "status": "Open",
-      "lifts_open": 6,
+      "lifts_open": 7,
       "lifts_total": 8,
       "base_lower": 40,
       "base_upper": 90,
@@ -194,8 +194,8 @@
           "status": "Open"
         },
         {
-          "name": "Greengates Express Via Million Dollar",
-          "status": "Unknown"
+          "name": "Greengates Express",
+          "status": "Open"
         },
         {
           "name": "Meadows Learner Express",
@@ -254,8 +254,8 @@
           "difficulty": "unclassified"
         },
         {
-          "name": "Easy Rider Partially",
-          "status": "Closed for Racing",
+          "name": "Easy Rider Groomed",
+          "status": "Unknown",
           "difficulty": "unclassified"
         },
         {
@@ -270,7 +270,7 @@
         },
         {
           "name": "The Chimney",
-          "status": "Variable",
+          "status": "Closed",
           "difficulty": "black"
         },
         {
@@ -350,7 +350,7 @@
         },
         {
           "name": "Race Arena",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": "black"
         },
         {
@@ -415,7 +415,7 @@
         },
         {
           "name": "Back Bowls",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "double-black"
         },
         {
@@ -434,14 +434,23 @@
           "difficulty": "unclassified"
         }
       ],
-      "carparks": [],
+      "carparks": [
+        {
+          "name": "Car Park 1",
+          "status": "Full"
+        },
+        {
+          "name": "Car Park 7",
+          "status": "Spaces available"
+        }
+      ],
       "weather": {
-        "temperature_c": -2.9,
-        "snowing": false,
-        "condition": "Not snowing",
-        "weather_code": 1,
-        "snowfall_cm": 0.0,
-        "observed": "2026-09-27T09:00",
+        "temperature_c": -1.7,
+        "snowing": true,
+        "condition": "Snow",
+        "weather_code": 85,
+        "snowfall_cm": 0.07,
+        "observed": "2026-09-27T11:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -644,7 +653,7 @@
       "carparks": [
         {
           "name": "Carpark A",
-          "status": "Available"
+          "status": "Full"
         },
         {
           "name": "Carpark B",
@@ -797,15 +806,15 @@
       "carparks": [
         {
           "name": "Carpark 1",
-          "status": "Available"
+          "status": "Full"
         },
         {
           "name": "Carpark 2",
-          "status": "Available"
+          "status": "Full"
         },
         {
           "name": "Carpark 3",
-          "status": "Available"
+          "status": "Full"
         }
       ],
       "weather": {
