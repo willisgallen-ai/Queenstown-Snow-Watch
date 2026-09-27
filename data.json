@@ -1,17 +1,19 @@
 {
-  "updated": "2026-09-27T10:58:46.863214+00:00",
+  "updated": "2026-09-27T15:34:00.188861+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "The real action arrives this weekend. Saturday brings a brief lull before an icy southerly blasts up the South Island early Sunday, potentially dumping 5-15+cm across the Southern Lakes and 10-30cm in Canterbury. Mt Ruapehu gets its share later Sunday, although severe gales and heavy rain beforehand will make for a pretty atrocious day.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-27T11:00:00+00:00",
+  "next_scheduled_update": "2026-09-27T15:35:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
     "total_resorts": 4,
-    "stale_resorts": []
+    "stale_resorts": [
+      "coronetpeak"
+    ]
   },
   "resorts": {
     "remarkables": {
@@ -117,12 +119,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -4.3,
+        "temperature_c": -3.4,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-27T23:45",
+        "observed": "2026-09-28T04:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,14 +136,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "6 pm 27 Sep 2026",
+        "issued": "12 am 28 Sep 2026",
         "days": [
-          {
-            "label": "Sun 27",
-            "cm": 1,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Mon 28",
             "cm": 0,
@@ -169,8 +165,8 @@
           {
             "label": "Fri 2",
             "cm": 0,
-            "mm": 3,
-            "rain": true
+            "mm": 0,
+            "rain": false
           }
         ]
       },
@@ -502,7 +498,7 @@
           }
         ]
       },
-      "stale": false,
+      "stale": true,
       "hours_closed": true
     },
     "cardrona": {
@@ -695,14 +691,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "6 pm 27 Sep 2026",
+        "issued": "12 am 28 Sep 2026",
         "days": [
-          {
-            "label": "Sun 27",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Mon 28",
             "cm": 0,
@@ -730,12 +720,12 @@
           {
             "label": "Fri 2",
             "cm": 0,
-            "mm": 3,
-            "rain": true
+            "mm": 0,
+            "rain": false
           }
         ]
       },
-      "stale": false,
+      "stale": true,
       "hours_closed": true
     },
     "treblecone": {
@@ -820,12 +810,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.1,
-        "snowing": true,
-        "condition": "Snow",
-        "weather_code": 75,
-        "snowfall_cm": 0.35,
-        "observed": "2026-09-27T06:15",
+        "temperature_c": -2.3,
+        "snowing": false,
+        "condition": "Not snowing",
+        "weather_code": 3,
+        "snowfall_cm": 0.0,
+        "observed": "2026-09-28T04:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -837,14 +827,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "6 pm 27 Sep 2026",
+        "issued": "12 am 28 Sep 2026",
         "days": [
-          {
-            "label": "Sun 27",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Mon 28",
             "cm": 0,
@@ -872,12 +856,12 @@
           {
             "label": "Fri 2",
             "cm": 0,
-            "mm": 6,
-            "rain": true
+            "mm": 0,
+            "rain": false
           }
         ]
       },
-      "stale": false,
+      "stale": true,
       "hours_closed": true
     }
   }
