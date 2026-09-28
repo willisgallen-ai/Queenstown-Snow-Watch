@@ -1,19 +1,17 @@
 {
-  "updated": "2026-09-28T00:48:34.895581+00:00",
+  "updated": "2026-09-28T05:57:15.108248+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Strong, chilly winds could hamper lifts again today, Monday, although Mt Ruapehu should score another 5-10cm. Things come right on Tuesday as winds ease and skies clear, before a couple of mint spring days follow through Wednesday and Thursday. Northwesterlies then crank up on Friday as another front moves in, bringing rain to the Southern Lakes and potentially setting the stage for a little more snow over the weekend.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-28T00:50:00+00:00",
+  "next_scheduled_update": "2026-09-28T06:00:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
     "total_resorts": 4,
-    "stale_resorts": [
-      "coronetpeak"
-    ]
+    "stale_resorts": []
   },
   "resorts": {
     "remarkables": {
@@ -119,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.3,
+        "temperature_c": -1.5,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-28T13:45",
+        "observed": "2026-09-28T18:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -136,7 +134,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "6 am 28 Sep 2026",
+        "issued": "12 pm 28 Sep 2026",
         "days": [
           {
             "label": "Mon 28",
@@ -164,15 +162,15 @@
           },
           {
             "label": "Fri 2",
-            "cm": 2,
-            "mm": 0,
-            "rain": false
+            "cm": 0,
+            "mm": 3,
+            "rain": true
           },
           {
             "label": "Sat 3",
             "cm": 0,
-            "mm": 0,
-            "rain": false
+            "mm": 2,
+            "rain": true
           }
         ]
       },
@@ -181,8 +179,8 @@
       "hours_closed": true
     },
     "coronetpeak": {
-      "status": "Open",
-      "lifts_open": 7,
+      "status": "Closed",
+      "lifts_open": 0,
       "lifts_total": 8,
       "base_lower": 40,
       "base_upper": 90,
@@ -193,31 +191,31 @@
       "lifts": [
         {
           "name": "Coronet Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Greengates Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Meadows Learner Express",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Rocky Gully T-bar",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Magic Carpet Conveyor",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Beginner Carpet Conveyor",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Skiwiland Conveyor",
-          "status": "Open"
+          "status": "Closed"
         },
         {
           "name": "Kidszone carpet",
@@ -227,47 +225,47 @@
       "trails": [
         {
           "name": "Big Easy Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Beginner Area Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Little Easy Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Gentle Annie Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Fun Zone",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "M1 Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Easy Rider Partially",
-          "status": "Closed for Racing",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Greengates Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Wall Street Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
@@ -277,12 +275,12 @@
         },
         {
           "name": "The Hurdle",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Exchange Drop",
-          "status": "Variable",
+          "status": "Closed",
           "difficulty": "black"
         },
         {
@@ -292,82 +290,82 @@
         },
         {
           "name": "Dual Carpet slopes",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "green"
         },
         {
           "name": "Shirt Front Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Eighth Basin",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Brough's Lane Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Tuck Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Million Dollar Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Upper Walkabout",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "black"
         },
         {
           "name": "Mid Gully",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Pro Am",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "blue"
         },
         {
           "name": "Overrun Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Rocky Return",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "blue"
         },
         {
           "name": "West Gates Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Race Arena",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "black"
         },
         {
           "name": "Powder Run",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "double-black"
         },
         {
           "name": "Sugar's Run",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "red"
         },
         {
           "name": "Express Way Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
@@ -377,22 +375,22 @@
         },
         {
           "name": "Arnolds Way Groomed",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Duncan's Dance",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Lunch Rocks",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Out Wide",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
@@ -402,17 +400,17 @@
         },
         {
           "name": "Dirty Four",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Way Out Wide",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
           "name": "Donkey Serenade",
-          "status": "Ungroomed",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
@@ -422,7 +420,7 @@
         },
         {
           "name": "Touring Route Change",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
@@ -432,27 +430,27 @@
         },
         {
           "name": "Tuck Rail garden",
-          "status": "Open",
+          "status": "Closed",
           "difficulty": "unclassified"
         }
       ],
       "carparks": [
         {
           "name": "Car Park 7",
-          "status": "Spaces available"
+          "status": "Closed"
         },
         {
           "name": "Car Park 1",
-          "status": "Full"
+          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": 0.1,
+        "temperature_c": 1.9,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-28T11:00",
+        "observed": "2026-09-28T18:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -464,7 +462,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "6 am 28 Sep 2026",
+        "issued": "12 pm 28 Sep 2026",
         "days": [
           {
             "label": "Mon 28",
@@ -487,8 +485,8 @@
           {
             "label": "Thu 1",
             "cm": 0,
-            "mm": 0,
-            "rain": false
+            "mm": 1,
+            "rain": true
           },
           {
             "label": "Fri 2",
@@ -499,12 +497,13 @@
           {
             "label": "Sat 3",
             "cm": 0,
-            "mm": 1,
+            "mm": 3,
             "rain": true
           }
         ]
       },
-      "stale": true
+      "stale": false,
+      "hours_closed": true
     },
     "cardrona": {
       "status": "Closed",
@@ -655,27 +654,27 @@
       "carparks": [
         {
           "name": "Carpark A",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Carpark B",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Carpark C",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "The Yard",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "Valley View",
-          "status": "Available"
+          "status": "Closed"
         },
         {
           "name": "The Pines",
-          "status": "Available"
+          "status": "Closed"
         }
       ],
       "weather": {
@@ -688,7 +687,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Cardrona Alpine Resort is open for skiing today, with a delayed opening after an intense blizzard passed through the resort and access road overnight. 15 cm of new snow fell in the past 24 hours and was still falling as the storm cleared, holding the natural base at 112 cm; it's currently -7°C with winds around 37 km/h gusting to 71 km/h, with snow showers forecast to clear by evening and strong southwest winds continuing. It's a storm-riding day for the enthusiasts, so wrapping up warm is essential. Kindy Conveyor, Learner Conveyors, McDougall's Chondola, Whitestar Express and Valley View are all open; Captains Express is delayed pending avalanche mitigation work, with the T-Bar on hold and Soho Express, Willow's Quad and Wells Pipe Platter all closed; 5 of 10 lifts are currently running. Lifts may be affected by wind holds through the day. The access road is open with chains required on 2WD vehicles from Chain Bay 1, and an active road hazard advisory in place. The spring Pines Shuttle and bus schedule begins 1 October. Lifts & terrain Lifts Open 5 / 10 Runs Open 0 / 38 Percent open 0 %",
+      "summary": "Cardrona Alpine Resort is closed for skiing today, with the spring southwest wind returning above the operating threshold for chairlifts, and no improvement forecast as the wind is expected to increase slightly into the afternoon. There's been 6 cm of new snow in the past 24 hours, holding the natural base at 112 cm; it's currently -3°C with winds around 40 km/h gusting to 79 km/h, with a few snow showers forecast to lower to 1000m alongside strong southwesterly winds. The Junior Nationals Ski + Snowboard X has been postponed due to the weather. No lifts and runs are open today. The access road is chain-free, with an active road hazard advisory in place. The resort plans to try again tomorrow, with the spring Pines Shuttle and bus schedule beginning 1 October. Lifts & terrain Lifts Open 0 / 10 Runs Open 0 / 38 Percent open 0 %",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/wp-content/uploads/2026/09/LiveStill-2-300x169.jpg",
@@ -696,7 +695,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "6 am 28 Sep 2026",
+        "issued": "12 pm 28 Sep 2026",
         "days": [
           {
             "label": "Mon 28",
@@ -724,19 +723,20 @@
           },
           {
             "label": "Fri 2",
-            "cm": 1,
-            "mm": 0,
-            "rain": false
+            "cm": 0,
+            "mm": 2,
+            "rain": true
           },
           {
             "label": "Sat 3",
             "cm": 0,
-            "mm": 0,
-            "rain": false
+            "mm": 2,
+            "rain": true
           }
         ]
       },
-      "stale": true
+      "stale": false,
+      "hours_closed": true
     },
     "treblecone": {
       "status": "Closed",
@@ -829,7 +829,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Treble Cone is open for skiing today, closing day of the season, with Home Basin open under a mixed bag of conditions — some firmness beneath fresh snow, with a few nice turns to be found, and the resort still in the cloud with light snow pulsing on and off. There's been 8 cm of new snow in the past 24 hours, with the natural base at 150 cm at the top of Home Basin; it's currently -6°C with winds around 27 km/h gusting to 51 km/h, expected to gradually clear into a nicer afternoon. Saddle Basin remains on hold pending weather improvement and avalanche control work, uncertain whether it opens today. Home Basin Express and the Beginner Platter are open, 2 of 3 lifts running, with the Saddle Quad on hold; 6 of 10 terrain zones are open including Home Basin, Powder Bowl and Matukituki Basin, with Saddle Basin and Summit Slopes on hold and Motatapu Chutes closed. The access road is graded and chain-free, though all vehicles must still carry chains; the top carpark is closed while the grader clears snow, with a free shuttle available for those without chains. Lifts & terrain Lifts Open 2 / 3 Runs Open 0 / 59 Percent open 0 %",
+      "summary": null,
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/treble-cone/snow-cams",
         "image_url": "https://www.mountainwatch.com/wp-content/uploads/2026/09/LiveStill-2-300x169.jpg",
@@ -837,7 +837,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "6 am 28 Sep 2026",
+        "issued": "12 pm 28 Sep 2026",
         "days": [
           {
             "label": "Mon 28",
@@ -865,19 +865,20 @@
           },
           {
             "label": "Fri 2",
-            "cm": 1,
-            "mm": 1,
-            "rain": false
+            "cm": 0,
+            "mm": 4,
+            "rain": true
           },
           {
             "label": "Sat 3",
             "cm": 0,
-            "mm": 0,
-            "rain": false
+            "mm": 3,
+            "rain": true
           }
         ]
       },
-      "stale": true
+      "stale": false,
+      "hours_closed": true
     }
   }
 }
