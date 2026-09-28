@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-28T05:57:15.108248+00:00",
+  "updated": "2026-09-28T12:45:25.033568+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Strong, chilly winds could hamper lifts again today, Monday, although Mt Ruapehu should score another 5-10cm. Things come right on Tuesday as winds ease and skies clear, before a couple of mint spring days follow through Wednesday and Thursday. Northwesterlies then crank up on Friday as another front moves in, bringing rain to the Southern Lakes and potentially setting the stage for a little more snow over the weekend.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-28T06:00:00+00:00",
+  "next_scheduled_update": "2026-09-28T12:50:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -122,7 +122,7 @@
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-28T18:45",
+        "observed": "2026-09-29T01:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,7 +134,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "12 pm 28 Sep 2026",
+        "issued": "6 pm 28 Sep 2026",
         "days": [
           {
             "label": "Mon 28",
@@ -157,20 +157,20 @@
           {
             "label": "Thu 1",
             "cm": 0,
+            "mm": 1,
+            "rain": true
+          },
+          {
+            "label": "Fri 2",
+            "cm": 5,
             "mm": 0,
             "rain": false
           },
           {
-            "label": "Fri 2",
-            "cm": 0,
-            "mm": 3,
-            "rain": true
-          },
-          {
             "label": "Sat 3",
             "cm": 0,
-            "mm": 2,
-            "rain": true
+            "mm": 0,
+            "rain": false
           }
         ]
       },
@@ -438,19 +438,15 @@
         {
           "name": "Car Park 7",
           "status": "Closed"
-        },
-        {
-          "name": "Car Park 1",
-          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": 1.9,
+        "temperature_c": 0.6,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-28T18:45",
+        "observed": "2026-09-29T01:30",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -462,7 +458,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "12 pm 28 Sep 2026",
+        "issued": "6 pm 28 Sep 2026",
         "days": [
           {
             "label": "Mon 28",
@@ -490,14 +486,14 @@
           },
           {
             "label": "Fri 2",
-            "cm": 0,
-            "mm": 5,
-            "rain": true
+            "cm": 2,
+            "mm": 11,
+            "rain": false
           },
           {
             "label": "Sat 3",
             "cm": 0,
-            "mm": 3,
+            "mm": 1,
             "rain": true
           }
         ]
@@ -511,7 +507,7 @@
       "lifts_total": 10,
       "base_lower": 112,
       "base_upper": 112,
-      "new_snow_7d": 24,
+      "new_snow_7d": 20,
       "new_snow_24h": null,
       "season_cm": null,
       "terrain": {},
@@ -695,7 +691,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "12 pm 28 Sep 2026",
+        "issued": "6 pm 28 Sep 2026",
         "days": [
           {
             "label": "Mon 28",
@@ -723,15 +719,15 @@
           },
           {
             "label": "Fri 2",
-            "cm": 0,
-            "mm": 2,
-            "rain": true
+            "cm": 4,
+            "mm": 0,
+            "rain": false
           },
           {
             "label": "Sat 3",
             "cm": 0,
-            "mm": 2,
-            "rain": true
+            "mm": 0,
+            "rain": false
           }
         ]
       },
@@ -837,7 +833,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "12 pm 28 Sep 2026",
+        "issued": "6 pm 28 Sep 2026",
         "days": [
           {
             "label": "Mon 28",
@@ -860,19 +856,19 @@
           {
             "label": "Thu 1",
             "cm": 0,
+            "mm": 2,
+            "rain": true
+          },
+          {
+            "label": "Fri 2",
+            "cm": 7,
             "mm": 0,
             "rain": false
           },
           {
-            "label": "Fri 2",
-            "cm": 0,
-            "mm": 4,
-            "rain": true
-          },
-          {
             "label": "Sat 3",
             "cm": 0,
-            "mm": 3,
+            "mm": 1,
             "rain": true
           }
         ]
