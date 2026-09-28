@@ -1,17 +1,19 @@
 {
-  "updated": "2026-09-27T22:13:53.049586+00:00",
+  "updated": "2026-09-28T00:48:34.895581+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Strong, chilly winds could hamper lifts again today, Monday, although Mt Ruapehu should score another 5-10cm. Things come right on Tuesday as winds ease and skies clear, before a couple of mint spring days follow through Wednesday and Thursday. Northwesterlies then crank up on Friday as another front moves in, bringing rain to the Southern Lakes and potentially setting the stage for a little more snow over the weekend.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-27T22:15:00+00:00",
+  "next_scheduled_update": "2026-09-28T00:50:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
     "total_resorts": 4,
-    "stale_resorts": []
+    "stale_resorts": [
+      "coronetpeak"
+    ]
   },
   "resorts": {
     "remarkables": {
@@ -117,12 +119,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -3.0,
-        "snowing": true,
-        "condition": "Snow",
-        "weather_code": 85,
-        "snowfall_cm": 0.07,
-        "observed": "2026-09-28T11:00",
+        "temperature_c": -1.3,
+        "snowing": false,
+        "condition": "Not snowing",
+        "weather_code": 2,
+        "snowfall_cm": 0.0,
+        "observed": "2026-09-28T13:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -502,7 +504,7 @@
           }
         ]
       },
-      "stale": false
+      "stale": true
     },
     "cardrona": {
       "status": "Closed",
@@ -734,7 +736,7 @@
           }
         ]
       },
-      "stale": false
+      "stale": true
     },
     "treblecone": {
       "status": "Closed",
@@ -818,12 +820,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -2.3,
+        "temperature_c": 1.9,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 3,
+        "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-28T04:30",
+        "observed": "2026-09-28T13:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -875,7 +877,7 @@
           }
         ]
       },
-      "stale": false
+      "stale": true
     }
   }
 }
