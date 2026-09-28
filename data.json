@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-28T12:45:25.033568+00:00",
+  "updated": "2026-09-28T19:52:00.490108+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Strong, chilly winds could hamper lifts again today, Monday, although Mt Ruapehu should score another 5-10cm. Things come right on Tuesday as winds ease and skies clear, before a couple of mint spring days follow through Wednesday and Thursday. Northwesterlies then crank up on Friday as another front moves in, bringing rain to the Southern Lakes and potentially setting the stage for a little more snow over the weekend.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-28T12:50:00+00:00",
+  "next_scheduled_update": "2026-09-28T19:55:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.5,
+        "temperature_c": -0.9,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-29T01:30",
+        "observed": "2026-09-29T08:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,14 +134,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "6 pm 28 Sep 2026",
+        "issued": "6 am 29 Sep 2026",
         "days": [
-          {
-            "label": "Mon 28",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Tue 29",
             "cm": 0,
@@ -157,17 +151,23 @@
           {
             "label": "Thu 1",
             "cm": 0,
-            "mm": 1,
-            "rain": true
+            "mm": 0,
+            "rain": false
           },
           {
             "label": "Fri 2",
+            "cm": 0,
+            "mm": 8,
+            "rain": true
+          },
+          {
+            "label": "Sat 3",
             "cm": 5,
             "mm": 0,
             "rain": false
           },
           {
-            "label": "Sat 3",
+            "label": "Sun 4",
             "cm": 0,
             "mm": 0,
             "rain": false
@@ -441,12 +441,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 0.6,
+        "temperature_c": 1.7,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-29T01:30",
+        "observed": "2026-09-29T08:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -458,14 +458,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "6 pm 28 Sep 2026",
+        "issued": "6 am 29 Sep 2026",
         "days": [
-          {
-            "label": "Mon 28",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Tue 29",
             "cm": 0,
@@ -486,15 +480,21 @@
           },
           {
             "label": "Fri 2",
-            "cm": 2,
+            "cm": 0,
             "mm": 11,
-            "rain": false
+            "rain": true
           },
           {
             "label": "Sat 3",
             "cm": 0,
-            "mm": 1,
+            "mm": 13,
             "rain": true
+          },
+          {
+            "label": "Sun 4",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
           }
         ]
       },
@@ -502,8 +502,8 @@
       "hours_closed": true
     },
     "cardrona": {
-      "status": "Closed",
-      "lifts_open": 0,
+      "status": "Open",
+      "lifts_open": 10,
       "lifts_total": 10,
       "base_lower": 112,
       "base_upper": 112,
@@ -514,163 +514,163 @@
       "lifts": [
         {
           "name": "Learner Conveyors",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "McDougall's Chondola",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Whitestar Express",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Captains Express",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Willow's Quad",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Soho Express",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "T-Bar",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Valley View",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Kindy Conveyor",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Wells Pipe Platter",
-          "status": "Closed"
+          "status": "Open"
         }
       ],
       "trails": [
         {
           "name": "Learners Slope",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Main Basin",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Captains",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Soho",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Little Willows",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Big Willows",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Backcountry Access",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Mt Cardrona",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Arcadia Chutes",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         },
         {
           "name": "Summit",
-          "status": "Closed",
+          "status": "Open",
           "difficulty": null
         }
       ],
       "park": [
         {
           "name": "Baby Bucks",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Little Bucks",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Antlers Alley",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Stag Lane",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Big Bucks",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Peoples Pipe",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Olympic Pipe",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Big Air",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Mc Park",
-          "status": "Closed"
+          "status": "Open"
         },
         {
           "name": "Gravity Cross",
-          "status": "Closed"
+          "status": "Open"
         }
       ],
       "carparks": [
         {
           "name": "Carpark A",
-          "status": "Closed"
+          "status": "Full"
         },
         {
           "name": "Carpark B",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "Carpark C",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "The Yard",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "Valley View",
-          "status": "Closed"
+          "status": "Available"
         },
         {
           "name": "The Pines",
-          "status": "Closed"
+          "status": "Available"
         }
       ],
       "weather": {
@@ -691,14 +691,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "6 pm 28 Sep 2026",
+        "issued": "6 am 29 Sep 2026",
         "days": [
-          {
-            "label": "Mon 28",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Tue 29",
             "cm": 0,
@@ -719,20 +713,25 @@
           },
           {
             "label": "Fri 2",
-            "cm": 4,
-            "mm": 0,
-            "rain": false
+            "cm": 0,
+            "mm": 5,
+            "rain": true
           },
           {
             "label": "Sat 3",
+            "cm": 2,
+            "mm": 6,
+            "rain": false
+          },
+          {
+            "label": "Sun 4",
             "cm": 0,
             "mm": 0,
             "rain": false
           }
         ]
       },
-      "stale": false,
-      "hours_closed": true
+      "stale": false
     },
     "treblecone": {
       "status": "Closed",
@@ -833,14 +832,8 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "6 pm 28 Sep 2026",
+        "issued": "6 am 29 Sep 2026",
         "days": [
-          {
-            "label": "Mon 28",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
           {
             "label": "Tue 29",
             "cm": 0,
@@ -856,20 +849,26 @@
           {
             "label": "Thu 1",
             "cm": 0,
-            "mm": 2,
+            "mm": 1,
             "rain": true
           },
           {
             "label": "Fri 2",
-            "cm": 7,
-            "mm": 0,
-            "rain": false
+            "cm": 0,
+            "mm": 11,
+            "rain": true
           },
           {
             "label": "Sat 3",
             "cm": 0,
-            "mm": 1,
+            "mm": 12,
             "rain": true
+          },
+          {
+            "label": "Sun 4",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
           }
         ]
       },
