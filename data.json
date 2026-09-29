@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-29T04:53:40.232521+00:00",
+  "updated": "2026-09-29T10:57:31.783171+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Strong, chilly winds could hamper lifts again today, Monday, although Mt Ruapehu should score another 5-10cm. Things come right on Tuesday as winds ease and skies clear, before a couple of mint spring days follow through Wednesday and Thursday. Northwesterlies then crank up on Friday as another front moves in, bringing rain to the Southern Lakes and potentially setting the stage for a little more snow over the weekend.",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-29T04:55:00+00:00",
+  "next_scheduled_update": "2026-09-29T11:00:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 3.5,
+        "temperature_c": -1.8,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 1,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-29T17:45",
+        "observed": "2026-09-29T23:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,7 +134,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "12 pm 29 Sep 2026",
+        "issued": "6 pm 29 Sep 2026",
         "days": [
           {
             "label": "Tue 29",
@@ -156,7 +156,7 @@
           },
           {
             "label": "Fri 2",
-            "cm": 11,
+            "cm": 9,
             "mm": 0,
             "rain": false
           },
@@ -441,12 +441,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 7.9,
+        "temperature_c": -0.2,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 1,
+        "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-29T17:45",
+        "observed": "2026-09-29T23:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -458,7 +458,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "12 pm 29 Sep 2026",
+        "issued": "6 pm 29 Sep 2026",
         "days": [
           {
             "label": "Tue 29",
@@ -475,14 +475,14 @@
           {
             "label": "Thu 1",
             "cm": 0,
-            "mm": 1,
-            "rain": true
+            "mm": 0,
+            "rain": false
           },
           {
             "label": "Fri 2",
-            "cm": 7,
-            "mm": 12,
-            "rain": false
+            "cm": 0,
+            "mm": 26,
+            "rain": true
           },
           {
             "label": "Sat 3",
@@ -674,12 +674,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 4.0,
+        "temperature_c": -0.9,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 1,
+        "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-29T17:45",
+        "observed": "2026-09-29T23:45",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -691,7 +691,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "12 pm 29 Sep 2026",
+        "issued": "6 pm 29 Sep 2026",
         "days": [
           {
             "label": "Tue 29",
@@ -713,8 +713,8 @@
           },
           {
             "label": "Fri 2",
-            "cm": 8,
-            "mm": 2,
+            "cm": 7,
+            "mm": 1,
             "rain": false
           },
           {
@@ -833,7 +833,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "12 pm 29 Sep 2026",
+        "issued": "6 pm 29 Sep 2026",
         "days": [
           {
             "label": "Tue 29",
@@ -850,14 +850,14 @@
           {
             "label": "Thu 1",
             "cm": 0,
-            "mm": 1,
-            "rain": true
+            "mm": 0,
+            "rain": false
           },
           {
             "label": "Fri 2",
-            "cm": 9,
-            "mm": 12,
-            "rain": false
+            "cm": 0,
+            "mm": 28,
+            "rain": true
           },
           {
             "label": "Sat 3",
