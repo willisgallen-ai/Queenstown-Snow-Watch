@@ -1,12 +1,12 @@
 {
-  "updated": "2026-09-29T21:05:58.817080+00:00",
+  "updated": "2026-09-30T00:22:05.931079+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Wednesday, 30 th September 2026 Snow conditions are looking great after winter came roaring back on Sunday, with an icy blast giving South Island ski fields a solid top-up of around 15-30cm, while Mt Ruapehu also picked up freshies, with between 7-17cm falling. That fresh powder is perfectly timed for the school holidays, which are now underway. It’s the final week at Coronet Peak, while The Remarkables and Mt Hutt will run through to the 11th of October. Cardrona has extended its season until the 18th, with Whakapapa and Tūroa aiming to keep the lifts spinning through to the 25th. There’s some mint spring skiing on offer today, Wednesday, with sunshine across the country, followed by another mostly decent day Thursday. Things turn more lively on Friday as northwesterlies crank up over the South Island and a front slowly pushes north, bringing rain before a colder change turns it to wet snow over Canterbury overnight. Around 1-5cm could be on the ground by the time things clear up on Saturday, with Sunday shaping up as another cracking sunny day for South Island ski fields. Mt Ruapehu stays largely out of the action, with cloud and a few showers developing over the weekend. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Wednesday 30 th September A nice, sunny day for Kiwi ski fields as northwest breezes develop across the country, picking up a bit over the Southern Lakes. Canterbury may see some morning cloud before skies clear, while Mt Ruapehu gets a little cloud during the afternoon, particularly around the lower slopes. Thursday 1 st October West-to-northwest winds continue across the country and will be brisk over the Southern Lakes, where skies turn mostly cloudy as a weak front nudges onto the bottom of the South Island, bringing the chance of a few light rain showers. Canterbury also sees some high cloud, while Mt Ruapehu will be sitting pretty in the sunshine above a layer of cloud hugging the lower slopes. Friday 2 nd October Northwesterlies crank up over the South Island, potentially hampering lift operations, as the front to the south gathers some momentum and slowly creeps northwards. The front spreads rain over the Southern Lakes during the morning before clearing away in the evening. Canterbury stays fine beneath increasing high cloud for much of the day before rain arrives from the south during the evening, eventually turning to wet, dense snow overnight as cooler southeasterlies arrive. Mt Ruapehu remains largely untouched by the action, with just some cloud hanging around the lower slopes. Saturday 3 rd October Cloud clagging up the Southern Lakes ski fields gradually breaks apart, opening the door to a sunny end to the day. Snow and sleet over Canterbury gradually clear from the south as the front continues northwards, leaving around 1-5cm of wet, dense snow behind. Winds will be light across the South Island. Cloud builds over Mt Ruapehu, with a few showers developing later in the afternoon as a southwest breeze swings around to the southeast. Sunday 4 th October A ridge of high pressure serves up a beaut sunny day for South Island ski fields, with light northwest breezes developing during the afternoon. Mt Ruapehu won’t fare quite as well, with showers hanging around although winds will be light. Extended Forecast Next week, northwesterlies strengthen across the South Island on Monday the 5 th and Tuesday the 6 th of October ahead of a front crossing on Wednesday the 7 th . This will bring a bout of rain before a cold change whips through, potentially leaving ski fields with a wee dusting of fresh snow. Things should clear up again for Thursday the 8 th and Friday the 9 th as another high-pressure system passes by, before northerlies pick up again over the weekend of the 10 th and 11 th . Mt Ruapehu, meanwhile, looks set for a showery, wet week with little sign of any fresh snow. That’s all from me today, folks. I’m sending out NZ forecasts every Monday, Wednesday and Friday throughout the season. Have a great couple of days, and I’ll see you back here on Friday. Grasshopper",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-09-29T21:10:00+00:00",
+  "next_scheduled_update": "2026-09-30T00:25:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": -1.8,
+        "temperature_c": 4.2,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-30T10:00",
+        "observed": "2026-09-30T13:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -446,15 +446,19 @@
         {
           "name": "Car Park 1-2",
           "status": "Full"
+        },
+        {
+          "name": "Car Park 1-3",
+          "status": "Full"
         }
       ],
       "weather": {
-        "temperature_c": 1.4,
+        "temperature_c": 8.5,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 2,
+        "weather_code": 0,
         "snowfall_cm": 0.0,
-        "observed": "2026-09-30T10:00",
+        "observed": "2026-09-30T13:15",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -669,7 +673,7 @@
         },
         {
           "name": "The Yard",
-          "status": "Available"
+          "status": "Full"
         },
         {
           "name": "Valley View",
@@ -690,7 +694,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Cardrona Alpine Resort is open for skiing today, with a fine day forecast though strong southwest winds from yesterday have eased only slightly and are still likely to affect lift operations. Groomers have been busy working in all the fresh snow, feeling like mid-winter with cold, dry cover; there's been 27 cm over the past 7 days, holding the natural base at 112 cm. It's currently 1°C with winds around 24 km/h gusting to 45 km/h. Coverage is excellent overall, though some areas have been stripped back by wind, with variable off-piste conditions including big drifts and wind-stripped sections. Main Basin and Valley View are running from 8:30am, with the T-Bar and Captains following; Soho started the day on wind hold before opening at 12:15pm, and McDougall's is running with chairs only after reopening at 11:45am; Willows is closed for the day. 8 of 10 lifts, 7 of 9 park features and 7 of 10 terrain zones are open. The Junior Nationals are running today in McPark and lower Lil Bucks, with a briefing from 8:30am; the Olympic Pipe and platter lift close at 12pm. The access road is chain-free, with an active road hazard advisory in place. The spring Pines Shuttle and bus schedule begins 1 October. Lifts & terrain Lifts Open 8 / 10 Runs Open 0 / 38 Percent open 0 %",
+      "summary": "Cardrona Alpine Resort is open for skiing today, a beautiful spring day with bluebird skies and moderate southwesterly winds. It'll start out cool and warm up quickly with the sun; snow conditions and coverage are described as superb, with fresh snow and cold temps giving good grooming up high. There's been 27 cm over the past 7 days, holding the natural base at 112 cm; it's currently 3°C with winds around 13 km/h gusting to 21 km/h. The lower mountain starts firm, with off-piste variable to start before softening nicely as the day warms. All 10 of 10 lifts are open. Main Basin and Valley View are running from 8:30am, with the T-Bar, Captains, Soho and Willow following; the Olympic Halfpipe and Platter had a delayed start to allow salting, now fully open from 10am. 7 of 9 park features are open, with all 10 of 10 terrain zones open. The Junior Nationals are running Slopestyle today in Lil Bucks and Antlers Alley, briefing from 8:30am. The access road is chain-free, with an active road hazard advisory in place. The spring Pines Shuttle and bus schedule begins tomorrow, 1 October (up: 8:30/9:30/10:30am; down: 1:30/2:30/3:30/4:15pm). Upper car parks are nearly at capacity today. Lifts & terrain Lifts Open 10 / 10 Runs Open 0 / 38 Percent open 0 %",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/wp-content/uploads/2026/09/LiveStill-2-300x169.jpg",
