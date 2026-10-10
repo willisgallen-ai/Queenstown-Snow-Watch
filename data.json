@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-09T21:39:47.408622+00:00",
+  "updated": "2026-10-10T01:15:12.383513+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Friday, 2 nd October 2026 Well folks, we’ve made it to the final NZ forecast of the season, although there are still plenty of turns left before the lifts stop spinning for winter. It’s the final week at Coronet Peak and Ōhau, while Mt Olympus runs through to the 10 th of October, and The Remarkables and Mt Hutt through to the 11 th . Cardrona has extended its season until the 18 th , with Whakapapa and Tūroa aiming to keep the lifts spinning through to the 25 th , the long Labour Weekend. Things get a little wild today, Friday, as northwesterlies crank up over the South Island, potentially hampering lifts before rain spreads into the Southern Lakes and eventually Canterbury. A colder change brings 1-5cm of wet snow to Canterbury early Saturday before things rapidly improve, setting up a cracking Sunday and Monday with sunshine, light winds and some mint spring skiing. Looking further ahead, things become more unsettled again next week, with a stronger storm threatening the South Island next weekend. That could throw a spanner in the works for closing weekend at Mt Olympus, The Remarkables and Mt Hutt, although there should hopefully still be a decent window to squeeze in those final turns. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Friday 2 nd October Northwesterlies crank up over the South Island, reaching gale force in exposed areas and potentially hampering lift operations, as a front to the south gathers some momentum and slowly creeps northwards. The front spreads rain over the Southern Lakes from late morning before clearing away early in the evening. Cloud builds over Canterbury, with a few showers spilling over from the Main Divide during the afternoon before rain arrives from the south overnight. Mt Ruapehu remains largely untouched by the action, with just some cloud possible around the lower slopes as southwesterlies pick up. Saturday 3 rd October The Southern Lakes ski fields will be clear and sunny above morning low cloud filling the valleys and basins, while light southerly breezes gradually die away. Rain over Canterbury turns to wet, dense snow and sleet early in the morning as cooler south-to-southeasterlies arrive. That’ll gradually clear from the south during the afternoon as the front continues northwards, leaving around 1-5cm of wet, dense snow behind. Conditions deteriorate on Mt Ruapehu, with showers arriving around midday before clearing during the evening as southwest winds swing around to the southeast. Sunday 4 th October A ridge of high pressure serves up a beaut sunny day for South Island ski fields, with barely a puff of wind. A perfect way to sign off a great season at Coronet Peak and Ōhau. Mt Ruapehu also starts off nicely, but cloud will materialise during the afternoon, with a few spits of rain or drizzle possible, although winds remain light. Monday 5 th October Another stunning blue-dome day for the South Island under the influence of high pressure, with a light northwest breeze kicking in. Mt Ruapehu will be mint too, with mostly sunny skies and light breezes. Tuesday 6 th October Northwesterlies pick up over the South Island as the high moves out east and a storm system approaches from the west, bringing a little cloud to the Southern Lakes on an otherwise sunny day. Light northerly breezes over Mt Ruapehu will bring mostly cloudy skies and a few light, drizzly showers. Extended Forecast The front approaching from the west on Tuesday moves onto the lower South Island on Wednesday the 7 th and lingers into Thursday the 8th before gradually dissipating. This will bring a few showers to the Southern Lakes, while Canterbury and Mt Ruapehu stay mostly fine and dry. A stronger storm system is earmarked to hit the South Island next weekend, the 10 th and 11 th of October, bringing a bout of rain and strong northwest winds. That’s not ideal for closing weekend at Mt Olympus, The Remarkables and Mt Hutt, but the storm shouldn’t consume the entire weekend, hopefully leaving a decent window to sneak in those final turns of the season. That’s all from me this season, folks. It was a slow start, but it’s turned out to be a great season overall. Enjoy these final few weeks and squeeze in a few more turns if you can. As for me, I’m off for a short hibernation nap until things start cranking up in the Northern Hemisphere. See you then. The Grasshopper, signing out!",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-10-09T21:40:00+00:00",
+  "next_scheduled_update": "2026-10-10T01:20:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -117,12 +117,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 8.4,
+        "temperature_c": 9.6,
         "snowing": false,
         "condition": "Not snowing",
-        "weather_code": 0,
+        "weather_code": 3,
         "snowfall_cm": 0.0,
-        "observed": "2026-10-10T10:30",
+        "observed": "2026-10-10T14:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -441,12 +441,12 @@
         }
       ],
       "weather": {
-        "temperature_c": 10.6,
+        "temperature_c": 14.3,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 2,
         "snowfall_cm": 0.0,
-        "observed": "2026-10-10T10:30",
+        "observed": "2026-10-10T14:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -682,7 +682,7 @@
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
-      "summary": "Friday 09/10 We have clear skies and light winds forecast for today. It's shaping up to be a fantastic spring day up the mountain! A great day to get out and enjoy some spring skiing and riding! Snow conditions will be a little firm to start but should soften quickly this morning. With warm temperatures overnight, we’re expecting some great spring skiing conditions early on, with the snow continuing to soften as the day goes on. Main Basin will be open from 9am to 4:30pm. Captains, T-Bar and Soho open from 9:30am. Valley View car park, lift and terrain is now closed for the remainder of the season. There is still plenty of great skiing and riding to be had across the upper mountain, so get up there and make the most of the spring conditions! Lifts & terrain Lifts Open 8 / 10 Runs Open - / 38 Percent open 70 %",
+      "summary": "Saturday 10/10 Mini Pipe World Champs Is on today in the Peoples pipe, head up and check out the action! We’re in for a similar day to yesterday, with mainly clear skies and little cloud coming and going, light winds to start. Winds are expected to increase throughout the day, but overall it’s shaping up to be another great spring day up the mountain! Snow conditions will be a little firm to start, softening quickly as temperatures warm up throughout the morning. Expect some great spring skiing and riding! Main Basin will be open from 9am to 4:30pm. Captains, T-Bar and Soho open from 9:30am. Delays in the terrain parks this morning due to a late snap freeze this morning! Valley View car park, lift and terrain is now closed for the remainder of the season. There is still plenty of great skiing and riding to be had across the upper mountain, so get up there and make the most of the spring conditions Lifts & terrain Lifts Open 8 / 10 Runs Open - / 38 Percent open 60 %",
       "webcam": {
         "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
         "image_url": "https://www.mountainwatch.com/wp-content/uploads/2026/10/LiveStill-1-300x169.jpg",
