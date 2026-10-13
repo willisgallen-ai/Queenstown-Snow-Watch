@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-12T22:37:22.502869+00:00",
+  "updated": "2026-10-13T03:10:46.293837+00:00",
   "news": {
     "title": "The Grasshopper — NZ forecast",
     "summary": "Published early Friday, 2 nd October 2026 Well folks, we’ve made it to the final NZ forecast of the season, although there are still plenty of turns left before the lifts stop spinning for winter. It’s the final week at Coronet Peak and Ōhau, while Mt Olympus runs through to the 10 th of October, and The Remarkables and Mt Hutt through to the 11 th . Cardrona has extended its season until the 18 th , with Whakapapa and Tūroa aiming to keep the lifts spinning through to the 25 th , the long Labour Weekend. Things get a little wild today, Friday, as northwesterlies crank up over the South Island, potentially hampering lifts before rain spreads into the Southern Lakes and eventually Canterbury. A colder change brings 1-5cm of wet snow to Canterbury early Saturday before things rapidly improve, setting up a cracking Sunday and Monday with sunshine, light winds and some mint spring skiing. Looking further ahead, things become more unsettled again next week, with a stronger storm threatening the South Island next weekend. That could throw a spanner in the works for closing weekend at Mt Olympus, The Remarkables and Mt Hutt, although there should hopefully still be a decent window to squeeze in those final turns. Latest pressure analysis and satellite image. Source: The BOM (vandalised by the Grasshopper) Friday 2 nd October Northwesterlies crank up over the South Island, reaching gale force in exposed areas and potentially hampering lift operations, as a front to the south gathers some momentum and slowly creeps northwards. The front spreads rain over the Southern Lakes from late morning before clearing away early in the evening. Cloud builds over Canterbury, with a few showers spilling over from the Main Divide during the afternoon before rain arrives from the south overnight. Mt Ruapehu remains largely untouched by the action, with just some cloud possible around the lower slopes as southwesterlies pick up. Saturday 3 rd October The Southern Lakes ski fields will be clear and sunny above morning low cloud filling the valleys and basins, while light southerly breezes gradually die away. Rain over Canterbury turns to wet, dense snow and sleet early in the morning as cooler south-to-southeasterlies arrive. That’ll gradually clear from the south during the afternoon as the front continues northwards, leaving around 1-5cm of wet, dense snow behind. Conditions deteriorate on Mt Ruapehu, with showers arriving around midday before clearing during the evening as southwest winds swing around to the southeast. Sunday 4 th October A ridge of high pressure serves up a beaut sunny day for South Island ski fields, with barely a puff of wind. A perfect way to sign off a great season at Coronet Peak and Ōhau. Mt Ruapehu also starts off nicely, but cloud will materialise during the afternoon, with a few spits of rain or drizzle possible, although winds remain light. Monday 5 th October Another stunning blue-dome day for the South Island under the influence of high pressure, with a light northwest breeze kicking in. Mt Ruapehu will be mint too, with mostly sunny skies and light breezes. Tuesday 6 th October Northwesterlies pick up over the South Island as the high moves out east and a storm system approaches from the west, bringing a little cloud to the Southern Lakes on an otherwise sunny day. Light northerly breezes over Mt Ruapehu will bring mostly cloudy skies and a few light, drizzly showers. Extended Forecast The front approaching from the west on Tuesday moves onto the lower South Island on Wednesday the 7 th and lingers into Thursday the 8th before gradually dissipating. This will bring a few showers to the Southern Lakes, while Canterbury and Mt Ruapehu stay mostly fine and dry. A stronger storm system is earmarked to hit the South Island next weekend, the 10 th and 11 th of October, bringing a bout of rain and strong northwest winds. That’s not ideal for closing weekend at Mt Olympus, The Remarkables and Mt Hutt, but the storm shouldn’t consume the entire weekend, hopefully leaving a decent window to sneak in those final turns of the season. That’s all from me this season, folks. It was a slow start, but it’s turned out to be a great season overall. Enjoy these final few weeks and squeeze in a few more turns if you can. As for me, I’m off for a short hibernation nap until things start cranking up in the Northern Hemisphere. See you then. The Grasshopper, signing out!",
     "url": "https://www.mountainwatch.com/grasshopper/",
     "source": "The Grasshopper · Mountainwatch"
   },
-  "next_scheduled_update": "2026-10-12T22:40:00+00:00",
+  "next_scheduled_update": "2026-10-13T03:15:00+00:00",
   "schedule_minutes": 5,
   "health": {
     "usable_resorts": 4,
@@ -122,7 +122,7 @@
         "condition": "Not snowing",
         "weather_code": 53,
         "snowfall_cm": 0.0,
-        "observed": "2026-10-13T11:30",
+        "observed": "2026-10-13T16:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -134,23 +134,23 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "6 am 13 Oct 2026",
+        "issued": "12 pm 13 Oct 2026",
         "days": [
           {
             "label": "Tue 13",
             "cm": 0,
-            "mm": 20,
+            "mm": 15,
             "rain": true
           },
           {
             "label": "Wed 14",
-            "cm": 12,
-            "mm": 1,
+            "cm": 8,
+            "mm": 2,
             "rain": false
           },
           {
             "label": "Thu 15",
-            "cm": 11,
+            "cm": 16,
             "mm": 0,
             "rain": false
           },
@@ -420,7 +420,7 @@
         },
         {
           "name": "Touring Route Change",
-          "status": "Unknown",
+          "status": "Closed",
           "difficulty": "unclassified"
         },
         {
@@ -437,16 +437,16 @@
       "carparks": [
         {
           "name": "Car Park 7",
-          "status": "Spaces available"
+          "status": "Closed"
         }
       ],
       "weather": {
-        "temperature_c": 8.7,
+        "temperature_c": 8.9,
         "snowing": false,
         "condition": "Not snowing",
         "weather_code": 61,
         "snowfall_cm": 0.0,
-        "observed": "2026-10-13T11:30",
+        "observed": "2026-10-13T16:00",
         "source": "Open-Meteo",
         "source_url": "https://open-meteo.com/"
       },
@@ -458,239 +458,7 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "6 am 13 Oct 2026",
-        "days": [
-          {
-            "label": "Tue 13",
-            "cm": 0,
-            "mm": 29,
-            "rain": true
-          },
-          {
-            "label": "Wed 14",
-            "cm": 7,
-            "mm": 5,
-            "rain": false
-          },
-          {
-            "label": "Thu 15",
-            "cm": 10,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Fri 16",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sat 17",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          },
-          {
-            "label": "Sun 18",
-            "cm": 0,
-            "mm": 0,
-            "rain": false
-          }
-        ]
-      },
-      "stale": false
-    },
-    "cardrona": {
-      "status": "Open",
-      "lifts_open": 4,
-      "lifts_total": 10,
-      "base_lower": 75,
-      "base_upper": 75,
-      "new_snow_7d": 0,
-      "new_snow_24h": null,
-      "season_cm": null,
-      "terrain": {},
-      "lifts": [
-        {
-          "name": "Learner Conveyors",
-          "status": "Unknown"
-        },
-        {
-          "name": "McDougall's Chondola",
-          "status": "Unknown"
-        },
-        {
-          "name": "Whitestar Express",
-          "status": "Unknown"
-        },
-        {
-          "name": "Captains Express",
-          "status": "Unknown"
-        },
-        {
-          "name": "Willow's Quad",
-          "status": "Unknown"
-        },
-        {
-          "name": "Soho Express",
-          "status": "Unknown"
-        },
-        {
-          "name": "T-Bar",
-          "status": "Unknown"
-        },
-        {
-          "name": "Valley View",
-          "status": "Unknown"
-        },
-        {
-          "name": "Kindy Conveyor",
-          "status": "Unknown"
-        },
-        {
-          "name": "Wells Pipe Platter",
-          "status": "Unknown"
-        }
-      ],
-      "trails": [
-        {
-          "name": "Learners Slope",
-          "status": "Unknown",
-          "difficulty": null
-        },
-        {
-          "name": "Main Basin",
-          "status": "Unknown",
-          "difficulty": null
-        },
-        {
-          "name": "Captains",
-          "status": "Unknown",
-          "difficulty": null
-        },
-        {
-          "name": "Soho",
-          "status": "Unknown",
-          "difficulty": null
-        },
-        {
-          "name": "Little Willows",
-          "status": "Unknown",
-          "difficulty": null
-        },
-        {
-          "name": "Big Willows",
-          "status": "Unknown",
-          "difficulty": null
-        },
-        {
-          "name": "Backcountry Access",
-          "status": "Unknown",
-          "difficulty": null
-        },
-        {
-          "name": "Mt Cardrona",
-          "status": "Unknown",
-          "difficulty": null
-        },
-        {
-          "name": "Arcadia Chutes",
-          "status": "Unknown",
-          "difficulty": null
-        },
-        {
-          "name": "Summit",
-          "status": "Unknown",
-          "difficulty": null
-        }
-      ],
-      "park": [
-        {
-          "name": "Baby Bucks",
-          "status": "Unknown"
-        },
-        {
-          "name": "Little Bucks",
-          "status": "Unknown"
-        },
-        {
-          "name": "Antlers Alley",
-          "status": "Unknown"
-        },
-        {
-          "name": "Stag Lane",
-          "status": "Unknown"
-        },
-        {
-          "name": "Big Bucks",
-          "status": "Unknown"
-        },
-        {
-          "name": "Peoples Pipe",
-          "status": "Unknown"
-        },
-        {
-          "name": "Olympic Pipe",
-          "status": "Unknown"
-        },
-        {
-          "name": "Big Air",
-          "status": "Unknown"
-        },
-        {
-          "name": "Mc Park",
-          "status": "Unknown"
-        },
-        {
-          "name": "Gravity Cross",
-          "status": "Unknown"
-        }
-      ],
-      "carparks": [
-        {
-          "name": "Carpark A",
-          "status": "Available"
-        },
-        {
-          "name": "Carpark B",
-          "status": "Available"
-        },
-        {
-          "name": "Carpark C",
-          "status": "Available"
-        },
-        {
-          "name": "The Yard",
-          "status": "Available"
-        },
-        {
-          "name": "Valley View",
-          "status": "Available"
-        },
-        {
-          "name": "The Pines",
-          "status": "Available"
-        }
-      ],
-      "weather": {
-        "temperature_c": 9.9,
-        "snowing": false,
-        "condition": "Not snowing",
-        "weather_code": 1,
-        "snowfall_cm": 0.0,
-        "observed": "2026-10-09T12:45",
-        "source": "Open-Meteo",
-        "source_url": "https://open-meteo.com/"
-      },
-      "summary": "0930 Update - Delayed opening for Soho due to icey and slick conditions. ETA opening 10am We are Open today with a bluebird Spring day on the cards! It is already warm with light northerly winds. Don't forget the sunscreen. The snow will start out firm but soften quickly. Coverage up top is still great! There is still plenty of great skiing and riding to be had across the upper mountain, so get up there and make the most of the spring conditions. Main Basin lifts will be open from 9am to 4:30pm. Soho lift and Captain basin will be open from 9:30am. The Olympic Halfpipe and platter will have a delayed opening today so the team can salt before opening, ETA 9:30. Noodle Bar and The Lounge will keep you fed, caffeinated, and hydrated. Lifts & terrain Lifts Open 5 / 10 Runs Open - / 38 Percent open 50 %",
-      "webcam": {
-        "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
-        "image_url": "https://www.mountainwatch.com/wp-content/uploads/2026/10/LiveStill-1-300x169.jpg",
-        "embeddable": true,
-        "source": "Mountainwatch"
-      },
-      "forecast": {
-        "issued": "6 am 13 Oct 2026",
+        "issued": "12 pm 13 Oct 2026",
         "days": [
           {
             "label": "Tue 13",
@@ -700,8 +468,8 @@
           },
           {
             "label": "Wed 14",
-            "cm": 8,
-            "mm": 5,
+            "cm": 5,
+            "mm": 4,
             "rain": false
           },
           {
@@ -730,7 +498,241 @@
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "hours_closed": true
+    },
+    "cardrona": {
+      "status": "Closed",
+      "lifts_open": 0,
+      "lifts_total": 10,
+      "base_lower": 75,
+      "base_upper": 75,
+      "new_snow_7d": 0,
+      "new_snow_24h": null,
+      "season_cm": null,
+      "terrain": {},
+      "lifts": [
+        {
+          "name": "Learner Conveyors",
+          "status": "Closed"
+        },
+        {
+          "name": "McDougall's Chondola",
+          "status": "Closed"
+        },
+        {
+          "name": "Whitestar Express",
+          "status": "Closed"
+        },
+        {
+          "name": "Captains Express",
+          "status": "Closed"
+        },
+        {
+          "name": "Willow's Quad",
+          "status": "Closed"
+        },
+        {
+          "name": "Soho Express",
+          "status": "Closed"
+        },
+        {
+          "name": "T-Bar",
+          "status": "Closed"
+        },
+        {
+          "name": "Valley View",
+          "status": "Closed"
+        },
+        {
+          "name": "Kindy Conveyor",
+          "status": "Closed"
+        },
+        {
+          "name": "Wells Pipe Platter",
+          "status": "Closed"
+        }
+      ],
+      "trails": [
+        {
+          "name": "Learners Slope",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Main Basin",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Captains",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Soho",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Little Willows",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Big Willows",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Backcountry Access",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Mt Cardrona",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Arcadia Chutes",
+          "status": "Closed",
+          "difficulty": null
+        },
+        {
+          "name": "Summit",
+          "status": "Closed",
+          "difficulty": null
+        }
+      ],
+      "park": [
+        {
+          "name": "Baby Bucks",
+          "status": "Closed"
+        },
+        {
+          "name": "Little Bucks",
+          "status": "Closed"
+        },
+        {
+          "name": "Antlers Alley",
+          "status": "Closed"
+        },
+        {
+          "name": "Stag Lane",
+          "status": "Closed"
+        },
+        {
+          "name": "Big Bucks",
+          "status": "Closed"
+        },
+        {
+          "name": "Peoples Pipe",
+          "status": "Closed"
+        },
+        {
+          "name": "Olympic Pipe",
+          "status": "Closed"
+        },
+        {
+          "name": "Big Air",
+          "status": "Closed"
+        },
+        {
+          "name": "Mc Park",
+          "status": "Closed"
+        },
+        {
+          "name": "Gravity Cross",
+          "status": "Closed"
+        }
+      ],
+      "carparks": [
+        {
+          "name": "Carpark A",
+          "status": "Closed"
+        },
+        {
+          "name": "Carpark B",
+          "status": "Closed"
+        },
+        {
+          "name": "Carpark C",
+          "status": "Closed"
+        },
+        {
+          "name": "The Yard",
+          "status": "Closed"
+        },
+        {
+          "name": "Valley View",
+          "status": "Closed"
+        },
+        {
+          "name": "The Pines",
+          "status": "Closed"
+        }
+      ],
+      "weather": {
+        "temperature_c": 9.9,
+        "snowing": false,
+        "condition": "Not snowing",
+        "weather_code": 1,
+        "snowfall_cm": 0.0,
+        "observed": "2026-10-09T12:45",
+        "source": "Open-Meteo",
+        "source_url": "https://open-meteo.com/"
+      },
+      "summary": "Tuesday 13/10 We are open today with another warm start! Today will be partly cloudy with rain developing in the afternoon/ evening. Northwesterly winds are forecast to increase through the day. The snow will start out firm but will soften quickly. Mid-morning will see the snow in Goldilocks zone. There is still plenty of great skiing and riding to be had across the upper mountain, so get up here and make the most of the last few days of the season. Main Basin lifts will be open from 9am to 4:30pm. Captain basin will be open from 9:30. am. Soho called closed due to wind (10:34am) The snow is melting fast on the lower mountain. Today is likely the last day of the season for Soho. Come get the last laps of 2026 in Soho! Cardrona Parks are still going hard with everything open including plenty of jibs, 4 jumps lines, 2 pipes, Big Air, and Gravity Cross. Come take advantage of the soft landings. Noodle Bar and The Lounge will keep you fed, caffeinated, and hydrated. Lifts & terrain Lifts Open 4 / 10 Runs Open - / 38 Percent open 30 %",
+      "webcam": {
+        "page_url": "https://www.mountainwatch.com/new-zealand/cardrona/snow-cams",
+        "image_url": "https://www.mountainwatch.com/wp-content/uploads/2026/10/LiveStill-1-300x169.jpg",
+        "embeddable": true,
+        "source": "Mountainwatch"
+      },
+      "forecast": {
+        "issued": "12 pm 13 Oct 2026",
+        "days": [
+          {
+            "label": "Tue 13",
+            "cm": 0,
+            "mm": 20,
+            "rain": true
+          },
+          {
+            "label": "Wed 14",
+            "cm": 6,
+            "mm": 6,
+            "rain": false
+          },
+          {
+            "label": "Thu 15",
+            "cm": 16,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Fri 16",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sat 17",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          },
+          {
+            "label": "Sun 18",
+            "cm": 0,
+            "mm": 0,
+            "rain": false
+          }
+        ]
+      },
+      "stale": false,
+      "hours_closed": true
     },
     "treblecone": {
       "status": "Closed",
@@ -831,23 +833,23 @@
         "source": "Mountainwatch"
       },
       "forecast": {
-        "issued": "6 am 13 Oct 2026",
+        "issued": "12 pm 13 Oct 2026",
         "days": [
           {
             "label": "Tue 13",
             "cm": 0,
-            "mm": 40,
+            "mm": 41,
             "rain": true
           },
           {
             "label": "Wed 14",
             "cm": 4,
-            "mm": 4,
+            "mm": 3,
             "rain": false
           },
           {
             "label": "Thu 15",
-            "cm": 12,
+            "cm": 16,
             "mm": 0,
             "rain": false
           },
@@ -871,7 +873,8 @@
           }
         ]
       },
-      "stale": false
+      "stale": false,
+      "hours_closed": true
     }
   }
 }
